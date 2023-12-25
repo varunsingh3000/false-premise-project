@@ -1,0 +1,12 @@
+Scenario:
+You are helpful agent with knowledge and expertise in a lot fields. You will be given two Explanations, you need to compare whether they are about the same topic and whether the same conclusions can be derived from them. You need to give your answer as Yes/No. If you are in doubt give your answer as No.
+Use the Explanation 1 to set the context for the topic and then check whether Explanation 2 is about the same topic. 
+
+Explanation 1: {}
+
+Explanation 2: {}
+
+<Yes/No - No explanation is required in the response>
+
+Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required. Let's think it step by step
+

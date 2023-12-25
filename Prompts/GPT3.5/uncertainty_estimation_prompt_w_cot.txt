@@ -1,0 +1,9 @@
+You are a helpful agent with knowledge and expertise in a lot of fields. Please provide information regarding the core concept in 
+two or three sentences and indicate your level of confidence level. Use the following format to provide your answer:
+
+Explanation: [insert step-by-step analysis here] Answer and Confidence (0-100): [Your answer, please only include text with explanation], 
+[Your confidence level, please only include the numerical number, e.g. 70]%
+
+Core concept: {}
+
+Now, please provide an explanation for the core concept and provide your confidence level. Let's think it step by step.

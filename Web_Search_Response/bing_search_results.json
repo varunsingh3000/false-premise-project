@@ -1,0 +1,743 @@
+{
+    "_type": "SearchResponse",
+    "queryContext": {
+        "originalQuery": "gta 5"
+    },
+    "webPages": {
+        "webSearchUrl": "https://www.bing.com/search?q=gta+5",
+        "totalEstimatedMatches": 35200000,
+        "value": [
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
+                "name": "Grand Theft Auto V - Rockstar Games",
+                "url": "https://www.rockstargames.com/gta-v",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.rockstargames.com/gta-v",
+                "snippet": "Grand Theft Auto V and GTA Online — now upgraded for PlayStation 5 and Xbox Series X|S with stunning visuals, faster loading, and more — delivering the action-packed, blockbuster Story Mode adventure and the dynamic, ever-evolving online world of GTA...",
+                "deepLinks": [
+                    {
+                        "name": "Buy Grand Theft Auto V",
+                        "url": "https://store.rockstargames.com/game/buy-gta-v",
+                        "snippet": "The Criminal Enterprise Starter Pack is the fastest way for new GTA Online players to jumpstart their criminal empires with the most exciting and popular content plus $1,000,000 bonus cash to spend in GTA Online - all content valued at over GTA$10,000,000 if purchased separately."
+                    },
+                    {
+                        "name": "Buy Now",
+                        "url": "https://www.rockstargames.com/gta-v?info=order",
+                        "snippet": "Grand Theft Auto V and GTA Online — now upgraded for PlayStation 5 and Xbox Series X|S with stunning visuals, faster loading, and more — delivering the action-packed, blockbuster Story Mode adventure and the dynamic, ever-evolving online world of GTA..."
+                    }
+                ],
+                "dateLastCrawled": "2023-12-25T02:03:00.0000000Z",
+                "language": "en",
+                "isNavigational": true
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
+                "name": "Grand Theft Auto V on Steam",
+                "url": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd&w=80&h=80&c=1&pid=5.1",
+                "about": [
+                    {
+                        "_type": "CreativeWork",
+                        "aggregateRating": {
+                            "ratingValue": 9,
+                            "bestRating": 10,
+                            "reviewCount": 1549852
+                        }
+                    }
+                ],
+                "isFamilyFriendly": true,
+                "displayUrl": "https://store.steampowered.com/app/271590",
+                "snippet": "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second. Recent Reviews: Very Positive (28,615) All Reviews: Very Positive (1,548,649) Release Date: Apr 14, 2015",
+                "dateLastCrawled": "2023-12-24T15:23:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4611571155403124&mkt=en-US&setlang=en-US&w=cU8VpyCJUdYxGZmguuQ_tj9fVdGn233i",
+                "language": "en",
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Developer"
+                        },
+                        "items": [
+                            {
+                                "text": "Rockstar North"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Publishers"
+                        },
+                        "items": [
+                            {
+                                "text": "Rockstar Games"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "ReleaseData"
+                        },
+                        "items": [
+                            {
+                                "text": "Apr 14, 2015"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "ReviewsDescription"
+                        },
+                        "items": [
+                            {
+                                "text": "Very Positive"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Video Duration"
+                        },
+                        "items": [
+                            {
+                                "text": "30 sec"
+                            }
+                        ],
+                        "hint": {
+                            "text": "MEDIA:DURATION"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Author"
+                        },
+                        "items": [
+                            {
+                                "text": "Rockstar Games"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:AUTHOR"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
+                "name": "Grand Theft Auto V | Xbox",
+                "url": "https://www.xbox.com/en-US/games/gta-v",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.jCqq_xSiJEuqCvQ23haNNAHaDH&w=80&h=80&c=1&pid=5.1",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.xbox.com/en-US/games/gta-v",
+                "snippet": "Explore the stunning world of Los Santos and Blaine County in the ultimate Grand Theft Auto V experience, featuring a range of technical upgrades and enhancements for new and returning players. Trailers and gameplay Discover your next favorite game",
+                "dateLastCrawled": "2023-12-24T23:26:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.jCqq_xSiJEuqCvQ23haNNAHaDH&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.jCqq_xSiJEuqCvQ23haNNAHaDH"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4683224094674808&mkt=en-US&setlang=en-US&w=DkccpEbQtp1Rrxik4KAAgyXvt6prL3i1",
+                "language": "en",
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Video Duration"
+                        },
+                        "items": [
+                            {
+                                "text": "1 min"
+                            }
+                        ],
+                        "hint": {
+                            "text": "MEDIA:DURATION"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 4,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "Grand Theft Auto V - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.C9qobPOZoVF7_1rDyI_C4AAAAA&w=80&h=80&c=1&pid=5.1",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
+                "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall.",
+                "dateLastCrawled": "2023-12-25T16:05:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.C9qobPOZoVF7_1rDyI_C4AAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.C9qobPOZoVF7_1rDyI_C4AAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=1886332546762&mkt=en-US&setlang=en-US&w=4HN9kFxUcqtBeDLTI6eFBgMkdkp7WolF",
+                "language": "en",
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Developer(s)"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "Rockstar North",
+                                "url": "https://www.bing.com/search?q=Rockstar+North+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Engine"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "RAGE",
+                                "url": "https://www.bing.com/search?q=Rockstar+Advanced+Game+Engine+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Publisher(s)"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "Rockstar Games",
+                                "url": "https://www.bing.com/search?q=Rockstar+Games+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Series"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "Grand Theft Auto",
+                                "url": "https://www.bing.com/search?q=Grand+Theft+Auto+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
+                "name": "Grand Theft Auto V - Epic Games Store",
+                "url": "https://store.epicgames.com/en-US/p/grand-theft-auto-v",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://store.epicgames.com/en-US/p/grand-theft-auto-v",
+                "snippet": "GRAND THEFT AUTO V When a young street hustler, a retired bank robber and a terrifying psychopath land themselves in trouble, they must pull off a series of dangerous heists to survive in a city in which they can trust nobody, least of all each other. GRAND THEFT AUTO ONLINE",
+                "dateLastCrawled": "2023-12-24T15:20:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4656457852672515&mkt=en-US&setlang=en-US&w=yU0Ck8zOqrdFg1wlC4EaTfrWzPgMRtnx",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
+                "name": "Grand Theft Auto V (US) - PlayStation",
+                "url": "https://www.playstation.com/en-us/games/grand-theft-auto-v/",
+                "datePublished": "2022-03-14T00:00:00.0000000",
+                "datePublishedDisplayText": "Mar 14, 2022",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.playstation.com/en-us/games/grand-theft-auto-v",
+                "snippet": "PS5 features Choose edition Buy GTAV and GTA Online on PlayStation Store. Risk it all in the sun-soaked city of Los Santos and experience Rockstar Games’ critically acclaimed open world game.",
+                "dateLastCrawled": "2023-12-25T12:22:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4653288171055867&mkt=en-US&setlang=en-US&w=a-TcUv0D-LVEEh5sLG6xez3-KABh2G7I",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
+                "name": "Grand Theft Auto V - Rockstar Games",
+                "url": "https://socialclub.rockstargames.com/games/gtav/index-signin?ageGate=True",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://socialclub.rockstargames.com/games/gtav/index-signin?ageGate=True",
+                "snippet": "Join over 200 million Rockstar Games members worldwide on the official Rockstar Games platform to enhance and extend your gaming experience.",
+                "dateLastCrawled": "2023-12-24T15:17:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4714504334159087&mkt=en-US&setlang=en-US&w=aSgYoOe_CaNf6M1w_lZd8cNypSUylwdt",
+                "language": "en",
+                "isNavigational": false
+            }
+        ]
+    },
+    "entities": {
+        "value": [
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#Entities.0",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    },
+                    {
+                        "_type": "ContractualRules/LinkAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "text": "Wikipedia",
+                        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                    },
+                    {
+                        "_type": "ContractualRules/MediaAttribution",
+                        "targetPropertyName": "image",
+                        "mustBeCloseToContent": true,
+                        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                    }
+                ],
+                "webSearchUrl": "https://www.bing.com/entityexplore?q=Grand+Theft+Auto+V&filters=sid:%2257d60610-c99e-4850-5668-e849f7eaab97%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
+                "name": "Grand Theft Auto V",
+                "url": "https://www.rockstargames.com/gta-v",
+                "image": {
+                    "name": "Grand Theft Auto V",
+                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.487a3f10a4e9fc58534ee7e46e7fe7d1&w=110&h=110&c=7",
+                    "provider": [
+                        {
+                            "_type": "Organization",
+                            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                        }
+                    ],
+                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+                    "width": 110,
+                    "height": 110,
+                    "sourceWidth": 284,
+                    "sourceHeight": 351
+                },
+                "description": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips, and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals. Players freely roam San Andreas's open world countryside and fictional city of Los Santos, based on Los Angeles.",
+                "entityPresentationInfo": {
+                    "entityScenario": "DominantEntity",
+                    "entityTypeHints": [
+                        "VideoGame"
+                    ],
+                    "entityTypeDisplayHint": "2013 video game"
+                },
+                "bingId": "57d60610-c99e-4850-5668-e849f7eaab97"
+            }
+        ]
+    },
+    "news": {
+        "id": "https://api.bing.microsoft.com/api/v7/#News",
+        "readLink": "https://api.bing.microsoft.com/api/v7/news/search?q=GTA+5",
+        "value": [
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Bleeping Computer"
+                    }
+                ],
+                "name": "GTA 5 source code reportedly leaked online a year after RockStar hack",
+                "url": "https://www.bleepingcomputer.com/news/security/gta-5-source-code-reportedly-leaked-online-a-year-after-rockstar-hack/",
+                "image": {
+                    "contentUrl": "https://www.bleepstatic.com/content/hl-images/2022/09/18/GTA_headpic.jpg",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.FzA-j-e5S6Feeg6yhrblxi&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "The source code for Grand Theft Auto 5 was reportedly leaked on Christmas Eve, a little over a year after the Lapsus$ threat actors hacked Rockstar games and stole corporate data.",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
+                        "name": "Grand Theft Auto V"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/2c5bb946-67c3-b55f-0a48-18257d2c4403",
+                        "name": "Rockstar"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/c7628208-2acf-c5a7-cfe0-129ae79ffe7a",
+                        "name": "Source code"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Bleeping Computer",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.EOQr4Xjhw1xPCgzmOfY9RA&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2023-12-25T17:27:00.0000000Z",
+                "category": "ScienceAndTechnology"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Dexerto"
+                    }
+                ],
+                "name": "GTA 5 leak reveals scrapped GTA Tokyo & cancelled single-player DLCs",
+                "url": "https://www.dexerto.com/gta/gta-5-leak-reveals-scrapped-gta-tokyo-cancelled-single-player-dlcs-2445568/",
+                "image": {
+                    "contentUrl": "https://editors.dexerto.com/wp-content/uploads/2023/12/25/GTA-5-leak-reveals-cancelled-GTA-tokyo-canned-single-player-DLCs.jpg",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.y9CrBaCO7AaJU42FjpYB4y&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "GTA 5's source code leak has revealed files for a scrapped GTA Tokyo PS2 game and some cancelled single player DLC.",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
+                        "name": "Grand Theft Auto V"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/c34ce3db-c24e-fea7-043a-e3a762803683",
+                        "name": "Tokyo Cancelled"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Dexerto",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.0iS1Dv-e5sD2zbhqxLjIMA&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2023-12-25T17:34:00.0000000Z",
+                "category": "ScienceAndTechnology"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Xfire on MSN.com"
+                    }
+                ],
+                "name": "GTA 5 might disappear from Game Pass this December",
+                "url": "https://www.msn.com/en-us/entertainment/gaming/gta-5-might-disappear-from-game-pass-this-december/ar-AA1m0ltK",
+                "image": {
+                    "contentUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1m0jmX.img?w=1920&h=1080&m=4&q=93",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.7_yUaYJ4j8IWFCPwxCDrTy&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "The good news is that, if Grand Theft Auto 5 does leave Game Pass, it's available to buy at a lower price than usual on Xbox Series S/X.",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
+                        "name": "Grand Theft Auto V"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "name": "Grand Theft Auto V"
+                    },
+                    {
+                        "name": "Microsoft"
+                    },
+                    {
+                        "name": "Grand Theft Auto"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Xfire on MSN.com",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.Ee1dYt0BjigXWY0WUxa-sA&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2023-12-25T02:44:02.0000000Z",
+                "category": "ScienceAndTechnology"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "EssentiallySports on MSN.com"
+                    }
+                ],
+                "name": "GTA V Source Code Leaks: Here’s the Impact It Could Have on Rockstar Games",
+                "url": "https://www.msn.com/en-us/entertainment/gaming/gta-v-source-code-leaks-here-s-the-impact-it-could-have-on-rockstar-games/ar-AA1m0Ur2",
+                "image": {
+                    "contentUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1m15PX.img?w=560&h=315&m=4&q=100",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.PgS3WkhZvA_mPXGEv0FKvS&pid=News",
+                        "width": 560,
+                        "height": 315
+                    }
+                },
+                "description": "Rockstar Games’ devastating affair with leaks continues! The unfortunate series of leaks that the Grand Theft Auto developers have been subjected to is frustrating. However, the misery doesn’t seem to stop as the industry giants have faced yet another episode of data breach.",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
+                        "name": "Grand Theft Auto V"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/afa3417b-365e-254d-e329-cb53762a388e",
+                        "name": "Rockstar Games"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/45f5a510-1350-5b71-013e-abf0f9940780",
+                        "name": "Source Code"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "name": "Grand Theft Auto V"
+                    },
+                    {
+                        "name": "Rockstar Games"
+                    },
+                    {
+                        "name": "Source Code"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "EssentiallySports on MSN.com",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.LP9KGI2appo5C22F9s3gBA&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2023-12-25T16:34:06.0000000Z",
+                "category": "ScienceAndTechnology"
+            },
+            {
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Yahoo"
+                    }
+                ],
+                "name": "GTA 5 May Leave Xbox Game Pass Soon",
+                "url": "https://www.yahoo.com/entertainment/gta-5-may-leave-xbox-170725178.html",
+                "image": {
+                    "contentUrl": "https://media.zenfs.com/en/comingsoon_net_477/41ae9f0ee632a11d74062864636cc7a7",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.Thoeb5Cs8hl6LAHgbF0H7i&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "The year is coming to a close and Microsoft may have one more surprise up its sleeve as it seems that Grand Theft Auto V may leave Xbox Game Pass soon. Some players have received notifications that the game will be one of three due to leave the service on December 31,",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/595e44be-f445-d997-7d70-92b9f35592e2",
+                        "name": "Xbox"
+                    },
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
+                        "name": "Grand Theft Auto V"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Yahoo",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.UM0amhg3WAObCEGqc4w_Cw&pid=news"
+                            }
+                        }
+                    }
+                ],
+                "datePublished": "2023-12-21T17:07:00.0000000Z",
+                "category": "ScienceAndTechnology"
+            }
+        ]
+    },
+    "relatedSearches": {
+        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
+        "value": [
+            {
+                "text": "5 gta download",
+                "displayText": "5 gta download",
+                "webSearchUrl": "https://www.bing.com/search?q=5+gta+download"
+            },
+            {
+                "text": "gta 5 original",
+                "displayText": "gta 5 original",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+original"
+            },
+            {
+                "text": "gta 5 download free",
+                "displayText": "gta 5 download free",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+download+free"
+            },
+            {
+                "text": "gta 5 full game download",
+                "displayText": "gta 5 full game download",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+full+game+download"
+            },
+            {
+                "text": "gta 5 release date",
+                "displayText": "gta 5 release date",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+release+date"
+            },
+            {
+                "text": "gta 5 for free",
+                "displayText": "gta 5 for free",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+for+free"
+            },
+            {
+                "text": "gta 5 wikipedia",
+                "displayText": "gta 5 wikipedia",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+wikipedia"
+            },
+            {
+                "text": "gta 5 anniversary date",
+                "displayText": "gta 5 anniversary date",
+                "webSearchUrl": "https://www.bing.com/search?q=gta+5+anniversary+date"
+            }
+        ]
+    },
+    "rankingResponse": {
+        "mainline": {
+            "items": [
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0"
+                    }
+                },
+                {
+                    "answerType": "News",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#News"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 1,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 2,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 3,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 4,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 5,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 6,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6"
+                    }
+                },
+                {
+                    "answerType": "RelatedSearches",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches"
+                    }
+                }
+            ]
+        },
+        "sidebar": {
+            "items": [
+                {
+                    "answerType": "Entities"
+                },
+                {
+                    "answerType": "Entities",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
+                    }
+                },
+                {
+                    "answerType": "Images"
+                },
+                {
+                    "answerType": "WebPages"
+                }
+            ]
+        }
+    }
+}

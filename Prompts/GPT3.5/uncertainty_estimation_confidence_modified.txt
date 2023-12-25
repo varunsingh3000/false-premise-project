@@ -1,0 +1,12 @@
+Scenario:
+You are helpful agent with knowledge and expertise in a lot fields. You will be given two Explanations and you need to compare whether they are about the same subject in terms of the final conclusion that can be derived from them.
+To judge if two explanations are about the same subject and lead to the same conclusions, follow these steps: First, compare their content for similarities in the information and concepts discussed. Next, assess the consistency in details and specific points mentioned in both explanations. Evaluate the reasoning and logic employed in each explanation to determine if they align in their arguments and assumptions. Look for common conclusions derived from each explanation and consider the context or perspective from which they are presented.
+
+Explanation 1: {}
+
+Explanation 2: {}
+
+<Yes/No - No explanation is required in the response>
+
+Now, please always provide your answer as only Yes or No. If you are in doubt give your answer as No. No explanation regarding the answer is required. Let's think it step by step
+

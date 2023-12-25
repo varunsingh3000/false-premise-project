@@ -1,0 +1,584 @@
+{
+    "_type": "SearchResponse",
+    "queryContext": {
+        "originalQuery": "Why does Mars have three moons?"
+    },
+    "webPages": {
+        "webSearchUrl": "https://www.bing.com/search?q=Why+does+Mars+have+three+moons%3f",
+        "totalEstimatedMatches": 4020000,
+        "value": [
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
+                "name": "Mars Moons - NASA Science",
+                "url": "https://science.nasa.gov/mars/moons/",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://science.nasa.gov/mars/moons",
+                "snippet": "Exploration Moons Stories Gallery All Planets Our Solar System Moons of Mars Mars has two moons, Phobos and Deimos. Both are thought to be captured asteroids, or debris from early in the formation of our solar system. Phobos is the larger of Mars' two moons.",
+                "deepLinks": [
+                    {
+                        "name": "Mars Moons: Facts",
+                        "url": "https://science.nasa.gov/mars/moons/facts/",
+                        "snippet": "Scientists have discussed the possibility of using one of the Martian moons as a base from which astronauts could observe the Red Planet and launch robots to its surface, while shielded by miles of rock from cosmic rays and solar radiation for nearly two-thirds of every orbit.",
+                        "deepLinks": []
+                    },
+                    {
+                        "name": "Mars: Facts",
+                        "url": "https://science.nasa.gov/mars/facts/",
+                        "snippet": "Stories All Planets Mars Facts Mars – the fourth planet from the Sun – is a dusty, cold, desert world with a very thin atmosphere. This dynamic planet has seasons, polar ice caps, extinct volcanoes, canyons and weather. Quick Facts If Earth were the size of a dime, Mars would be about as big as an aspirin tablet. Mars orbits our Sun, a star.",
+                        "deepLinks": []
+                    },
+                    {
+                        "name": "Martian Moons",
+                        "url": "https://mars.nasa.gov/all-about-mars/moons/summary/",
+                        "snippet": "(moons of Mars) Mars has two small moons: Phobos and Deimos. Phobos (fear) and Deimos (panic) were named after the horses that pulled the chariot of the Greek war god Ares, the counterpart to the Roman war god Mars. Both Phobos and Deimos were discovered in 1877 by American astronomer Asaph Hall.",
+                        "deepLinks": []
+                    }
+                ],
+                "dateLastCrawled": "2023-12-23T19:15:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=5035604680453377&mkt=en-US&setlang=en-US&w=brdlE8ygsATx7cIZfWti8RiJoHuzwANB",
+                "language": "en",
+                "isNavigational": true
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 1,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "Moons of Mars - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Moons_of_Mars",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://en.wikipedia.org/wiki/Moons_of_Mars",
+                "snippet": "However, the view of most astronomers is that Swift was simply employing a common argument of the time, that as the inner planets Venus and Mercury had no satellites, Earth had one and Jupiter had four (known at the time), that Mars by analogy must have two.",
+                "dateLastCrawled": "2023-12-24T01:05:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=4755989425892560&mkt=en-US&setlang=en-US&w=BRmoTI-1o-Nyxj9FcrGsr9YraBnLNPXg",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
+                "name": "The mission to discover the mystery origin of Mars’ moons",
+                "url": "https://www.space.com/mission-to-mars-moons-origin",
+                "datePublished": "2023-12-14T16:00:02.0000000",
+                "datePublishedDisplayText": "Dec 14, 2023",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.space.com/mission-to-mars-moons-origin",
+                "snippet": "An opposing hypothesis (#TeamCapture), however, suggests the moons are asteroids that were captured by Mars’s gravitational pull and were trapped in orbit. To solve the mystery, we’ll need...",
+                "dateLastCrawled": "2023-12-19T08:15:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=4624915611999791&mkt=en-US&setlang=en-US&w=Mw_JgOEPiaM3K3CZTB5tAeWumSkKxzXn",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
+                "name": "Where Did Mars's Moons Come From? | Scientific American",
+                "url": "https://www.scientificamerican.com/article/where-did-marss-moons-come-from/",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.7ZSUt0x4yJTii5pxkKDe0gAAAA&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2023-05-02T00:00:00.0000000",
+                "datePublishedDisplayText": "May 2, 2023",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.scientificamerican.com/article/where-did-marss-moons-come-from",
+                "snippet": "That’s a question scientists still can’t answer. We know that Earth’s moon was likely formed from a giant impact on our planet about 4.5 billion years ago. Some moons in the solar system ...",
+                "dateLastCrawled": "2023-12-20T22:19:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.7ZSUt0x4yJTii5pxkKDe0gAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.7ZSUt0x4yJTii5pxkKDe0gAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=4812541260540266&mkt=en-US&setlang=en-US&w=8B3D8rmURqmMfZSXKLfpCW7xt2dtEREy",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
+                "name": "Mystery of why Mars has two moons is solved | WIRED UK",
+                "url": "https://www.wired.co.uk/article/mars-moons-origins-phobos-deimos",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.dLVfovupjq3369BZQW8uOAHaEK&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2016-07-04T00:00:00.0000000",
+                "datePublishedDisplayText": "Jul 4, 2016",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.wired.co.uk/article/mars-moons-origins-phobos-deimos",
+                "snippet": "Mars’ two tiny moons – Phobos and Deimos – are the sole survivors of a giant impact on the Red Planet, according to new research. Potato-shaped Phobos and Deimos were initially thought to be...",
+                "dateLastCrawled": "2023-12-23T13:09:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.dLVfovupjq3369BZQW8uOAHaEK&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.dLVfovupjq3369BZQW8uOAHaEK"
+                },
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
+                "name": "Mars | Facts, Surface, Moons, Temperature, & Atmosphere",
+                "url": "https://www.britannica.com/place/Mars-planet",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.8jGDw8Q3AZA_LlQkVfSe5AAAAA&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2023-12-05T16:51:00.0000000",
+                "datePublishedDisplayText": "Dec 5, 2023",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.britannica.com/place/Mars-planet",
+                "snippet": "Mars, fourth planet in the solar system in order of distance from the Sun and seventh in size and mass. It is a periodically conspicuous reddish object in the night sky. Mars is designated by the symbol ♂. Sometimes called the Red Planet, Mars has long been associated with warfare and slaughter. It is named for the Roman god of war.",
+                "dateLastCrawled": "2023-12-24T18:10:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.8jGDw8Q3AZA_LlQkVfSe5AAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.8jGDw8Q3AZA_LlQkVfSe5AAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=4722072069491018&mkt=en-US&setlang=en-US&w=dFJtumkZUeljWdp2Ld7oq2pOTFyF6TfF",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
+                "name": "Moons of Mars – Center for Planetary Sciences",
+                "url": "http://planetary-science.org/mars-research/moons-of-mars/",
+                "isFamilyFriendly": true,
+                "displayUrl": "planetary-science.org/mars-research/moons-of-mars",
+                "snippet": "It is cratered, but the surface is noticeably smoother than that of Phobos, caused by the partial filling of craters with regolith. The regolith is highly porous and has a radar-estimated density of only 1.471 g/cm3. The two largest craters, Swift and Voltaire, each measure about 3 km (1.9 mi) across.",
+                "dateLastCrawled": "2023-12-22T18:02:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+does+Mars+have+three+moons%3f&d=5038894629410440&mkt=en-US&setlang=en-US&w=QEuQev70ct3zbN8Hs69Y-_hNjWnRuu2R",
+                "language": "en",
+                "isNavigational": false
+            }
+        ]
+    },
+    "entities": {
+        "value": [
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#Entities.0",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    },
+                    {
+                        "_type": "ContractualRules/LinkAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "text": "Wikipedia",
+                        "url": "https://en.wikipedia.org/wiki/Moons_of_Mars"
+                    },
+                    {
+                        "_type": "ContractualRules/MediaAttribution",
+                        "targetPropertyName": "image",
+                        "mustBeCloseToContent": true,
+                        "url": "https://en.wikipedia.org/wiki/Moons_of_Mars"
+                    }
+                ],
+                "webSearchUrl": "https://www.bing.com/entityexplore?q=Moons+of+Mars&filters=sid:%225f4c1989-482c-a9f7-3f26-b7efb78ae271%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
+                "name": "Moons of Mars",
+                "image": {
+                    "name": "Moons of Mars",
+                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.714acae48b3bc2730c92a33fea5c1d22&w=110&h=110&c=7",
+                    "provider": [
+                        {
+                            "_type": "Organization",
+                            "url": "https://en.wikipedia.org/wiki/Moons_of_Mars"
+                        }
+                    ],
+                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Phobos_colour_2008.jpg/1200px-Phobos_colour_2008.jpg",
+                    "width": 110,
+                    "height": 110,
+                    "sourceWidth": 1200,
+                    "sourceHeight": 1131
+                },
+                "description": "The two moons of Mars are Phobos and Deimos. They are irregular in shape. Both were discovered by American astronomer Asaph Hall in August 1877 and are named after the Greek mythological twin characters Phobos and Deimos who accompanied their father Ares into battle. Ares, the god of war, was known to the Romans as Mars.",
+                "entityPresentationInfo": {
+                    "entityScenario": "DominantEntity",
+                    "entityTypeHints": [
+                        "Generic"
+                    ]
+                },
+                "bingId": "5f4c1989-482c-a9f7-3f26-b7efb78ae271"
+            }
+        ]
+    },
+    "videos": {
+        "id": "https://api.bing.microsoft.com/api/v7/#Videos",
+        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Why+does+Mars+have+three+moons%3f",
+        "webSearchUrl": "https://www.bing.com/videos/search?q=Why+does+Mars+have+three+moons%3f",
+        "isFamilyFriendly": true,
+        "value": [
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=876D2582C81DF9AD0281876D2582C81DF9AD0281",
+                "name": "The Moons of Mars Explained -- Phobos & Deimos MM#2",
+                "description": "What do you know about the Moons of Mars? Nothing? They are super cool (and strange), promise. Moon May! One video about cool moon stuff every Mo(o)nday in May. Next: Plutos five Moons explained. Videos, explaining things. Like evolution, time, space, global energy or our existence in this strange universe. We are a team of designers ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.ZcWdd59s28t30P0dFWKTZAHgFo&pid=Api",
+                "datePublished": "2014-05-12T12:50:28.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Kurzgesagt – In a Nutshell"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=Pw0IZg7_4mo",
+                "hostPageUrl": "https://www.youtube.com/watch?v=Pw0IZg7_4mo",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=Pw0IZg7_4mo",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT1M55S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM.gQKt-R3IgiVthw_1703140207&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/Pw0IZg7_4mo?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 4409973,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=23EEC125474D7CF3305723EEC125474D7CF33057",
+                "name": "Mars' Moons: Facts About Phobos & Deimos",
+                "description": "The two small bodies that orbit the red planet raise a number of questions about the formation of the early solar system.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.fw5bJuQeYqXaAxmELfOPbgEsCn&pid=Api",
+                "datePublished": "2017-12-08T02:58:00.0000000",
+                "publisher": [
+                    {
+                        "name": "SPACE.com"
+                    }
+                ],
+                "creator": {
+                    "name": "Nola Taylor Tillman"
+                },
+                "contentUrl": "https://www.space.com/20413-phobos-deimos-mars-moons.html",
+                "hostPageUrl": "https://www.space.com/20413-phobos-deimos-mars-moons.html",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.space.com/20413-phobos-deimos-mars-moons.html",
+                "width": 720,
+                "height": 402,
+                "embedHtml": "<iframe src=\"https://content.jwplatform.com/players/cjVH4eBR.html\" width=\"100%\" height=\"350\" frameborder=\"0\" scrolling=\"auto\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 89
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=F50359BBD005119159B0F50359BBD005119159B0",
+                "name": "The Moons of Mars",
+                "description": "Here are some facts about the moons of Mars! [Phobos] -Diameter: 22.5 km (14 mi) -May have formed after an impact on Mars threw material into orbit -Will eventually either collide with Mars or be ripped into a planetary ring by gravity [Deimos] -Diameter: 12.4 km (7.7 mi) -Potentially a captured asteroid -Is slowly drifting away from Mars and ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.aHqdhFVLRSHxyDUBoW3UOAEkII&pid=Api",
+                "datePublished": "2022-07-28T21:07:05.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Beyond"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=IWsSTWiNH9E",
+                "hostPageUrl": "https://www.youtube.com/watch?v=IWsSTWiNH9E",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=IWsSTWiNH9E",
+                "width": 720,
+                "height": 1278,
+                "duration": "PT22S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM2.sFmREQXQu1kD9Q&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/IWsSTWiNH9E?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 28215,
+                "thumbnail": {
+                    "width": 89,
+                    "height": 160
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=6CA60A9E63422989A44F6CA60A9E63422989A44F",
+                "name": "Why the ‘Super Weird’ Moons of Mars Fascinate Scientists",
+                "description": "What’s the big deal about little Phobos and tinier Deimos?",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.eMVcb8_OIxYWsP3E-iYxyQIIEQ&pid=Api",
+                "datePublished": "2020-07-25T09:00:33.0000000",
+                "publisher": [
+                    {
+                        "name": "NY Times"
+                    }
+                ],
+                "creator": {
+                    "name": "Robin George Andrews"
+                },
+                "contentUrl": "https://www.nytimes.com/2020/07/25/science/mars-moons-phobos-deimos.html",
+                "hostPageUrl": "https://www.nytimes.com/2020/07/25/science/mars-moons-phobos-deimos.html",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.nytimes.com/2020/07/25/science/mars-moons-phobos-deimos.html",
+                "width": 1050,
+                "height": 550,
+                "duration": "PT20S",
+                "embedHtml": "<iframe title=\"New York Times Video - Embed Player\" width=\"480\" height=\"321\" frameborder=\"0\" scrolling=\"no\" allowfullscreen=\"true\" marginheight=\"0\" marginwidth=\"0\" id=\"nyt_video_player\" src=\"https://www.nytimes.com/video/players/offsite/index.html?videoId=100000007255098\"></iframe>",
+                "allowHttpsEmbed": true,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 83
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=BAACB0266E8EA99DCD47BAACB0266E8EA99DCD47",
+                "name": "Most detailed images of Mars' moon Deimos unveiled",
+                "description": "The most detailed images of Mars' moon Deimos have been unveiled after a probe flew just 100km (62 miles) from its surface. Researchers from the UAE Space Agency say the images help challenge the long-standing theory that Mars' moons are asteroids captured by the planet's gravity. #Mars #Moon #Space #Deimos #UAE SUBSCRIBE to our YouTube channel ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.mt_UhKAOApGaME196odc7wDKFo&pid=Api",
+                "datePublished": "2023-04-25T08:00:00.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Sky News"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=wizlWZomDxA",
+                "hostPageUrl": "https://www.youtube.com/watch?v=wizlWZomDxA",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=wizlWZomDxA",
+                "width": 576,
+                "height": 1024,
+                "duration": "PT42S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM1.R82dqY5uJrCsug_1701797641&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/wizlWZomDxA?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 7011,
+                "thumbnail": {
+                    "width": 89,
+                    "height": 160
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=B4D9A6E47F4610CD06E0B4D9A6E47F4610CD06E0",
+                "name": "The Death Of Mars | The Planets | Earth Science",
+                "description": "The formation of Mars happening further away from the Sun - where there is much less rock - meant it was destined to be a smaller planet and its core would cool quickly. Best of Earth Lab: http://bit.ly/EarthLabOriginals Best of BBC Earth: http://bit.ly/TheBestOfBBCEarthVideos The Planets (2019) This stunningly ambitious series brings to life ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.tIMPrmSyaZuObi4DMnj59wHgFo&pid=Api",
+                "datePublished": "2021-11-07T18:00:01.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "BBC Earth Lab"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=5B8lm61KoYo",
+                "hostPageUrl": "https://www.youtube.com/watch?v=5B8lm61KoYo",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=5B8lm61KoYo",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT6M32S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM.4AbNEEZ_5KbZtA_1646002283&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/5B8lm61KoYo?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 455883,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=ECAD1FDE8C05EE9A9661ECAD1FDE8C05EE9A9661",
+                "name": "The Moon's Orbit and Rotation – Moon: NASA Science",
+                "description": "Animation of both the orbit and the rotation of the Moon.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.xyhUp8fo1JxN2AHqkvDQAQErEs&pid=Api",
+                "datePublished": "2022-12-02T13:18:00.0000000",
+                "publisher": [
+                    {
+                        "name": "nasa.gov"
+                    }
+                ],
+                "contentUrl": "https://moon.nasa.gov/resources/429/the-moons-orbit-and-rotation/",
+                "hostPageUrl": "https://moon.nasa.gov/resources/429/the-moons-orbit-and-rotation/",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://moon.nasa.gov/resources/429/the-moons-orbit-and-rotation/",
+                "width": 733,
+                "height": 735,
+                "thumbnail": {
+                    "width": 159,
+                    "height": 160
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=7B5B736C3652DD320EF37B5B736C3652DD320EF3",
+                "name": "Here's how NASA wants to send humans back to the moon",
+                "description": "Before landing the first humans on Mars, NASA wants to return to the lunar surface and establish a sustained human presence on the moon. The lessons learned from the beginning of the Artemis program could impact when and how humans explore Mars.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.tNT3RwWtCzDVwRZjXBSypAIIEk&pid=Api",
+                "datePublished": "2022-08-28T18:59:32.0000000",
+                "publisher": [
+                    {
+                        "name": "CNN"
+                    }
+                ],
+                "creator": {
+                    "name": "Ashley Strickland"
+                },
+                "contentUrl": "https://www.cnn.com/2022/08/28/world/artemis-1-moon-rocket-mars-scn/index.html",
+                "hostPageUrl": "https://www.cnn.com/2022/08/28/world/artemis-1-moon-rocket-mars-scn/index.html",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.cnn.com/2022/08/28/world/artemis-1-moon-rocket-mars-scn/index.html",
+                "width": 1100,
+                "height": 619,
+                "duration": "PT4M10S",
+                "thumbnail": {
+                    "width": 160,
+                    "height": 89
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=EBF76F00087B99A23720EBF76F00087B99A23720",
+                "name": "All Jupiter Moons - NASA Science",
+                "description": "IAUnumber IAUname Provisionaldesignation Yeardiscovered Discoverer(s)/spacecraft mission References I Io 1610 Galileo IAU WGPSN II Europa 1610 Galileo IAU WGPSN III Ganymede 1610 Galileo IAU WGPSN IV Callisto 1610 Galileo IAU WGPSN V Amalthea 1892 E.E. Barnard IAU WGPSN VI Himalia 1904 C.D. Perrine IAU WGPSN VII Elara 1905 C.D. Perrine IAU ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.9D9iEMd-U-7XCT1bWLrPvQEsEm&pid=Api",
+                "datePublished": "2023-11-01T06:14:44.0000000",
+                "publisher": [
+                    {
+                        "name": "nasa.gov"
+                    }
+                ],
+                "contentUrl": "https://science.nasa.gov/jupiter/moons/all-jupiter-moons/",
+                "hostPageUrl": "https://science.nasa.gov/jupiter/moons/all-jupiter-moons/",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://science.nasa.gov/jupiter/moons/all-jupiter-moons/",
+                "width": 800,
+                "height": 785,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 156
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Why%20does%20Mars%20have%20three%20moons?&view=detail&mid=A7B7B2CE0B2A1B68A669A7B7B2CE0B2A1B68A669",
+                "name": "Mars Close Approach | Mars in our Night Sky – NASA Mars Exploration",
+                "description": "NASA’s real-time portal for Mars exploration, featuring the latest news, images, and discoveries from the Red Planet.",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.Moe_4KSxgU316H_IagE0UgEsCo&pid=Api",
+                "datePublished": "2009-01-01T00:00:00.0000000",
+                "publisher": [
+                    {
+                        "name": "nasa.gov"
+                    }
+                ],
+                "contentUrl": "https://mars.nasa.gov/all-about-mars/night-sky/close-approach/",
+                "hostPageUrl": "https://mars.nasa.gov/all-about-mars/night-sky/close-approach/",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://mars.nasa.gov/all-about-mars/night-sky/close-approach/",
+                "width": 640,
+                "height": 360,
+                "duration": "PT2M31S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM.aaZoGyoLzrK3pw_1701238764&pid=Api",
+                "thumbnail": {
+                    "width": 160,
+                    "height": 89
+                },
+                "isSuperfresh": false
+            }
+        ],
+        "scenario": "List"
+    },
+    "rankingResponse": {
+        "mainline": {
+            "items": [
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 1,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 2,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 3,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3"
+                    }
+                },
+                {
+                    "answerType": "Videos",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 4,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 5,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 6,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6"
+                    }
+                }
+            ]
+        },
+        "sidebar": {
+            "items": [
+                {
+                    "answerType": "Entities",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
+                    }
+                }
+            ]
+        }
+    }
+}

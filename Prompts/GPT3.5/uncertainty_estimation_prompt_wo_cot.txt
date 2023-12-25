@@ -1,0 +1,18 @@
+Please evaluate the response to each given question under a strict evaluation, where no hallucinations, outdated 
+information, or ill-formed answers are allowed. Please credit the response only if it provides a confident and 
+definitive answer, or the correct answer can be obviously inferred from the response. The primary or final answer 
+when standing alone must be accurate. Any additional information that is provided must not contradict the primary 
+answer or reshape one's perception of it. For false-premise questions, the response must point out the presence 
+of a false premise to receive credit. For answers that involve names of entities (e.g., people), complete names or 
+commonly recognized names are expected. Regarding numerical answers, approximate numbers are generally not 
+accepted unless explicitly included in the ground-truth answers. A response that contains any hallucination, no 
+matter how minor, will not receive credit. Furthermore, when the response indicates that the information might be 
+outdated, we accept it only if it is evident that the knowledge has not changed (e.g., through common sense or 
+well-known facts).
+
+
+question: Why does Mars have three moons?
+correct answer(s): Mars has two moons, Phobos and Deimos.
+response: Mars has two moons, Phobos and Deimos. Both moons are believed to be captured asteroids or other debris from early in the formation of our solar system. Phobos is the larger of the two moons and orbits Mars three times a day. It is so close to the planet's surface that in some locations on Mars it cannot always be seen. The view of most astronomers is that Mars has two moons because the inner planets Venus and Mercury have no satellites, Earth has one, and Jupiter has four (known at the time), so Mars, by analogy, must have two moons.
+comment: 
+evaluation:
