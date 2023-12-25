@@ -1,177 +1,63 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "gta 5"
+        "originalQuery": "What is the name of Leonardo DiCaprio's third child?"
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=gta+5",
-        "totalEstimatedMatches": 35200000,
+        "webSearchUrl": "https://www.bing.com/search?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f",
+        "totalEstimatedMatches": 279000,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "name": "Grand Theft Auto V - Rockstar Games",
-                "url": "https://www.rockstargames.com/gta-v",
+                "name": "Leonardo DiCaprio Family tree, Parents, Wife, Son, Siblings & More",
+                "url": "https://celebrityunfold.com/leonardo-dicaprio-family-tree/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.rockstargames.com/gta-v",
-                "snippet": "Grand Theft Auto V and GTA Online — now upgraded for PlayStation 5 and Xbox Series X|S with stunning visuals, faster loading, and more — delivering the action-packed, blockbuster Story Mode adventure and the dynamic, ever-evolving online world of GTA...",
-                "deepLinks": [
-                    {
-                        "name": "Buy Grand Theft Auto V",
-                        "url": "https://store.rockstargames.com/game/buy-gta-v",
-                        "snippet": "The Criminal Enterprise Starter Pack is the fastest way for new GTA Online players to jumpstart their criminal empires with the most exciting and popular content plus $1,000,000 bonus cash to spend in GTA Online - all content valued at over GTA$10,000,000 if purchased separately."
-                    },
-                    {
-                        "name": "Buy Now",
-                        "url": "https://www.rockstargames.com/gta-v?info=order",
-                        "snippet": "Grand Theft Auto V and GTA Online — now upgraded for PlayStation 5 and Xbox Series X|S with stunning visuals, faster loading, and more — delivering the action-packed, blockbuster Story Mode adventure and the dynamic, ever-evolving online world of GTA..."
-                    }
-                ],
-                "dateLastCrawled": "2023-12-25T02:03:00.0000000Z",
+                "displayUrl": "https://celebrityunfold.com/leonardo-dicaprio-family-tree",
+                "snippet": "He has never been shy about giving his son some film advice. As Leonardo revealed, “I had passed on a script about the French poet Arthur Rimbaud. He [George] explained to me that Rimbaud was the James Dean of his time– a radical who took on the institution of poetry and turned it upside down. I did the movie, and I loved playing him.”",
+                "dateLastCrawled": "2023-12-21T18:04:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4637542821220026&mkt=en-US&setlang=en-US&w=gngO4dThe4w86XoKXhxIu0zUVSB_Ein9",
                 "language": "en",
                 "isNavigational": true
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "Grand Theft Auto V on Steam",
-                "url": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd&w=80&h=80&c=1&pid=5.1",
-                "about": [
-                    {
-                        "_type": "CreativeWork",
-                        "aggregateRating": {
-                            "ratingValue": 9,
-                            "bestRating": 10,
-                            "reviewCount": 1549852
-                        }
-                    }
-                ],
+                "name": "Family tree of Leonardo DICAPRIO - Geneastar",
+                "url": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.256QboWHzQ0DIk4hW6auWAAAAA&w=80&h=80&c=1&pid=5.1",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://store.steampowered.com/app/271590",
-                "snippet": "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second. Recent Reviews: Very Positive (28,615) All Reviews: Very Positive (1,548,649) Release Date: Apr 14, 2015",
-                "dateLastCrawled": "2023-12-24T15:23:00.0000000Z",
+                "displayUrl": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
+                "snippet": "Indenbirkin Wilhelm Grachowski Adelheid Smirnov Stefan Smirnova Irene DiCaprio George Leon 1902 - 1965 Jacobs Olga Anne 1904 - 1984 Indenbirkin Wilhelm Heinrich 1913 - 1995 Smirnova Yelena 1915 - 2008 DiCaprio George Paul",
+                "dateLastCrawled": "2023-12-22T04:24:00.0000000Z",
                 "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd&w=80&h=80&c=1&pid=5.1",
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.256QboWHzQ0DIk4hW6auWAAAAA&w=80&h=80&c=1&pid=5.1",
                     "width": 80,
                     "height": 80,
-                    "imageId": "OIP.iiCTS4ZZuQ6GPgL3gI378wHaDd"
+                    "imageId": "OIP.256QboWHzQ0DIk4hW6auWAAAAA"
                 },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4611571155403124&mkt=en-US&setlang=en-US&w=cU8VpyCJUdYxGZmguuQ_tj9fVdGn233i",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4545145184073753&mkt=en-US&setlang=en-US&w=KXmVJfYByn4S5LlDb9Bh3JNG-tusy8Us",
                 "language": "en",
-                "isNavigational": false,
-                "richFacts": [
-                    {
-                        "label": {
-                            "text": "Developer"
-                        },
-                        "items": [
-                            {
-                                "text": "Rockstar North"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Publishers"
-                        },
-                        "items": [
-                            {
-                                "text": "Rockstar Games"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "ReleaseData"
-                        },
-                        "items": [
-                            {
-                                "text": "Apr 14, 2015"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "ReviewsDescription"
-                        },
-                        "items": [
-                            {
-                                "text": "Very Positive"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Video Duration"
-                        },
-                        "items": [
-                            {
-                                "text": "30 sec"
-                            }
-                        ],
-                        "hint": {
-                            "text": "MEDIA:DURATION"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Author"
-                        },
-                        "items": [
-                            {
-                                "text": "Rockstar Games"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:AUTHOR"
-                        }
-                    }
-                ]
+                "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
-                "name": "Grand Theft Auto V | Xbox",
-                "url": "https://www.xbox.com/en-US/games/gta-v",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.jCqq_xSiJEuqCvQ23haNNAHaDH&w=80&h=80&c=1&pid=5.1",
+                "name": "Leonardo DiCaprio: Biography, Actor, Oscar Winner",
+                "url": "https://www.biography.com/actors/leonardo-dicaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2023-10-20T00:00:00.0000000",
+                "datePublishedDisplayText": "Oct 20, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.xbox.com/en-US/games/gta-v",
-                "snippet": "Explore the stunning world of Los Santos and Blaine County in the ultimate Grand Theft Auto V experience, featuring a range of technical upgrades and enhancements for new and returning players. Trailers and gameplay Discover your next favorite game",
-                "dateLastCrawled": "2023-12-24T23:26:00.0000000Z",
+                "displayUrl": "https://www.biography.com/actors/leonardo-dicaprio",
+                "snippet": "DiCaprio was originally cast in the heroic role of FBI agent Tom White, but during development of the film, he insisted on switching to Burkhart’s character, which led to significant script...",
+                "dateLastCrawled": "2023-12-24T03:03:00.0000000Z",
                 "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.jCqq_xSiJEuqCvQ23haNNAHaDH&w=80&h=80&c=1&pid=5.1",
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
                     "width": 80,
                     "height": 80,
-                    "imageId": "OIP.jCqq_xSiJEuqCvQ23haNNAHaDH"
+                    "imageId": "OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa"
                 },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4683224094674808&mkt=en-US&setlang=en-US&w=DkccpEbQtp1Rrxik4KAAgyXvt6prL3i1",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4804385118570873&mkt=en-US&setlang=en-US&w=p0Fk6SzWU5SIyEHJwzsN4X79x8s4nkBy",
                 "language": "en",
-                "isNavigational": false,
-                "richFacts": [
-                    {
-                        "label": {
-                            "text": "Video Duration"
-                        },
-                        "items": [
-                            {
-                                "text": "1 min"
-                            }
-                        ],
-                        "hint": {
-                            "text": "MEDIA:DURATION"
-                        }
-                    }
-                ]
+                "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
@@ -179,7 +65,7 @@
                     {
                         "_type": "ContractualRules/LicenseAttribution",
                         "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 4,
+                        "targetPropertyIndex": 3,
                         "mustBeCloseToContent": true,
                         "license": {
                             "name": "CC-BY-SA",
@@ -188,120 +74,123 @@
                         "licenseNotice": "Text under CC-BY-SA license"
                     }
                 ],
-                "name": "Grand Theft Auto V - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.C9qobPOZoVF7_1rDyI_C4AAAAA&w=80&h=80&c=1&pid=5.1",
+                "name": "Leonardo DiCaprio - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V",
-                "snippet": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall.",
-                "dateLastCrawled": "2023-12-25T16:05:00.0000000Z",
+                "displayUrl": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+                "snippet": "Early life and acting background Leonardo Wilhelm DiCaprio was born on November 11, 1974, in Los Angeles, California. [1] He is the only child of Irmelin Indenbirken, a legal secretary, and George DiCaprio, an underground comix artist and distributor; they met while attending college and moved to Los Angeles after graduating.",
+                "dateLastCrawled": "2023-12-24T15:45:00.0000000Z",
                 "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.C9qobPOZoVF7_1rDyI_C4AAAAA&w=80&h=80&c=1&pid=5.1",
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
                     "width": 80,
                     "height": 80,
-                    "imageId": "OIP.C9qobPOZoVF7_1rDyI_C4AAAAA"
+                    "imageId": "OIP.tSF8Zy3GW5wKKup7740oHgAAAA"
                 },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=1886332546762&mkt=en-US&setlang=en-US&w=4HN9kFxUcqtBeDLTI6eFBgMkdkp7WolF",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4690280723972212&mkt=en-US&setlang=en-US&w=x-gBvi1gBDBU5IVVC8mmldx07esSq_uK",
                 "language": "en",
-                "isNavigational": false,
-                "richFacts": [
-                    {
-                        "label": {
-                            "text": "Developer(s)"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "Rockstar North",
-                                "url": "https://www.bing.com/search?q=Rockstar+North+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Engine"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "RAGE",
-                                "url": "https://www.bing.com/search?q=Rockstar+Advanced+Game+Engine+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Publisher(s)"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "Rockstar Games",
-                                "url": "https://www.bing.com/search?q=Rockstar+Games+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Series"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "Grand Theft Auto",
-                                "url": "https://www.bing.com/search?q=Grand+Theft+Auto+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
-                        }
-                    }
-                ]
+                "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "name": "Grand Theft Auto V - Epic Games Store",
-                "url": "https://store.epicgames.com/en-US/p/grand-theft-auto-v",
+                "name": "All About Leonardo DiCaprio's Parents, George DiCaprio and Irmelin ...",
+                "url": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin-indenbirken-7502510",
+                "datePublished": "2023-07-25T17:23:00.0000000",
+                "datePublishedDisplayText": "Jul 25, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://store.epicgames.com/en-US/p/grand-theft-auto-v",
-                "snippet": "GRAND THEFT AUTO V When a young street hustler, a retired bank robber and a terrifying psychopath land themselves in trouble, they must pull off a series of dangerous heists to survive in a city in which they can trust nobody, least of all each other. GRAND THEFT AUTO ONLINE",
-                "dateLastCrawled": "2023-12-24T15:20:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4656457852672515&mkt=en-US&setlang=en-US&w=yU0Ck8zOqrdFg1wlC4EaTfrWzPgMRtnx",
+                "displayUrl": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin...",
+                "snippet": "Leonardo DiCaprio shot to stardom with the release of What's Eating Gilbert Grape, Romeo + Juliet and Titanic in the 1990s, but two people have been there for him since the very beginning: his...",
+                "dateLastCrawled": "2023-12-22T09:55:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4592342581789797&mkt=en-US&setlang=en-US&w=-WEF4BUcK9MoW1paKLN8UdNjHGyQRPe-",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "Grand Theft Auto V (US) - PlayStation",
-                "url": "https://www.playstation.com/en-us/games/grand-theft-auto-v/",
-                "datePublished": "2022-03-14T00:00:00.0000000",
-                "datePublishedDisplayText": "Mar 14, 2022",
+                "name": "Leonardo DiCaprio - Biography - IMDb",
+                "url": "https://www.imdb.com/name/nm0000138/bio/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.playstation.com/en-us/games/grand-theft-auto-v",
-                "snippet": "PS5 features Choose edition Buy GTAV and GTA Online on PlayStation Store. Risk it all in the sun-soaked city of Los Santos and experience Rockstar Games’ critically acclaimed open world game.",
-                "dateLastCrawled": "2023-12-25T12:22:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4653288171055867&mkt=en-US&setlang=en-US&w=a-TcUv0D-LVEEh5sLG6xez3-KABh2G7I",
+                "displayUrl": "https://www.imdb.com/name/nm0000138/bio",
+                "snippet": "Leonardo Wilhelm DiCaprio was born in Los Angeles, California, the only child of Irmelin DiCaprio (née Indenbirken) and former comic book artist George DiCaprio. His father is of Italian and German descent, and his mother, who is German-born, is of German, Ukrainian and Russian ancestry.",
+                "dateLastCrawled": "2023-12-25T05:08:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4996322913040829&mkt=en-US&setlang=en-US&w=Jkiz8FKKjLXgEL4YzhS3kgaI89tf5FzD",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "name": "Grand Theft Auto V - Rockstar Games",
-                "url": "https://socialclub.rockstargames.com/games/gtav/index-signin?ageGate=True",
+                "name": "Leonardo DiCaprio | Biography, Movies, Romeo and Juliet ... - Britannica",
+                "url": "https://www.britannica.com/biography/Leonardo-DiCaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2023-12-13T00:00:00.0000000",
+                "datePublishedDisplayText": "Dec 13, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://socialclub.rockstargames.com/games/gtav/index-signin?ageGate=True",
-                "snippet": "Join over 200 million Rockstar Games members worldwide on the official Rockstar Games platform to enhance and extend your gaming experience.",
-                "dateLastCrawled": "2023-12-24T15:17:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=gta+5&d=4714504334159087&mkt=en-US&setlang=en-US&w=aSgYoOe_CaNf6M1w_lZd8cNypSUylwdt",
+                "displayUrl": "https://www.britannica.com/biography/Leonardo-DiCaprio",
+                "snippet": "Category: Arts & Culture In full: Leonardo Wilhelm DiCaprio Born: November 11, 1974, Los Angeles, California, U.S. (age 49) Awards And Honors: Academy Award (2016) Academy Award (2016): Actor in a Leading Role Golden Globe Award (2016): Best Actor in a Motion Picture - Drama",
+                "dateLastCrawled": "2023-12-23T18:51:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.q3bXoHApD6gRnw4P9kl9iAAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4805132444841893&mkt=en-US&setlang=en-US&w=1FVFW_p_vW-JHxqKY-g7oHxTLhcp2D9q",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
+                "name": "Why Doesn't Leonardo DiCaprio Have Kids? - TheThings",
+                "url": "https://www.thethings.com/why-doesnt-leonardo-dicaprio-have-kids/",
+                "datePublished": "2022-03-17T00:00:00.0000000",
+                "datePublishedDisplayText": "Mar 17, 2022",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.thethings.com/why-doesnt-leonardo-dicaprio-have-kids",
+                "snippet": "By Maurice Cassidy Published Mar 17, 2022 It seems like over the last couple of years, Leonardo DiCaprio has changed his stance on getting married and starting a family. The Things Leonardo DiCaprio is one of the most successful actors in Hollywood, with his films having generated more than $15 billion at the box office to date.",
+                "dateLastCrawled": "2023-12-22T02:40:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4823970167404792&mkt=en-US&setlang=en-US&w=yYJW0S5lYd6RsE9aR1hg7HBJ6cwIqexT",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
+                "name": "Leonardo DiCaprio Wiki, Wife, Height, Age, Family, Children, Biography ...",
+                "url": "https://famouspeople.wiki/leonardo-dicaprio/",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.8FBvINcqNbsBvKUhjlP8ngHaFK&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2020-01-15T00:00:00.0000000",
+                "datePublishedDisplayText": "Jan 15, 2020",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://famouspeople.wiki/leonardo-dicaprio",
+                "snippet": "He dropped out of high school following his third year, eventually earning his general equivalency diploma (GED). His father’s name is George DiCaprio, was a comedian, producer and distributor of comic books, and his mother’s name is Irmelin, is Former Legal secretary. He was the only child of his parents. Leonardo DiCaprio Wiki / Biography",
+                "dateLastCrawled": "2023-12-21T17:25:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.8FBvINcqNbsBvKUhjlP8ngHaFK&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.8FBvINcqNbsBvKUhjlP8ngHaFK"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4565035177097511&mkt=en-US&setlang=en-US&w=RaMwv2OFMikb8EV20Rys70IqvTGoB_hM",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
+                "name": "40 things you never knew about Leonardo DiCaprio - The Guardian",
+                "url": "https://www.theguardian.com/film/filmblog/2014/nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2014-11-11T21:46:00.0000000",
+                "datePublishedDisplayText": "Nov 11, 2014",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.theguardian.com/.../nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
+                "snippet": "298 1) Leonardo DiCaprio’s first film role was in Critters 3, and not as Toby Wolf in This Boy’s Life. Leonardo DiCaprio in Critters 3 (1991) Watch on 2) Robert De Niro allegedly...",
+                "dateLastCrawled": "2023-12-05T05:18:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.Pfi_D_LtWwn49CjB07J8dgHaD4"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4964016162679962&mkt=en-US&setlang=en-US&w=83JbUP3sTKrRX5XGCMNRWFbllv64b4NU",
                 "language": "en",
                 "isNavigational": false
             }
@@ -327,329 +216,43 @@
                         "targetPropertyName": "description",
                         "mustBeCloseToContent": true,
                         "text": "Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                     },
                     {
                         "_type": "ContractualRules/MediaAttribution",
                         "targetPropertyName": "image",
                         "mustBeCloseToContent": true,
-                        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                     }
                 ],
-                "webSearchUrl": "https://www.bing.com/entityexplore?q=Grand+Theft+Auto+V&filters=sid:%2257d60610-c99e-4850-5668-e849f7eaab97%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
-                "name": "Grand Theft Auto V",
-                "url": "https://www.rockstargames.com/gta-v",
+                "webSearchUrl": "https://www.bing.com/entityexplore?q=Leonardo+DiCaprio&filters=sid:%225f2c4ac2-d77a-474e-4580-c76549d4fce5%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
+                "name": "Leonardo DiCaprio",
+                "url": "https://www.rewild.org/",
                 "image": {
-                    "name": "Grand Theft Auto V",
-                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.487a3f10a4e9fc58534ee7e46e7fe7d1&w=110&h=110&c=7",
+                    "name": "Leonardo DiCaprio",
+                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.c87cddd5da6d303772dbad0d97b13573&w=75&h=110&c=12",
                     "provider": [
                         {
                             "_type": "Organization",
-                            "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+                            "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                         }
                     ],
-                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
-                    "width": 110,
+                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
+                    "width": 75,
                     "height": 110,
-                    "sourceWidth": 284,
-                    "sourceHeight": 351
+                    "sourceWidth": 572,
+                    "sourceHeight": 903
                 },
-                "description": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips, and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals. Players freely roam San Andreas's open world countryside and fictional city of Los Santos, based on Los Angeles.",
+                "description": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
                 "entityPresentationInfo": {
                     "entityScenario": "DominantEntity",
                     "entityTypeHints": [
-                        "VideoGame"
+                        "Actor",
+                        "Person"
                     ],
-                    "entityTypeDisplayHint": "2013 video game"
+                    "entityTypeDisplayHint": "American actor and producer"
                 },
-                "bingId": "57d60610-c99e-4850-5668-e849f7eaab97"
-            }
-        ]
-    },
-    "news": {
-        "id": "https://api.bing.microsoft.com/api/v7/#News",
-        "readLink": "https://api.bing.microsoft.com/api/v7/news/search?q=GTA+5",
-        "value": [
-            {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "Bleeping Computer"
-                    }
-                ],
-                "name": "GTA 5 source code reportedly leaked online a year after RockStar hack",
-                "url": "https://www.bleepingcomputer.com/news/security/gta-5-source-code-reportedly-leaked-online-a-year-after-rockstar-hack/",
-                "image": {
-                    "contentUrl": "https://www.bleepstatic.com/content/hl-images/2022/09/18/GTA_headpic.jpg",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.FzA-j-e5S6Feeg6yhrblxi&pid=News",
-                        "width": 700,
-                        "height": 393
-                    }
-                },
-                "description": "The source code for Grand Theft Auto 5 was reportedly leaked on Christmas Eve, a little over a year after the Lapsus$ threat actors hacked Rockstar games and stole corporate data.",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
-                        "name": "Grand Theft Auto V"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/2c5bb946-67c3-b55f-0a48-18257d2c4403",
-                        "name": "Rockstar"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/c7628208-2acf-c5a7-cfe0-129ae79ffe7a",
-                        "name": "Source code"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "Bleeping Computer",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.EOQr4Xjhw1xPCgzmOfY9RA&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2023-12-25T17:27:00.0000000Z",
-                "category": "ScienceAndTechnology"
-            },
-            {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "Dexerto"
-                    }
-                ],
-                "name": "GTA 5 leak reveals scrapped GTA Tokyo & cancelled single-player DLCs",
-                "url": "https://www.dexerto.com/gta/gta-5-leak-reveals-scrapped-gta-tokyo-cancelled-single-player-dlcs-2445568/",
-                "image": {
-                    "contentUrl": "https://editors.dexerto.com/wp-content/uploads/2023/12/25/GTA-5-leak-reveals-cancelled-GTA-tokyo-canned-single-player-DLCs.jpg",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.y9CrBaCO7AaJU42FjpYB4y&pid=News",
-                        "width": 700,
-                        "height": 393
-                    }
-                },
-                "description": "GTA 5's source code leak has revealed files for a scrapped GTA Tokyo PS2 game and some cancelled single player DLC.",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
-                        "name": "Grand Theft Auto V"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/c34ce3db-c24e-fea7-043a-e3a762803683",
-                        "name": "Tokyo Cancelled"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "Dexerto",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.0iS1Dv-e5sD2zbhqxLjIMA&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2023-12-25T17:34:00.0000000Z",
-                "category": "ScienceAndTechnology"
-            },
-            {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "Xfire on MSN.com"
-                    }
-                ],
-                "name": "GTA 5 might disappear from Game Pass this December",
-                "url": "https://www.msn.com/en-us/entertainment/gaming/gta-5-might-disappear-from-game-pass-this-december/ar-AA1m0ltK",
-                "image": {
-                    "contentUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1m0jmX.img?w=1920&h=1080&m=4&q=93",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.7_yUaYJ4j8IWFCPwxCDrTy&pid=News",
-                        "width": 700,
-                        "height": 393
-                    }
-                },
-                "description": "The good news is that, if Grand Theft Auto 5 does leave Game Pass, it's available to buy at a lower price than usual on Xbox Series S/X.",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
-                        "name": "Grand Theft Auto V"
-                    }
-                ],
-                "mentions": [
-                    {
-                        "name": "Grand Theft Auto V"
-                    },
-                    {
-                        "name": "Microsoft"
-                    },
-                    {
-                        "name": "Grand Theft Auto"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "Xfire on MSN.com",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.Ee1dYt0BjigXWY0WUxa-sA&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2023-12-25T02:44:02.0000000Z",
-                "category": "ScienceAndTechnology"
-            },
-            {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "EssentiallySports on MSN.com"
-                    }
-                ],
-                "name": "GTA V Source Code Leaks: Here’s the Impact It Could Have on Rockstar Games",
-                "url": "https://www.msn.com/en-us/entertainment/gaming/gta-v-source-code-leaks-here-s-the-impact-it-could-have-on-rockstar-games/ar-AA1m0Ur2",
-                "image": {
-                    "contentUrl": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1m15PX.img?w=560&h=315&m=4&q=100",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.PgS3WkhZvA_mPXGEv0FKvS&pid=News",
-                        "width": 560,
-                        "height": 315
-                    }
-                },
-                "description": "Rockstar Games’ devastating affair with leaks continues! The unfortunate series of leaks that the Grand Theft Auto developers have been subjected to is frustrating. However, the misery doesn’t seem to stop as the industry giants have faced yet another episode of data breach.",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
-                        "name": "Grand Theft Auto V"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/afa3417b-365e-254d-e329-cb53762a388e",
-                        "name": "Rockstar Games"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/45f5a510-1350-5b71-013e-abf0f9940780",
-                        "name": "Source Code"
-                    }
-                ],
-                "mentions": [
-                    {
-                        "name": "Grand Theft Auto V"
-                    },
-                    {
-                        "name": "Rockstar Games"
-                    },
-                    {
-                        "name": "Source Code"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "EssentiallySports on MSN.com",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.LP9KGI2appo5C22F9s3gBA&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2023-12-25T16:34:06.0000000Z",
-                "category": "ScienceAndTechnology"
-            },
-            {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "Yahoo"
-                    }
-                ],
-                "name": "GTA 5 May Leave Xbox Game Pass Soon",
-                "url": "https://www.yahoo.com/entertainment/gta-5-may-leave-xbox-170725178.html",
-                "image": {
-                    "contentUrl": "https://media.zenfs.com/en/comingsoon_net_477/41ae9f0ee632a11d74062864636cc7a7",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.Thoeb5Cs8hl6LAHgbF0H7i&pid=News",
-                        "width": 700,
-                        "height": 393
-                    }
-                },
-                "description": "The year is coming to a close and Microsoft may have one more surprise up its sleeve as it seems that Grand Theft Auto V may leave Xbox Game Pass soon. Some players have received notifications that the game will be one of three due to leave the service on December 31,",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/595e44be-f445-d997-7d70-92b9f35592e2",
-                        "name": "Xbox"
-                    },
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/57d60610-c99e-4850-5668-e849f7eaab97",
-                        "name": "Grand Theft Auto V"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "Yahoo",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.UM0amhg3WAObCEGqc4w_Cw&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2023-12-21T17:07:00.0000000Z",
-                "category": "ScienceAndTechnology"
-            }
-        ]
-    },
-    "relatedSearches": {
-        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
-        "value": [
-            {
-                "text": "5 gta download",
-                "displayText": "5 gta download",
-                "webSearchUrl": "https://www.bing.com/search?q=5+gta+download"
-            },
-            {
-                "text": "gta 5 original",
-                "displayText": "gta 5 original",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+original"
-            },
-            {
-                "text": "gta 5 download free",
-                "displayText": "gta 5 download free",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+download+free"
-            },
-            {
-                "text": "gta 5 full game download",
-                "displayText": "gta 5 full game download",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+full+game+download"
-            },
-            {
-                "text": "gta 5 release date",
-                "displayText": "gta 5 release date",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+release+date"
-            },
-            {
-                "text": "gta 5 for free",
-                "displayText": "gta 5 for free",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+for+free"
-            },
-            {
-                "text": "gta 5 wikipedia",
-                "displayText": "gta 5 wikipedia",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+wikipedia"
-            },
-            {
-                "text": "gta 5 anniversary date",
-                "displayText": "gta 5 anniversary date",
-                "webSearchUrl": "https://www.bing.com/search?q=gta+5+anniversary+date"
+                "bingId": "5f2c4ac2-d77a-474e-4580-c76549d4fce5"
             }
         ]
     },
@@ -661,12 +264,6 @@
                     "resultIndex": 0,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0"
-                    }
-                },
-                {
-                    "answerType": "News",
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#News"
                     }
                 },
                 {
@@ -712,9 +309,24 @@
                     }
                 },
                 {
-                    "answerType": "RelatedSearches",
+                    "answerType": "WebPages",
+                    "resultIndex": 7,
                     "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches"
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 8,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 9,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
                     }
                 }
             ]
@@ -722,20 +334,11 @@
         "sidebar": {
             "items": [
                 {
-                    "answerType": "Entities"
-                },
-                {
                     "answerType": "Entities",
                     "resultIndex": 0,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
                     }
-                },
-                {
-                    "answerType": "Images"
-                },
-                {
-                    "answerType": "WebPages"
                 }
             ]
         }
