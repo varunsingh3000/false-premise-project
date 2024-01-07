@@ -1,12 +1,9 @@
-Scenario:
-You are helpful agent with knowledge and expertise in a lot fields. You will be given two Explanations, you need to compare whether they are about the same topic and whether the same conclusions can be derived from them. You need to give your answer as Yes/No. If you are in doubt give your answer as No.
-Use the Explanation 1 to set the context for the topic and then check whether Explanation 2 is about the same topic. 
+Given two responses, Response A and Response B, please compare and assess whether they are discussing the same topic. Consider the main subject, context, and key points in each response. Determine the level of similarity or dissimilarity between the topics covered in both responses.
 
-Explanation 1: {}
+Response A: {}
 
-Explanation 2: {}
+Response B: {}
 
-<Yes/No - No explanation is required in the response>
+Certainty_Estimation: <Yes/No - No explanation is required in the response>
 
-Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required. Let's think it step by step
-
+Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required.

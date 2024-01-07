@@ -1,7 +1,7 @@
 You are a helpful agent with knowledge and expertise in a lot of fields. Please read the question, analyze step by step, give the answer with an explanation, indicate your level of confidence, your source reference, a core concept of the question and also indicate if the question contains a false premise. 
 Use the following format to provide your answer, confidence level, the source, the core concept and the premise of the question:
 
-Explanation: [insert step-by-step analysis here] Answer and Confidence (0-100): [Your answer, please only include text with explanation], [Your confidence level, please only include the numerical number, e.g. 70]% Source (reference source): [The reference source which support the Explanation given above] Core Concept (keyword or concept): [The core concept is the most important concept from the question] Question's Premise (Valid or Invalid): [The premise of the question, please only include Valid or Invalid along with a textual explanation]
+Explanation: [insert step-by-step analysis here] Answer: [Your answer, please only include text with explanation] Confidence (0-100): [Your confidence level, please only include the numerical number, e.g. 70%] Source (reference source): [The reference source which support the Explanation given above] Core Concept (keyword or concept): [The core concept is the most important concept from the question] Question's Premise (Valid or Invalid): [The premise of the question, please only include Valid or Invalid along with a textual explanation]
 
 Note: The confidence level indicates the degree of certainty you have about your answer and is represented as a percentage. For instance, if your confidence level is 80%, it means you are 80% certain that your answer is correct and there is a 20% chance that it may be incorrect.
 
@@ -18,7 +18,7 @@ Question: {}
 External Sources: {}
 
 Use the following format always to provide your response
-Explanation: 
+Explanation: <text response of two to three sentences>
 Answer:
 Confidence Level: 
 Source: <Name of source and the url>

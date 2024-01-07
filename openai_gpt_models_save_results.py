@@ -47,6 +47,7 @@ def perform_gpt_response(client,variable1,temperature,prompt_path,variable2):
         messages=message,
         model=MODEL,
         temperature=temperature
+        # top_p=temperature
         )
     print("#"*20)
     print("INITIAL LLM RESPONSE")

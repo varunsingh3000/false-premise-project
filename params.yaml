@@ -1,7 +1,7 @@
 {
     "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106"
     "TEMPERATURE": 0.0, #default - 0.0
-    "CANDIDATE_TEMPERATURE": 0.7, #default - 0.7
+    "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
     "DATASET_PATH": "Data\\", #default - "Data\\" 
     "QUERY_PROMPT_PATH": "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt", #default - "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt"

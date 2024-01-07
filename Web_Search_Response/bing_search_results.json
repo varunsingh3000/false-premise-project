@@ -1,258 +1,166 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "What is the name of Leonardo DiCaprio's third child?"
+        "originalQuery": "Why are all quickly verifiable problems also quickly solvable?"
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f",
-        "totalEstimatedMatches": 279000,
+        "webSearchUrl": "https://www.bing.com/search?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f",
+        "totalEstimatedMatches": 84700,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "name": "Leonardo DiCaprio Family tree, Parents, Wife, Son, Siblings & More",
-                "url": "https://celebrityunfold.com/leonardo-dicaprio-family-tree/",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 0,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "P versus NP problem - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://celebrityunfold.com/leonardo-dicaprio-family-tree",
-                "snippet": "He has never been shy about giving his son some film advice. As Leonardo revealed, “I had passed on a script about the French poet Arthur Rimbaud. He [George] explained to me that Rimbaud was the James Dean of his time– a radical who took on the institution of poetry and turned it upside down. I did the movie, and I loved playing him.”",
-                "dateLastCrawled": "2023-12-21T18:04:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4637542821220026&mkt=en-US&setlang=en-US&w=gngO4dThe4w86XoKXhxIu0zUVSB_Ein9",
+                "displayUrl": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+                "snippet": "v t e The P versus NP problem is a major unsolved problem in theoretical computer science. In informal terms, it asks whether every problem whose solution can be quickly verified can also be quickly solved.",
+                "dateLastCrawled": "2024-01-07T07:18:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4756728168979749&mkt=en-US&setlang=en-US&w=9cX0F_ZEkIlzHCzuRH_lxFRGPThOGNYm",
                 "language": "en",
-                "isNavigational": true
+                "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "Family tree of Leonardo DICAPRIO - Geneastar",
-                "url": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.256QboWHzQ0DIk4hW6auWAAAAA&w=80&h=80&c=1&pid=5.1",
+                "name": "complexity theory - Please explain \"decidability\" and \"verifiability ...",
+                "url": "https://cs.stackexchange.com/questions/12068/please-explain-decidability-and-verifiability",
+                "about": [
+                    {
+                        "_type": "CreativeWork",
+                        "aggregateRating": {
+                            "ratingValue": 0,
+                            "reviewCount": 2
+                        }
+                    }
+                ],
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
-                "snippet": "Indenbirkin Wilhelm Grachowski Adelheid Smirnov Stefan Smirnova Irene DiCaprio George Leon 1902 - 1965 Jacobs Olga Anne 1904 - 1984 Indenbirkin Wilhelm Heinrich 1913 - 1995 Smirnova Yelena 1915 - 2008 DiCaprio George Paul",
-                "dateLastCrawled": "2023-12-22T04:24:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.256QboWHzQ0DIk4hW6auWAAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.256QboWHzQ0DIk4hW6auWAAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4545145184073753&mkt=en-US&setlang=en-US&w=KXmVJfYByn4S5LlDb9Bh3JNG-tusy8Us",
+                "displayUrl": "https://cs.stackexchange.com/questions/12068",
+                "snippet": "A language is called decidable if there exists a method - any method at all - to determine whether a given word belongs to that language or not. However, I fail to find a parallel definition for verifiability. In the Theory of Computation book by Sipser, we find, P = the class of languages for which membership can be decided quickly.",
+                "dateLastCrawled": "2024-01-04T10:29:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4763093307632410&mkt=en-US&setlang=en-US&w=J_WKpujfpjd2ATILYXMRu3xXWHoqQpQs",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
-                "name": "Leonardo DiCaprio: Biography, Actor, Oscar Winner",
-                "url": "https://www.biography.com/actors/leonardo-dicaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2023-10-20T00:00:00.0000000",
-                "datePublishedDisplayText": "Oct 20, 2023",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 2,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "NP (complexity) - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/NP_(complexity)",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.biography.com/actors/leonardo-dicaprio",
-                "snippet": "DiCaprio was originally cast in the heroic role of FBI agent Tom White, but during development of the film, he insisted on switching to Burkhart’s character, which led to significant script...",
-                "dateLastCrawled": "2023-12-24T03:03:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4804385118570873&mkt=en-US&setlang=en-US&w=p0Fk6SzWU5SIyEHJwzsN4X79x8s4nkBy",
+                "displayUrl": "https://en.wikipedia.org/wiki/NP_(complexity)",
+                "snippet": "NP is the set of decision problems solvable in polynomial time by a nondeterministic Turing machine. NP is the set of decision problems verifiable in polynomial time by a deterministic Turing machine. The first definition is the basis for the abbreviation NP; \"nondeterministic, polynomial time\". These two definitions are equivalent because the ...",
+                "dateLastCrawled": "2024-01-05T07:13:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4748314330661410&mkt=en-US&setlang=en-US&w=9ZXRi9KrWvlvSKNowzG2j47jaF2FzqJt",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 3,
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    }
-                ],
-                "name": "Leonardo DiCaprio - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
+                "name": "Searching for Easy Answers to Hard Computational Questions",
+                "url": "https://www.scientificamerican.com/article/searching-for-easy-answers-hard-computational-questions/",
+                "datePublished": "2012-09-01T00:00:00.0000000",
+                "datePublishedDisplayText": "Sep 1, 2012",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
-                "snippet": "Early life and acting background Leonardo Wilhelm DiCaprio was born on November 11, 1974, in Los Angeles, California. [1] He is the only child of Irmelin Indenbirken, a legal secretary, and George DiCaprio, an underground comix artist and distributor; they met while attending college and moved to Los Angeles after graduating.",
-                "dateLastCrawled": "2023-12-24T15:45:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.tSF8Zy3GW5wKKup7740oHgAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4690280723972212&mkt=en-US&setlang=en-US&w=x-gBvi1gBDBU5IVVC8mmldx07esSq_uK",
+                "displayUrl": "https://www.scientificamerican.com/article/searching-for-easy-answers-hard...",
+                "snippet": "The “P versus NP” question asks whether tough problems whose solutions can be quickly checked (like a jigsaw puzzle) are, at heart, easily solvable as well. Despite decades of investigation,...",
+                "dateLastCrawled": "2023-11-09T19:05:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4608594744516334&mkt=en-US&setlang=en-US&w=DhOc3qED6yUvvxbSLI6AHtoCY7Y5SAz5",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "name": "All About Leonardo DiCaprio's Parents, George DiCaprio and Irmelin ...",
-                "url": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin-indenbirken-7502510",
-                "datePublished": "2023-07-25T17:23:00.0000000",
-                "datePublishedDisplayText": "Jul 25, 2023",
+                "name": "CS1010: Theory of Computation - Brown University",
+                "url": "https://cs.brown.edu/courses/cs101/files/doc/fall2020/Lecture-15-P%20and%20NP.pdf",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin...",
-                "snippet": "Leonardo DiCaprio shot to stardom with the release of What's Eating Gilbert Grape, Romeo + Juliet and Titanic in the 1990s, but two people have been there for him since the very beginning: his...",
-                "dateLastCrawled": "2023-12-22T09:55:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4592342581789797&mkt=en-US&setlang=en-US&w=-WEF4BUcK9MoW1paKLN8UdNjHGyQRPe-",
+                "displayUrl": "https://cs.brown.edu/courses/cs101/files/doc/fall2020/Lecture-15-P and NP.pdf",
+                "snippet": "Path Problem Î P. breadth-first algorithm runs in polynomial time: M = On input <G, s, t> where G is a directed graph with nodes s and t (and there are m nodes): Place a mark on node s. Repeat until no additional nodes are marked. Scan all edges of G. If an edge (a,b) is found from a marked node a to an unmarked node b, mark node b.",
+                "dateLastCrawled": "2024-01-05T09:53:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "Leonardo DiCaprio - Biography - IMDb",
-                "url": "https://www.imdb.com/name/nm0000138/bio/",
+                "name": "CS1010: Theory of Computation - Brown University",
+                "url": "https://cs.brown.edu/courses/csci1010/files/doc/fall2020/Lecture-16-NP%20Completeness.pdf",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.imdb.com/name/nm0000138/bio",
-                "snippet": "Leonardo Wilhelm DiCaprio was born in Los Angeles, California, the only child of Irmelin DiCaprio (née Indenbirken) and former comic book artist George DiCaprio. His father is of Italian and German descent, and his mother, who is German-born, is of German, Ukrainian and Russian ancestry.",
-                "dateLastCrawled": "2023-12-25T05:08:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4996322913040829&mkt=en-US&setlang=en-US&w=Jkiz8FKKjLXgEL4YzhS3kgaI89tf5FzD",
+                "displayUrl": "https://cs.brown.edu/courses/csci1010/files/doc/fall2020/Lecture-16-NP Completeness.pdf",
+                "snippet": "When problem A is efficiently reducible to problem B, an efficient solution to B can be used to solve A efficiently “Efficiently reducible” means in polynomial time If A is polytimereducible to B, we can convert the problem of testing for membership in A to a membership test in B",
+                "dateLastCrawled": "2024-01-03T03:15:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "name": "Leonardo DiCaprio | Biography, Movies, Romeo and Juliet ... - Britannica",
-                "url": "https://www.britannica.com/biography/Leonardo-DiCaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2023-12-13T00:00:00.0000000",
-                "datePublishedDisplayText": "Dec 13, 2023",
+                "name": "Computability Theory and Complexity | Toptal®",
+                "url": "https://www.toptal.com/algorithms/computability-theory-complexity",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.britannica.com/biography/Leonardo-DiCaprio",
-                "snippet": "Category: Arts & Culture In full: Leonardo Wilhelm DiCaprio Born: November 11, 1974, Los Angeles, California, U.S. (age 49) Awards And Honors: Academy Award (2016) Academy Award (2016): Actor in a Leading Role Golden Globe Award (2016): Best Actor in a Motion Picture - Drama",
-                "dateLastCrawled": "2023-12-23T18:51:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.q3bXoHApD6gRnw4P9kl9iAAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4805132444841893&mkt=en-US&setlang=en-US&w=1FVFW_p_vW-JHxqKY-g7oHxTLhcp2D9q",
+                "displayUrl": "https://www.toptal.com/algorithms/computability-theory-complexity",
+                "snippet": "P is the set of problems that are solvable in polynomial time. That is, the number of computational steps is bounded by a polynomial function with respect to the problem size. We know that the “Can everyone get a date?” question, also known as bipartite matching problem, is in P. NP is the set of problems that are verifiable in polynomial ...",
+                "dateLastCrawled": "2024-01-02T06:58:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4847974748606836&mkt=en-US&setlang=en-US&w=8gQhSF09cZecms7e0wSkcfdwU1L8qFk7",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
-                "name": "Why Doesn't Leonardo DiCaprio Have Kids? - TheThings",
-                "url": "https://www.thethings.com/why-doesnt-leonardo-dicaprio-have-kids/",
-                "datePublished": "2022-03-17T00:00:00.0000000",
-                "datePublishedDisplayText": "Mar 17, 2022",
+                "name": "Why are NP problems called that way (and NP-hard and NP-complete)?",
+                "url": "https://stackoverflow.com/questions/3671429/why-are-np-problems-called-that-way-and-np-hard-and-np-complete",
+                "datePublished": "2010-09-09T00:00:00.0000000",
+                "datePublishedDisplayText": "Sep 9, 2010",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.thethings.com/why-doesnt-leonardo-dicaprio-have-kids",
-                "snippet": "By Maurice Cassidy Published Mar 17, 2022 It seems like over the last couple of years, Leonardo DiCaprio has changed his stance on getting married and starting a family. The Things Leonardo DiCaprio is one of the most successful actors in Hollywood, with his films having generated more than $15 billion at the box office to date.",
-                "dateLastCrawled": "2023-12-22T02:40:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4823970167404792&mkt=en-US&setlang=en-US&w=yYJW0S5lYd6RsE9aR1hg7HBJ6cwIqexT",
+                "displayUrl": "https://stackoverflow.com/questions/3671429",
+                "snippet": "5 Answers Sorted by: 20 P Class of all problems which can be solved by a deterministic Turing machine in polynomial time. NP Class of all problems which can be solved by a non-deterministic Turing machine in polynomial time (they can also be verified by a deterministic Turing machine in polynomial time.) NP-Hard",
+                "dateLastCrawled": "2023-12-26T22:56:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4741386536821837&mkt=en-US&setlang=en-US&w=cLDmkAmXfvBsIkGYGKmhOvLiZnmVtzPT",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
-                "name": "Leonardo DiCaprio Wiki, Wife, Height, Age, Family, Children, Biography ...",
-                "url": "https://famouspeople.wiki/leonardo-dicaprio/",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.8FBvINcqNbsBvKUhjlP8ngHaFK&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2020-01-15T00:00:00.0000000",
-                "datePublishedDisplayText": "Jan 15, 2020",
+                "name": "Chapter 34: NP-Completeness",
+                "url": "http://hscc.cs.nthu.edu.tw/~sheujp/lecture_note/13algorithm/Ch%2034%2013.pdf",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://famouspeople.wiki/leonardo-dicaprio",
-                "snippet": "He dropped out of high school following his third year, eventually earning his general equivalency diploma (GED). His father’s name is George DiCaprio, was a comedian, producer and distributor of comic books, and his mother’s name is Irmelin, is Former Legal secretary. He was the only child of his parents. Leonardo DiCaprio Wiki / Biography",
-                "dateLastCrawled": "2023-12-21T17:25:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.8FBvINcqNbsBvKUhjlP8ngHaFK&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.8FBvINcqNbsBvKUhjlP8ngHaFK"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4565035177097511&mkt=en-US&setlang=en-US&w=RaMwv2OFMikb8EV20Rys70IqvTGoB_hM",
+                "displayUrl": "hscc.cs.nthu.edu.tw/~sheujp/lecture_note/13algorithm/Ch 34 13.pdf",
+                "snippet": "Given a Boolean formula F, such as. F = ( x y z) ( y z) ( x) is it possible to assign True/False to each variable, such that the overall value of F is true ? Remark: If the answer is YES, F is a satisfiable , and so it is how the name SAT is from. The proofs made by Cook and Levin is a bit complicated, because intuitively they need to show that ...",
+                "dateLastCrawled": "2024-01-01T12:15:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
-                "name": "40 things you never knew about Leonardo DiCaprio - The Guardian",
-                "url": "https://www.theguardian.com/film/filmblog/2014/nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2014-11-11T21:46:00.0000000",
-                "datePublishedDisplayText": "Nov 11, 2014",
+                "name": "Problems and Solutions Decidability and Complexity - UConn Health",
+                "url": "https://health.uconn.edu/bioinformatics/wp-content/uploads/sites/162/2017/11/Computation_Complexity_2015.pdf",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.theguardian.com/.../nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
-                "snippet": "298 1) Leonardo DiCaprio’s first film role was in Critters 3, and not as Toby Wolf in This Boy’s Life. Leonardo DiCaprio in Critters 3 (1991) Watch on 2) Robert De Niro allegedly...",
-                "dateLastCrawled": "2023-12-05T05:18:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.Pfi_D_LtWwn49CjB07J8dgHaD4"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=What+is+the+name+of+Leonardo+DiCaprio%27s+third+child%3f&d=4964016162679962&mkt=en-US&setlang=en-US&w=83JbUP3sTKrRX5XGCMNRWFbllv64b4NU",
+                "displayUrl": "https://health.uconn.edu/bioinformatics/wp-content/uploads/sites/162/2017/11/...",
+                "snippet": "Remember P problems also fit the definition of NP, so…. –Is P is a proper subset (P NP) or –Can all problems in NP be solved in P time (P=NP) •If that is the case, then other NP problems such as TSP, permutations, factorization, etc all must have efficient solutions. These solutions have never been found and do not likely exist",
+                "dateLastCrawled": "2023-12-03T23:01:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
-            }
-        ]
-    },
-    "entities": {
-        "value": [
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#Entities.0",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "description",
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    },
-                    {
-                        "_type": "ContractualRules/LinkAttribution",
-                        "targetPropertyName": "description",
-                        "mustBeCloseToContent": true,
-                        "text": "Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
-                    },
-                    {
-                        "_type": "ContractualRules/MediaAttribution",
-                        "targetPropertyName": "image",
-                        "mustBeCloseToContent": true,
-                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
-                    }
-                ],
-                "webSearchUrl": "https://www.bing.com/entityexplore?q=Leonardo+DiCaprio&filters=sid:%225f2c4ac2-d77a-474e-4580-c76549d4fce5%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
-                "name": "Leonardo DiCaprio",
-                "url": "https://www.rewild.org/",
-                "image": {
-                    "name": "Leonardo DiCaprio",
-                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.c87cddd5da6d303772dbad0d97b13573&w=75&h=110&c=12",
-                    "provider": [
-                        {
-                            "_type": "Organization",
-                            "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
-                        }
-                    ],
-                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
-                    "width": 75,
-                    "height": 110,
-                    "sourceWidth": 572,
-                    "sourceHeight": 903
-                },
-                "description": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
-                "entityPresentationInfo": {
-                    "entityScenario": "DominantEntity",
-                    "entityTypeHints": [
-                        "Actor",
-                        "Person"
-                    ],
-                    "entityTypeDisplayHint": "American actor and producer"
-                },
-                "bingId": "5f2c4ac2-d77a-474e-4580-c76549d4fce5"
             }
         ]
     },
@@ -327,17 +235,6 @@
                     "resultIndex": 9,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
-                    }
-                }
-            ]
-        },
-        "sidebar": {
-            "items": [
-                {
-                    "answerType": "Entities",
-                    "resultIndex": 0,
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
                     }
                 }
             ]
