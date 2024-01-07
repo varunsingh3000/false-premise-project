@@ -10,7 +10,7 @@ DATASET_PATH = config['DATASET_PATH']
 def process_freshqa(dataset_name):
     # processing specific to freshqa dataset
     df_og = pd.read_csv(DATASET_PATH+dataset_name+".csv")
-    new_header = df_og.iloc[1]  # Grab the third row for the new column names
+    new_header = df_og.iloc[1]  # Grab the second row for the new column names
     df = df_og.copy().loc[2:][:2]
     df.columns = new_header  # Set the new column names
     query_list = df["question"].tolist()
