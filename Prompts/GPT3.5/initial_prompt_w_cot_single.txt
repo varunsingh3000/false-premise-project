@@ -11,11 +11,11 @@ Note: The core concept captures the most essential piece of information from the
 
 Note: The premise of the question indicates whether the information contained in the question leads to a valid answer consistent with our knowledge. If this is the case then denote the premise as Valid otherwise it is Invalid. Also provide a short explanation for it by analysing the premise and your knowledge.
 
-Note that the external sources is only for your reference. Your confidence level should represent your certainty in your own answer, rather than the accuracy of the information provided in the external sources. If the information in the external evidence conflicts with each other then consider the evidence that is the most recent.
+Note that the external sources is only for your reference. Your confidence level should represent your certainty in your own answer, rather than the accuracy of the information provided in the external sources. 
 
 Question: {}
 
-External Sources: {}
+External Sources: {} 
 
 Use the following format always to provide your response
 Explanation: <text response of two to three sentences>

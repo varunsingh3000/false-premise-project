@@ -1,391 +1,505 @@
 {
     "search_metadata": {
-        "id": "659c0e2ee93ff4f684f0ef3f",
+        "id": "659c2dd9ca968f786301fd67",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/bfb2b441baa28d3c/659c0e2ee93ff4f684f0ef3f.json",
-        "created_at": "2024-01-08 15:01:02 UTC",
-        "processed_at": "2024-01-08 15:01:03 UTC",
-        "google_url": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
-        "raw_html_file": "https://serpapi.com/searches/bfb2b441baa28d3c/659c0e2ee93ff4f684f0ef3f.html",
-        "total_time_taken": 1.72
+        "json_endpoint": "https://serpapi.com/searches/d0f583cb20615b15/659c2dd9ca968f786301fd67.json",
+        "created_at": "2024-01-08 17:16:09 UTC",
+        "processed_at": "2024-01-08 17:16:10 UTC",
+        "google_url": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+        "raw_html_file": "https://serpapi.com/searches/d0f583cb20615b15/659c2dd9ca968f786301fd67.html",
+        "total_time_taken": 3.08
     },
     "search_parameters": {
         "engine": "google",
-        "q": "When was the permanent cure for cancer developed?",
+        "q": "When did American Express open its 20th Centurion Lounge?",
         "google_domain": "google.com",
         "hl": "en",
         "gl": "us",
         "device": "desktop"
     },
     "search_information": {
-        "query_displayed": "When was the permanent cure for cancer developed?",
-        "total_results": 78300000,
-        "time_taken_displayed": 0.37,
+        "query_displayed": "When did American Express open its 20th Centurion Lounge?",
+        "total_results": 649000,
+        "time_taken_displayed": 0.38,
         "menu_items": [
             {
                 "position": 1,
-                "title": "Perspectives",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&uds=AMIYvT9kjnlMyRpDi_QECv2jbY6sdI3ksRLPeh7IWlinvmymTIa2qkaf-m5vAm1y4nsfgshtjmQfQLDQr0YKqkI6zQkXfG6ZuJiueIUYk1_P14jrzaMsxxczdPPDBy9UAt72bl9aG321EuxtrZ7vOJNJmxQHiz_o8GhWM0umk-DylgqQeWV6Tfo&udm=4&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQs6gLegQICRAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=When+was+the+permanent+cure+for+cancer+developed%3F"
+                "title": "News",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIDBAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws"
             },
             {
                 "position": 2,
-                "title": "Images",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ0pQJegQIDRAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F"
+                "title": "Perspectives",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&uds=AMIYvT8qsroas90F6tOiCT5bwaagPnS0xbSKV_BLcJc2QfVZppJw_n-dkuxOyM8QCkB0hzvW07vv4H9NMwfuryHO8ZQG-v2rqSEHlN6yB86xM7RsAG1gOyB3mSf_jkea65sDjpXBbowe0gSTRPyV3VuAn4lH1315AvxkuUvm3kslvLvtsiO34FaMvXzteSUWf35qMgtLs6sD&udm=4&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs6gLegQICxAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 3,
-                "title": "News",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ0pQJegQIDBAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=nws"
+                "title": "Images",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIChAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 4,
-                "title": "Videos",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ0pQJegQIChAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F"
+                "title": "Shopping",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=shop&source=lnms",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 5,
-                "title": "Shopping",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=shop&source=lnms",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F"
+                "title": "Videos",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIThAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 6,
-                "title": "Books",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+permanent+cure+for+cancer+developed%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ0pQJegQIVBAB"
+                "title": "Maps",
+                "link": "https://maps.google.com/maps?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge?&source=lnms&entry=mc"
             },
             {
                 "position": 7,
-                "title": "Maps",
-                "link": "https://maps.google.com/maps?sca_esv=596572399&output=search&q=When+was+the+permanent+cure+for+cancer+developed?&source=lnms&entry=mc"
+                "title": "Books",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQITBAB"
             },
             {
                 "position": 8,
                 "title": "Flights",
-                "link": "https://www.google.com/travel/flights?sca_esv=596572399&output=search&q=When+was+the+permanent+cure+for+cancer+developed%3F&source=lnms"
+                "link": "https://www.google.com/travel/flights?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms"
             },
             {
                 "position": 9,
                 "title": "Finance",
-                "link": "https://www.google.com/finance?sca_esv=596572399&output=search&q=When+was+the+permanent+cure+for+cancer+developed%3F&source=lnms&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ0pQJegQIUhAB"
+                "link": "https://www.google.com/finance?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQITRAB"
             }
         ],
         "organic_results_state": "Results for exact spelling"
     },
+    "inline_people_also_search_for": [
+        {
+            "title": "Amex Lounge locations",
+            "items": [
+                {
+                    "name": "Dallas/Fort Worth Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQY-pn8dwNh7qmk55ZEeWDW2gYJDimHjMnH36bOyeJEf2Y5W2q8wmPYDO0NKXbu8z9qFN-o0cuA&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg1EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA"
+                },
+                {
+                    "name": "San Francisco Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR0glViGklQo4L06tmoOZBJHOvBnVQCSjYaNabr3CKGtXQtvG6oOjShmozA0oEvLDlOgUqLF3fY&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg1EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA"
+                },
+                {
+                    "name": "George Bush Intercontine... Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XzwlfidcbmiddTOI7WXcXYSBysP8iISmXYCruq09D9THi1d1VJmJ&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg1EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA"
+                },
+                {
+                    "name": "Hong Kong",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSdkftEN0pqUYngD-AmqsZhQeYQOGvVgSLnXx&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg1EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA"
+                }
+            ],
+            "see_more_link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINRAG",
+            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA"
+        },
+        {
+            "title": "Centurion Lounge locations usa",
+            "items": [
+                {
+                    "name": "Los Angeles International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRwb6ruc6qB877ftWYZPRPHRJ2Q1G3vLYQ3xoKfrESioMddSa1aMszjzOT8D9IDhcBMrGQMnQOf&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg2EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA"
+                },
+                {
+                    "name": "Miami International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTPcerPlK8n5oizXGrjLcAr_zZ2zt8-2ZdoFDx3-VNOKI80NUi43I1Tw3b1WCiQ9gR4vcoMxoc&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg2EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA"
+                },
+                {
+                    "name": "LaGuardia Airport (LGA)",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT39ExDVYfBNrjbe3rNe6XXuSERL2RvRExzvREEB4FjCUy1CsB0Yr0N7PhcaP_uIhjA0EwPhTxh&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg2EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA"
+                },
+                {
+                    "name": "John F. Kennedy Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMxyGLYT9fZ8r-4MvWCjibqmlfAU2bWKcnRoU9JGqAOoYfNw0Cew-&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg2EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA"
+                },
+                {
+                    "name": "Philadelphia International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSCRJN4OpejJD5dLkgXtSeNM0aInokr3NvQwYhX5B2MTqnTqhVu29yE-wUptwaHvkNhf11xw5XC&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAR6BAg2EAY",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA"
+                },
+                {
+                    "name": "Harry Reid International Airport (LAS)",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh31TVz0ieHUca1YHEzanWY7ygBLyZsy8w5dM&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAV6BAg2EAc",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA"
+                }
+            ],
+            "see_more_link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINhAI",
+            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA"
+        }
+    ],
     "related_questions": [
         {
-            "question": "Is there a permanent cure for cancer?",
-            "snippet": "Whether a person's cancer can be cured depends on the type and stage of the cancer, the type of treatment they can get, and other factors. Some cancers are more likely to be cured than others. But each cancer needs to be treated differently. There isn't one cure for cancer.",
-            "title": "Can Cancer Be Cured? | Does Treatment Cure Cancer?",
-            "date": "May 6, 2021",
-            "link": "https://www.cancer.org/cancer/understanding-cancer/can-cancer-be-cured.html#:~:text=Whether%20a%20person's%20cancer%20can,t%20one%20cure%20for%20cancer.",
-            "displayed_link": "https://www.cancer.org › cancer › can-cancer-be-cured",
-            "source_logo": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/29ddbd540217c71b072138c6d761193276bbb4c31dcbb5cf4dba45418c2e50ba.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhIHBlcm1hbmVudCBjdXJlIGZvciBjYW5jZXI/IiwibGsiOiJHaGx3WlhKdFlXNWxiblFnWTNWeVpTQm1iM0lnWTJGdVkyVnkiLCJicyI6ImMtUFM0bEwxTEZZb3lVZ3RTbFZJVkNoSUxjcE56RXZOSzFGSUxnVUtwT1VYS1NRbjVpV25GdGxMOU1wd3FYTXBlZVNYSzZSa3BvQTBWQ3FVRktVbWxrQVZLR1RtS1JoYUdobllTOXd6NWRMa1VnRXBMRThzaHNtQ2xhYW1LSmdhS0ZTbUpoWVZLeVNtNTl0THROUnhtWElaaEdmbTVFQmRrQVJ5QkpyVklKUHpTNHNVY2pMVFVrc3ljMVB0SlI2ekNEQUNBQSIsImlkIjoiZmNfMSJ9",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJJcyB0aGVyZSBhIHBlcm1hbmVudCBjdXJlIGZvciBjYW5jZXI%2FIiwibGsiOiJHaGx3WlhKdFlXNWxiblFnWTNWeVpTQm1iM0lnWTJGdVkyVnkiLCJicyI6ImMtUFM0bEwxTEZZb3lVZ3RTbFZJVkNoSUxjcE56RXZOSzFGSUxnVUtwT1VYS1NRbjVpV25GdGxMOU1wd3FYTXBlZVNYSzZSa3BvQTBWQ3FVRktVbWxrQVZLR1RtS1JoYUdobllTOXd6NWRMa1VnRXBMRThzaHNtQ2xhYW1LSmdhS0ZTbUpoWVZLeVNtNTl0THROUnhtWElaaEdmbTVFQmRrQVJ5QkpyVklKUHpTNHNVY2pMVFVrc3ljMVB0SlI2ekNEQUNBQSIsImlkIjoiZmNfMSJ9"
+            "question": "When did first Centurion lounge open?",
+            "snippet": "The first American Express Centurion® Lounge opened in Las Vegas (LAS airport) in 2013. American Express was the first card issuer to enter the airline lounge space, but other issuers now also have lounges.",
+            "title": "2013",
+            "date": "Nov 15, 2023",
+            "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/#:~:text=The%20first%20American%20Express%20Centurion,issuers%20now%20also%20have%20lounges.",
+            "displayed_link": "https://www.usatoday.com › blueprint › credit-cards › a...",
+            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3ba812967d9dc67616d5115f688b4e790.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIGZpcnN0IENlbnR1cmlvbiBsb3VuZ2Ugb3Blbj8iLCJsayI6IkdpUjNhR1Z1SUdScFpDQm1hWEp6ZENCalpXNTBkWEpwYjI0Z2JHOTFibWRsSUc5d1pXNCIsImJzIjoiYy1QUzRsSU56MGpOVTBqSlRGRkl5eXdxTGxGd1RzMHJLUzNLek05VHlNa3Z6VXRQVmNndlNNMnpsM2hvem1YQlpSeWVrVmlpa0ZpVXFsQ1NrYXFRbkpFSWxDOVdTTXN2VWtoRzF3VVNOREl3TXJhWC1DckRaY0tsNzVGZnJwQ2JtRmVKWVg0eHpEd2dtWmtITmpnMDJGNWlMamVYSnBlS1o3R0NYMnA1WWxFMmRtY3BWS2FXMkV0TURoZGdCQUEiLCJpZCI6ImZjXzEifQ==",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIGZpcnN0IENlbnR1cmlvbiBsb3VuZ2Ugb3Blbj8iLCJsayI6IkdpUjNhR1Z1SUdScFpDQm1hWEp6ZENCalpXNTBkWEpwYjI0Z2JHOTFibWRsSUc5d1pXNCIsImJzIjoiYy1QUzRsSU56MGpOVTBqSlRGRkl5eXdxTGxGd1RzMHJLUzNLek05VHlNa3Z6VXRQVmNndlNNMnpsM2hvem1YQlpSeWVrVmlpa0ZpVXFsQ1NrYXFRbkpFSWxDOVdTTXN2VWtoRzF3VVNOREl3TXJhWC1DckRaY0tsNzVGZnJwQ2JtRmVKWVg0eHpEd2dtWmtITmpnMDJGNWlMamVYSnBlS1o3R0NYMnA1WWxFMmRtY3BWS2FXMkV0TURoZGdCQUEiLCJpZCI6ImZjXzEifQ%3D%3D"
         },
         {
-            "question": "How did they treat cancer in 1920?",
-            "snippet": "1920s radiotherapy The science of radiobiology was still in its infancy and increasing knowledge of the biology of cancer and the effects of radiation on normal and pathological tissues made an enormous difference to treatment. Treatment planning began in this period with the use of multiple external beams.",
-            "title": "Radiotherapy in the 1920s - British Institute of Radiology",
-            "link": "https://www.bir.org.uk/useful-information/history-of-radiology/1920s/1920s-radiotherapy.aspx#:~:text=1920s%20radiotherapy&text=The%20science%20of%20radiobiology%20was,use%20of%20multiple%20external%20beams.",
-            "displayed_link": "https://www.bir.org.uk › history-of-radiology",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbG82aHbT35vC4lQAZDHSMEgJ3kwhtzLbswoqYVr0-HQ&s",
-            "source_logo": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/29ddbd540217c71b072138c6d76119321b0ae2f8ed37414aa82e8dc78c3e326d.jpeg",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJIb3cgZGlkIHRoZXkgdHJlYXQgY2FuY2VyIGluIDE5MjA/IiwibGsiOiJHaUZvYjNjZ1pHbGtJSFJvWlhrZ2RISmxZWFFnWTJGdVkyVnlJR2x1SURFNU1qQSIsImJzIjoiYy1QUzRsTDFMRllveVVndFNsVklWQ2hJTGNwTnpFdk5LMUZJTGdVS3BPVVhLU1FuNWlXbkZ0bEw5TXB3cVhNcGVlU1hLNlJrcG9BMFZDcVVGS1VtbGtBVktHVG1LUmhhR2huWVM5d3o1ZExrVWdFcExFOHNoc21DbGFhbUtKZ2FLRlNtSmhZVkt5U201OXRMdE5SeG1YSVpoR2ZtNUVCZGtBUnlCSnJWSUpQelM0c1VjakxUVWtzeWMxUHRKUjZ6Q0RBQ0FBIiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJIb3cgZGlkIHRoZXkgdHJlYXQgY2FuY2VyIGluIDE5MjA%2FIiwibGsiOiJHaUZvYjNjZ1pHbGtJSFJvWlhrZ2RISmxZWFFnWTJGdVkyVnlJR2x1SURFNU1qQSIsImJzIjoiYy1QUzRsTDFMRllveVVndFNsVklWQ2hJTGNwTnpFdk5LMUZJTGdVS3BPVVhLU1FuNWlXbkZ0bEw5TXB3cVhNcGVlU1hLNlJrcG9BMFZDcVVGS1VtbGtBVktHVG1LUmhhR2huWVM5d3o1ZExrVWdFcExFOHNoc21DbGFhbUtKZ2FLRlNtSmhZVkt5U201OXRMdE5SeG1YSVpoR2ZtNUVCZGtBUnlCSnJWSUpQelM0c1VjakxUVWtzeWMxUHRKUjZ6Q0RBQ0FBIiwiaWQiOiJmY18xIn0%3D"
+            "question": "What are the changes for centurion lounge for 2023?",
+            "snippet": "As of Feb. 1, 2023, the ability to bring in two guests at no additional cost went away for most cardholders. Now, unless you spend $75,000 or more each calendar year on your card, you'll need to pay $50 to bring an adult guest ($30 for children ages 2 through 17) into the Centurion Lounge. Terms apply.",
+            "title": "Centurion Lounge Guest Policy: Is It Worth It? - NerdWallet",
+            "date": "Nov 14, 2023",
+            "link": "https://www.nerdwallet.com/article/travel/centurion-lounge-guest-policy#:~:text=policy%20has%20ended-,As%20of%20Feb.,Terms%20apply.",
+            "displayed_link": "https://www.nerdwallet.com › article › travel › centurion...",
+            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3699d035381fc2ba621e7d8ef76cf426b.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
         },
         {
-            "question": "How was cancer treated 50 years ago?",
-            "snippet": "In the 1950s, survival from cancer was poor. Damaging surgery and relatively unsophisticated radiotherapy were the main treatments, assuming the disease was detected in time for anything to be done.",
-            "title": "Celebrating 60 years of progress - Cancer News",
-            "date": "Jun 3, 2012",
-            "link": "https://news.cancerresearchuk.org/2012/06/03/celebrating-60-years-of-progress/#:~:text=In%20the%201950s%2C%20survival%20from,for%20anything%20to%20be%20done.",
-            "displayed_link": "https://news.cancerresearchuk.org › 2012/06/03 › celebr...",
-            "source_logo": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/29ddbd540217c71b072138c6d7611932ddcc6e150aad2155a059d6af0e649197.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJIb3cgd2FzIGNhbmNlciB0cmVhdGVkIDUwIHllYXJzIGFnbz8iLCJsayI6IkdpTm9iM2NnZDJGeklHTmhibU5sY2lCMGNtVmhkR1ZrSURVd0lIbGxZWEp6SUdGbmJ3IiwiYnMiOiJjLVBTNGxMMUxGWW95VWd0U2xWSVZDaElMY3BOekV2TksxRklMZ1VLcE9VWEtTUW41aVduRnRsTDlNcHdxWE1wZWVTWEs2Umtwb0EwVkNxVUZLVW1sa0FWS0dUbUtSaGFHaG5ZUzl3ejVkTGtVZ0VwTEU4c2hzbUNsYWFtS0pnYUtGU21KaFlWS3lTbTU5dEx0TlJ4bVhJWmhHZm01RUJka0FSeUJKclZJSlB6UzRzVWNqTFRVa3N5YzFQdEpSNnpDREFDQUEiLCJpZCI6ImZjXzEifQ==",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJIb3cgd2FzIGNhbmNlciB0cmVhdGVkIDUwIHllYXJzIGFnbz8iLCJsayI6IkdpTm9iM2NnZDJGeklHTmhibU5sY2lCMGNtVmhkR1ZrSURVd0lIbGxZWEp6SUdGbmJ3IiwiYnMiOiJjLVBTNGxMMUxGWW95VWd0U2xWSVZDaElMY3BOekV2TksxRklMZ1VLcE9VWEtTUW41aVduRnRsTDlNcHdxWE1wZWVTWEs2Umtwb0EwVkNxVUZLVW1sa0FWS0dUbUtSaGFHaG5ZUzl3ejVkTGtVZ0VwTEU4c2hzbUNsYWFtS0pnYUtGU21KaFlWS3lTbTU5dEx0TlJ4bVhJWmhHZm01RUJka0FSeUJKclZJSlB6UzRzVWNqTFRVa3N5YzFQdEpSNnpDREFDQUEiLCJpZCI6ImZjXzEifQ%3D%3D"
+            "question": "How many Centurion lounges are there in the US?",
+            "snippet": "American Express boasts 13 Centurion Lounges in the United States and 11 in international locations, which are exclusively reserved for cardholders of The Platinum Card® from American Express, The Business Platinum Card® from American Express or the Centurion® Card from American Express.",
+            "title": "13 Centurion Lounges",
+            "date": "Sep 12, 2023",
+            "link": "https://www.lendingtree.com/credit-cards/guides/amex-centurion-lounges/#:~:text=American%20Express%20boasts%2013%20Centurion,%C2%AE%20Card%20from%20American%20Express.",
+            "displayed_link": "https://www.lendingtree.com › credit-cards › guides › a...",
+            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3437c295ed458f7d4a4c829023852f26e.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM/IiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM%2FIiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
         },
         {
-            "question": "Will there be a cure for cancer in our lifetime?",
-            "snippet": "Do you think there will be a cure for cancer in our lifetimes? No. It's still going to be a long road, but there is good news for cancer patients. Cancer is just a catchall phrase for dozens of different diseases that have the same endpoint—uncontrolled growth of tissue driven by mutated cells.",
-            "title": "Will there be cancer cure in our lifetimes? - NIU Newsroom",
-            "date": "Mar 11, 2015",
-            "link": "https://newsroom.niu.edu/will-there-be-cancer-cure-in-our-lifetimes/#:~:text=Do%20you%20think%20there%20will,tissue%20driven%20by%20mutated%20cells.",
-            "displayed_link": "https://newsroom.niu.edu › will-there-be-cancer-cure-in-...",
-            "source_logo": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/29ddbd540217c71b072138c6d761193247a7e2ab71cef31778ff6d989a7f3df5.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJXaWxsIHRoZXJlIGJlIGEgY3VyZSBmb3IgY2FuY2VyIGluIG91ciBsaWZldGltZT8iLCJsayI6IkdpdDNhV3hzSUhSb1pYSmxJR0psSUdFZ1kyRnVZMlZ5SUdOMWNtVWdhVzRnYjNWeUlHeHBabVYwYVcxbCIsImJzIjoiYy1QUzRsTDFMRllveVVndFNsVklWQ2hJTGNwTnpFdk5LMUZJTGdVS3BPVVhLU1FuNWlXbkZ0bEw5TXB3cVhNcGVlU1hLNlJrcG9BMFZDcVVGS1VtbGtBVktHVG1LUmhhR2huWVM5d3o1ZExrVWdFcExFOHNoc21DbGFhbUtKZ2FLRlNtSmhZVkt5U201OXRMdE5SeG1YSVpoR2ZtNUVCZGtBUnlCSnJWSUpQelM0c1VjakxUVWtzeWMxUHRKUjZ6Q0RBQ0FBIiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsWU1EUTROVEkyT1hWWFExVmlURmxFUWt0bE16RTVlSGxGT1d4V2MyTnFVbFZLWjA4NFdsaHhWV2h0UlZkbVJYVnZXRE0yUWs5VE5VOUVVR0ZGU25kSGJqRnZkRzFzRWhkTlFUWmpXbU5NUkVOYVlYYzFUbTlRY0hCeGFtdEJUUm9pUVVwM2F5MDRaV1pIVkhsWFRDMXlRM2Q2U0cxaVRqQmtWRVUxYlZoNlMxQlZadyIsImZjdiI6IjMiLCJlaSI6Ik1BNmNaY0xEQ1phdzVOb1BwcHFqa0FNIiwicWMiOiJDakIzYUdWdUlIZGhjeUIwYUdVZ2NHVnliV0Z1Wlc1MElHTjFjbVVnWm05eUlHTmhibU5sY2lCa1pYWmxiRzl3WldRUUFCZ0JNUUFBQUNBRWE4UV9mZFBWT3o4IiwicXVlc3Rpb24iOiJXaWxsIHRoZXJlIGJlIGEgY3VyZSBmb3IgY2FuY2VyIGluIG91ciBsaWZldGltZT8iLCJsayI6IkdpdDNhV3hzSUhSb1pYSmxJR0psSUdFZ1kyRnVZMlZ5SUdOMWNtVWdhVzRnYjNWeUlHeHBabVYwYVcxbCIsImJzIjoiYy1QUzRsTDFMRllveVVndFNsVklWQ2hJTGNwTnpFdk5LMUZJTGdVS3BPVVhLU1FuNWlXbkZ0bEw5TXB3cVhNcGVlU1hLNlJrcG9BMFZDcVVGS1VtbGtBVktHVG1LUmhhR2huWVM5d3o1ZExrVWdFcExFOHNoc21DbGFhbUtKZ2FLRlNtSmhZVkt5U201OXRMdE5SeG1YSVpoR2ZtNUVCZGtBUnlCSnJWSUpQelM0c1VjakxUVWtzeWMxUHRKUjZ6Q0RBQ0FBIiwiaWQiOiJmY18xIn0%3D"
+            "question": "Is Newark Centurion lounge open yet?",
+            "snippet": "You'll get to hear a professional musician tickle the ivories over at Newark Liberty International Airport (EWR), which will host the newest Centurion Lounge when it opens in 2026. The new, 17,000-square-foot Centurion Lounge will be located in Terminal A.",
+            "title": "AmEx to Open Centurion Lounge at Newark Airport - NerdWallet",
+            "date": "Sep 12, 2023",
+            "link": "https://www.nerdwallet.com/article/travel/newark-centurion-lounge#:~:text=You'll%20get%20to%20hear,be%20located%20in%20Terminal%20A.",
+            "displayed_link": "https://www.nerdwallet.com › Travel",
+            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3f925750550de864c34ad1412866f889c.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
         }
     ],
     "organic_results": [
         {
             "position": 1,
-            "title": "Milestones in Cancer Research and Discovery - NCI",
-            "link": "https://www.cancer.gov/research/progress/250-years-milestones",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cancer.gov/research/progress/250-years-milestones&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECBcQAQ",
-            "displayed_link": "https://www.cancer.gov › 250-years-milestones",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74027bbb7c9f1cad4814a558cfc8e92c8e.png",
-            "date": "Aug 31, 2020",
-            "snippet": "1775: Chimney Soot & Squamous Cell Carcinoma · 1863: Inflammation & Cancer · 1882: The First Radical Mastectomy to Treat Breast Cancer · 1886: ...",
+            "title": "A Complete List of AmEx Centurion Lounges in the U.S.",
+            "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s",
+            "redirect_link": "https://www.google.comhttps://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s",
+            "displayed_link": "https://www.afar.com › magazine › a-complete-list-of-...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d371a2da590a2c8ca0a80316abc93b7c4e8.png",
+            "date": "Aug 30, 2023",
+            "snippet": "Get a full list of all 13 American Express Centurion Lounges in the U.S. and where to find them, along with a review and guide to each ...",
             "snippet_highlighted_words": [
-                "1882"
+                "American Express Centurion Lounges"
             ],
-            "missing": [
-                "permanent"
-            ],
-            "must_include": {
-                "word": "permanent",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+%22permanent%22+cure+for+cancer+developed?&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ5t4CegQILBAB"
-            },
-            "source": "National Cancer Institute (.gov)"
+            "source": "Afar"
         },
         {
             "position": 2,
-            "title": "History of Cancer Treatments: Surgery",
-            "link": "https://www.cancer.org/cancer/understanding-cancer/history-of-cancer/cancer-treatment-surgery.html",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cancer.org/cancer/understanding-cancer/history-of-cancer/cancer-treatment-surgery.html&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECBYQAQ",
-            "displayed_link": "https://www.cancer.org › ... › The History of Cancer",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74a2bba3bd01111a008ea9b7e8d17d4dc0.png",
-            "date": "Jun 12, 2014",
-            "snippet": "Surgery is the earliest form of cancer treatment. Learn about how cancer surgery developed throughout history.",
+            "title": "AmEx to Open Centurion Lounge at Newark Airport",
+            "link": "https://www.nerdwallet.com/article/travel/newark-centurion-lounge",
+            "redirect_link": "https://www.google.comhttps://www.nerdwallet.com/article/travel/newark-centurion-lounge",
+            "displayed_link": "https://www.nerdwallet.com › Travel",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d375c2b305b0dbef2c9020bfadaa223d397.png",
+            "date": "Sep 12, 2023",
+            "snippet": "American Express announced in September 2023 that it would open a new Centurion Lounge at Newark Airport (EWR) in 2026 with a piano lounge ...",
             "snippet_highlighted_words": [
-                "Surgery"
+                "September 2023"
             ],
-            "missing": [
-                "permanent"
-            ],
-            "must_include": {
-                "word": "permanent",
-                "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+the+%22permanent%22+cure+for+cancer+developed?&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ5t4CegQIJxAB"
-            },
-            "source": "American Cancer Society"
+            "source": "NerdWallet"
         },
         {
             "position": 3,
-            "title": "Progress against Cancer (1971–2011): How far have we come?",
-            "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3270124/",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3270124/&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECBQQAQ",
-            "displayed_link": "https://www.ncbi.nlm.nih.gov › articles › PMC3270124",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74360fa8c0a11df9514a12906c8edf51d4.png",
-            "author": "by AK Tiwari",
-            "cited_by": "Cited by 34",
-            "extracted_cited_by": 34,
-            "date": "2012",
-            "snippet": "A 1985 breast cancer treatment trial that demonstrated clear parity of lumpectomy combined with radiotherapy to radical mastectomy was indeed ...",
+            "title": "American Express and The Port Authority of New York & New ...",
+            "link": "https://about.americanexpress.com/newsroom/press-releases/news-details/2023/American-Express-and-The-Port-Authority-of-New-York--New-Jersey-Announce-Plans-for-New-Centurion-Lounge-at-Newark-Liberty-International-Airport/default.aspx",
+            "redirect_link": "https://www.google.comhttps://about.americanexpress.com/newsroom/press-releases/news-details/2023/American-Express-and-The-Port-Authority-of-New-York--New-Jersey-Announce-Plans-for-New-Centurion-Lounge-at-Newark-Liberty-International-Airport/default.aspx",
+            "displayed_link": "https://about.americanexpress.com › news-details › A...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37640d836dc840820fb41c670add2d6df8.png",
+            "date": "Sep 12, 2023",
+            "snippet": "The newly constructed lounge, located in the new Terminal A, is scheduled to open in 2026. American Express is the first credit card issuer to ...",
             "snippet_highlighted_words": [
-                "1985"
+                "2026"
             ],
-            "sitelinks": {
-                "inline": [
-                    {
-                        "title": "Advances In Cancer Biology",
-                        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3270124/#:~:text=Advances%20in%20cancer%20biology,-Signing%20of%20the%20legislation%20acted"
-                    },
-                    {
-                        "title": "Advances In Cancer Treatment",
-                        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3270124/#:~:text=Advances%20in%20cancer%20treatment,-Even%20the%20most%20vocal%20skeptics"
-                    },
-                    {
-                        "title": "Advances In Cancer...",
-                        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3270124/#:~:text=Advances%20in%20cancer%20prevention,-In%20eighteenth%20century%2C%20when"
-                    }
-                ]
-            },
-            "source": "National Institutes of Health (.gov)"
+            "source": "American Express"
         },
         {
             "position": 4,
-            "title": "Evolution of Cancer Pharmacological Treatments at the ...",
-            "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6243123/",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6243123/&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECBUQAQ",
-            "displayed_link": "https://www.ncbi.nlm.nih.gov › articles › PMC6243123",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c747c6c1408dc480b6d159f36309c0e030b.png",
-            "author": "by L Falzone",
-            "cited_by": "Cited by 782",
-            "extracted_cited_by": 782,
-            "date": "2018",
-            "snippet": "In particular, dacarbazine was first synthesized by Shealy in 1962 and was approved by the Food and Drug Administration (FDA) in 1975 for the ...",
+            "title": "New Amex Centurion Lounge Opening Dates Delayed",
+            "link": "https://onemileatatime.com/centurion-lounge-opening-dates/",
+            "redirect_link": "https://www.google.comhttps://onemileatatime.com/centurion-lounge-opening-dates/",
+            "displayed_link": "https://onemileatatime.com › centurion-lounge-openin...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d3791632e6f0a52b1d789c93ffb41d4ca26.png",
+            "date": "Jun 1, 2020",
+            "snippet": "The Amex Centurion Lounge London Heathrow is now scheduled to open in the second half of 2020, while previously the lounge was supposed to open ...",
             "snippet_highlighted_words": [
-                "1962"
+                "the second half of 2020"
             ],
-            "source": "National Institutes of Health (.gov)"
+            "source": "One Mile at a Time"
         },
         {
             "position": 5,
-            "title": "Is There a Cure for Cancer?",
-            "link": "https://www.webmd.com/cancer/cure-for-cancer",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.webmd.com/cancer/cure-for-cancer&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECDgQAQ",
-            "displayed_link": "https://www.webmd.com › Cancer › Guide",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c748d993d7f5ee6b3bc9a140ee723bfd947.png",
-            "date": "Jun 12, 2022",
-            "snippet": "No “alternative” or natural cancer treatments have been proven to cure cancer. But there are some safe non-medical treatments -- like ...",
+            "title": "American Express Announces EWR Centurion Lounge",
+            "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/",
+            "redirect_link": "https://www.google.comhttps://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/",
+            "displayed_link": "https://www.cnbc.com › CNBC Select › Credit Cards",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37b36aa9f24ad0639506d4ad21e336fc30.png",
+            "date": "Sep 12, 2023",
+            "snippet": "American Express is opening a Centurion Lounge at New Jersey's Newark Liberty International Airport (EWR) in 2026.",
             "snippet_highlighted_words": [
-                "No “alternative”"
+                "2026"
             ],
-            "sitelinks": {
-                "inline": [
-                    {
-                        "title": "Understanding Cancer",
-                        "link": "https://www.webmd.com/cancer/cure-for-cancer#091e9c5e81f06b8e-1-2"
-                    },
-                    {
-                        "title": "Cure vs. Cured vs. Remission",
-                        "link": "https://www.webmd.com/cancer/cure-for-cancer#091e9c5e81f06b8e-1-3"
-                    },
-                    {
-                        "title": "Treatment",
-                        "link": "https://www.webmd.com/cancer/cure-for-cancer#091e9c5e81f06b8e-2-4"
-                    }
-                ]
-            },
-            "source": "WebMD"
+            "source": "CNBC"
         },
         {
             "position": 6,
-            "title": "Cancer cure finally here? New drug Dostarlimab ... - Mint",
-            "link": "https://www.livemint.com/news/world/cancer-cure-finally-here-new-drug-dostarlimab-cures-all-patients-first-time-in-history-11654659187360.html",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.livemint.com/news/world/cancer-cure-finally-here-new-drug-dostarlimab-cures-all-patients-first-time-in-history-11654659187360.html&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECEEQAQ",
-            "displayed_link": "https://www.livemint.com › News › world",
-            "thumbnail": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c743219a158e528d2678235fcdf78e5644e.jpeg",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c748e159560a354afa3456957579ada9489.png",
-            "date": "Jun 8, 2022",
-            "snippet": "In a small clinical trial, 18 patients took the drug Dostarlimab for six months, and all of them had their cancer vanished.",
+            "title": "10 years later: What's next for Amex's Centurion Lounge ...",
+            "link": "https://thepointsguy.com/news/amex-centurion-lounge-10-year-anniversary/",
+            "redirect_link": "https://www.google.comhttps://thepointsguy.com/news/amex-centurion-lounge-10-year-anniversary/",
+            "displayed_link": "https://thepointsguy.com › news › amex-centurion-lou...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d375a77c20531bc932b29fe1a83d45e80fe.png",
+            "date": "Oct 16, 2023",
+            "snippet": "The card issuer opened its first Centurion Lounge in Las Vegas in 2013, and it has since welcomed cardmembers into the blue doors of 26 more ...",
             "snippet_highlighted_words": [
-                "six months"
+                "2013"
             ],
-            "source": "livemint.com"
+            "missing": [
+                "20th"
+            ],
+            "must_include": {
+                "word": "20th",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+%2220th%22+Centurion+Lounge?&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ5t4CegQIQBAB"
+            },
+            "source": "The Points Guy"
         },
         {
             "position": 7,
-            "title": "The History of Cancer Therapy, an Interactive Timeline",
-            "link": "https://static.scientificamerican.com/sciam/assets/media/multimedia/msktimeline/index.html",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://static.scientificamerican.com/sciam/assets/media/multimedia/msktimeline/index.html&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECDkQAQ",
-            "displayed_link": "https://static.scientificamerican.com › msktimeline",
-            "thumbnail": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74d04ead88d544fa4c21d50183438da1f6.jpeg",
-            "snippet": "A look at major advancements in cancer treatments throughout the years, from the first radical mastectomy in 1882 to the immune checkpoint inhibitors and ...",
+            "title": "Amex Centurion Lounge Coming to Newark Airport in 2026",
+            "link": "https://www.businessinsider.com/personal-finance/amex-centurion-lounge-newark-airport-2023-9",
+            "redirect_link": "https://www.google.comhttps://www.businessinsider.com/personal-finance/amex-centurion-lounge-newark-airport-2023-9",
+            "displayed_link": "https://www.businessinsider.com › ... › Credit Cards",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37e0cf3eb2eaa522c7788e24b2693cb1fd.png",
+            "date": "Sep 12, 2023",
+            "snippet": "While the Centurion Lounge at Newark Airport won't open until 2026, American Express has shared some initial details on what to expect. As with ...",
             "snippet_highlighted_words": [
-                "1882"
+                "2026"
             ],
-            "source": "Scientific American"
+            "source": "Business Insider"
         },
         {
             "position": 8,
-            "title": "New Cure for Cancer? - Endeavor | Moffitt",
-            "link": "https://endeavor.moffitt.org/archive/new-cure-for-cancer/",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://endeavor.moffitt.org/archive/new-cure-for-cancer/&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECDoQAQ",
-            "displayed_link": "https://endeavor.moffitt.org › archive › new-cure-for-...",
-            "thumbnail": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74846b42cef4bbfaa63d38e881cb268302.jpeg",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74a17a956434754738675d08f716c2233b.png",
-            "date": "Jan 30, 2019",
-            "snippet": "An Israeli company says it's discovered the cure for cancer, but Moffitt Cancer Center researchers say not so fast.",
+            "title": "Amex reveals updated opening dates for new Centurion ...",
+            "link": "https://thepointsguy.com/news/new-amex-centurion-lounges/",
+            "redirect_link": "https://www.google.comhttps://thepointsguy.com/news/new-amex-centurion-lounges/",
+            "displayed_link": "https://thepointsguy.com › news › new-amex-centurio...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37a22d845d8d815a934d37c8c9165a7a2f.png",
+            "date": "Jan 8, 2023",
+            "snippet": "Estimated opening date: 2023. Amex has confirmed that a brand-new Centurion Lounge will open at this Washington, D.C., airport. It will be ...",
             "snippet_highlighted_words": [
-                "Israeli"
+                "2023"
             ],
-            "source": "Moffitt"
+            "missing": [
+                "20th"
+            ],
+            "must_include": {
+                "word": "20th",
+                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+%2220th%22+Centurion+Lounge?&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ5t4CegQISBAB"
+            },
+            "source": "The Points Guy"
         },
         {
             "position": 9,
-            "title": "Will Cancer Ever Be Cured?",
-            "link": "https://www.verywellhealth.com/will-cancer-ever-be-cured-4686392",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.verywellhealth.com/will-cancer-ever-be-cured-4686392&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECDwQAQ",
-            "displayed_link": "https://www.verywellhealth.com › Cancer › Treatment",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvML-C5Ol4_msfEANRIAq28QF0YbQkmdULUE9UVGwyH9oBKjkMGhkx&usqp=CAE&s",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74dfdf41ee67c71be4667bbeb0e355c8ac.png",
-            "date": "Feb 28, 2023",
-            "snippet": "Today, cancers that respond to treatment are not considered outright cured because there is always a potential they could come back.",
+            "title": "Three Months After American Express' New Centurion ...",
+            "link": "https://loyaltylobby.com/2023/05/22/three-months-after-american-express-new-centurion-lounge-guest-policy-there-is-little-sign-of-improvement/",
+            "redirect_link": "https://www.google.comhttps://loyaltylobby.com/2023/05/22/three-months-after-american-express-new-centurion-lounge-guest-policy-there-is-little-sign-of-improvement/",
+            "displayed_link": "https://loyaltylobby.com › 2023/05/22 › three-months...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37a81cceef7e9ac9efed15a2b8011ea9d8.png",
+            "date": "May 22, 2023",
+            "snippet": "Effective February 1, 2023 U.S. Amex Platinum cardholders are no longer to take guests into Centurion lounges unless they hit an annual spend ...",
             "snippet_highlighted_words": [
-                "are not considered outright cured"
+                "Effective February 1, 2023"
             ],
-            "source": "Verywell Health"
+            "source": "LoyaltyLobby"
         },
         {
             "position": 10,
-            "title": "Cancer treatment",
-            "link": "https://en.wikipedia.org/wiki/Cancer_treatment",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Cancer_treatment&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQFnoECD8QAQ",
-            "displayed_link": "https://en.wikipedia.org › wiki › Cancer_treatment",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB3Kb2vaWoILx2Putwe5staRf2JSBb1zH-KfMVDH4vdt2yq41qeowI&usqp=CAE&s",
-            "favicon": "https://serpapi.com/searches/659c0e2ee93ff4f684f0ef3f/images/fa4ea17ad139c264d4bda9e28c783c74af5a4f202b0c48d87df693d23cc4ae68.png",
-            "snippet": "Tumor removal surgeries have been documented in ancient Egypt, hormone therapy and radiation therapy were developed in the late 19th century. Chemotherapy, ...",
+            "title": "American Express Has Officially Reopened All U.S. ...",
+            "link": "https://loyaltylobby.com/2020/12/11/american-express-has-officially-reopened-all-u-s-centurion-lounges-except-ny-laguardia/",
+            "redirect_link": "https://www.google.comhttps://loyaltylobby.com/2020/12/11/american-express-has-officially-reopened-all-u-s-centurion-lounges-except-ny-laguardia/",
+            "displayed_link": "https://loyaltylobby.com › 2020/12/11 › american-exp...",
+            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37234e304cae7edb076b48e92e9764d593.png",
+            "date": "Dec 11, 2020",
+            "snippet": "Yesterday the American Express Centurion Lounge in Las Vegas opened it's doors again, concluding the re-opening all domestic clubs with the ...",
             "snippet_highlighted_words": [
-                "the late 19th century"
+                "American Express Centurion Lounge",
+                "opened it's",
+                "opening"
             ],
-            "source": "Wikipedia"
+            "source": "LoyaltyLobby"
         }
     ],
     "related_searches": [
         {
             "block_position": 1,
-            "query": "history of cancer treatment timeline",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=History+of+cancer+treatment+timeline&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAg3EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=History+of+cancer+treatment+timeline"
+            "query": "Amex Lounge locations",
+            "items": [
+                {
+                    "name": "Dallas/Fort Worth Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQY-pn8dwNh7qmk55ZEeWDW2gYJDimHjMnH36bOyeJEf2Y5W2q8wmPYDO0NKXbu8z9qFN-o0cuA&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg1EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA"
+                },
+                {
+                    "name": "San Francisco Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR0glViGklQo4L06tmoOZBJHOvBnVQCSjYaNabr3CKGtXQtvG6oOjShmozA0oEvLDlOgUqLF3fY&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg1EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA"
+                },
+                {
+                    "name": "George Bush Intercontine... Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XzwlfidcbmiddTOI7WXcXYSBysP8iISmXYCruq09D9THi1d1VJmJ&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg1EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA"
+                },
+                {
+                    "name": "Hong Kong",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSdkftEN0pqUYngD-AmqsZhQeYQOGvVgSLnXx&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg1EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA"
+                }
+            ],
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINRAG",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA"
         },
         {
             "block_position": 1,
-            "query": "when was cancer first discovered",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+cancer+first+discovered&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAg2EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+cancer+first+discovered"
+            "query": "Centurion Lounge locations usa",
+            "items": [
+                {
+                    "name": "Los Angeles International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRwb6ruc6qB877ftWYZPRPHRJ2Q1G3vLYQ3xoKfrESioMddSa1aMszjzOT8D9IDhcBMrGQMnQOf&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg2EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA"
+                },
+                {
+                    "name": "Miami International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTPcerPlK8n5oizXGrjLcAr_zZ2zt8-2ZdoFDx3-VNOKI80NUi43I1Tw3b1WCiQ9gR4vcoMxoc&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg2EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA"
+                },
+                {
+                    "name": "LaGuardia Airport (LGA)",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT39ExDVYfBNrjbe3rNe6XXuSERL2RvRExzvREEB4FjCUy1CsB0Yr0N7PhcaP_uIhjA0EwPhTxh&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg2EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA"
+                },
+                {
+                    "name": "John F. Kennedy Internationa...",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMxyGLYT9fZ8r-4MvWCjibqmlfAU2bWKcnRoU9JGqAOoYfNw0Cew-&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg2EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA"
+                },
+                {
+                    "name": "Philadelphia International Airport",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSCRJN4OpejJD5dLkgXtSeNM0aInokr3NvQwYhX5B2MTqnTqhVu29yE-wUptwaHvkNhf11xw5XC&s=19",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAR6BAg2EAY",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA"
+                },
+                {
+                    "name": "Harry Reid International Airport (LAS)",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh31TVz0ieHUca1YHEzanWY7ygBLyZsy8w5dM&s=0",
+                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAV6BAg2EAc",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA"
+                }
+            ],
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINhAI",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA"
         },
         {
             "block_position": 1,
-            "query": "history of cancer timeline",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=History+of+cancer+timeline&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAg1EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=History+of+cancer+timeline"
+            "query": "american express centurion lounge",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+Centurion+Lounge&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg5EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+Centurion+Lounge"
         },
         {
             "block_position": 1,
-            "query": "when did cancer start to rise",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=When+did+cancer+start+to+rise&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAg0EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+cancer+start+to+rise"
+            "query": "newark centurion lounge opening date",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Newark+Centurion+Lounge+opening+date&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg6EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Newark+Centurion+Lounge+opening+date"
         },
         {
             "block_position": 1,
-            "query": "when was cancer first discovered in america",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=When+was+cancer+first+discovered+in+America&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAgyEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+cancer+first+discovered+in+America"
+            "query": "centurion lounge locations",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg7EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations"
         },
         {
             "block_position": 1,
-            "query": "who discovered cancer treatment",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=Who+discovered+cancer+treatment&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAgzEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Who+discovered+cancer+treatment"
+            "query": "american express lounge newark terminal c",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg8EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+Newark+Terminal+C"
         },
         {
             "block_position": 1,
-            "query": "how has cancer treatment improved over the years",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=How+has+cancer+treatment+improved+over+the+years&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAgxEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+has+cancer+treatment+improved+over+the+years"
+            "query": "american express lounge access list",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+lounge+access+list&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg9EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+access+list"
         },
         {
             "block_position": 1,
-            "query": "cancer timeline death",
-            "link": "https://www.google.com/search?sca_esv=596572399&q=Cancer+timeline+death&sa=X&ved=2ahUKEwjCm_m7h86DAxUWGFkFHSbNCDIQ1QJ6BAgwEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Cancer+timeline+death"
+            "query": "centurion lounge atlanta",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+Atlanta&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg4EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+Atlanta"
+        },
+        {
+            "block_position": 1,
+            "query": "centurion lounge locations international",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+lounge+locations+international&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAhFEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+lounge+locations+international"
+        },
+        {
+            "block_position": 1,
+            "query": "centurion lounge newark terminal c",
+            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAhCEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+lounge+Newark+Terminal+C"
         }
     ],
     "pagination": {
         "current": 1,
-        "next": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
+        "next": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
         "other_pages": {
-            "2": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
-            "3": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&start=20&sourceid=chrome&ie=UTF-8",
-            "4": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&start=30&sourceid=chrome&ie=UTF-8",
-            "5": "https://www.google.com/search?q=When+was+the+permanent+cure+for+cancer+developed%3F&oq=When+was+the+permanent+cure+for+cancer+developed%3F&hl=en&gl=us&start=40&sourceid=chrome&ie=UTF-8"
+            "2": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
+            "3": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&start=20&sourceid=chrome&ie=UTF-8",
+            "4": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&start=30&sourceid=chrome&ie=UTF-8",
+            "5": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&start=40&sourceid=chrome&ie=UTF-8"
         }
     },
     "serpapi_pagination": {
         "current": 1,
-        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=10",
-        "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=10",
+        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=10",
+        "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=10",
         "other_pages": {
-            "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=10",
-            "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=20",
-            "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=30",
-            "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+permanent+cure+for+cancer+developed%3F&start=40"
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&start=40"
         }
     }
 }

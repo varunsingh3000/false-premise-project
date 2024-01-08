@@ -7,14 +7,10 @@ import serpapi
 
 
 # Function to perform web search using bing web search API, returns the response as json
-def perform_web_search(query,engine,language,location_country,subscription_key):
+def perform_web_search(params):
 
     # Query term(s) to search for.
     # query = "Why does Mars have three moons?"
-
-    # Construct a request
-    params = { 'q': query, 'engine': engine, 'hl': language, 'gl': location_country, 'api_key': subscription_key}
-
     # Call the API
     try:
         response_json = dict(serpapi.search(params))
@@ -49,10 +45,10 @@ def process_json(response_json):
             print(f"Key {e} not found. Skipping this item.")
 
     # Iterating through the webpages section
-    if 'organic_results' in data:
+    if 'organic_results' not in data:
         print("Web pages are found as external evidence")
         retrieved_info_dict.update({"organic_results":[]})
-        for webpageitem in data["organic_results"][:]: #iterating through a list here
+        for webpageitem in data["organic_results"][:1]: #iterating through a list here
             try:
                 name = webpageitem["title"]
                 url = webpageitem["link"]
@@ -67,7 +63,7 @@ def process_json(response_json):
     if 'related_questions' in data:
         print("Related Questions are found as external evidence")
         retrieved_info_dict.update({"related_questions":[]})
-        for relatedquesitem in data["related_questions"][:2]: #iterating through a list here
+        for relatedquesitem in data["related_questions"][:]: #iterating through a list here
             try:
                 name = relatedquesitem["question"]
                 url = relatedquesitem["link"]
@@ -84,15 +80,14 @@ def process_json(response_json):
 
 def start_web_search(query):
     print("Web search process starts")
-    # Add your Bing Search V7 subscription key to your environment variables.
+    # Add your SerpAPI Web Search API key to your environment variables.
     subscription_key = os.environ.get("SERP_API_WEB_SEARCH")
-    # endpoint = "https://api.bing.microsoft.com" + "/v7.0/search" 
-    # mkt = 'en-US'
     engine = "google"
     language = "en"
     location_country = "us"
+    params = { 'q': query, 'engine': engine, 'hl': language, 'gl': location_country, 'api_key': subscription_key}
     # call the web search api and get the response as json back
-    response_json = perform_web_search(query,engine,language,location_country,subscription_key)
+    response_json = perform_web_search(params)
     # process the json response into a suitable format of dictionary later used
     external_evidence = process_json(response_json)
     print("Web search process ends")
