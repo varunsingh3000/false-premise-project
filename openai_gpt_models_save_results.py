@@ -8,7 +8,8 @@ from openai import OpenAI
 from utils.utils import uncertainty_confidence_cal
 from utils.utils import matching_condition_check
 from utils.utils import check_dict_keys_condition
-from web_search import start_web_search
+# from web_search import start_web_search
+from web_search_serp import start_web_search
 
 
 with open('params.yaml', 'r') as file:
