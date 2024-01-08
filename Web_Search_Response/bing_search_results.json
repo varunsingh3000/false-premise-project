@@ -1,55 +1,35 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "Why are all quickly verifiable problems also quickly solvable?"
+        "originalQuery": "is bodybuilding part of olympics?"
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f",
-        "totalEstimatedMatches": 84700,
+        "webSearchUrl": "https://www.bing.com/search?q=is+bodybuilding+part+of+olympics%3f",
+        "totalEstimatedMatches": 11600000,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 0,
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    }
-                ],
-                "name": "P versus NP problem - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+                "name": "Why Is Bodybuilding Not an Olympic Sport Yet?",
+                "url": "https://www.essentiallysports.com/bodybuilding-news-why-is-bodybuilding-not-an-olympic-sport-yet/",
+                "datePublished": "2023-12-01T00:00:00.0000000",
+                "datePublishedDisplayText": "Dec 1, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
-                "snippet": "v t e The P versus NP problem is a major unsolved problem in theoretical computer science. In informal terms, it asks whether every problem whose solution can be quickly verified can also be quickly solved.",
-                "dateLastCrawled": "2024-01-07T07:18:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4756728168979749&mkt=en-US&setlang=en-US&w=9cX0F_ZEkIlzHCzuRH_lxFRGPThOGNYm",
+                "displayUrl": "https://www.essentiallysports.com/bodybuilding-news-why-is-bodybuilding-not-an-olympic...",
+                "snippet": "Bodybuilders use performance-enhancing drugs to enhance their masses and hence according to the IOC bodybuilding cannot be a part of the Olympics. Bodybuilding is not considered to be a sport Even though bodybuilding has a long history it is not considered to be a sport due to various reasons.",
+                "dateLastCrawled": "2023-12-15T03:13:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4689765165697033&mkt=en-US&setlang=en-US&w=biVy3h57mEhUqO8JARxJ7d_5BPfqcicN",
                 "language": "en",
-                "isNavigational": false
+                "isNavigational": true
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "complexity theory - Please explain \"decidability\" and \"verifiability ...",
-                "url": "https://cs.stackexchange.com/questions/12068/please-explain-decidability-and-verifiability",
-                "about": [
-                    {
-                        "_type": "CreativeWork",
-                        "aggregateRating": {
-                            "ratingValue": 0,
-                            "reviewCount": 2
-                        }
-                    }
-                ],
+                "name": "The History of Bodybuilding’s Messy Journey to the Olympics",
+                "url": "https://barbend.com/bodybuilding-olympics-history/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://cs.stackexchange.com/questions/12068",
-                "snippet": "A language is called decidable if there exists a method - any method at all - to determine whether a given word belongs to that language or not. However, I fail to find a parallel definition for verifiability. In the Theory of Computation book by Sipser, we find, P = the class of languages for which membership can be decided quickly.",
-                "dateLastCrawled": "2024-01-04T10:29:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4763093307632410&mkt=en-US&setlang=en-US&w=J_WKpujfpjd2ATILYXMRu3xXWHoqQpQs",
+                "displayUrl": "https://barbend.com/bodybuilding-olympics-history",
+                "snippet": "Written by Conor Heffernan Last updated on July 31st, 2023 Bodybuilding truly deserves a place in the pantheon of Olympic sports. It dates to the original Olympic Games of the ancient Greeks,...",
+                "dateLastCrawled": "2024-01-02T01:36:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4984017837304447&mkt=en-US&setlang=en-US&w=7a60OQF2HU_aeC3kc-AdvhdDiJ7qxVFy",
                 "language": "en",
                 "isNavigational": false
             },
@@ -68,99 +48,322 @@
                         "licenseNotice": "Text under CC-BY-SA license"
                     }
                 ],
-                "name": "NP (complexity) - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/NP_(complexity)",
+                "name": "Olympic weightlifting - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Olympic_weightlifting",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/NP_(complexity)",
-                "snippet": "NP is the set of decision problems solvable in polynomial time by a nondeterministic Turing machine. NP is the set of decision problems verifiable in polynomial time by a deterministic Turing machine. The first definition is the basis for the abbreviation NP; \"nondeterministic, polynomial time\". These two definitions are equivalent because the ...",
-                "dateLastCrawled": "2024-01-05T07:13:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4748314330661410&mkt=en-US&setlang=en-US&w=9ZXRi9KrWvlvSKNowzG2j47jaF2FzqJt",
+                "displayUrl": "https://en.wikipedia.org/wiki/Olympic_weightlifting",
+                "snippet": "Weightlifting (often known as Olympic weightlifting) is a sport in which athletes compete in lifting a barbell loaded with weight plates from the ground to overhead, with the aim of successfully lifting the heaviest weights. Athletes compete in two specific ways of lifting the barbell overhead.",
+                "dateLastCrawled": "2024-01-05T22:10:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4563596372812909&mkt=en-US&setlang=en-US&w=T1rAgCVyHfkbSPY1qqgTkVVcIN-DJdBn",
                 "language": "en",
-                "isNavigational": false
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Contact"
+                        },
+                        "items": [
+                            {
+                                "text": "No"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Highest governing body"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "International Weightlifting Federation",
+                                "url": "https://www.bing.com/search?q=International+Weightlifting+Federation+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    }
+                ]
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
-                "name": "Searching for Easy Answers to Hard Computational Questions",
-                "url": "https://www.scientificamerican.com/article/searching-for-easy-answers-hard-computational-questions/",
-                "datePublished": "2012-09-01T00:00:00.0000000",
-                "datePublishedDisplayText": "Sep 1, 2012",
+                "name": "Why is Bodybuilding not an Olympic sport? - The Bridge",
+                "url": "https://thebridge.in/bodybuilding/why-bodybuilding-not-olympic-sport-21879",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.HyjCe7H7N0AIbmIoU98dgQAAAA&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2021-06-04T10:30:00.0000000",
+                "datePublishedDisplayText": "Jun 4, 2021",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.scientificamerican.com/article/searching-for-easy-answers-hard...",
-                "snippet": "The “P versus NP” question asks whether tough problems whose solutions can be quickly checked (like a jigsaw puzzle) are, at heart, easily solvable as well. Despite decades of investigation,...",
-                "dateLastCrawled": "2023-11-09T19:05:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4608594744516334&mkt=en-US&setlang=en-US&w=DhOc3qED6yUvvxbSLI6AHtoCY7Y5SAz5",
+                "displayUrl": "https://thebridge.in/bodybuilding/why-bodybuilding-not-olympic-sport-21879",
+                "snippet": "Arnold Schwarzenegger (Source: Outlook India) Abhijit Nair Why is Bodybuilding not an Olympic sport? Bodybuilding has been in existence for a long, long time. It is nothing but the usage of weight training to develop one's body muscles the way one wants them to be.",
+                "dateLastCrawled": "2023-12-31T23:27:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.HyjCe7H7N0AIbmIoU98dgQAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.HyjCe7H7N0AIbmIoU98dgQAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4588202233641586&mkt=en-US&setlang=en-US&w=W7I23mFyxGMmeWhLz4Tl2vSH_myyoSOX",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "name": "CS1010: Theory of Computation - Brown University",
-                "url": "https://cs.brown.edu/courses/cs101/files/doc/fall2020/Lecture-15-P%20and%20NP.pdf",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 4,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "Bodybuilding - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Bodybuilding",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://cs.brown.edu/courses/cs101/files/doc/fall2020/Lecture-15-P and NP.pdf",
-                "snippet": "Path Problem Î P. breadth-first algorithm runs in polynomial time: M = On input <G, s, t> where G is a directed graph with nodes s and t (and there are m nodes): Place a mark on node s. Repeat until no additional nodes are marked. Scan all edges of G. If an edge (a,b) is found from a marked node a to an unmarked node b, mark node b.",
-                "dateLastCrawled": "2024-01-05T09:53:00.0000000Z",
+                "displayUrl": "https://en.wikipedia.org/wiki/Bodybuilding",
+                "snippet": "Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy. An individual who engages in this activity is referred to as a bodybuilder.It is primarily undertaken for aesthetic purposes over functional ones, distinguishing it from similar activities such as powerlifting, which focuses solely on increasing the physical load one ...",
+                "dateLastCrawled": "2024-01-07T05:09:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4597277510039177&mkt=en-US&setlang=en-US&w=6zNIo2tqrjgqmevV4rZcEDe31IQZjyb0",
                 "language": "en",
-                "isNavigational": false
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Nicknames"
+                        },
+                        "items": [
+                            {
+                                "text": "BB"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Olympic"
+                        },
+                        "items": [
+                            {
+                                "text": "No"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Team members"
+                        },
+                        "items": [
+                            {
+                                "text": "No"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Highest governing body"
+                        },
+                        "items": [
+                            {
+                                "_type": "Properties/Link",
+                                "text": "International Federation of BodyBuilding & Fitness",
+                                "url": "https://www.bing.com/search?q=International+Federation+of+BodyBuilding+&+Fitness+wikipedia"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACTWITHLINK"
+                        }
+                    }
+                ]
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "CS1010: Theory of Computation - Brown University",
-                "url": "https://cs.brown.edu/courses/csci1010/files/doc/fall2020/Lecture-16-NP%20Completeness.pdf",
+                "name": "Will Bodybuilding Ever Become an Olympic Sport? - Weik Fitness, LLC",
+                "url": "https://www.weikfitness.com/bodybuilding-become-olympic-sport/",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt&w=80&h=80&c=1&pid=5.1",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://cs.brown.edu/courses/csci1010/files/doc/fall2020/Lecture-16-NP Completeness.pdf",
-                "snippet": "When problem A is efficiently reducible to problem B, an efficient solution to B can be used to solve A efficiently “Efficiently reducible” means in polynomial time If A is polytimereducible to B, we can convert the problem of testing for membership in A to a membership test in B",
-                "dateLastCrawled": "2024-01-03T03:15:00.0000000Z",
+                "displayUrl": "https://www.weikfitness.com/bodybuilding-become-olympic-sport",
+                "snippet": "Some have been saying that the International Olympic Committee (IOC) accepted the sport of bodybuilding into the 2020 Summer Olympics in Tokyo. However, nothing has surfaced about it since these rumors started which leads me to believe, it’s not truly going to be part of the Olympics. Bodybuilding Olympics? That would be pretty cool, no?",
+                "dateLastCrawled": "2023-12-29T11:08:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4941656567141901&mkt=en-US&setlang=en-US&w=fL9qqGKTSn3HNOneqw_BUgUKucvd0G0f",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "name": "Computability Theory and Complexity | Toptal®",
-                "url": "https://www.toptal.com/algorithms/computability-theory-complexity",
+                "name": "Full article: Is bodybuilding a sport? - Taylor & Francis Online",
+                "url": "https://www.tandfonline.com/doi/full/10.1080/00948705.2023.2234978",
+                "datePublished": "2023-07-23T00:00:00.0000000",
+                "datePublishedDisplayText": "Jul 23, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.toptal.com/algorithms/computability-theory-complexity",
-                "snippet": "P is the set of problems that are solvable in polynomial time. That is, the number of computational steps is bounded by a polynomial function with respect to the problem size. We know that the “Can everyone get a date?” question, also known as bipartite matching problem, is in P. NP is the set of problems that are verifiable in polynomial ...",
-                "dateLastCrawled": "2024-01-02T06:58:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4847974748606836&mkt=en-US&setlang=en-US&w=8gQhSF09cZecms7e0wSkcfdwU1L8qFk7",
+                "displayUrl": "https://www.tandfonline.com/doi/full/10.1080/00948705.2023.2234978",
+                "snippet": "Since its beginnings, modern bodybuilding has been accompanied by the background issue of whether it should be considered a sport. The problem, culminating in its provisional acceptance as a sport by the International Olympic Committee, was later retracted. The uncertainty of whether bodybuilding is a sport or not seems to linger.",
+                "dateLastCrawled": "2023-12-28T21:03:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
-                "name": "Why are NP problems called that way (and NP-hard and NP-complete)?",
-                "url": "https://stackoverflow.com/questions/3671429/why-are-np-problems-called-that-way-and-np-hard-and-np-complete",
-                "datePublished": "2010-09-09T00:00:00.0000000",
-                "datePublishedDisplayText": "Sep 9, 2010",
+                "name": "Bodybuilding and the Olympics - Evolution of Bodybuilding",
+                "url": "https://www.evolutionofbodybuilding.net/bodybuilding-olympics/",
+                "datePublished": "2018-02-19T00:00:00.0000000",
+                "datePublishedDisplayText": "Feb 19, 2018",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://stackoverflow.com/questions/3671429",
-                "snippet": "5 Answers Sorted by: 20 P Class of all problems which can be solved by a deterministic Turing machine in polynomial time. NP Class of all problems which can be solved by a non-deterministic Turing machine in polynomial time (they can also be verified by a deterministic Turing machine in polynomial time.) NP-Hard",
-                "dateLastCrawled": "2023-12-26T22:56:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Why+are+all+quickly+verifiable+problems+also+quickly+solvable%3f&d=4741386536821837&mkt=en-US&setlang=en-US&w=cLDmkAmXfvBsIkGYGKmhOvLiZnmVtzPT",
+                "displayUrl": "https://www.evolutionofbodybuilding.net/bodybuilding-olympics",
+                "snippet": "At this year’s Games in Peru, bodybuilding will feature on the programme alongside sports such as athletics, swimming and weightlifting. It was also announced in December that bodybuilding will be part of this year’s South American Games, another huge multi-sport event organised by national Olympic committees. Bodybuilding has also been ...",
+                "dateLastCrawled": "2023-12-27T05:00:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4662698447226843&mkt=en-US&setlang=en-US&w=6NQ5jmTk4HFIWerUEN0ghp_7drEtQg4X",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
-                "name": "Chapter 34: NP-Completeness",
-                "url": "http://hscc.cs.nthu.edu.tw/~sheujp/lecture_note/13algorithm/Ch%2034%2013.pdf",
+                "name": "Is Bodybuilding a Sport? - ResearchGate",
+                "url": "https://www.researchgate.net/publication/369078323_Is_Bodybuilding_a_sport/fulltext/64089a490d98a97717ec8f58/Is-Bodybuilding-a-sport.pdf",
+                "datePublished": "2023-03-06T00:00:00.0000000",
+                "datePublishedDisplayText": "Mar 6, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "hscc.cs.nthu.edu.tw/~sheujp/lecture_note/13algorithm/Ch 34 13.pdf",
-                "snippet": "Given a Boolean formula F, such as. F = ( x y z) ( y z) ( x) is it possible to assign True/False to each variable, such that the overall value of F is true ? Remark: If the answer is YES, F is a satisfiable , and so it is how the name SAT is from. The proofs made by Cook and Levin is a bit complicated, because intuitively they need to show that ...",
-                "dateLastCrawled": "2024-01-01T12:15:00.0000000Z",
+                "displayUrl": "https://www.researchgate.net/publication/369078323_Is_Bodybuilding_a_sport/fulltext/...",
+                "snippet": "International Olympic Committee, retracted later. The uncertainty of whether bodybuilding is a sport or ... efforts, at least in part, resulted in bodybuilding’s recognition by the American ...",
+                "dateLastCrawled": "2023-11-27T00:33:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
-                "name": "Problems and Solutions Decidability and Complexity - UConn Health",
-                "url": "https://health.uconn.edu/bioinformatics/wp-content/uploads/sites/162/2017/11/Computation_Complexity_2015.pdf",
+                "name": "Is Bodybuilding a sport? | SportRxiv",
+                "url": "https://sportrxiv.org/index.php/server/preprint/view/270",
+                "datePublished": "2023-03-07T00:00:00.0000000",
+                "datePublishedDisplayText": "Mar 7, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://health.uconn.edu/bioinformatics/wp-content/uploads/sites/162/2017/11/...",
-                "snippet": "Remember P problems also fit the definition of NP, so…. –Is P is a proper subset (P NP) or –Can all problems in NP be solved in P time (P=NP) •If that is the case, then other NP problems such as TSP, permutations, factorization, etc all must have efficient solutions. These solutions have never been found and do not likely exist",
-                "dateLastCrawled": "2023-12-03T23:01:00.0000000Z",
+                "displayUrl": "https://sportrxiv.org/index.php/server/preprint/view/270",
+                "snippet": "A problem culminating in its provisional acceptance as a sport by the International Olympic Committee, retracted later. The uncertainty of whether bodybuilding is a sport or not seems to linger. Addressing this issue, Aranyosi (2018) provided an account to determine the status of bodybuilding as a sport that arrives at the negative answer ...",
+                "dateLastCrawled": "2023-12-03T03:49:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4528128533998021&mkt=en-US&setlang=en-US&w=x2w-QcE3MXcLJ5vddUtLqHUw66IdFnK7",
                 "language": "en",
                 "isNavigational": false
+            }
+        ]
+    },
+    "entities": {
+        "value": [
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#Entities.0",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    },
+                    {
+                        "_type": "ContractualRules/LinkAttribution",
+                        "targetPropertyName": "description",
+                        "mustBeCloseToContent": true,
+                        "text": "Wikipedia",
+                        "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                    },
+                    {
+                        "_type": "ContractualRules/MediaAttribution",
+                        "targetPropertyName": "image",
+                        "mustBeCloseToContent": true,
+                        "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                    }
+                ],
+                "webSearchUrl": "https://www.bing.com/entityexplore?q=Bodybuilding&filters=sid:%2252777ded-08ca-6d3f-f0f3-818fab647341%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
+                "name": "Bodybuilding",
+                "image": {
+                    "name": "Bodybuilding",
+                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.6f617385c9ce6cc6dfe13ce72a55a51a&w=75&h=110&c=7",
+                    "provider": [
+                        {
+                            "_type": "Organization",
+                            "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                        }
+                    ],
+                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Arnold_Schwarzenegger_1974.jpg",
+                    "width": 75,
+                    "height": 110,
+                    "sourceWidth": 925,
+                    "sourceHeight": 1344
+                },
+                "description": "Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy. An individual who engages in this activity is referred to as a bodybuilder. It is primarily undertaken for aesthetic purposes over functional ones, distinguishing it from similar activities such as powerlifting, which focuses solely on increasing the physical load one can exert.",
+                "entityPresentationInfo": {
+                    "entityScenario": "DominantEntity",
+                    "entityTypeHints": [
+                        "Generic"
+                    ]
+                },
+                "bingId": "52777ded-08ca-6d3f-f0f3-818fab647341"
+            }
+        ]
+    },
+    "relatedSearches": {
+        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
+        "value": [
+            {
+                "text": "mr olympia official website",
+                "displayText": "mr olympia official website",
+                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+official+website"
+            },
+            {
+                "text": "mr olympia 2023 pictures",
+                "displayText": "mr olympia 2023 pictures",
+                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+2023+pictures"
+            },
+            {
+                "text": "olympic weightlifting bodybuilding program",
+                "displayText": "olympic weightlifting bodybuilding program",
+                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifting+bodybuilding+program"
+            },
+            {
+                "text": "mr olympia website",
+                "displayText": "mr olympia website",
+                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+website"
+            },
+            {
+                "text": "olympic weightlifting highest governing body",
+                "displayText": "olympic weightlifting highest governing body",
+                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifting+highest+governing+body"
+            },
+            {
+                "text": "2020 olympics weightlifting results",
+                "displayText": "2020 olympics weightlifting results",
+                "webSearchUrl": "https://www.bing.com/search?q=2020+olympics+weightlifting+results"
+            },
+            {
+                "text": "female olympic weightlifting weight classes",
+                "displayText": "female olympic weightlifting weight classes",
+                "webSearchUrl": "https://www.bing.com/search?q=female+olympic+weightlifting+weight+classes"
+            },
+            {
+                "text": "olympic weightlifters images",
+                "displayText": "olympic weightlifters images",
+                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifters+images"
             }
         ]
     },
@@ -235,6 +438,23 @@
                     "resultIndex": 9,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
+                    }
+                },
+                {
+                    "answerType": "RelatedSearches",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches"
+                    }
+                }
+            ]
+        },
+        "sidebar": {
+            "items": [
+                {
+                    "answerType": "Entities",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
                     }
                 }
             ]
