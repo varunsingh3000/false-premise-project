@@ -3,7 +3,6 @@
 
 import json
 import os 
-import requests
 import serpapi
 
 
@@ -86,8 +85,7 @@ def process_json(response_json):
 def start_web_search(query):
     print("Web search process starts")
     # Add your Bing Search V7 subscription key to your environment variables.
-    # subscription_key = os.environ.get("BING_WEB_SEARCH_API_KEY")
-    subscription_key = "6ad4eeb47eaa503b840586b572627d31abff00c5e205cf8b1d3809f09d0c38eb"
+    subscription_key = os.environ.get("SERP_API_WEB_SEARCH")
     # endpoint = "https://api.bing.microsoft.com" + "/v7.0/search" 
     # mkt = 'en-US'
     engine = "google"
