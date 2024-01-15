@@ -1,0 +1,30 @@
+You are a helpful agent with knowledge and expertise in a lot of fields. Please read the question, analyze step by step, give the answer with an explanation, indicate your level of confidence, your source reference, a core concept of the question and also indicate if the question contains a false premise. 
+Use the following format to provide your answer, confidence level, the source, the core concept and the premise of the question:
+
+Explanation: [insert step-by-step analysis here] Answer: [Your answer, please only include text with explanation] Confidence (0-100): [Your confidence level, please only include the numerical number, e.g. 70%] Source (reference source): [The reference source which support the Explanation given above] Core Concept (keyword or concept): [The core concept is the most important concept from the question] Question's Premise (Valid or Invalid): [The premise of the question, please only include Valid or Invalid along with a textual explanation]
+
+Note: The confidence level indicates the degree of certainty you have about your answer and is represented as a percentage. For instance, if your confidence level is 80%, it means you are 80% certain that your answer is correct and there is a 20% chance that it may be incorrect.
+
+Note: The source can either be the URL links from the External sources or your knowledge which in that case indicate it. For instance Source: LLM (if the source is your knowledge and the external sources are not helpful.)
+
+Note: The core concept captures the most essential piece of information from the question through which the question could be answered completely.
+
+Note: The premise of the question indicates whether the information contained in the question leads to a valid answer consistent with our knowledge. If this is the case then denote the premise as Valid otherwise it is Invalid. Also provide a short explanation for it by analysing the premise and your knowledge.
+
+Note that the external sources is only for your reference. Your confidence level should represent your certainty in your own answer, rather than the accuracy of the information provided in the external sources. 
+
+Question: {}
+
+External Sources: {} 
+
+Use the following format always to provide your response
+Explanation: <text response of two to three sentences>
+Answer:
+Confidence Level: 
+Source: <Name of source and the url>
+Core Concept: <text response of two to three words maximum>
+Premise of the Question:
+
+Note: If the information needed to answer the question is not directly given in the external sources then please reason whether the question itself is correct based on the information given in the external sources. Do not put too much emphasize on the external sources in the final answer, and have some confidence in your answers.
+
+Now, please answer this question, provide your confidence level, the source, the core concept and the premise of the question. Let's think it step by step.

@@ -1,13 +1,13 @@
 {
     "search_metadata": {
-        "id": "659c2dd9ca968f786301fd67",
+        "id": "65a557ce2c6878890be08e4a",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/d0f583cb20615b15/659c2dd9ca968f786301fd67.json",
-        "created_at": "2024-01-08 17:16:09 UTC",
-        "processed_at": "2024-01-08 17:16:10 UTC",
+        "json_endpoint": "https://serpapi.com/searches/d0f583cb20615b15/65a557ce2c6878890be08e4a.json",
+        "created_at": "2024-01-15 16:05:34 UTC",
+        "processed_at": "2024-01-15 16:05:34 UTC",
         "google_url": "https://www.google.com/search?q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&oq=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
-        "raw_html_file": "https://serpapi.com/searches/d0f583cb20615b15/659c2dd9ca968f786301fd67.html",
-        "total_time_taken": 3.08
+        "raw_html_file": "https://serpapi.com/searches/d0f583cb20615b15/65a557ce2c6878890be08e4a.html",
+        "total_time_taken": 0.65
     },
     "search_parameters": {
         "engine": "google",
@@ -19,58 +19,58 @@
     },
     "search_information": {
         "query_displayed": "When did American Express open its 20th Centurion Lounge?",
-        "total_results": 649000,
-        "time_taken_displayed": 0.38,
+        "total_results": 779000,
+        "time_taken_displayed": 0.4,
         "menu_items": [
             {
                 "position": 1,
                 "title": "News",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIDBAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws"
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q0pQJegQICRAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=nws"
             },
             {
                 "position": 2,
                 "title": "Perspectives",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&uds=AMIYvT8qsroas90F6tOiCT5bwaagPnS0xbSKV_BLcJc2QfVZppJw_n-dkuxOyM8QCkB0hzvW07vv4H9NMwfuryHO8ZQG-v2rqSEHlN6yB86xM7RsAG1gOyB3mSf_jkea65sDjpXBbowe0gSTRPyV3VuAn4lH1315AvxkuUvm3kslvLvtsiO34FaMvXzteSUWf35qMgtLs6sD&udm=4&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs6gLegQICxAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&uds=AMwkrPv9bcNNFIheWE-RWAL3XbC5w3H0yHsv9yOWYOL1-7-SJwV74ddFH_uM_lkjQ-kF_cioo7lndDUkH5enTQGXDdkdvVGWHeA3HuG9jMo61lTYEM0crDf7S2H2tC1z3kPGNw09uCbAT1keYEt6ZWFJpVlEIy64bt3gt8Teu7AU92a72_qMZsfKhF5NZrIB9aRcHKJm8KqE&udm=4&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs6gLegQIChAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 3,
                 "title": "Images",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIChAB",
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q0pQJegQICxAB",
                 "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 4,
-                "title": "Shopping",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=shop&source=lnms",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
-            },
-            {
-                "position": 5,
                 "title": "Videos",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQIThAB",
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q0pQJegQIDRAB",
                 "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
-                "position": 6,
+                "position": 5,
                 "title": "Maps",
-                "link": "https://maps.google.com/maps?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge?&source=lnms&entry=mc"
+                "link": "https://maps.google.com/maps?sca_esv=1fc1322baddc500b&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge?&source=lnms&entry=mc"
+            },
+            {
+                "position": 6,
+                "title": "Shopping",
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=shop&source=lnms",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F"
             },
             {
                 "position": 7,
                 "title": "Books",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQITBAB"
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q0pQJegQITBAB"
             },
             {
                 "position": 8,
                 "title": "Flights",
-                "link": "https://www.google.com/travel/flights?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms"
+                "link": "https://www.google.com/travel/flights?sca_esv=1fc1322baddc500b&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms"
             },
             {
                 "position": 9,
                 "title": "Finance",
-                "link": "https://www.google.com/finance?sca_esv=c48e17254b1184be&hl=en&gl=us&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ0pQJegQITRAB"
+                "link": "https://www.google.com/finance?sca_esv=1fc1322baddc500b&output=search&q=When+did+American+Express+open+its+20th+Centurion+Lounge%3F&source=lnms&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q0pQJegQITRAB"
             }
         ],
         "organic_results_state": "Results for exact spelling"
@@ -82,86 +82,86 @@
                 {
                     "name": "Dallas/Fort Worth Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQY-pn8dwNh7qmk55ZEeWDW2gYJDimHjMnH36bOyeJEf2Y5W2q8wmPYDO0NKXbu8z9qFN-o0cuA&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg1EAI",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBncpNbG-B6OCrJde2pN2wF55Q0rdhXc-N5XAgC9T36d7gAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAB6BAg0EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBncpNbG-B6OCrJde2pN2wF55Q0rdhXc-N5XAgC9T36d7gAAAA"
                 },
                 {
                     "name": "San Francisco Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR0glViGklQo4L06tmoOZBJHOvBnVQCSjYaNabr3CKGtXQtvG6oOjShmozA0oEvLDlOgUqLF3fY&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg1EAM",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskg5vU2hjfw1FBtmtPrWk7IK-8YcWughvf-0oAaP71VsoAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAF6BAg0EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskg5vU2hjfw1FBtmtPrWk7IK-8YcWughvf-0oAaP71VsoAAAA"
                 },
                 {
-                    "name": "George Bush Intercontine... Airport",
+                    "name": "George Bush Intercontine... Airport (IAH)",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XzwlfidcbmiddTOI7WXcXYSBysP8iISmXYCruq09D9THi1d1VJmJ&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg1EAQ",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJIOb1NoY38NRQbZrT61pOyCvvGHFroIb3_tKACpno3XrAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAJ6BAg0EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJIOb1NoY38NRQbZrT61pOyCvvGHFroIb3_tKACpno3XrAAAA"
                 },
                 {
                     "name": "Hong Kong",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSdkftEN0pqUYngD-AmqsZhQeYQOGvVgSLnXx&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg1EAU",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02SwU1qbYzv4agg27Wn1rQdkFfesGJXwY3vfSUAPPxzfM8AAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAN6BAg0EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02SwU1qbYzv4agg27Wn1rQdkFfesGJXwY3vfSUAPPxzfM8AAAA"
                 }
             ],
-            "see_more_link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINRAG",
-            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA"
+            "see_more_link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLBTWptjO_hqCDbtafWtB2QV96wYlfBje99JQAwiyfx0QAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q4qYDegQINBAG",
+            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLBTWptjO_hqCDbtafWtB2QV96wYlfBje99JQAwiyfx0QAAAA"
         },
         {
             "title": "Centurion Lounge locations usa",
             "items": [
                 {
-                    "name": "Los Angeles International Airport",
+                    "name": "Los Angeles International Airport (LAX)",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRwb6ruc6qB877ftWYZPRPHRJ2Q1G3vLYQ3xoKfrESioMddSa1aMszjzOT8D9IDhcBMrGQMnQOf&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg2EAI",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDG5Sa2PedKfcNHL95Z_8qW_1gUnqCuHXJT8BAIpTDp8-AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAB6BAg1EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDG5Sa2PedKfcNHL95Z_8qW_1gUnqCuHXJT8BAIpTDp8-AQAA"
                 },
                 {
                     "name": "Miami International Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTPcerPlK8n5oizXGrjLcAr_zZ2zt8-2ZdoFDx3-VNOKI80NUi43I1Tw3b1WCiQ9gR4vcoMxoc&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg2EAM",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGdyk1sa86U65aeT6yz_5U9_qA5PUFcKvS34CABuuN-c4AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAF6BAg1EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGdyk1sa86U65aeT6yz_5U9_qA5PUFcKvS34CABuuN-c4AQAA"
                 },
                 {
-                    "name": "LaGuardia Airport (LGA)",
+                    "name": "LaGuardia Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT39ExDVYfBNrjbe3rNe6XXuSERL2RvRExzvREEB4FjCUy1CsB0Yr0N7PhcaP_uIhjA0EwPhTxh&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg2EAQ",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJ4Ca1NuZNd8pNI9df_smf-lYfmKSuEH5d8hMAo1zfxi8BAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAJ6BAg1EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJ4Ca1NuZNd8pNI9df_smf-lYfmKSuEH5d8hMAo1zfxi8BAAA"
                 },
                 {
                     "name": "John F. Kennedy Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMxyGLYT9fZ8r-4MvWCjibqmlfAU2bWKcnRoU9JGqAOoYfNw0Cew-&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg2EAU",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkcJNaG_OmO-Wmkesv_-RPfasPTFJXCL8u-QkAYtyopSgBAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAN6BAg1EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkcJNaG_OmO-Wmkesv_-RPfasPTFJXCL8u-QkAYtyopSgBAAA"
                 },
                 {
                     "name": "Philadelphia International Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSCRJN4OpejJD5dLkgXtSeNM0aInokr3NvQwYhX5B2MTqnTqhVu29yE-wUptwaHvkNhf11xw5XC&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAR6BAg2EAY",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmySDm9TamDfdKTeNXH_5J3_qW31gkrpC-HXJTwDREOtHQAEAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAR6BAg1EAY",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmySDm9TamDfdKTeNXH_5J3_qW31gkrpC-HXJTwDREOtHQAEAAA"
                 },
                 {
                     "name": "Harry Reid International Airport (LAS)",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh31TVz0ieHUca1YHEzanWY7ygBLyZsy8w5dM&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAV6BAg2EAc",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJIOb1NqYN90pN41cf_knf-pbfWCSukL4dclPAAUGJho-AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAV6BAg1EAc",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJIOb1NqYN90pN41cf_knf-pbfWCSukL4dclPAAUGJho-AQAA"
                 }
             ],
-            "see_more_link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINhAI",
-            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA"
+            "see_more_link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyuEmtjXnTnXLTyPWXf_KnvtUHJqkrhF-X_AQApXuDmjEBAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q4qYDegQINRAI",
+            "see_more_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyuEmtjXnTnXLTyPWXf_KnvtUHJqkrhF-X_AQApXuDmjEBAAA"
         }
     ],
     "related_questions": [
         {
-            "question": "When did first Centurion lounge open?",
+            "question": "When did Centurion lounges start?",
             "snippet": "The first American Express Centurion® Lounge opened in Las Vegas (LAS airport) in 2013. American Express was the first card issuer to enter the airline lounge space, but other issuers now also have lounges.",
-            "title": "2013",
+            "title": "A Guide To Amex Centurion Lounges - USA Today",
             "date": "Nov 15, 2023",
             "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/#:~:text=The%20first%20American%20Express%20Centurion,issuers%20now%20also%20have%20lounges.",
-            "displayed_link": "https://www.usatoday.com › blueprint › credit-cards › a...",
-            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3ba812967d9dc67616d5115f688b4e790.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIGZpcnN0IENlbnR1cmlvbiBsb3VuZ2Ugb3Blbj8iLCJsayI6IkdpUjNhR1Z1SUdScFpDQm1hWEp6ZENCalpXNTBkWEpwYjI0Z2JHOTFibWRsSUc5d1pXNCIsImJzIjoiYy1QUzRsSU56MGpOVTBqSlRGRkl5eXdxTGxGd1RzMHJLUzNLek05VHlNa3Z6VXRQVmNndlNNMnpsM2hvem1YQlpSeWVrVmlpa0ZpVXFsQ1NrYXFRbkpFSWxDOVdTTXN2VWtoRzF3VVNOREl3TXJhWC1DckRaY0tsNzVGZnJwQ2JtRmVKWVg0eHpEd2dtWmtITmpnMDJGNWlMamVYSnBlS1o3R0NYMnA1WWxFMmRtY3BWS2FXMkV0TURoZGdCQUEiLCJpZCI6ImZjXzEifQ==",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIGZpcnN0IENlbnR1cmlvbiBsb3VuZ2Ugb3Blbj8iLCJsayI6IkdpUjNhR1Z1SUdScFpDQm1hWEp6ZENCalpXNTBkWEpwYjI0Z2JHOTFibWRsSUc5d1pXNCIsImJzIjoiYy1QUzRsSU56MGpOVTBqSlRGRkl5eXdxTGxGd1RzMHJLUzNLek05VHlNa3Z6VXRQVmNndlNNMnpsM2hvem1YQlpSeWVrVmlpa0ZpVXFsQ1NrYXFRbkpFSWxDOVdTTXN2VWtoRzF3VVNOREl3TXJhWC1DckRaY0tsNzVGZnJwQ2JtRmVKWVg0eHpEd2dtWmtITmpnMDJGNWlMamVYSnBlS1o3R0NYMnA1WWxFMmRtY3BWS2FXMkV0TURoZGdCQUEiLCJpZCI6ImZjXzEifQ%3D%3D"
+            "displayed_link": "https://www.usatoday.com › blueprint › credit-cards",
+            "source_logo": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/b35fa2c438ce711631524e4dbaf9b8f3ba812967d9dc67616d5115f688b4e790.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIENlbnR1cmlvbiBsb3VuZ2VzIHN0YXJ0PyIsImxrIjoiR2lCM2FHVnVJR1JwWkNCalpXNTBkWEpwYjI0Z2JHOTFibWRsY3lCemRHRnlkQSIsImJzIjoiYy1OUzQxSU16MGpOVTBqSlRGRndUczByS1MzS3pNOVR5TWt2elV0UExWWW9Ma2tzS3JHWGVHak9aY0ZsSEo2UldLS1FXSlNxVUpLUnFwQ2NrUWhXa1paZnBKQ01wZzhzYUdSZ1pHd3Y4VldHeTRSTDN5T19YQ0UzTWE4U2l3MVE4NEJrWmg3WTROQmdlNG01M0Z5YVhDcWV4UXAtcWVXSlJka1kyaFR5QzRCT3Jrd0ZPbTF5dUFBakFBIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoZW4gZGlkIENlbnR1cmlvbiBsb3VuZ2VzIHN0YXJ0PyIsImxrIjoiR2lCM2FHVnVJR1JwWkNCalpXNTBkWEpwYjI0Z2JHOTFibWRsY3lCemRHRnlkQSIsImJzIjoiYy1OUzQxSU16MGpOVTBqSlRGRndUczByS1MzS3pNOVR5TWt2elV0UExWWW9Ma2tzS3JHWGVHak9aY0ZsSEo2UldLS1FXSlNxVUpLUnFwQ2NrUWhXa1paZnBKQ01wZzhzYUdSZ1pHd3Y4VldHeTRSTDN5T19YQ0UzTWE4U2l3MVE4NEJrWmg3WTROQmdlNG01M0Z5YVhDcWV4UXAtcWVXSlJka1kyaFR5QzRCT3Jrd0ZPbTF5dUFBakFBIiwiaWQiOiJmY18xIn0%3D"
         },
         {
             "question": "What are the changes for centurion lounge for 2023?",
@@ -170,9 +170,9 @@
             "date": "Nov 14, 2023",
             "link": "https://www.nerdwallet.com/article/travel/centurion-lounge-guest-policy#:~:text=policy%20has%20ended-,As%20of%20Feb.,Terms%20apply.",
             "displayed_link": "https://www.nerdwallet.com › article › travel › centurion...",
-            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3699d035381fc2ba621e7d8ef76cf426b.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
+            "source_logo": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/b35fa2c438ce711631524e4dbaf9b8f3699d035381fc2ba621e7d8ef76cf426b.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IldoYXQgYXJlIHRoZSBjaGFuZ2VzIGZvciBjZW50dXJpb24gbG91bmdlIGZvciAyMDIzPyIsImxrIjoiR2lGalpXNTBkWEpwYjI0Z2JHOTFibWRsSUdOb1lXNW5aWE1nWm05eUlESXdNak0iLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9"
         },
         {
             "question": "How many Centurion lounges are there in the US?",
@@ -181,9 +181,9 @@
             "date": "Sep 12, 2023",
             "link": "https://www.lendingtree.com/credit-cards/guides/amex-centurion-lounges/#:~:text=American%20Express%20boasts%2013%20Centurion,%C2%AE%20Card%20from%20American%20Express.",
             "displayed_link": "https://www.lendingtree.com › credit-cards › guides › a...",
-            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3437c295ed458f7d4a4c829023852f26e.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM/IiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM%2FIiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
+            "source_logo": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/b35fa2c438ce711631524e4dbaf9b8f3437c295ed458f7d4a4c829023852f26e.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM/IiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IkhvdyBtYW55IENlbnR1cmlvbiBsb3VuZ2VzIGFyZSB0aGVyZSBpbiB0aGUgVVM%2FIiwibGsiOiJjNVBTeThndlY4aE56S3RVU0U3Tkt5a3R5c3pQVThqSkw4MUxUeTFXU0N4S1ZTakpTQVdTbVhrZ2hrSnBNUUEiLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9"
         },
         {
             "question": "Is Newark Centurion lounge open yet?",
@@ -192,47 +192,19 @@
             "date": "Sep 12, 2023",
             "link": "https://www.nerdwallet.com/article/travel/newark-centurion-lounge#:~:text=You'll%20get%20to%20hear,be%20located%20in%20Terminal%20A.",
             "displayed_link": "https://www.nerdwallet.com › Travel",
-            "source_logo": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/b35fa2c438ce711631524e4dbaf9b8f3f925750550de864c34ad1412866f889c.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJURTl1Y0ZsVlJrZEZiRnBIWkRWNmRUSTBPR05WU0RaWFRGaERaWEF3TlVZNVZXUmlibk5tUjNweVNFdEtaRzV0V25jNWFWVkNTMFpTVUV0Uk1uVnJhR0ZvUldkVk1IbExVVWM1RWhjelF6SmpXbVl5VFVNMFRHWnJkbEZRTVMxbFNubEJWUm9pUVVwM2F5MDRaR1ZpV1dGaWNrRlliVTVYVkc5amRGcHVkbUpHUzNSS2IxZzRRUSIsImZjdiI6IjMiLCJlaSI6IjNDMmNaZjJNQzRMZmt2UVAxLWVKeUFVIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtUFM0bElOejBqTlUwakpURkZJeXl3cUxsRndUczByS1MzS3pNOVR5TWt2elV0UFZjZ3ZTTTJ6bDNob3ptWEJaUnlla1ZpaWtGaVVxbENTa2FxUW5KRUlsQzlXU01zdlVraEcxd1VTTkRJd01yYVgtQ3JEWmNLbDc1RmZycENibUZlSllYNHh6RHdnbVprSE5qZzAyRjVpTGplWEpwZUtaN0dDWDJwNVlsRTJkbWNwVkthVzJFdE1EaGRnQkFBIiwiaWQiOiJmY18xIn0%3D"
+            "source_logo": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/b35fa2c438ce711631524e4dbaf9b8f3f925750550de864c34ad1412866f889c.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOcmJrdElUbUUzV1ZOWk1WTnJWelpRU1V4Qk0yZ3RSa3RTU3kwMWIzUjFOREJQYlZoSVEwWjFWazV0TWxCT1ZVaFJjR05wYVRCSk5VTTVja0kyZFZNMlUyRTNTVWR4RWhkNmJHVnNXbU0zTFVJNVlWQjNZbXRRY0RoRFdEaEJSUm9pUVZCWWFHMDFXbk5hWjJWTVJrOUlZMlJtV0Y4MlRXNHhOREZqTFdwRlVtWmhkdyIsImZjdiI6IjMiLCJlaSI6InpsZWxaYzctQjlhUHdia1BwOENYOEFFIiwicWMiOiJDamgzYUdWdUlHUnBaQ0JoYldWeWFXTmhiaUJsZUhCeVpYTnpJRzl3Wlc0Z2FYUnpJREl3ZEdnZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlJBQWZlVFZEejgiLCJxdWVzdGlvbiI6IklzIE5ld2FyayBDZW50dXJpb24gbG91bmdlIG9wZW4geWV0PyIsImxrIjoiR2lOcGN5QnVaWGRoY21zZ1kyVnVkSFZ5YVc5dUlHeHZkVzVuWlNCdmNHVnVJSGxsZEEiLCJicyI6ImMtTlM0MUlNejBqTlUwakpURkZ3VHMwcktTM0t6TTlUeU1rdnpVdFBMVllvTGtrc0tyR1hlR2pPWmNGbEhKNlJXS0tRV0pTcVVKS1JxcENja1FoV2taWmZwSkNNcGc4c2FHUmdaR3d2OFZXR3k0UkwzeU9fWENFM01hOFNpdzFRODRCa1poN1k0TkJnZTRtNTNGeWFYQ3FleFFwLXFlV0pSZGtZMmhUeUM0Qk9ya3dGT20xeXVBQWpBQSIsImlkIjoiZmNfMSJ9"
         }
     ],
     "organic_results": [
         {
             "position": 1,
-            "title": "A Complete List of AmEx Centurion Lounges in the U.S.",
-            "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s",
-            "redirect_link": "https://www.google.comhttps://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s",
-            "displayed_link": "https://www.afar.com › magazine › a-complete-list-of-...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d371a2da590a2c8ca0a80316abc93b7c4e8.png",
-            "date": "Aug 30, 2023",
-            "snippet": "Get a full list of all 13 American Express Centurion Lounges in the U.S. and where to find them, along with a review and guide to each ...",
-            "snippet_highlighted_words": [
-                "American Express Centurion Lounges"
-            ],
-            "source": "Afar"
-        },
-        {
-            "position": 2,
-            "title": "AmEx to Open Centurion Lounge at Newark Airport",
-            "link": "https://www.nerdwallet.com/article/travel/newark-centurion-lounge",
-            "redirect_link": "https://www.google.comhttps://www.nerdwallet.com/article/travel/newark-centurion-lounge",
-            "displayed_link": "https://www.nerdwallet.com › Travel",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d375c2b305b0dbef2c9020bfadaa223d397.png",
-            "date": "Sep 12, 2023",
-            "snippet": "American Express announced in September 2023 that it would open a new Centurion Lounge at Newark Airport (EWR) in 2026 with a piano lounge ...",
-            "snippet_highlighted_words": [
-                "September 2023"
-            ],
-            "source": "NerdWallet"
-        },
-        {
-            "position": 3,
             "title": "American Express and The Port Authority of New York & New ...",
             "link": "https://about.americanexpress.com/newsroom/press-releases/news-details/2023/American-Express-and-The-Port-Authority-of-New-York--New-Jersey-Announce-Plans-for-New-Centurion-Lounge-at-Newark-Liberty-International-Airport/default.aspx",
-            "redirect_link": "https://www.google.comhttps://about.americanexpress.com/newsroom/press-releases/news-details/2023/American-Express-and-The-Port-Authority-of-New-York--New-Jersey-Announce-Plans-for-New-Centurion-Lounge-at-Newark-Liberty-International-Airport/default.aspx",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://about.americanexpress.com/newsroom/press-releases/news-details/2023/American-Express-and-The-Port-Authority-of-New-York--New-Jersey-Announce-Plans-for-New-Centurion-Lounge-at-Newark-Liberty-International-Airport/default.aspx&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECBgQAQ",
             "displayed_link": "https://about.americanexpress.com › news-details › A...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37640d836dc840820fb41c670add2d6df8.png",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d371a2da590a2c8ca0a80316abc93b7c4e8.png",
             "date": "Sep 12, 2023",
             "snippet": "The newly constructed lounge, located in the new Terminal A, is scheduled to open in 2026. American Express is the first credit card issuer to ...",
             "snippet_highlighted_words": [
@@ -241,40 +213,42 @@
             "source": "American Express"
         },
         {
-            "position": 4,
-            "title": "New Amex Centurion Lounge Opening Dates Delayed",
-            "link": "https://onemileatatime.com/centurion-lounge-opening-dates/",
-            "redirect_link": "https://www.google.comhttps://onemileatatime.com/centurion-lounge-opening-dates/",
-            "displayed_link": "https://onemileatatime.com › centurion-lounge-openin...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d3791632e6f0a52b1d789c93ffb41d4ca26.png",
-            "date": "Jun 1, 2020",
-            "snippet": "The Amex Centurion Lounge London Heathrow is now scheduled to open in the second half of 2020, while previously the lounge was supposed to open ...",
+            "position": 2,
+            "title": "A Complete List of AmEx Centurion Lounges in the U.S.",
+            "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECBUQAQ",
+            "displayed_link": "https://www.afar.com › magazine › a-complete-list-of-...",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d375c2b305b0dbef2c9020bfadaa223d397.png",
+            "date": "Aug 30, 2023",
+            "snippet": "Get a full list of all 13 American Express Centurion Lounges in the U.S. and where to find them, along with a review and guide to each ...",
             "snippet_highlighted_words": [
-                "the second half of 2020"
+                "American Express Centurion Lounges"
             ],
-            "source": "One Mile at a Time"
+            "sitelinks": {
+                "inline": [
+                    {
+                        "title": "Dallas/fort Worth...",
+                        "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s#:~:text=Dallas%2FFort%20Worth%20International%20Airport%20%28DFW%29%2C%20Texas"
+                    },
+                    {
+                        "title": "Denver International Airport...",
+                        "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s#:~:text=Denver%20International%20Airport%20%28DEN%29%2C%20Colorado"
+                    },
+                    {
+                        "title": "Laguardia Airport (lga), New...",
+                        "link": "https://www.afar.com/magazine/a-complete-list-of-amex-centurion-lounges-in-the-u-s#:~:text=LaGuardia%20Airport%20%28LGA%29%2C%20New%20York%20City"
+                    }
+                ]
+            },
+            "source": "Afar"
         },
         {
-            "position": 5,
-            "title": "American Express Announces EWR Centurion Lounge",
-            "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/",
-            "redirect_link": "https://www.google.comhttps://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/",
-            "displayed_link": "https://www.cnbc.com › CNBC Select › Credit Cards",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37b36aa9f24ad0639506d4ad21e336fc30.png",
-            "date": "Sep 12, 2023",
-            "snippet": "American Express is opening a Centurion Lounge at New Jersey's Newark Liberty International Airport (EWR) in 2026.",
-            "snippet_highlighted_words": [
-                "2026"
-            ],
-            "source": "CNBC"
-        },
-        {
-            "position": 6,
+            "position": 3,
             "title": "10 years later: What's next for Amex's Centurion Lounge ...",
             "link": "https://thepointsguy.com/news/amex-centurion-lounge-10-year-anniversary/",
-            "redirect_link": "https://www.google.comhttps://thepointsguy.com/news/amex-centurion-lounge-10-year-anniversary/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://thepointsguy.com/news/amex-centurion-lounge-10-year-anniversary/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECBAQAQ",
             "displayed_link": "https://thepointsguy.com › news › amex-centurion-lou...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d375a77c20531bc932b29fe1a83d45e80fe.png",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37640d836dc840820fb41c670add2d6df8.png",
             "date": "Oct 16, 2023",
             "snippet": "The card issuer opened its first Centurion Lounge in Las Vegas in 2013, and it has since welcomed cardmembers into the blue doors of 26 more ...",
             "snippet_highlighted_words": [
@@ -285,17 +259,105 @@
             ],
             "must_include": {
                 "word": "20th",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+%2220th%22+Centurion+Lounge?&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ5t4CegQIQBAB"
+                "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=When+did+American+Express+open+its+%2220th%22+Centurion+Lounge?&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q5t4CegQIERAB"
             },
             "source": "The Points Guy"
         },
         {
+            "position": 4,
+            "title": "AmEx to Open Centurion Lounge at Newark Airport",
+            "link": "https://www.nerdwallet.com/article/travel/newark-centurion-lounge",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nerdwallet.com/article/travel/newark-centurion-lounge&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECA4QAQ",
+            "displayed_link": "https://www.nerdwallet.com › Travel",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d3791632e6f0a52b1d789c93ffb41d4ca26.png",
+            "date": "Sep 12, 2023",
+            "snippet": "American Express announced in September 2023 that it would open a new Centurion Lounge at Newark Airport (EWR) in 2026 with a piano lounge ...",
+            "snippet_highlighted_words": [
+                "September 2023"
+            ],
+            "source": "NerdWallet"
+        },
+        {
+            "position": 5,
+            "title": "New Amex Centurion Lounge Opening Dates Delayed",
+            "link": "https://onemileatatime.com/centurion-lounge-opening-dates/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://onemileatatime.com/centurion-lounge-opening-dates/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECC4QAQ",
+            "displayed_link": "https://onemileatatime.com › centurion-lounge-openin...",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37b36aa9f24ad0639506d4ad21e336fc30.png",
+            "date": "Jun 1, 2020",
+            "snippet": "The Amex Centurion Lounge London Heathrow is now scheduled to open in the second half of 2020, while previously the lounge was supposed to open ...",
+            "snippet_highlighted_words": [
+                "the second half of 2020"
+            ],
+            "source": "One Mile at a Time"
+        },
+        {
+            "position": 6,
+            "title": "American Express Announces EWR Centurion Lounge",
+            "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECDEQAQ",
+            "displayed_link": "https://www.cnbc.com › CNBC Select › Credit Cards",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d375a77c20531bc932b29fe1a83d45e80fe.png",
+            "date": "Sep 12, 2023",
+            "snippet": "American Express is opening a Centurion Lounge at New Jersey's Newark Liberty International Airport (EWR) in 2026.",
+            "snippet_highlighted_words": [
+                "2026"
+            ],
+            "sitelinks": {
+                "inline": [
+                    {
+                        "title": "American Express To Open A...",
+                        "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/#:~:text=American%20Express%20to%20open%20a%20Centurion%20Lounge%20at%20Newark%20Airport%20with%20live%20music%20and%20a%20terrace,-A%20Centurion%20Lounge%20is%20coming"
+                    },
+                    {
+                        "title": "A Centurion Lounge Is Coming...",
+                        "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/#:~:text=A%20Centurion%20Lounge%20is%20coming%20to%20Newark%20Liberty%20International%20Airport%20%28EWR%29%20in%202026"
+                    },
+                    {
+                        "title": "How To Access Amex Centurion...",
+                        "link": "https://www.cnbc.com/select/american-express-announces-ewr-centurion-lounge/#:~:text=How%20to%20access%20Amex%20Centurion%20Lounges,-Select%20American%20Express%20cardholders%20receive"
+                    }
+                ]
+            },
+            "source": "CNBC"
+        },
+        {
             "position": 7,
+            "title": "A Guide To Amex Centurion Lounges",
+            "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECDAQAQ",
+            "displayed_link": "https://www.usatoday.com › blueprint › credit-cards",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37e0cf3eb2eaa522c7788e24b2693cb1fd.png",
+            "date": "Nov 15, 2023",
+            "snippet": "American Express also opened its first Centurion Club in March 2023 ... The Centurion Lounge is accessible only for eligible cardholders and their ...",
+            "snippet_highlighted_words": [
+                "March 2023"
+            ],
+            "sitelinks": {
+                "inline": [
+                    {
+                        "title": "Key Benefits Of The Amex...",
+                        "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/#:~:text=Key%20benefits%20of%20the%20Amex%20Centurion%20Lounge"
+                    },
+                    {
+                        "title": "How To Get Access To The...",
+                        "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/#:~:text=How%20to%20get%20access%20to%20The%20Centurion%20Lounge"
+                    },
+                    {
+                        "title": "Our Partner",
+                        "link": "https://www.usatoday.com/money/blueprint/credit-cards/amex-centurion-lounge-guide/#:~:text=our%20partner,-Ad"
+                    }
+                ]
+            },
+            "source": "USA Today"
+        },
+        {
+            "position": 8,
             "title": "Amex Centurion Lounge Coming to Newark Airport in 2026",
             "link": "https://www.businessinsider.com/personal-finance/amex-centurion-lounge-newark-airport-2023-9",
-            "redirect_link": "https://www.google.comhttps://www.businessinsider.com/personal-finance/amex-centurion-lounge-newark-airport-2023-9",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.businessinsider.com/personal-finance/amex-centurion-lounge-newark-airport-2023-9&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECC8QAQ",
             "displayed_link": "https://www.businessinsider.com › ... › Credit Cards",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37e0cf3eb2eaa522c7788e24b2693cb1fd.png",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37a22d845d8d815a934d37c8c9165a7a2f.png",
             "date": "Sep 12, 2023",
             "snippet": "While the Centurion Lounge at Newark Airport won't open until 2026, American Express has shared some initial details on what to expect. As with ...",
             "snippet_highlighted_words": [
@@ -304,53 +366,30 @@
             "source": "Business Insider"
         },
         {
-            "position": 8,
-            "title": "Amex reveals updated opening dates for new Centurion ...",
-            "link": "https://thepointsguy.com/news/new-amex-centurion-lounges/",
-            "redirect_link": "https://www.google.comhttps://thepointsguy.com/news/new-amex-centurion-lounges/",
-            "displayed_link": "https://thepointsguy.com › news › new-amex-centurio...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37a22d845d8d815a934d37c8c9165a7a2f.png",
-            "date": "Jan 8, 2023",
-            "snippet": "Estimated opening date: 2023. Amex has confirmed that a brand-new Centurion Lounge will open at this Washington, D.C., airport. It will be ...",
+            "position": 9,
+            "title": "Under construction Centurion Lounge at DCA shows new ...",
+            "link": "https://www.arlnow.com/2023/09/07/under-construction-centurion-lounge-at-dca-shows-new-signs-of-progress/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.arlnow.com/2023/09/07/under-construction-centurion-lounge-at-dca-shows-new-signs-of-progress/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECCwQAQ",
+            "displayed_link": "https://www.arlnow.com › 2023 › September › 7",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37a81cceef7e9ac9efed15a2b8011ea9d8.png",
+            "date": "Sep 7, 2023",
+            "snippet": "Last month, CNN reported the lounge is now expected to open “later this year.” The new Centurion Lounge at DCA will span more than 11,500 ...",
             "snippet_highlighted_words": [
-                "2023"
+                "“later this year.”"
             ],
-            "missing": [
-                "20th"
-            ],
-            "must_include": {
-                "word": "20th",
-                "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=When+did+American+Express+open+its+%2220th%22+Centurion+Lounge?&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ5t4CegQISBAB"
-            },
-            "source": "The Points Guy"
+            "source": "ARLnow.com"
         },
         {
-            "position": 9,
+            "position": 10,
             "title": "Three Months After American Express' New Centurion ...",
             "link": "https://loyaltylobby.com/2023/05/22/three-months-after-american-express-new-centurion-lounge-guest-policy-there-is-little-sign-of-improvement/",
-            "redirect_link": "https://www.google.comhttps://loyaltylobby.com/2023/05/22/three-months-after-american-express-new-centurion-lounge-guest-policy-there-is-little-sign-of-improvement/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://loyaltylobby.com/2023/05/22/three-months-after-american-express-new-centurion-lounge-guest-policy-there-is-little-sign-of-improvement/&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4QFnoECC0QAQ",
             "displayed_link": "https://loyaltylobby.com › 2023/05/22 › three-months...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37a81cceef7e9ac9efed15a2b8011ea9d8.png",
+            "favicon": "https://serpapi.com/searches/65a557ce2c6878890be08e4a/images/fb51210e64cf51c5e1c28c6f6c5f6d37234e304cae7edb076b48e92e9764d593.png",
             "date": "May 22, 2023",
             "snippet": "Effective February 1, 2023 U.S. Amex Platinum cardholders are no longer to take guests into Centurion lounges unless they hit an annual spend ...",
             "snippet_highlighted_words": [
                 "Effective February 1, 2023"
-            ],
-            "source": "LoyaltyLobby"
-        },
-        {
-            "position": 10,
-            "title": "American Express Has Officially Reopened All U.S. ...",
-            "link": "https://loyaltylobby.com/2020/12/11/american-express-has-officially-reopened-all-u-s-centurion-lounges-except-ny-laguardia/",
-            "redirect_link": "https://www.google.comhttps://loyaltylobby.com/2020/12/11/american-express-has-officially-reopened-all-u-s-centurion-lounges-except-ny-laguardia/",
-            "displayed_link": "https://loyaltylobby.com › 2020/12/11 › american-exp...",
-            "favicon": "https://serpapi.com/searches/659c2dd9ca968f786301fd67/images/fb51210e64cf51c5e1c28c6f6c5f6d37234e304cae7edb076b48e92e9764d593.png",
-            "date": "Dec 11, 2020",
-            "snippet": "Yesterday the American Express Centurion Lounge in Las Vegas opened it's doors again, concluding the re-opening all domestic clubs with the ...",
-            "snippet_highlighted_words": [
-                "American Express Centurion Lounge",
-                "opened it's",
-                "opening"
             ],
             "source": "LoyaltyLobby"
         }
@@ -363,122 +402,122 @@
                 {
                     "name": "Dallas/Fort Worth Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQY-pn8dwNh7qmk55ZEeWDW2gYJDimHjMnH36bOyeJEf2Y5W2q8wmPYDO0NKXbu8z9qFN-o0cuA&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg1EAI",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBkOXMlcUvTz8vfZCnLijS8zqhdvOXugqNjPFAAZRiXE7gAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBncpNbG-B6OCrJde2pN2wF55Q0rdhXc-N5XAgC9T36d7gAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAB6BAg0EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Dallas+Fort+Worth+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuTDc2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGBGGw9g5JhXZMLaxWXHJKUYOENs4w8zkF6OoI8gBPmgOaGBhXMSq7pKYk5NYrOCWX1SiEA4kMhQ880pSi_LAahJzFBwziwqAwrfYJBncpNbG-B6OCrJde2pN2wF55Q0rdhXc-N5XAgC9T36d7gAAAA"
                 },
                 {
                     "name": "San Francisco Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR0glViGklQo4L06tmoOZBJHOvBnVQCSjYaNabr3CKGtXQtvG6oOjShmozA0oEvLDlOgUqLF3fY&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg1EAM",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskw4ErmUuKfl7-PltBTrzxZUb14i1nDxQV-5kCAMz3rg_KAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskg5vU2hjfw1FBtmtPrWk7IK-8YcWughvf-0oAaP71VsoAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAF6BAg0EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=SFO&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMwxqcg2Ek3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYIItgbGOz4pJTjBwgtnGGmckvRlFHkAN80BzQwMK4iJU52M3_Fpskg5vU2hjfw1FBtmtPrWk7IK-8YcWughvf-0oAaP71VsoAAAA"
                 },
                 {
-                    "name": "George Bush Intercontine... Airport",
+                    "name": "George Bush Intercontine... Airport (IAH)",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XzwlfidcbmiddTOI7WXcXYSBysP8iISmXYCruq09D9THi1d1VJmJ&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg1EAQ",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJMOBK5lLin5e_j5bQU688WVG9eItZw8UFfuZAgCObvgs6wAAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJIOb1NoY38NRQbZrT61pOyCvvGHFroIb3_tKACpno3XrAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAJ6BAg0EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=George+Bush+Intercontinental+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MDQ2Ky4xEk3MTa1QyMkvzUtPBVLJiSWZ-XnFURbhGal5CimZKQqOualFmcmJeQquFQVFqcXFCvkFQJnMkmIFI4OSDAXn1LyS0iKgHgUfsBmnGCGGZ1emG8PYOSYV2TA2yNJTjBwgtnGGmckvRlFHkAN80BzQwMK4iFXFPTW_CCjqVFqcoeCZV5JalJyfV5KZB7QyMUfBMbOoIL-o5BabJIOb1NoY38NRQbZrT61pOyCvvGHFroIb3_tKACpno3XrAAAA"
                 },
                 {
                     "name": "Hong Kong",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSdkftEN0pqUYngD-AmqsZhQeYQOGvVgSLnXx&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg1EAU",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02S4cCVzCVFPy9_n60gJ974MqN68ZazB4qK_UwBmPUoJc8AAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02SwU1qbYzv4agg27Wn1rQdkFfesGJXwY3vfSUAPPxzfM8AAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAN6BAg0EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Hong+Kong&stick=H4sIAAAAAAAAAOOQUeLQz9U3MM4wMzESTcxNrVDIyS_NS08FUsmJJZn5ecVRFuEZqXkKKZkpCo65qUWZyYl5Cq4VBUWpxcUK-QVAmcySYgUjg5IMBefUvJLSIqAeBR-wGacYOUFmG2ZXphvD2DkmFdkwtrFZcckpRrj9vxhFHUEO8EFzQAML4yJWTo_8vHQFbyBxi02SwU1qbYzv4agg27Wn1rQdkFfesGJXwY3vfSUAPPxzfM8AAAA"
                 }
             ],
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINRAG",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLhwJXMJUU_L3-frSAn3vgyo3rxlrMHior9TAGUgnyo0QAAAA"
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLBTWptjO_hqCDbtafWtB2QV96wYlfBje99JQAwiyfx0QAAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q4qYDegQINBAG",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Amex+Lounge+locations&stick=H4sIAAAAAAAAAOOQMRJNzE2tUMjJL81LTwVSyYklmfl5xVEW4RmpeQopmSkKjrmpRZnJiXkKrhUFRanFxQr5BUCZzJJiBSODkgwF59S8ktIioB4FH7AZpxg59XP1DQyzK9ONYewck4psGNvYrLjkFCMHiG2cYWbyi1HUEeQAHzQHNLAwLmLFLnWLTZLBTWptjO_hqCDbtafWtB2QV96wYlfBje99JQAwiyfx0QAAAA"
         },
         {
             "block_position": 1,
             "query": "Centurion Lounge locations usa",
             "items": [
                 {
-                    "name": "Los Angeles International Airport",
+                    "name": "Los Angeles International Airport (LAX)",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRwb6ruc6qB877ftWYZPRPHRJ2Q1G3vLYQ3xoKfrESioMddSa1aMszjzOT8D9IDhcBMrGQMnQOf&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAB6BAg2EAI",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDAeuZC7586JS9WJoxuGdzxP-f6mR5-DcFsAMABhujUI-AQAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDG5Sa2PedKfcNHL95Z_8qW_1gUnqCuHXJT8BAIpTDp8-AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAB6BAg1EAI",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Los+Angeles+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3MMmpzDaSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xwS04xcoKYhtmV6cZQ4coSyyyEcE4eVLjAMMcIJpxjUgHXaWxWXAJj51aZViHYRulQrSmWWUW_GOXQnYHqnQYWxkWsij75xQqOQLmc1GIFz7yS1KI8sIrEHAXHzKKC_KKSW2ySDG5Sa2PedKfcNHL95Z_8qW_1gUnqCuHXJT8BAIpTDp8-AQAA"
                 },
                 {
                     "name": "Miami International Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTPcerPlK8n5oizXGrjLcAr_zZ2zt8-2ZdoFDx3-VNOKI80NUi43I1Tw3b1WCiQ9gR4vcoMxoc&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAF6BAg2EAM",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGQ5cyVzy50Wl6sXQjMM7nyf8_1Ijz8G5LYAZAImTtDo4AQAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGdyk1sa86U65aeT6yz_5U9_qA5PUFcKvS34CABuuN-c4AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAF6BAg1EAM",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Miami+International+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3qCyxzDKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUGGQ3QjhnDyocIFhjhFMOMekAq7T2Ky4BMbOrTKtQrCN0qFaUyyzin4xyqE7A9U7DSyMi1ilfTMTczMVPPNKUovywHKJOQqOmUUF-UUlt9gkGdyk1sa86U65aeT6yz_5U9_qA5PUFcKvS34CABuuN-c4AQAA"
                 },
                 {
-                    "name": "LaGuardia Airport (LGA)",
+                    "name": "LaGuardia Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT39ExDVYfBNrjbe3rNe6XXuSERL2RvRExzvREEB4FjCUy1CsB0Yr0N7PhcaP_uIhjA0EwPhTxh&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAJ6BAg2EAQ",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJcOBK5pI_LypVL4ZmHN75POH_lxp5Ds5tAcwAMWFcGy8BAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJ4Ca1NuZNd8pNI9df_smf-lYfmKSuEH5d8hMAo1zfxi8BAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAJ6BAg1EAQ",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=LaGuardia+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMyuzMkzkktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xwixMN4YKV5ZYZiGEc_KgwgWGOUYw4RyTCrhOY7PiEhg7t8q0CsE2SodqTbHMKvrFKIfuDFTvNLAwLmIV9El0L00sSslMVHDMLCrILyq5xSbJ4Ca1NuZNd8pNI9df_smf-lYfmKSuEH5d8hMAo1zfxi8BAAA"
                 },
                 {
                     "name": "John F. Kennedy Internationa...",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMxyGLYT9fZ8r-4MvWCjibqmlfAU2bWKcnRoU9JGqAOoYfNw0Cew-&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAN6BAg2EAU",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkOHAlc8mfF5WqF0MzDu98nvD_S408B-e2AGYA8OEreCgBAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkcJNaG_OmO-Wmkesv_-RPfasPTFJXCL8u-QkAYtyopSgBAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAN6BAg1EAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=JFK+Airport&stick=H4sIAAAAAAAAAOOQUeLQz9U3KDDMMTKSS07NKyktyszPU8jJL81LTwVSyYklQH6xQmlxYpRFeEZqnkJKZoqCY25qUWZyYp6Ca0VBUWpxsUJ-AVAms6RYwcigJEPBGW6OD9icU4xgS0xyKrNPMXKCmIbZlenGUOHKEssshHBOHlQY5CSYcI5JBVynsVlxCYydW2VahWAbpUO1plhmFf1ilEN3Bqp3GlgYF7Fye7l5KzhmFhXkF5XcYpNkcJNaG_OmO-Wmkesv_-RPfasPTFJXCL8u-QkAYtyopSgBAAA"
                 },
                 {
                     "name": "Philadelphia International Airport",
                     "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSCRJN4OpejJD5dLkgXtSeNM0aInokr3NvQwYhX5B2MTqnTqhVu29yE-wUptwaHvkNhf11xw5XC&s=19",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAR6BAg2EAY",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmyTDgSuZS_68qFS9GJpxeOfzhP9fauQ5OLcFMAMAQy1omkABAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmySDm9TamDfdKTeNXH_5J3_qW31gkrpC-HXJTwDREOtHQAEAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAR6BAg1EAY",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Philadelphia+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMq0ykktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGBvkbATbKB2qNcUyq-gXoxy6M1C908DCuIhVKSAjMycxJTWnICMzUcEzryS1KA-sJDFHwTGzqCC_qOQWmySDm9TamDfdKTeNXH_5J3_qW31gkrpC-HXJTwDREOtHQAEAAA"
                 },
                 {
                     "name": "Harry Reid International Airport (LAS)",
                     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh31TVz0ieHUca1YHEzanWY7ygBLyZsy8w5dM&s=0",
-                    "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQs9oBKAV6BAg2EAc",
-                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJMOBK5lL_ryoVL0YmnF45_OE_19q5Dk4twUwAwCXO6XHPgEAAA"
+                    "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJIOb1NqYN90pN41cf_knf-pbfWCSukL4dclPAAUGJho-AQAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Qs9oBKAV6BAg1EAc",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Harry+Reid+International+Airport&stick=H4sIAAAAAAAAAOOQUeLUz9U3MMytMko3kktOzSspLcrMz1PIyS_NS08FUsmJJUB-sUJpcWKURXhGap5CSmaKgmNualFmcmKegmtFQVFqcbFCfgFQJrOkWMHIoCRDwRlujg_YnFOMHCBbTHIqs08xQizMrkw3hgpXllhmIYRz8qDCBYY5RjDhHJMKuE5js-ISGDu3yrQKwTZKh2pNscwq-sUoh-4MVO80sDAuYlXwSCwqqlQISgV6yjOvJLUoD6wgMUfBMbOoIL-o5BabJIOb1NqYN90pN41cf_knf-pbfWCSukL4dclPAAUGJho-AQAA"
                 }
             ],
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ4qYDegQINhAI",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyHLiSueTPi0rVi6EZh3c-T_j_pUaeg3NbADMAN0YARzEBAAA"
-        },
-        {
-            "block_position": 1,
-            "query": "american express centurion lounge",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+Centurion+Lounge&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg5EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+Centurion+Lounge"
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyuEmtjXnTnXLTyPWXf_KnvtUHJqkrhF-X_AQApXuDmjEBAAA&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q4qYDegQINRAI",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations+usa&stick=H4sIAAAAAAAAAOOQMZJLTs0rKS3KzM9TyMkvzUtPBVLJiSVAfrFCaXFilEV4RmqeQkpmioJjbmpRZnJinoJrRUFRanGxQn4BUCazpFjByKAkQ8EZbo4P2JxTjBz6ufoGJjmV2acYOUFMw-zKdGOocGWJZRZCOCcPKlxgmGMEE84xqYDrNDYrLoGxc6tMqxBso3So1hTLrKJfjHLozkD1TgML4yJWAmpusUkyuEmtjXnTnXLTyPWXf_KnvtUHJqkrhF-X_AQApXuDmjEBAAA"
         },
         {
             "block_position": 1,
             "query": "newark centurion lounge opening date",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Newark+Centurion+Lounge+opening+date&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg6EAE",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Newark+Centurion+Lounge+opening+date&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhEEAE",
             "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Newark+Centurion+Lounge+opening+date"
         },
         {
             "block_position": 1,
+            "query": "american express centurion lounge",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=American+Express+Centurion+Lounge&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhFEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+Centurion+Lounge"
+        },
+        {
+            "block_position": 1,
             "query": "centurion lounge locations",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+locations&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg7EAE",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Centurion+Lounge+locations&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhGEAE",
             "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+locations"
         },
         {
             "block_position": 1,
-            "query": "american express lounge newark terminal c",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg8EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+Newark+Terminal+C"
-        },
-        {
-            "block_position": 1,
             "query": "american express lounge access list",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=American+Express+lounge+access+list&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg9EAE",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=American+Express+lounge+access+list&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhIEAE",
             "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+access+list"
         },
         {
             "block_position": 1,
-            "query": "centurion lounge atlanta",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+Lounge+Atlanta&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAg4EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+Lounge+Atlanta"
+            "query": "american express lounge newark",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=American+Express+lounge+Newark&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhDEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+Newark"
         },
         {
             "block_position": 1,
-            "query": "centurion lounge locations international",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+lounge+locations+international&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAhFEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+lounge+locations+international"
+            "query": "american express lounge newark terminal c",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=American+Express+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhCEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=American+Express+lounge+Newark+Terminal+C"
         },
         {
             "block_position": 1,
             "query": "centurion lounge newark terminal c",
-            "link": "https://www.google.com/search?sca_esv=c48e17254b1184be&hl=en&gl=us&q=Centurion+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwj96pPWpc6DAxWCr4QIHddzAlkQ1QJ6BAhCEAE",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Centurion+lounge+Newark+Terminal+C&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhKEAE",
             "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Centurion+lounge+Newark+Terminal+C"
+        },
+        {
+            "block_position": 1,
+            "query": "atlanta centurion lounge opening date",
+            "link": "https://www.google.com/search?sca_esv=1fc1322baddc500b&q=Atlanta+Centurion+Lounge+opening+date&sa=X&ved=2ahUKEwjOnbT44t-DAxXWRzABHSfgBR4Q1QJ6BAhJEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Atlanta+Centurion+Lounge+opening+date"
         }
     ],
     "pagination": {

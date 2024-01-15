@@ -1,12 +1,12 @@
 {
-    "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106"
+    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-1106"
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
     "DATASET_PATH": "Data\\", #default - "Data\\" 
     "QUERY_PROMPT_PATH": "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt", #default - "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\GPT3.5\\uncertainty_estimation_confidence.txt", #default - "Prompts\\GPT3.5\\uncertainty_estimation_confidence.txt"
-    "RESULT_SAVE_PATH": "Results\\my_dataframe6.csv", #default - "Results\\my_dataframe6.csv"
+    "RESULT_SAVE_PATH": "Results\\my_dataframe_MISTRAL.csv", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
     "MAX_CANDIDATE_RESPONSES": 3, #default - 3
     "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1

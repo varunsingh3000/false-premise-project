@@ -2,7 +2,10 @@ import numpy as np
 
 def uncertainty_confidence_cal(confi_match_list,confi_list):
     # first we remove the % symbol from the list values
-    final_confidence_value = round(np.divide(np.sum(confi_match_list),np.sum(confi_list)) * 100, 2)
+    if np.sum(confi_list) != 0:
+        final_confidence_value = round(np.divide(np.sum(confi_match_list),np.sum(confi_list)) * 100, 2)
+    else:
+        return 0
     return final_confidence_value
 
 

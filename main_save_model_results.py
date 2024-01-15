@@ -7,7 +7,8 @@ from utils.dataset import start_dataset_processing
 # from web_search import start_web_search
 from web_search_serp import start_web_search
 # from openai_gpt_models import start_openai_api_model_response
-from openai_gpt_models_save_results import start_openai_api_model_response
+from openai_gpt_models import start_openai_api_model_response
+from mistral_models import start_mistral_api_model_response
 
 with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -27,9 +28,12 @@ MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
 # Func to start workflow for a query
-def start_workflow(query,WORKFLOW_RUN_COUNT):
+def start_workflow(query,MODEL,WORKFLOW_RUN_COUNT):
     external_evidence = start_web_search(query)
-    result = start_openai_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+    if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-1106-preview"]:
+        result = start_openai_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
+        result = start_mistral_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
     responses_dict, final_response, final_confidence_value = result
     return responses_dict, final_response, final_confidence_value
  
@@ -52,7 +56,7 @@ def start_complete_workflow():
     for ques_id,query,true_ans in zip(ques_id_list,query_list,ans_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value = start_workflow(query,WORKFLOW_RUN_COUNT)
+        responses_dict, final_response, final_confidence_value = start_workflow(query,MODEL,WORKFLOW_RUN_COUNT)
         print("RESPONSES DICT : ", responses_dict)
         print("QUERY HAS FINISHED"*4)    
 
