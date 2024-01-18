@@ -18,8 +18,8 @@ with open('params.yaml', 'r') as file:
 MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
-QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
+QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
+UNCERTAINTY_PROMPT_PATH = config['LLAMA_UNCERTAINTY_PROMPT_PATH']
 # can be "Half" or "Full", Half would mean as soon as half the number of candidate responses are the same as the original response
 # stop the workflow and consider it to be successful 
 MATCH_CRITERIA = config['MATCH_CRITERIA'] 
@@ -59,7 +59,7 @@ def perform_gpt_response(client,variable1,temperature,prompt_path,variable2):
 # function to parse through the api response and extract certain keywords in a dict
 def process_response(chat_completion):
     #use the chat_completion object to retrieve the textual LLM response
-    text = chat_completion.get("generation")
+    text = chat_completion.get("generation").strip()
 
     # Remove all newline characters ("\n")
     text_without_newlines = text.replace('\n', '')
@@ -152,7 +152,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            if uncertainty_response.startswith("NO") or uncertainty_response.upper() == "NO":
+            if uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
                 # response_dict.update({"Certainty_Estimation":"No"})
                 # print("INSIDE NO Candidate response {}: {}".format(i,response_dict))
                 confi_value = 0

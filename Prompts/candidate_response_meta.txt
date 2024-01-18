@@ -26,4 +26,4 @@ Source: <Name of source and the url>
 Core Concept: <text response of two to three words maximum>
 Premise of the Question:
 
-Now, please answer this question, provide your confidence level, the source, the core concept and the premise of the question. Let's think it step by step. <</SYS>>[/INST]
+Now, please answer this question, provide your confidence level, the source, the core concept and the premise of the question. Let's think it step by step. <</SYS>> [/INST]

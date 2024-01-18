@@ -59,7 +59,7 @@ def perform_gpt_response(client,variable1,temperature,prompt_path,variable2):
 # function to parse through the api response and extract certain keywords in a dict
 def process_response(chat_completion):
     #use the chat_completion object to retrieve the textual LLM response
-    text = chat_completion.choices[0].message.content
+    text = chat_completion.choices[0].message.content.strip()
 
     # Remove all newline characters ("\n")
     text_without_newlines = text.replace('\n', '')

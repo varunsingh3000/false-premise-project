@@ -4,9 +4,11 @@
     "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
     "DATASET_PATH": "Data\\", #default - "Data\\" 
-    "QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response.txt"
-    "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
-    "RESULT_SAVE_PATH": "Results\\result_", #default - "Results\\my_dataframe6.csv"
+    "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
+    "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
+    "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
+    "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
+    "RESULT_SAVE_PATH": "Results\\testresult_", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
     "MAX_CANDIDATE_RESPONSES": 3, #default - 3
     "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1
