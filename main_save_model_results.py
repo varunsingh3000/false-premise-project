@@ -6,7 +6,6 @@ import pandas as pd
 from utils.dataset import start_dataset_processing
 # from web_search import start_web_search
 from web_search_serp import start_web_search
-# from openai_gpt_models import start_openai_api_model_response
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
