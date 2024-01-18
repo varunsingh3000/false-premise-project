@@ -9,6 +9,7 @@ from web_search_serp import start_web_search
 # from openai_gpt_models import start_openai_api_model_response
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
+from meta_llama2_models import start_meta_api_model_response
 
 with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -34,6 +35,10 @@ def start_workflow(query,MODEL,WORKFLOW_RUN_COUNT):
         result = start_openai_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
         result = start_mistral_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+    elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
+        result = start_meta_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+    else:
+        print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
     responses_dict, final_response, final_confidence_value = result
     return responses_dict, final_response, final_confidence_value
  
@@ -126,7 +131,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_csv(RESULT_SAVE_PATH,index=False)  # Set index=False to not write row indices
+    df.to_csv(RESULT_SAVE_PATH + MODEL + ".csv",index=False)  # Set index=False to not write row indices
 
 start_complete_workflow()
 

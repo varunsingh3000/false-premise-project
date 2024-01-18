@@ -133,13 +133,15 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             chat_completion_uncertainty_resp_obj = perform_gpt_response(client,intial_explanation,TEMPERATURE,
                                                 UNCERTAINTY_PROMPT_PATH,response_dict['Explanation:'])
-            uncertainty_response = chat_completion_uncertainty_resp_obj.choices[0].message.content
+            uncertainty_response = chat_completion_uncertainty_resp_obj.choices[0].message.content.strip()
             print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
+            response_dict.update({"Certainty_Estimation":uncertainty_response})
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
             # checking if the candidate response agrees with the original response
-            if uncertainty_response.startswith("Yes"):
-                response_dict.update({"Certainty_Estimation":"Yes"})
+            if uncertainty_response.startswith("Yes") or uncertainty_response.upper() == "YES":
+                # response_dict.update({"Certainty_Estimation":"Yes"})
+                # print("INSIDE YES Candidate response {}: {}".format(i,response_dict))
                 #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
                 #and that response will be chosen as the potential final response
                 if confi_value >= max_confi_value: 
@@ -147,8 +149,9 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            if uncertainty_response.upper() == "NO":
-                response_dict.update({"Certainty_Estimation":"No"})
+            if uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
+                # response_dict.update({"Certainty_Estimation":"No"})
+                # print("INSIDE NO Candidate response {}: {}".format(i,response_dict))
                 confi_value = 0
                 confi_match_list.append(confi_value)
             # checking whether sufficent candidate responses agree with the original response
@@ -179,7 +182,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
 
 
 def start_mistral_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence):
-    print("OpenAI model response process starts")
+    print("Mistral model response process starts")
     api_key = os.environ["MISTRAL_API_KEY"]
     client = MistralClient(api_key=api_key)
 
@@ -189,7 +192,7 @@ def start_mistral_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
     result = perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_COUNT,external_evidence)
-    print("OpenAI model response process ends")
+    print("Mistral model response process ends")
     if result is None:
         print("Error: Result is None")
     else:

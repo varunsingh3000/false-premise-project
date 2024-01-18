@@ -1,3 +1,4 @@
+<s>[INST] <<SYS>>
 Given two responses, Response A and Response B, please compare and assess whether they are discussing the same topic. Consider the main subject, context, and key points in each response. Determine the level of similarity or dissimilarity between the topics covered in both responses.
 
 Response A: {}
@@ -6,4 +7,4 @@ Response B: {}
 
 Certainty_Estimation: <Yes/No - No explanation is required in the response>
 
-Now, please always provide your answer as only Yes or No. No further explanation regarding the answer is required. Your final answer always has to be either Yes or No.
+Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required. <</SYS>>[/INST]

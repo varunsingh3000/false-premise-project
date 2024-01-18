@@ -2,8 +2,8 @@
 
 import yaml
 import os 
-import requests
-from openai import OpenAI
+import boto3
+import json
 
 from utils.utils import uncertainty_confidence_cal
 from utils.utils import matching_condition_check
@@ -28,7 +28,7 @@ MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 # no of times you want the workflow to run after the first time, so 1 means in total twice
 MAX_WORKFLOW_RUN_COUNT = config['MAX_WORKFLOW_RUN_COUNT'] 
 
-# call the openai api with either gpt 3.5 or gpt 4 latest model
+# call the mistral api with either tiny or small model
 def perform_gpt_response(client,variable1,temperature,prompt_path,variable2):
     # variable1 and variable2 in general are the first and second input passed to the prompt
     # this can be query and external evidence or original response and candidate response
@@ -37,29 +37,29 @@ def perform_gpt_response(client,variable1,temperature,prompt_path,variable2):
         file_content = file.read()
     
     #passing the query and the external evidence as variables into the prompt
-    message = [
-        {
-            "role": "system",
-            "content": file_content.format(variable1,variable2) 
-        }
-    ]
+    message = json.dumps({
+    "prompt": file_content.format(variable1,variable2),   #file_content.format(variable1,variable2)
+    "temperature": temperature,
+    "max_gen_len": 1500
+    })
 
-    chat_completion = client.chat.completions.create(
-        messages=message,
-        model=MODEL,
-        temperature=temperature
-        # top_p=temperature
-        )
+    accept = 'application/json'
+    contentType = 'application/json'
+
+    response = client.invoke_model(body=message, modelId=MODEL, accept=accept, contentType=contentType)
+
+    chat_completion = json.loads(response.get("body").read())
+
     print("#"*20)
     print("INITIAL LLM RESPONSE")
-    print(chat_completion.choices[0].message)
-    print("The token usage: ", chat_completion.usage)
+    print(chat_completion.get("generation"))
+    # print("The token usage: ", chat_completion.usage)
     return chat_completion
 
 # function to parse through the api response and extract certain keywords in a dict
 def process_response(chat_completion):
     #use the chat_completion object to retrieve the textual LLM response
-    text = chat_completion.choices[0].message.content
+    text = chat_completion.get("generation")
 
     # Remove all newline characters ("\n")
     text_without_newlines = text.replace('\n', '')
@@ -80,7 +80,7 @@ def process_response(chat_completion):
     if last_term in text_without_newlines:
         split_text = text_without_newlines.split(last_term, 1)
         response_dict[last_term.strip()] = split_text[1].strip() if len(split_text) > 1 else ''
-
+    print(response_dict)
     return response_dict
 
 # performs clarification process by asking the user the question
@@ -91,7 +91,7 @@ def perform_clarification_ques(responses_dict,initial_core_concept,WORKFLOW_RUN_
     cq_user_ans = input(f"What would you like to know about '{initial_core_concept}'")
 
     external_evidence = start_web_search(cq_user_ans)
-    result = start_openai_api_model_response(cq_user_ans,WORKFLOW_RUN_COUNT,external_evidence)
+    result = start_meta_api_model_response(cq_user_ans,WORKFLOW_RUN_COUNT,external_evidence)
     print("LENGTH OF RESULT : ", len(result))
     # print("RESULT: ", result)
     responses_dict_new, final_response, final_confidence_value = result
@@ -136,21 +136,25 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             chat_completion_uncertainty_resp_obj = perform_gpt_response(client,intial_explanation,TEMPERATURE,
                                                 UNCERTAINTY_PROMPT_PATH,response_dict['Explanation:'])
-            uncertainty_response = chat_completion_uncertainty_resp_obj.choices[0].message.content.strip()
+            uncertainty_response = chat_completion_uncertainty_resp_obj.get("generation").strip()
             print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
             # checking if the candidate response agrees with the original response
             if uncertainty_response.startswith("Yes") or uncertainty_response.upper() == "YES":
+                # response_dict.update({"Certainty_Estimation":"Yes"})
+                # print("INSIDE YES Candidate response {}: {}".format(i,response_dict))
                 #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
                 #and that response will be chosen as the potential final response
-                if confi_value > max_confi_value: 
+                if confi_value >= max_confi_value: 
                     max_confi_value = confi_value
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            if uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
+            if uncertainty_response.startswith("NO") or uncertainty_response.upper() == "NO":
+                # response_dict.update({"Certainty_Estimation":"No"})
+                # print("INSIDE NO Candidate response {}: {}".format(i,response_dict))
                 confi_value = 0
                 confi_match_list.append(confi_value)
             # checking whether sufficent candidate responses agree with the original response
@@ -180,17 +184,16 @@ def perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_CO
         return responses_dict, final_response, final_confidence_value
 
 
-def start_openai_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence):
-    print("OpenAI model response process starts")
-    client = OpenAI() # defaults to os.environ.get("OPENAI_API_KEY")
-    # call the LLM and generate a response
+def start_meta_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence):
+    print("Meta Llama2 model response process starts")
+    client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
     #this func will basically perform all the operations needed for one run of the LLM workflow
     chat_completion = perform_gpt_response(client,query,TEMPERATURE,QUERY_PROMPT_PATH,external_evidence)
     # extract the key terms from the generated response into a dict
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
     result = perform_uncertainty_estimation(og_response_dict,client,query,WORKFLOW_RUN_COUNT,external_evidence)
-    print("OpenAI model response process ends")
+    print("Meta Llama2 model response process ends")
     if result is None:
         print("Error: Result is None")
     else:

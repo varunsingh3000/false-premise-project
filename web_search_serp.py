@@ -44,6 +44,7 @@ def process_json(response_json):
             # If any of the keys are missing, print a message and continue to the next item
             print(f"Key {e} not found. Skipping this item.")
 
+    # IMP: Organic results are not considered since they act as noise in the prompts for the evidence 
     # Iterating through the webpages section
     if 'organic_results' not in data:
         print("Web pages are found as external evidence")

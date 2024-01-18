@@ -1,15 +1,32 @@
 {
-    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-1106"
+    "MODEL": "meta.llama2-70b-chat-v1", #default - "gpt-3.5-turbo-1106" meta.llama2-70b-chat-v1
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
     "DATASET_PATH": "Data\\", #default - "Data\\" 
-    "QUERY_PROMPT_PATH": "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt", #default - "Prompts\\GPT3.5\\initial_prompt_w_cot_single.txt"
-    "UNCERTAINTY_PROMPT_PATH": "Prompts\\GPT3.5\\uncertainty_estimation_confidence.txt", #default - "Prompts\\GPT3.5\\uncertainty_estimation_confidence.txt"
-    "RESULT_SAVE_PATH": "Results\\my_dataframe_MISTRAL.csv", #default - "Results\\my_dataframe6.csv"
+    "QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response.txt"
+    "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
+    "RESULT_SAVE_PATH": "Results\\result_", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
     "MAX_CANDIDATE_RESPONSES": 3, #default - 3
     "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1
     "MATCH_CRITERIA": "Half" #default - "Half", takes either "Half" or "Full" as valid input
 }
+
+
+
+# {
+#     "MODEL": "mistral-small", #possible values - "gpt-3.5-turbo-1106", "gpt-4-1106-preview", "mistral-small", "meta.llama2-13b-chat-v1"
+#     "TEMPERATURE": 0.0, #possible value range - 0.0 to 1.0, OpenAI models can go till 2.0
+#     "CANDIDATE_TEMPERATURE": 0.3, #possible value range - 0.0 to 1.0, OpenAI models can go till 2.0
+#     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
+#     "DATASET_PATH": "Data\\", #add your own path if directories are changed 
+#     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #add your own path if directories are changed 
+#     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #add your own path if directories are changed 
+#     "RESULT_SAVE_PATH": "Results\\my_dataframe_MISTRAL.csv", #add your own path if directories are changed 
+#     "WORKFLOW_RUN_COUNT": 0, #should start from 0 but it can be increased to simulate the workflow repeat conditions
+#     "MAX_CANDIDATE_RESPONSES": 3, #possible value can be any integer higher than 0 but keep in mind the costs
+#     "MAX_WORKFLOW_RUN_COUNT": 1, #possible value can be any integer higher than 0 but keep in mind the costs
+#     "MATCH_CRITERIA": "Half" #possible value - takes either "Half" or "Full" as valid input
+# }
 
