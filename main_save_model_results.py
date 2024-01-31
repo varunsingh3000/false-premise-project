@@ -4,9 +4,10 @@ import yaml
 import pandas as pd
 
 from utils.dataset import start_dataset_processing
-# from web_search import start_web_search
-from web_search_serp import start_web_search
+from web_search import start_web_search
+# from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
+# from openai_gpt_workflow_test import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
 
@@ -31,11 +32,11 @@ WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 def start_workflow(query,MODEL,WORKFLOW_RUN_COUNT):
     external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-1106-preview"]:
-        result = start_openai_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+        result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
-        result = start_mistral_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+        result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
-        result = start_meta_api_model_response(query,WORKFLOW_RUN_COUNT,external_evidence)
+        result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
     responses_dict, final_response, final_confidence_value = result
@@ -70,18 +71,19 @@ def start_complete_workflow():
         for key_value in responses_dict:
             ques_no_list.append(ques_id)
             true_ans_list.append(true_ans)
-            question_list.append(query)
             workflow_run_count.append(key_value)
             og_response_list.append(responses_dict[key_value][0])
             evidence_list.append(responses_dict[key_value][1])
+            question_list.append(responses_dict[key_value][2])
             if num_keys > 1 and key_value != num_keys - 1:
                 finalans_list.append("Final response could not be determined in this run of the workflow")
                 finalconfi_list.append("Final confidence value could not be determined in this run of the workflow") 
             else:
                 finalans_list.append(final_response)
                 finalconfi_list.append(final_confidence_value)   
-            # index 0 and 1 are skipped because that is the original response and external evidence respectively
-            for candidate_resp in responses_dict[key_value][2:]: 
+            # index 0, 1 and 2 are skipped because that is the original response, external evidence and question respectively
+            # for loop iteration for the last element is skipped because that is the question
+            for candidate_resp in responses_dict[key_value][3:]:  
                 temp_indi_resp_list.append(candidate_resp)
             temp_candidate_response_list.append(temp_indi_resp_list)
             temp_indi_resp_list = []

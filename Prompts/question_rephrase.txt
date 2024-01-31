@@ -1,0 +1,16 @@
+Your task is to rephrase a question into binary (yes/no) question. The original question should be transformed into a query that can be answered with a simple "Yes" or "No" response.
+
+Instructions:
+
+Read the provided question carefully.
+Restructure the question so that it elicits a binary response.
+Ensure that the rephrased question is clear and concise.
+Avoid altering the meaning of the original question.
+
+Question: {}
+
+Use the following format always to provide your response
+
+Binary Question: <Rephrased binary question>
+
+Please provide the rephrased binary question.

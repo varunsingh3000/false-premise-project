@@ -1,265 +1,203 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "is bodybuilding part of olympics?"
+        "originalQuery": "Is the name of Leonardo DiCaprio's third child known?"
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=is+bodybuilding+part+of+olympics%3f",
-        "totalEstimatedMatches": 11600000,
+        "webSearchUrl": "https://www.bing.com/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
+        "totalEstimatedMatches": 650000,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "name": "Why Is Bodybuilding Not an Olympic Sport Yet?",
-                "url": "https://www.essentiallysports.com/bodybuilding-news-why-is-bodybuilding-not-an-olympic-sport-yet/",
-                "datePublished": "2023-12-01T00:00:00.0000000",
-                "datePublishedDisplayText": "Dec 1, 2023",
+                "name": "Does Leonardo DiCaprio Have Kids? The Truth About His Son - Glamour Buff",
+                "url": "https://glamourbuff.com/actor/leonardo-dicaprio-kids/",
+                "datePublished": "2023-07-10T00:00:00.0000000",
+                "datePublishedDisplayText": "Jul 10, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.essentiallysports.com/bodybuilding-news-why-is-bodybuilding-not-an-olympic...",
-                "snippet": "Bodybuilders use performance-enhancing drugs to enhance their masses and hence according to the IOC bodybuilding cannot be a part of the Olympics. Bodybuilding is not considered to be a sport Even though bodybuilding has a long history it is not considered to be a sport due to various reasons.",
-                "dateLastCrawled": "2023-12-15T03:13:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4689765165697033&mkt=en-US&setlang=en-US&w=biVy3h57mEhUqO8JARxJ7d_5BPfqcicN",
+                "displayUrl": "https://glamourbuff.com/actor/leonardo-dicaprio-kids",
+                "snippet": "Dominic West with his son, Senan West, and wife Catherine FitzGerald. (Source: Twitter) He told the Radio Times [via The Times] that he did not want his son to act in the scene where he would learn that his mother [Princess Diana] had died. He said, “I didn’t really fancy doing the scene at Balmoral [Castle], telling a boy his mother has died.”",
+                "dateLastCrawled": "2024-01-27T16:15:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4847317629157229&mkt=en-US&setlang=en-US&w=Sg_pRRWe5hCcTlrPMwRBb8tNNeL77-mI",
                 "language": "en",
                 "isNavigational": true
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "The History of Bodybuilding’s Messy Journey to the Olympics",
-                "url": "https://barbend.com/bodybuilding-olympics-history/",
+                "name": "Leonardo DiCaprio: Biography, Actor, Oscar Winner",
+                "url": "https://www.biography.com/actors/leonardo-dicaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2024-01-07T00:00:00.0000000",
+                "datePublishedDisplayText": "Jan 7, 2024",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://barbend.com/bodybuilding-olympics-history",
-                "snippet": "Written by Conor Heffernan Last updated on July 31st, 2023 Bodybuilding truly deserves a place in the pantheon of Olympic sports. It dates to the original Olympic Games of the ancient Greeks,...",
-                "dateLastCrawled": "2024-01-02T01:36:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4984017837304447&mkt=en-US&setlang=en-US&w=7a60OQF2HU_aeC3kc-AdvhdDiJ7qxVFy",
+                "displayUrl": "https://www.biography.com/actors/leonardo-dicaprio",
+                "snippet": "Starting his career in television before moving on to movies, he has regularly collaborated with the iconic director Martin Scorsese, including such films as Gangs of New York, The Aviator, The...",
+                "dateLastCrawled": "2024-01-30T21:07:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4804385133716417&mkt=en-US&setlang=en-US&w=rrLJPHsyM-iIyEHJwzsN4X79x8s4nkBy",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 2,
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    }
-                ],
-                "name": "Olympic weightlifting - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Olympic_weightlifting",
+                "name": "Leonardo DiCaprio Family tree, Parents, Wife, Son, Siblings & More",
+                "url": "https://celebrityunfold.com/leonardo-dicaprio-family-tree/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/Olympic_weightlifting",
-                "snippet": "Weightlifting (often known as Olympic weightlifting) is a sport in which athletes compete in lifting a barbell loaded with weight plates from the ground to overhead, with the aim of successfully lifting the heaviest weights. Athletes compete in two specific ways of lifting the barbell overhead.",
-                "dateLastCrawled": "2024-01-05T22:10:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4563596372812909&mkt=en-US&setlang=en-US&w=T1rAgCVyHfkbSPY1qqgTkVVcIN-DJdBn",
+                "displayUrl": "https://celebrityunfold.com/leonardo-dicaprio-family-tree",
+                "snippet": "He has never been shy about giving his son some film advice. As Leonardo revealed, “I had passed on a script about the French poet Arthur Rimbaud. He [George] explained to me that Rimbaud was the James Dean of his time– a radical who took on the institution of poetry and turned it upside down. I did the movie, and I loved playing him.”",
+                "dateLastCrawled": "2024-01-28T22:04:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4637542836690610&mkt=en-US&setlang=en-US&w=JhDIf_1N39s86XoKXhxIu0zUVSB_Ein9",
                 "language": "en",
-                "isNavigational": false,
-                "richFacts": [
-                    {
-                        "label": {
-                            "text": "Contact"
-                        },
-                        "items": [
-                            {
-                                "text": "No"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Highest governing body"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "International Weightlifting Federation",
-                                "url": "https://www.bing.com/search?q=International+Weightlifting+Federation+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
-                        }
-                    }
-                ]
+                "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
-                "name": "Why is Bodybuilding not an Olympic sport? - The Bridge",
-                "url": "https://thebridge.in/bodybuilding/why-bodybuilding-not-olympic-sport-21879",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.HyjCe7H7N0AIbmIoU98dgQAAAA&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2021-06-04T10:30:00.0000000",
-                "datePublishedDisplayText": "Jun 4, 2021",
+                "name": "Family tree of Leonardo DICAPRIO - Geneastar",
+                "url": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://thebridge.in/bodybuilding/why-bodybuilding-not-olympic-sport-21879",
-                "snippet": "Arnold Schwarzenegger (Source: Outlook India) Abhijit Nair Why is Bodybuilding not an Olympic sport? Bodybuilding has been in existence for a long, long time. It is nothing but the usage of weight training to develop one's body muscles the way one wants them to be.",
-                "dateLastCrawled": "2023-12-31T23:27:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.HyjCe7H7N0AIbmIoU98dgQAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.HyjCe7H7N0AIbmIoU98dgQAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4588202233641586&mkt=en-US&setlang=en-US&w=W7I23mFyxGMmeWhLz4Tl2vSH_myyoSOX",
+                "displayUrl": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
+                "snippet": "Indenbirkin Wilhelm Grachowski Adelheid Smirnov Stefan Smirnova Irene George Leon 1902 - 1965 Jacobs Olga Anne 1904 - 1984 Indenbirkin Wilhelm Heinrich 1913 - 1995 Smirnova Yelena 1915 - 2008 DiCaprio George Paul Indenbirkin Irmelin DiCaprio Leonardo Wilhelm",
+                "dateLastCrawled": "2024-01-24T18:19:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4545145198886107&mkt=en-US&setlang=en-US&w=LuEJdj7kKHIS5LlDb9Bh3JNG-tusy8Us",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 4,
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    }
-                ],
-                "name": "Bodybuilding - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Bodybuilding",
+                "name": "Leonardo DiCaprio | Biography, Movies, Romeo and Juliet ... - Britannica",
+                "url": "https://www.britannica.com/biography/Leonardo-DiCaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2024-01-26T22:23:00.0000000",
+                "datePublishedFreshnessText": "4 days ago",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/Bodybuilding",
-                "snippet": "Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy. An individual who engages in this activity is referred to as a bodybuilder.It is primarily undertaken for aesthetic purposes over functional ones, distinguishing it from similar activities such as powerlifting, which focuses solely on increasing the physical load one ...",
-                "dateLastCrawled": "2024-01-07T05:09:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4597277510039177&mkt=en-US&setlang=en-US&w=6zNIo2tqrjgqmevV4rZcEDe31IQZjyb0",
+                "displayUrl": "https://www.britannica.com/biography/Leonardo-DiCaprio",
+                "snippet": "Leonardo DiCaprio (born November 11, 1974, Los Angeles, California, U.S.) American actor and producer who emerged in the 1990s as one of Hollywood ’s leading performers, noted for his portrayals of unconventional and complex characters.",
+                "dateLastCrawled": "2024-01-29T23:16:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.q3bXoHApD6gRnw4P9kl9iAAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4805132460301944&mkt=en-US&setlang=en-US&w=OAld3__lrBSJHxqKY-g7oHxTLhcp2D9q",
                 "language": "en",
                 "isNavigational": false,
                 "richFacts": [
                     {
                         "label": {
-                            "text": "Nicknames"
+                            "text": "Author"
                         },
                         "items": [
                             {
-                                "text": "BB"
+                                "text": "The Editors of Encyclopaedia Britannica"
                             }
                         ],
                         "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Olympic"
-                        },
-                        "items": [
-                            {
-                                "text": "No"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Team members"
-                        },
-                        "items": [
-                            {
-                                "text": "No"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACT"
-                        }
-                    },
-                    {
-                        "label": {
-                            "text": "Highest governing body"
-                        },
-                        "items": [
-                            {
-                                "_type": "Properties/Link",
-                                "text": "International Federation of BodyBuilding & Fitness",
-                                "url": "https://www.bing.com/search?q=International+Federation+of+BodyBuilding+&+Fitness+wikipedia"
-                            }
-                        ],
-                        "hint": {
-                            "text": "BASE:GENERICFACTWITHLINK"
+                            "text": "BASE:AUTHOR"
                         }
                     }
                 ]
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "Will Bodybuilding Ever Become an Olympic Sport? - Weik Fitness, LLC",
-                "url": "https://www.weikfitness.com/bodybuilding-become-olympic-sport/",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt&w=80&h=80&c=1&pid=5.1",
+                "name": "All About Leonardo DiCaprio's Parents, George DiCaprio and Irmelin ...",
+                "url": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin-indenbirken-7502510",
+                "datePublished": "2023-07-25T17:23:00.0000000",
+                "datePublishedDisplayText": "Jul 25, 2023",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.weikfitness.com/bodybuilding-become-olympic-sport",
-                "snippet": "Some have been saying that the International Olympic Committee (IOC) accepted the sport of bodybuilding into the 2020 Summer Olympics in Tokyo. However, nothing has surfaced about it since these rumors started which leads me to believe, it’s not truly going to be part of the Olympics. Bodybuilding Olympics? That would be pretty cool, no?",
-                "dateLastCrawled": "2023-12-29T11:08:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.vXzr5_kj7aV3q3iJtmGiLgHaDt"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4941656567141901&mkt=en-US&setlang=en-US&w=fL9qqGKTSn3HNOneqw_BUgUKucvd0G0f",
+                "displayUrl": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin...",
+                "snippet": "A year after Leonardo was born, George and Irmelin separated before ultimately finalizing their divorce in the late '90s. Despite his parents' divorce, Leonardo told Vanity Fair that he remembers ...",
+                "dateLastCrawled": "2024-01-28T09:29:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4592342597722976&mkt=en-US&setlang=en-US&w=7wLQ9kLRUdEoW1paKLN8UdNjHGyQRPe-",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "name": "Full article: Is bodybuilding a sport? - Taylor & Francis Online",
-                "url": "https://www.tandfonline.com/doi/full/10.1080/00948705.2023.2234978",
-                "datePublished": "2023-07-23T00:00:00.0000000",
-                "datePublishedDisplayText": "Jul 23, 2023",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 6,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "Leonardo DiCaprio - Wikipedia",
+                "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.tandfonline.com/doi/full/10.1080/00948705.2023.2234978",
-                "snippet": "Since its beginnings, modern bodybuilding has been accompanied by the background issue of whether it should be considered a sport. The problem, culminating in its provisional acceptance as a sport by the International Olympic Committee, was later retracted. The uncertainty of whether bodybuilding is a sport or not seems to linger.",
-                "dateLastCrawled": "2023-12-28T21:03:00.0000000Z",
+                "displayUrl": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
+                "snippet": "Early life and acting background Leonardo Wilhelm DiCaprio was born on November 11, 1974, in Los Angeles, California. [1] He is the only child of Irmelin Indenbirken, a legal secretary, and George DiCaprio, an underground comix artist and distributor; they met while attending college and moved to Los Angeles after graduating.",
+                "dateLastCrawled": "2024-01-31T03:59:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.tSF8Zy3GW5wKKup7740oHgAAAA"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=3956504757578&mkt=en-US&setlang=en-US&w=Vv8i431b2V9U5IVVC8mmldx07esSq_uK",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
-                "name": "Bodybuilding and the Olympics - Evolution of Bodybuilding",
-                "url": "https://www.evolutionofbodybuilding.net/bodybuilding-olympics/",
-                "datePublished": "2018-02-19T00:00:00.0000000",
-                "datePublishedDisplayText": "Feb 19, 2018",
+                "name": "Leo DiCaprio's supermodel ex Bar Refaeli reveals she's given birth to ...",
+                "url": "https://www.the-sun.com/entertainment/275864/leo-dicaprios-supermodel-ex-bar-refaeli-third-child/",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2020-01-18T17:49:00.0000000",
+                "datePublishedDisplayText": "Jan 18, 2020",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.evolutionofbodybuilding.net/bodybuilding-olympics",
-                "snippet": "At this year’s Games in Peru, bodybuilding will feature on the programme alongside sports such as athletics, swimming and weightlifting. It was also announced in December that bodybuilding will be part of this year’s South American Games, another huge multi-sport event organised by national Olympic committees. Bodybuilding has also been ...",
-                "dateLastCrawled": "2023-12-27T05:00:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4662698447226843&mkt=en-US&setlang=en-US&w=6NQ5jmTk4HFIWerUEN0ghp_7drEtQg4X",
+                "displayUrl": "https://www.the-sun.com/.../275864/leo-dicaprios-supermodel-ex-bar-refaeli-third-child",
+                "snippet": "Bar Refaeli revealed she has given birth to her third child Credit: Instagram. Bar, who was previously in a relationship with Hollywood actor Leonardo DiCaprio, somehow managed to look glowing in the picture as she grinned for the camera wearing a hospital gown. She captioned the snap: \"This is what real GLAM looks like. 3rd baby in 3.5 years.",
+                "dateLastCrawled": "2024-01-21T08:52:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe"
+                },
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
-                "name": "Is Bodybuilding a Sport? - ResearchGate",
-                "url": "https://www.researchgate.net/publication/369078323_Is_Bodybuilding_a_sport/fulltext/64089a490d98a97717ec8f58/Is-Bodybuilding-a-sport.pdf",
-                "datePublished": "2023-03-06T00:00:00.0000000",
-                "datePublishedDisplayText": "Mar 6, 2023",
+                "name": "40 things you never knew about Leonardo DiCaprio - The Guardian",
+                "url": "https://www.theguardian.com/film/filmblog/2014/nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2014-11-11T21:46:00.0000000",
+                "datePublishedDisplayText": "Nov 11, 2014",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.researchgate.net/publication/369078323_Is_Bodybuilding_a_sport/fulltext/...",
-                "snippet": "International Olympic Committee, retracted later. The uncertainty of whether bodybuilding is a sport or ... efforts, at least in part, resulted in bodybuilding’s recognition by the American ...",
-                "dateLastCrawled": "2023-11-27T00:33:00.0000000Z",
+                "displayUrl": "https://www.theguardian.com/.../nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
+                "snippet": "@tnm___ Tue 11 Nov 2014 08.48 EST 1) Leonardo DiCaprio’s first film role was in Critters 3, and not as Toby Wolf in This Boy’s Life. 2) Robert De Niro allegedly hand-picked DiCaprio from...",
+                "dateLastCrawled": "2024-01-28T00:25:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.Pfi_D_LtWwn49CjB07J8dgHaD4"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4964016183444208&mkt=en-US&setlang=en-US&w=ppU7uHXUFLrRX5XGCMNRWFbllv64b4NU",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
-                "name": "Is Bodybuilding a sport? | SportRxiv",
-                "url": "https://sportrxiv.org/index.php/server/preprint/view/270",
-                "datePublished": "2023-03-07T00:00:00.0000000",
-                "datePublishedDisplayText": "Mar 7, 2023",
+                "name": "Leonardo DiCaprio - Biography - IMDb",
+                "url": "https://www.imdb.com/name/nm0000138/bio/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://sportrxiv.org/index.php/server/preprint/view/270",
-                "snippet": "A problem culminating in its provisional acceptance as a sport by the International Olympic Committee, retracted later. The uncertainty of whether bodybuilding is a sport or not seems to linger. Addressing this issue, Aranyosi (2018) provided an account to determine the status of bodybuilding as a sport that arrives at the negative answer ...",
-                "dateLastCrawled": "2023-12-03T03:49:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=is+bodybuilding+part+of+olympics%3f&d=4528128533998021&mkt=en-US&setlang=en-US&w=x2w-QcE3MXcLJ5vddUtLqHUw66IdFnK7",
+                "displayUrl": "https://www.imdb.com/name/nm0000138/bio",
+                "snippet": "Leonardo Wilhelm DiCaprio was born in Los Angeles, California, the only child of Irmelin DiCaprio (née Indenbirken) and former comic book artist George DiCaprio. His father is of Italian and German descent, and his mother, who is German-born, is of German, Ukrainian and Russian ancestry.",
+                "dateLastCrawled": "2024-01-30T14:14:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4996322928230429&mkt=en-US&setlang=en-US&w=B84VRRTdpwPgEL4YzhS3kgaI89tf5FzD",
                 "language": "en",
                 "isNavigational": false
             }
@@ -285,87 +223,361 @@
                         "targetPropertyName": "description",
                         "mustBeCloseToContent": true,
                         "text": "Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                     },
                     {
                         "_type": "ContractualRules/MediaAttribution",
                         "targetPropertyName": "image",
                         "mustBeCloseToContent": true,
-                        "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                     }
                 ],
-                "webSearchUrl": "https://www.bing.com/entityexplore?q=Bodybuilding&filters=sid:%2252777ded-08ca-6d3f-f0f3-818fab647341%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
-                "name": "Bodybuilding",
+                "webSearchUrl": "https://www.bing.com/entityexplore?q=Leonardo+DiCaprio&filters=sid:%225f2c4ac2-d77a-474e-4580-c76549d4fce5%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
+                "name": "Leonardo DiCaprio",
+                "url": "https://www.rewild.org/",
                 "image": {
-                    "name": "Bodybuilding",
-                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.6f617385c9ce6cc6dfe13ce72a55a51a&w=75&h=110&c=7",
+                    "name": "Leonardo DiCaprio",
+                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.c87cddd5da6d303772dbad0d97b13573&w=75&h=110&c=12",
                     "provider": [
                         {
                             "_type": "Organization",
-                            "url": "https://en.wikipedia.org/wiki/Bodybuilding"
+                            "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
                         }
                     ],
-                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Arnold_Schwarzenegger_1974.jpg",
+                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
                     "width": 75,
                     "height": 110,
-                    "sourceWidth": 925,
-                    "sourceHeight": 1344
+                    "sourceWidth": 572,
+                    "sourceHeight": 903
                 },
-                "description": "Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy. An individual who engages in this activity is referred to as a bodybuilder. It is primarily undertaken for aesthetic purposes over functional ones, distinguishing it from similar activities such as powerlifting, which focuses solely on increasing the physical load one can exert.",
+                "description": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
                 "entityPresentationInfo": {
                     "entityScenario": "DominantEntity",
                     "entityTypeHints": [
-                        "Generic"
-                    ]
+                        "Actor",
+                        "Person"
+                    ],
+                    "entityTypeDisplayHint": "American actor and producer"
                 },
-                "bingId": "52777ded-08ca-6d3f-f0f3-818fab647341"
+                "bingId": "5f2c4ac2-d77a-474e-4580-c76549d4fce5"
             }
         ]
     },
-    "relatedSearches": {
-        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
+    "videos": {
+        "id": "https://api.bing.microsoft.com/api/v7/#Videos",
+        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
+        "webSearchUrl": "https://www.bing.com/videos/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
+        "isFamilyFriendly": true,
         "value": [
             {
-                "text": "mr olympia official website",
-                "displayText": "mr olympia official website",
-                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+official+website"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=8FA19B21D464D5B21E178FA19B21D464D5B21E17",
+                "name": "16-Year-Old Leonardo DiCaprio FIRST Interview!",
+                "description": "More from Entertainment Tonight: https://www.youtube.com/channel/UCdtXPiqI2cLorKaPrfpKc4g?sub_confirmation=1 ET FLASHBACK PLAYLIST: https://www.youtube.com/playlist?list=PLQwITQ__CeH1Ls5bjGZ8ZCMrgJlIdQuD2 Leonardo DiCaprio first interview at age 16 on the set of Growing Pains. Watch his accidental goof ups and see what makes him \"romantic ...",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.snsFiJ9PBUa0I-XLYIk2ugHgFo&pid=Api",
+                "datePublished": "2014-11-11T17:44:44.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Entertainment Tonight"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
+                "hostPageUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT2M16S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM.Fx6y1WTUIZuhjw_1702306362&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/RnycvPjB7Y0?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 9740157,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "mr olympia 2023 pictures",
-                "displayText": "mr olympia 2023 pictures",
-                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+2023+pictures"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=BEE999FFF31167E5A36ABEE999FFF31167E5A36A",
+                "name": "The story about Leonardo DiCaprio's name",
+                "description": "Let's learn a few words from this clip I hope you learned something new 😊 We'd really appreciate it if you could share these videos and give us a follow ️",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.DOkK0TT60ewBStEw0XepegFRJY&pid=Api",
+                "datePublished": "2023-02-24T04:30:12.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Vocords"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
+                "hostPageUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
+                "width": 1080,
+                "height": 1920,
+                "duration": "PT58S",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/kFN4aUT-eQ0?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 4477,
+                "thumbnail": {
+                    "width": 89,
+                    "height": 160
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "olympic weightlifting bodybuilding program",
-                "displayText": "olympic weightlifting bodybuilding program",
-                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifting+bodybuilding+program"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=FC225F2A88987F74CD67FC225F2A88987F74CD67",
+                "name": "Leonardo DiCaprio | Producer, Actor, Writer",
+                "description": "Known for: Inception, Titanic, The Wolf of Wall Street",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.SxWzj9ySTKY__QJV2Qnn5ADeEs&pid=Api",
+                "datePublished": "2010-01-28T00:00:00.0000000",
+                "publisher": [
+                    {
+                        "name": "imdb.com"
+                    }
+                ],
+                "contentUrl": "https://www.imdb.com/name/nm0000138/",
+                "hostPageUrl": "https://www.imdb.com/name/nm0000138/",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.imdb.com/name/nm0000138/",
+                "width": 1000,
+                "height": 1347,
+                "viewCount": 2012,
+                "thumbnail": {
+                    "width": 118,
+                    "height": 160
+                },
+                "isSuperfresh": false
             },
             {
-                "text": "mr olympia website",
-                "displayText": "mr olympia website",
-                "webSearchUrl": "https://www.bing.com/search?q=mr+olympia+website"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=C862189F595A72876A93C862189F595A72876A93",
+                "name": "Leonardo DiCaprio stars in Killers of the Flower Moon trailer",
+                "description": "The most shocking name is Titanic actor Leonardo DiCaprio who first came to fame as a child actor on TV and has been on screens ever since. Another is Victoria Beckham - the Spice Girl.",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wfrMc09AywUR09deRawugwEsCo&pid=Api",
+                "datePublished": "2023-09-13T14:04:06.0000000",
+                "publisher": [
+                    {
+                        "name": "Mail Online"
+                    }
+                ],
+                "creator": {
+                    "name": "Heidi Parker"
+                },
+                "contentUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
+                "hostPageUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
+                "width": 636,
+                "height": 358,
+                "duration": "PT2M24S",
+                "embedHtml": "<iframe frameborder=\"0\" width=\"698\" height=\"573\" scrolling=\"no\" id=\"molvideoplayer\" title=\"MailOnline Embed Player\" src=\"http://www.dailymail.co.uk/embed/video/3016715.html\" ></iframe>",
+                "viewCount": 0,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 89
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "olympic weightlifting highest governing body",
-                "displayText": "olympic weightlifting highest governing body",
-                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifting+highest+governing+body"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=4000D9445F1F834F9A3B4000D9445F1F834F9A3B",
+                "name": "TITANIC CASTS ⭐ THEN AND NOW (1997 VS 2023) | How They Changed After 26 Years?",
+                "description": "TITANIC CASTS ⭐ THEN AND NOW (1997 VS 2023) | How They Changed After 26 Years? Titanic is a 1997 American epic romance and disaster film directed, written, produced, and co-edited by James Cameron. Incorporating both historical and fictionalized aspects, it is based on accounts of the sinking of RMS Titanic and stars Kate Winslet and Leonardo ...",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.Ucso1I0xPobdy_gbBxIesAHgFo&pid=Api",
+                "datePublished": "2023-06-04T17:48:06.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Timeless Movies 1960s"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
+                "hostPageUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT7M9S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.O5pPgx9fRNkAQA&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/HzGiSjr0vXY?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 464890,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "2020 olympics weightlifting results",
-                "displayText": "2020 olympics weightlifting results",
-                "webSearchUrl": "https://www.bing.com/search?q=2020+olympics+weightlifting+results"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=5E78B5085858C742D8505E78B5085858C742D850",
+                "name": "Titanic 3D | \"First Class Dinner\" | Official Clip HD",
+                "description": "Subscribe now for more : http://bit.ly/20thCenturyUK Jack Dawson has his first, first class dinner Click here for more official Titanic clips : http://bit.ly/TitanicPL Leonardo Di'Caprio and Kate Winslet are Jack and Kate in this classic romantic tragedy. In celebration of the films re-release in 3D we have added some of our favourite clips ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.lPZJdMBsPpBFvQh2Hm-SxAHgFo&pid=Api",
+                "datePublished": "2012-03-30T11:42:59.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "20th Century Studios UK"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
+                "hostPageUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
+                "width": 854,
+                "height": 480,
+                "duration": "PT1M3S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.UNhCx1hYCLV4Xg_1700913302&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/oklPl95DC8c?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 6716150,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "female olympic weightlifting weight classes",
-                "displayText": "female olympic weightlifting weight classes",
-                "webSearchUrl": "https://www.bing.com/search?q=female+olympic+weightlifting+weight+classes"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=F72161C8584631E92945F72161C8584631E92945",
+                "name": "Titanic 3D | \"Third Class Dance\" | Official Clip HD",
+                "description": "Subscribe now for more : http://bit.ly/20thCenturyUK Rose and Jack enjoy some dancing on the boat! Click here for more official Titanic clips : http://bit.ly/TitanicPL Leonardo Di'Caprio and Kate Winslet are Jack and Kate in this classic romantic tragedy. In celebration of the films re-release in 3D we have added some of our favourite clips ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.Pt2QodWceXOQvHmvjrAukQHgFo&pid=Api",
+                "datePublished": "2012-03-30T11:42:58.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "20th Century Studios UK"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
+                "hostPageUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
+                "width": 854,
+                "height": 480,
+                "duration": "PT48S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.RSnpMUZYyGEh9w_1701254131&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/erAQ9LkftwA?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 8912973,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
             },
             {
-                "text": "olympic weightlifters images",
-                "displayText": "olympic weightlifters images",
-                "webSearchUrl": "https://www.bing.com/search?q=olympic+weightlifters+images"
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=4B80019235A7040C5AD94B80019235A7040C5AD9",
+                "name": "This Boy's Life (1993)",
+                "description": "This Boy's Life: Directed by Michael Caton-Jones. With Robert De Niro, Ellen Barkin, Leonardo DiCaprio, Jonah Blechman. The story about the relationship between a rebellious 1950s teenager and his abusive stepfather, based on the memoirs of writer and literature Professor Tobias Wolff.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.rmQkwlwINs1FsVoo9HXiowD6DI&pid=Api",
+                "datePublished": "2008-04-11T17:24:13.0000000",
+                "publisher": [
+                    {
+                        "name": "IMDB"
+                    }
+                ],
+                "contentUrl": "https://www.imdb.com/title/tt0108330/",
+                "hostPageUrl": "https://www.imdb.com/title/tt0108330/",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.imdb.com/title/tt0108330/",
+                "width": 250,
+                "height": 200,
+                "duration": "PT1M59S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM.2VoMBKc1kgGASw_1706464422&pid=Api",
+                "embedHtml": "<iframe src=\"https://www.imdb.com/videoembed/vi2600272153?autoplay=true\" width=\"854\" height=\"480\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder=\"no\" scrolling=\"no\"></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 108,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 128
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=BAC0D3CCDEFBE21C547CBAC0D3CCDEFBE21C547C",
+                "name": "Top 10 Child Stars Who Became Hollywood Icons",
+                "description": "Once a celebrity, always a celebrity! For this list, we’ll be looking at the kids with their names up in lights who became classics. Our countdown includes celebrities Nathalie Portman, Ron Howard, Shirley Temple and more! If we missed any of your favorite Hollywood icons, let us know in the comments below. Check out these other Hollywood ...",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.jGM6hREjS4fEBOggIr8rBgHgFo&pid=Api",
+                "datePublished": "2023-09-11T15:00:38.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "MsMojo"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
+                "hostPageUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
+                "width": 3840,
+                "height": 2160,
+                "duration": "PT11M11S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM1.fFQc4vvezNPAug&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/m4DLfRHlTBM?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 31252,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=AE6879E935592740451CAE6879E935592740451C",
+                "name": "Growing Pains (TV Series 1985–1992)",
+                "description": "Growing Pains: Created by Neal Marlens. With Alan Thicke, Joanna Kerns, Kirk Cameron, Jeremy Miller. The misadventures of a family with a home business father and a journalist mother.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.oCOP06x8AAvGBCQ1w31MwQIIGG&pid=Api",
+                "datePublished": "2020-09-29T19:50:09.0000000",
+                "publisher": [
+                    {
+                        "name": "IMDB"
+                    }
+                ],
+                "contentUrl": "https://www.imdb.com/title/tt0088527/",
+                "hostPageUrl": "https://www.imdb.com/title/tt0088527/",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.imdb.com/title/tt0088527/",
+                "width": 640,
+                "height": 480,
+                "duration": "PT1M6S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.HEVAJ1k16Xlorg_1682119194&pid=Api",
+                "embedHtml": "<iframe src=\"https://www.imdb.com/videoembed/vi2224472345?autoplay=true\" width=\"854\" height=\"480\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder=\"no\" scrolling=\"no\"></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 53,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "isSuperfresh": false
             }
-        ]
+        ],
+        "scenario": "List"
     },
     "rankingResponse": {
         "mainline": {
@@ -382,6 +594,12 @@
                     "resultIndex": 1,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType": "Videos",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
                     }
                 },
                 {
@@ -438,12 +656,6 @@
                     "resultIndex": 9,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
-                    }
-                },
-                {
-                    "answerType": "RelatedSearches",
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches"
                     }
                 }
             ]

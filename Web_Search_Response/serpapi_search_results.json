@@ -1,415 +1,321 @@
 {
     "search_metadata": {
-        "id": "65a96c211d64ea5e3aa145d3",
+        "id": "65b9449a3d691942e29bd553",
         "status": "Success",
-        "json_endpoint": "https://serpapi.com/searches/f0c31aa59123df4c/65a96c211d64ea5e3aa145d3.json",
-        "created_at": "2024-01-18 18:21:21 UTC",
-        "processed_at": "2024-01-18 18:21:21 UTC",
-        "google_url": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
-        "raw_html_file": "https://serpapi.com/searches/f0c31aa59123df4c/65a96c211d64ea5e3aa145d3.html",
-        "total_time_taken": 1.22
+        "json_endpoint": "https://serpapi.com/searches/f5717f9abe6440b3/65b9449a3d691942e29bd553.json",
+        "created_at": "2024-01-30 18:48:58 UTC",
+        "processed_at": "2024-01-30 18:48:58 UTC",
+        "google_url": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+        "raw_html_file": "https://serpapi.com/searches/f5717f9abe6440b3/65b9449a3d691942e29bd553.html",
+        "total_time_taken": 1.37
     },
     "search_parameters": {
         "engine": "google",
-        "q": "What is the name of the first animal to land on the moon?",
+        "q": "When was the chapter of alpha Kappa Delta Phi established at American University?",
         "google_domain": "google.com",
         "hl": "en",
         "gl": "us",
         "device": "desktop"
     },
     "search_information": {
-        "query_displayed": "What is the name of the first animal to land on the moon?",
-        "total_results": 194000000,
-        "time_taken_displayed": 0.55,
+        "query_displayed": "When was the chapter of alpha Kappa Delta Phi established at American University?",
         "menu_items": [
             {
                 "position": 1,
-                "title": "Images",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ0pQJegQIDBAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F"
+                "title": "Perspectives",
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&uds=AMwkrPuBHS6j0ZNQ8k5ivrvt0Dg4_X4BNFJS8M7Obn7SAOJUXP2wGcjwLmiDZR0wiImNx3qMoxkEGHXcYkB1vq3zfP0l1YojIT9sQ39CcN3Zq5cVKj7nMGkTt8AJx9DA1PORIzYEbrdNrlCHMUm5tRhpFcH5qU0qv1BkyJjUFtw7IEViMKlGRfh8BvtI_sXSywniBOL0zqSogVA-d_kJYv600HRwFrArRA&udm=4&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Qs6gLegQIDBAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F"
             },
             {
                 "position": 2,
-                "title": "Nasa",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon+nasa&uds=AMwkrPszb7o9ovi3WCse24Nv4coy-LZAeJwc-YiHbY8Z3WUsuA4BvU6G9LA-fdl7Le2Wvlap8-ChDFIO1MR2QlBRXlB-zkPEZlWmdzQo9o5ZbDCZrWgvHVHQM_AscOIhrrGGrUwxXFIJO8WlQl2F_BD9ieumqkZFGw&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQxKsJegQICxAB&ictx=0",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon+nasa"
+                "title": "Images",
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q0pQJegQICRAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F"
             },
             {
                 "position": 3,
-                "title": "Perspectives",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&uds=AMwkrPv9bcNNFIheWE-RWAL3XbC5w3H0yHsv9yOWYOL1-7-SJw8a1TaUxGiSI0uGYOvwfLXVZ8_dLKrqGWFUBaSNLWDdKXTdW9KCTgDZXTOEyB9HOsMjK_M5BxuqcYb_N8SDWE7OhD5N0qrgmanHvW9KOKUWDlGsnufJ13rfw55XkTIAFwmIl-o&udm=4&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQs6gLegQIChAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F"
+                "title": "News",
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q0pQJegQIChAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=nws"
             },
             {
                 "position": 4,
                 "title": "Videos",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ0pQJegQICRAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F"
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=vid&source=lnms&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q0pQJegQICxAB",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_videos&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F"
             },
             {
                 "position": 5,
-                "title": "News",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=nws&source=lnms&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ0pQJegQIUhAB",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=nws"
+                "title": "Shopping",
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=shop&source=lnms",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F"
             },
             {
                 "position": 6,
-                "title": "Shopping",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=shop&source=lnms",
-                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_shopping&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F"
+                "title": "Books",
+                "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q0pQJegQIShAB"
             },
             {
                 "position": 7,
-                "title": "Books",
-                "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=bks&source=lnms&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ0pQJegQIVRAB"
+                "title": "Maps",
+                "link": "https://maps.google.com/maps?sca_esv=8212b838d9203bd8&hl=en&gl=us&output=search&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University?&source=lnms&entry=mc"
             },
             {
                 "position": 8,
-                "title": "Maps",
-                "link": "https://maps.google.com/maps?sca_esv=c573fd1884b964df&hl=en&gl=us&output=search&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon?&source=lnms&entry=mc"
+                "title": "Flights",
+                "link": "https://www.google.com/travel/flights?sca_esv=8212b838d9203bd8&hl=en&gl=us&output=search&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&source=lnms"
             },
             {
                 "position": 9,
-                "title": "Flights",
-                "link": "https://www.google.com/travel/flights?sca_esv=c573fd1884b964df&hl=en&gl=us&output=search&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&source=lnms"
+                "title": "Finance",
+                "link": "https://www.google.com/finance?sca_esv=8212b838d9203bd8&hl=en&gl=us&output=search&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&source=lnms&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q0pQJegQIRxAB"
             }
         ],
         "organic_results_state": "Results for exact spelling"
     },
-    "inline_images": [
-        {
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=isch&source=univ&fir=i2poJHXW8rBlKM%252C_XANMC6RuDZn5M%252C_%253Bya7fw1V14OSi_M%252C_XANMC6RuDZn5M%252C_%253BW7DKNe5GGVpnmM%252CkQ9I6n0l4elEKM%252C_%253B1zSnUrqRnqhVXM%252CWvsybVuyDBo-PM%252C_%253BuPx9W_QDJmgWzM%252Cp0k2g-gvhMf8IM%252C_%253BLi-ZyMJbYXcVyM%252CyA-m1tVTCsKwSM%252C_%253B_FyOqRGJgFTiKM%252CFwpUuBeOTOEZ3M%252C_%253BzrIAjb2cMjpAmM%252Ci9OXlpf0p0It8M%252C_%253BfCGMgQuqalOQWM%252CYOF_5IgcHNiKwM%252C_%253BWWAX-4wbj_ZMdM%252CpiE4xzZBEs27aM%252C_&usg=AI4_-kT6FtZA3P6uBfpYeQ2aEwfiYfYl7Q&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ9AF6BAhFEAA#imgrc=i2poJHXW8rBlKM",
-            "source": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmUI-5Q554XmK1tDMkVazRccv_IjIkpKCQrSAc4UoyfuBtE4KLKzcrYFoo7A&s",
-            "original": "https://www.rmg.co.uk/sites/default/files/styles/large/public/Miss_Baker%2C_the_squirrel_monkey.jpg?itok=FecpjNBn",
-            "title": "What was the first animal in space? | Royal Museums Greenwich",
-            "source_name": "Royal Museums Greenwich"
-        },
-        {
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=isch&source=univ&fir=i2poJHXW8rBlKM%252C_XANMC6RuDZn5M%252C_%253Bya7fw1V14OSi_M%252C_XANMC6RuDZn5M%252C_%253BW7DKNe5GGVpnmM%252CkQ9I6n0l4elEKM%252C_%253B1zSnUrqRnqhVXM%252CWvsybVuyDBo-PM%252C_%253BuPx9W_QDJmgWzM%252Cp0k2g-gvhMf8IM%252C_%253BLi-ZyMJbYXcVyM%252CyA-m1tVTCsKwSM%252C_%253B_FyOqRGJgFTiKM%252CFwpUuBeOTOEZ3M%252C_%253BzrIAjb2cMjpAmM%252Ci9OXlpf0p0It8M%252C_%253BfCGMgQuqalOQWM%252CYOF_5IgcHNiKwM%252C_%253BWWAX-4wbj_ZMdM%252CpiE4xzZBEs27aM%252C_&usg=AI4_-kT6FtZA3P6uBfpYeQ2aEwfiYfYl7Q&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ9AF6BAhKEAA#imgrc=ya7fw1V14OSi_M",
-            "source": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa0Yjl2PIx1esRXkWXibJ9KXXbUO4HCdkh3kTzZQ9N4m0xOhu1Q8D86jiNow&s",
-            "original": "https://www.rmg.co.uk/sites/default/files/styles/max_width_1440/public/Laika%20Space%20dog.jpg?itok=1EJV09rA",
-            "title": "What was the first animal in space? | Royal Museums Greenwich",
-            "source_name": "Royal Museums Greenwich"
-        },
-        {
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&tbm=isch&source=univ&fir=i2poJHXW8rBlKM%252C_XANMC6RuDZn5M%252C_%253Bya7fw1V14OSi_M%252C_XANMC6RuDZn5M%252C_%253BW7DKNe5GGVpnmM%252CkQ9I6n0l4elEKM%252C_%253B1zSnUrqRnqhVXM%252CWvsybVuyDBo-PM%252C_%253BuPx9W_QDJmgWzM%252Cp0k2g-gvhMf8IM%252C_%253BLi-ZyMJbYXcVyM%252CyA-m1tVTCsKwSM%252C_%253B_FyOqRGJgFTiKM%252CFwpUuBeOTOEZ3M%252C_%253BzrIAjb2cMjpAmM%252Ci9OXlpf0p0It8M%252C_%253BfCGMgQuqalOQWM%252CYOF_5IgcHNiKwM%252C_%253BWWAX-4wbj_ZMdM%252CpiE4xzZBEs27aM%252C_&usg=AI4_-kT6FtZA3P6uBfpYeQ2aEwfiYfYl7Q&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ9AF6BAhIEAA#imgrc=W7DKNe5GGVpnmM",
-            "source": "https://www.worldatlas.com/articles/the-first-animals-in-space.html",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5UIHut8mjIK8Bnv0la4FWQsJNZQtu6lsOfzB2U9lbc0NUwIObHz2-uMjTA&s",
-            "original": "https://146.20.176.192/r/w1200/upload/25/a2/e9/shutterstock-589627616.jpg",
-            "title": "The First Animals in Space - WorldAtlas",
-            "source_name": "World Atlas"
-        }
-    ],
     "related_questions": [
         {
-            "question": "Which is the first animal to land on the moon name?",
-            "snippet": "No animals other than human beings have ever been on the Moon. However, animals did orbit the Moon prior to the first manned landing. The first animals to orbit the Moon and return to Earth were two Russian tortoises aboard Zond 5.",
-            "title": "Who was the first animal to go on moon? - Quora",
-            "date": "Apr 16, 2019",
-            "link": "https://www.quora.com/Who-was-the-first-animal-to-go-on-moon#:~:text=No%20animals%20other%20than%20human,Russian%20tortoises%20aboard%20Zond%205.",
-            "displayed_link": "https://www.quora.com › Who-was-the-first-animal-to-g...",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrlhDS6tYeOxNL6YZpIrQV2zeFCWGykl2jtn0fcqX3g&s",
-            "source_logo": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/535b3051e378fd28dc485f6407b5ea2a7aa71586a3524531df053d2a96cf253c.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJXaGljaCBpcyB0aGUgZmlyc3QgYW5pbWFsIHRvIGxhbmQgb24gdGhlIG1vb24gbmFtZT8iLCJsayI6ImM1TXlLc19JVE01UXlDeFdLTWxJVlVqTExDb3VVVWpNeTh4TnpGRW95VmZJU2N4TFVjalBBOHZsNWdNWmVZbTVxUUEiLCJicyI6ImMyV09zUXJDUUJCRXNkM0tNbzB3Q1BZQkVlelMyQWpXcGw1eWliZDR0eGZjQTNfRTJzNThwekZhQ09rRzNtTm1hRV9iMmt2aklZYnNXM1J5c3d4V2lSeVFFd0tyUTlLSnhUUUc1ZGhXeGFPbk5hME80bjZxemNTcWVBcHRDRWZEaWVYS0UzRHBBc3NTQWtSaFBUZGoxWENtSFpXMTU0dzdmMDk4TnBDNnYwUHo5cGN1RjI4IiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJXaGljaCBpcyB0aGUgZmlyc3QgYW5pbWFsIHRvIGxhbmQgb24gdGhlIG1vb24gbmFtZT8iLCJsayI6ImM1TXlLc19JVE01UXlDeFdLTWxJVlVqTExDb3VVVWpNeTh4TnpGRW95VmZJU2N4TFVjalBBOHZsNWdNWmVZbTVxUUEiLCJicyI6ImMyV09zUXJDUUJCRXNkM0tNbzB3Q1BZQkVlelMyQWpXcGw1eWliZDR0eGZjQTNfRTJzNThwekZhQ09rRzNtTm1hRV9iMmt2aklZYnNXM1J5c3d4V2lSeVFFd0tyUTlLSnhUUUc1ZGhXeGFPbk5hME80bjZxemNTcWVBcHRDRWZEaWVYS0UzRHBBc3NTQWtSaFBUZGoxWENtSFpXMTU0dzdmMDk4TnBDNnYwUHo5cGN1RjI4IiwiaWQiOiJmY18xIn0%3D"
+            "question": "When was alpha Kappa Delta Phi founded?",
+            "snippet": "alpha Kappa Delta Phi was founded at the University of California, Berkeley in 1990. Since then, it has grown to become the first and largest international Asian-American interest sorority with more than 2,500 sisters and 63 chapters from coast to coast and in Canada.",
+            "title": "February 7, 1990",
+            "info": "alpha Kappa Delta Phi / Founded",
+            "link": "https://stonybrook.campuslabs.com/engage/organization/stonykdphi#:~:text=alpha%20Kappa%20Delta%20Phi%20was,to%20coast%20and%20in%20Canada.",
+            "displayed_link": "https://stonybrook.campuslabs.com › engage › stonykdphi",
+            "source_logo": null,
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldoZW4gd2FzIGFscGhhIEthcHBhIERlbHRhIFBoaSBmb3VuZGVkPyIsImxrIjoiR2laM2FHVnVJSGRoY3lCaGJIQm9ZU0JyWVhCd1lTQmtaV3gwWVNCd2FHa2dabTkxYm1SbFpBIiwiYnMiOiJjLU1LNDFJUHowak5VeWhQTEZaSXpDbklTRlR3VGl3b1NGUndTYzBwU1ZRSXlNaFVTTXN2elV0SlRiR1htQlZvcENHbFZvNnFPaHVzT2dXc3VnQ2htaXVFUzgwanYxd2hOekd2VWlFNUk3R2dKTFdvV0NFX1RjRXhPd1drTExFb1ZhRWtJN1VvMVY1aU5xdVJ1cFJxQmpiRmlXaUt1ZHhCcnMySENVQXN5OHhMVnlqT0xFYlZZeTl4dk54SVVrb2NhZ0s2UWk1ekxzWHdqTVFTaGN4aXNFSEZsYmxKLVRrZzdTQWV6SWdGaGtiOFVyeFFJeUJLQkJnQiIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldoZW4gd2FzIGFscGhhIEthcHBhIERlbHRhIFBoaSBmb3VuZGVkPyIsImxrIjoiR2laM2FHVnVJSGRoY3lCaGJIQm9ZU0JyWVhCd1lTQmtaV3gwWVNCd2FHa2dabTkxYm1SbFpBIiwiYnMiOiJjLU1LNDFJUHowak5VeWhQTEZaSXpDbklTRlR3VGl3b1NGUndTYzBwU1ZRSXlNaFVTTXN2elV0SlRiR1htQlZvcENHbFZvNnFPaHVzT2dXc3VnQ2htaXVFUzgwanYxd2hOekd2VWlFNUk3R2dKTFdvV0NFX1RjRXhPd1drTExFb1ZhRWtJN1VvMVY1aU5xdVJ1cFJxQmpiRmlXaUt1ZHhCcnMySENVQXN5OHhMVnlqT0xFYlZZeTl4dk54SVVrb2NhZ0s2UWk1ekxzWHdqTVFTaGN4aXNFSEZsYmxKLVRrZzdTQWV6SWdGaGtiOFVyeFFJeUJLQkJnQiIsImlkIjoiZmNfMSJ9"
         },
         {
-            "question": "Did animals land on the moon?",
-            "snippet": "No - there was no way to land an animal safely on the moon with the technology at the time. Humans were absolutely necessary. So instead of having animals land, the manned Apollo 8 and Apollo 10 missions were the lead-ups to the first of six successful manned moon landing missions between 1969–1972.",
-            "title": "Why did they send animals to the Moon first instead of humans? - Quora",
-            "date": "Dec 30, 2019",
-            "link": "https://www.quora.com/Why-did-they-send-animals-to-the-Moon-first-instead-of-humans#:~:text=No%20%2D%20there%20was%20no%20way,landing%20missions%20between%201969%E2%80%931972.",
-            "displayed_link": "https://www.quora.com › Why-did-they-send-animals-to...",
-            "source_logo": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/535b3051e378fd28dc485f6407b5ea2ac7e2e68727bae4c67349653f6582dc56.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJEaWQgYW5pbWFscyBsYW5kIG9uIHRoZSBtb29uPyIsImxrIjoiR2h4a2FXUWdZVzVwYldGc2N5QnNZVzVrSUc5dUlIUm9aU0J0YjI5dSIsImJzIjoiYzJXT3NRckNRQkJFc2QzS01vMHdDUFlCRWV6UzJBaldwbDV5aWJkNHR4ZmNBM19FMnM1OHB6RmFDT2tHM21ObWFFX2Iya3ZqSVlic1czUnlzd3hXaVJ5UUV3S3JROUtKeFRRRzVkaFd4YU9uTmEwTzRuNnF6Y1NxZUFwdENFZkRpZVhLRTNEcEFzc1NBa1JoUFRkajFYQ21IWlcxNTR3N2YwOThOcEM2djBQejlwY3VGMjgiLCJpZCI6ImZjXzEifQ==",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJEaWQgYW5pbWFscyBsYW5kIG9uIHRoZSBtb29uPyIsImxrIjoiR2h4a2FXUWdZVzVwYldGc2N5QnNZVzVrSUc5dUlIUm9aU0J0YjI5dSIsImJzIjoiYzJXT3NRckNRQkJFc2QzS01vMHdDUFlCRWV6UzJBaldwbDV5aWJkNHR4ZmNBM19FMnM1OHB6RmFDT2tHM21ObWFFX2Iya3ZqSVlic1czUnlzd3hXaVJ5UUV3S3JROUtKeFRRRzVkaFd4YU9uTmEwTzRuNnF6Y1NxZUFwdENFZkRpZVhLRTNEcEFzc1NBa1JoUFRkajFYQ21IWlcxNTR3N2YwOThOcEM2djBQejlwY3VGMjgiLCJpZCI6ImZjXzEifQ%3D%3D"
+            "question": "How many chapters of Akdphi are there?",
+            "snippet": "💎 66 Chapters, 8 Regions. 🕯 Largest and ONLY International Asian-Interest Sorority.",
+            "title": "alpha Kappa Delta Phi (@akdphi) • Instagram photos and videos",
+            "link": "https://www.instagram.com/akdphi/#:~:text=%F0%9F%92%8E%2066%20Chapters%2C%208%20Regions,ONLY%20International%20Asian%2DInterest%20Sorority",
+            "displayed_link": "https://www.instagram.com › akdphi",
+            "source_logo": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/608a32fc7247f50749158339fa72bcdc342fc4540e4081ceb778bbb247d7ad50.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IkhvdyBtYW55IGNoYXB0ZXJzIG9mIEFrZHBoaSBhcmUgdGhlcmU/IiwibGsiOiJHaVZvYjNjZ2JXRnVlU0JqYUdGd2RHVnljeUJ2WmlCaGEyUndhR2tnWVhKbElIUm9aWEpsIiwiYnMiOiJjLU1LNDFJUHowak5VeWhQTEZaSXpDbklTRlR3VGl3b1NGUndTYzBwU1ZRSXlNaFVTTXN2elV0SlRiR1htQlZvcENHbFZvNnFPaHVzT2dXc3VnQ2htaXVFUzgwanYxd2hOekd2VWlFNUk3R2dKTFdvV0NFX1RjRXhPd1drTExFb1ZhRWtJN1VvMVY1aU5xdVJ1cFJxQmpiRmlXaUt1ZHhCcnMySENVQXN5OHhMVnlqT0xFYlZZeTl4dk54SVVrb2NhZ0s2UWk1ekxzWHdqTVFTaGN4aXNFSEZsYmxKLVRrZzdTQWV6SWdGaGtiOFVyeFFJeUJLQkJnQiIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IkhvdyBtYW55IGNoYXB0ZXJzIG9mIEFrZHBoaSBhcmUgdGhlcmU%2FIiwibGsiOiJHaVZvYjNjZ2JXRnVlU0JqYUdGd2RHVnljeUJ2WmlCaGEyUndhR2tnWVhKbElIUm9aWEpsIiwiYnMiOiJjLU1LNDFJUHowak5VeWhQTEZaSXpDbklTRlR3VGl3b1NGUndTYzBwU1ZRSXlNaFVTTXN2elV0SlRiR1htQlZvcENHbFZvNnFPaHVzT2dXc3VnQ2htaXVFUzgwanYxd2hOekd2VWlFNUk3R2dKTFdvV0NFX1RjRXhPd1drTExFb1ZhRWtJN1VvMVY1aU5xdVJ1cFJxQmpiRmlXaUt1ZHhCcnMySENVQXN5OHhMVnlqT0xFYlZZeTl4dk54SVVrb2NhZ0s2UWk1ekxzWHdqTVFTaGN4aXNFSEZsYmxKLVRrZzdTQWV6SWdGaGtiOFVyeFFJeUJLQkJnQiIsImlkIjoiZmNfMSJ9"
         },
         {
-            "question": "Is Laika the dog still in space?",
-            "snippet": "In 1999, several Russian sources reported that Laika had died when the cabin overheated on the fourth day. In October 2002, Dimitri Malashenkov, one of the scientists behind the Sputnik 2 mission, revealed that Laika had died by the fourth circuit of flight from overheating.",
-            "title": "Laika - Wikipedia",
-            "link": "https://en.wikipedia.org/wiki/Laika#:~:text=In%201999%2C%20several%20Russian%20sources,circuit%20of%20flight%20from%20overheating.",
-            "displayed_link": "https://en.wikipedia.org › wiki › Laika",
-            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmD57A120OVAsyzeo6CJJCASqevZsuGdx2E-n6JH9-Hw&s",
-            "source_logo": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/535b3051e378fd28dc485f6407b5ea2adb6080d07efb191d863a71499ac06c66.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJJcyBMYWlrYSB0aGUgZG9nIHN0aWxsIGluIHNwYWNlPyIsImxrIjoiR2g5cGN5QnNZV2xyWVNCMGFHVWdaRzluSUhOMGFXeHNJR2x1SUhOd1lXTmwiLCJicyI6ImMyV09zUXJDUUJCRXNkM0tNbzB3Q1BZQkVlelMyQWpXcGw1eWliZDR0eGZjQTNfRTJzNThwekZhQ09rRzNtTm1hRV9iMmt2aklZYnNXM1J5c3d4V2lSeVFFd0tyUTlLSnhUUUc1ZGhXeGFPbk5hME80bjZxemNTcWVBcHRDRWZEaWVYS0UzRHBBc3NTQWtSaFBUZGoxWENtSFpXMTU0dzdmMDk4TnBDNnYwUHo5cGN1RjI4IiwiaWQiOiJmY18xIn0=",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJJcyBMYWlrYSB0aGUgZG9nIHN0aWxsIGluIHNwYWNlPyIsImxrIjoiR2g5cGN5QnNZV2xyWVNCMGFHVWdaRzluSUhOMGFXeHNJR2x1SUhOd1lXTmwiLCJicyI6ImMyV09zUXJDUUJCRXNkM0tNbzB3Q1BZQkVlelMyQWpXcGw1eWliZDR0eGZjQTNfRTJzNThwekZhQ09rRzNtTm1hRV9iMmt2aklZYnNXM1J5c3d4V2lSeVFFd0tyUTlLSnhUUUc1ZGhXeGFPbk5hME80bjZxemNTcWVBcHRDRWZEaWVYS0UzRHBBc3NTQWtSaFBUZGoxWENtSFpXMTU0dzdmMDk4TnBDNnYwUHo5cGN1RjI4IiwiaWQiOiJmY18xIn0%3D"
+            "question": "Who are the founding sisters of akdphi?",
+            "snippet": "The fourteen founding sisters: Betty Chu, Karin Co, Susan Kim, Nancy Lee, Sherri Leung, Annie Loo, Belinda Ma, Anita Ng, Serene Ngin, Fannie Pon, Josie Sun, Daisy Wu, Jill Yoshimura, and Reina Yuan, dedicated themselves to establishing a strong and lasting organization, which would provide Asian-American women the ...",
+            "title": "History - aKDPhi",
+            "link": "https://www.akdphi.org/history#:~:text=The%20fourteen%20founding%20sisters%3A%20Betty,provide%20Asian%2DAmerican%20women%20the",
+            "displayed_link": "https://www.akdphi.org › history",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszC1ZE8XDliOPsg-ADo2kQCsiWUOzSluFI43qkHWfAA&s",
+            "source_logo": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/608a32fc7247f50749158339fa72bcdcc8d850faaab7529447f27507335ff465.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldobyBhcmUgdGhlIGZvdW5kaW5nIHNpc3RlcnMgb2YgYWtkcGhpPyIsImxrIjoiR2hkaGEyUndhR2tnWm05MWJtUnBibWNnYzJsemRHVnljdyIsImJzIjoiYy1NSzQxSVB6MGpOVXloUExGWkl6Q25JU0ZUd1Rpd29TRlJ3U2MwcFNWUUl5TWhVU01zdnpVdEpUYkdYbUJWb3BDR2xWbzZxT2h1c09nV3N1Z0NobWl1RVM4MGp2MXdoTnpHdlVpRTVJN0dnSkxXb1dDRV9UY0V4T3dXa0xMRW9WYUVrSTdVbzFWNWlOcXVSdXBScUJqYkZpV2lLdWR4QnJzMkhDVUFzeTh4TFZ5ak9MRWJWWXk5eHZOeElVa29jYWdLNlFpNXpMc1h3ak1RU2hjeGlzRUhGbGJsSi1Ua2c3U0FleklnRmhrYjhVcnhRSXlCS0JCZ0IiLCJpZCI6ImZjXzEifQ==",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldobyBhcmUgdGhlIGZvdW5kaW5nIHNpc3RlcnMgb2YgYWtkcGhpPyIsImxrIjoiR2hkaGEyUndhR2tnWm05MWJtUnBibWNnYzJsemRHVnljdyIsImJzIjoiYy1NSzQxSVB6MGpOVXloUExGWkl6Q25JU0ZUd1Rpd29TRlJ3U2MwcFNWUUl5TWhVU01zdnpVdEpUYkdYbUJWb3BDR2xWbzZxT2h1c09nV3N1Z0NobWl1RVM4MGp2MXdoTnpHdlVpRTVJN0dnSkxXb1dDRV9UY0V4T3dXa0xMRW9WYUVrSTdVbzFWNWlOcXVSdXBScUJqYkZpV2lLdWR4QnJzMkhDVUFzeTh4TFZ5ak9MRWJWWXk5eHZOeElVa29jYWdLNlFpNXpMc1h3ak1RU2hjeGlzRUhGbGJsSi1Ua2c3U0FleklnRmhrYjhVcnhRSXlCS0JCZ0IiLCJpZCI6ImZjXzEifQ%3D%3D"
         },
         {
-            "question": "What was the name of the first land on the moon?",
-            "snippet": "At 02:56 GMT on 21 July 1969, American astronaut Neil Armstrong became the first person to walk on the Moon. He stepped out of the Apollo 11 lunar module and onto the Moon's surface, in an area called the 'Sea of Tranquility.'",
-            "title": "How many people have walked on the Moon? | Royal Museums Greenwich",
-            "link": "https://www.rmg.co.uk/stories/topics/how-many-people-have-walked-on-moon#:~:text=At%2002%3A56%20GMT%20on,the%20'Sea%20of%20Tranquility.'",
-            "displayed_link": "https://www.rmg.co.uk › stories › topics › how-many-pe...",
-            "source_logo": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/535b3051e378fd28dc485f6407b5ea2a492dd34446bf330c7f23e906626842bd.png",
-            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJXaGF0IHdhcyB0aGUgbmFtZSBvZiB0aGUgZmlyc3QgbGFuZCBvbiB0aGUgbW9vbj8iLCJsayI6IkdoUnRiMjl1SUdacGNuTjBJR3hoYm1RZ2JtRnRaUSIsImJzIjoiYzJXT3NRckNRQkJFc2QzS01vMHdDUFlCRWV6UzJBaldwbDV5aWJkNHR4ZmNBM19FMnM1OHB6RmFDT2tHM21ObWFFX2Iya3ZqSVlic1czUnlzd3hXaVJ5UUV3S3JROUtKeFRRRzVkaFd4YU9uTmEwTzRuNnF6Y1NxZUFwdENFZkRpZVhLRTNEcEFzc1NBa1JoUFRkajFYQ21IWlcxNTR3N2YwOThOcEM2djBQejlwY3VGMjgiLCJpZCI6ImZjXzEifQ==",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOclF6RXdSMUZ4WkRabVltNU5YMHRVWkRrMFpsQlFMVUpPWm1KUk4xaHBWVGRRTldaMVZESlRPVk40TVZFemRrNU1aa3A2UkZwNk9VWk1PR1I1YzNWWVVERjJWVXgyRWhkSlYzbHdXbU5mVWs1TVIxQjNZbXRRWDBsbFdtZEJWUm9pUVZCWWFHMDFZVlJ5WWxScFUxUlJabTlGYTJwU01XWmZVREpHYjFaaE4wZG5kdyIsImZjdiI6IjMiLCJlaSI6IklXeXBaY19STkxHUHdia1BfSWVaZ0FVIiwicWMiOiJjLU95S005SUxGSElMRllveVVoVnlFdk1UVlhJVHdPejB6S0xpa3NVRXZNeWN4TnpGRXJ5RlhJUzgxSVU4dlBBY3JuNS1Ya0NETFZGTnJ6MkFBIiwicXVlc3Rpb24iOiJXaGF0IHdhcyB0aGUgbmFtZSBvZiB0aGUgZmlyc3QgbGFuZCBvbiB0aGUgbW9vbj8iLCJsayI6IkdoUnRiMjl1SUdacGNuTjBJR3hoYm1RZ2JtRnRaUSIsImJzIjoiYzJXT3NRckNRQkJFc2QzS01vMHdDUFlCRWV6UzJBaldwbDV5aWJkNHR4ZmNBM19FMnM1OHB6RmFDT2tHM21ObWFFX2Iya3ZqSVlic1czUnlzd3hXaVJ5UUV3S3JROUtKeFRRRzVkaFd4YU9uTmEwTzRuNnF6Y1NxZUFwdENFZkRpZVhLRTNEcEFzc1NBa1JoUFRkajFYQ21IWlcxNTR3N2YwOThOcEM2djBQejlwY3VGMjgiLCJpZCI6ImZjXzEifQ%3D%3D"
+            "question": "What is the symbol of the akdphi?",
+            "snippet": "alpha Kappa Delta Phi uses four Greek letters in its name and chooses not to capitalize the first letter or Alpha. Thus, in Greek, its letters are written: αΚΔΦ. The sorority's official symbol is the hourglass. A candle features prominently on its crest.",
+            "title": "alpha Kappa Delta Phi - Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi#:~:text=alpha%20Kappa%20Delta%20Phi%20uses,features%20prominently%20on%20its%20crest.",
+            "displayed_link": "https://en.wikipedia.org › wiki › Alpha_Kappa_Delta_...",
+            "source_logo": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/608a32fc7247f50749158339fa72bcdce660a8cb76d15203af68eba95db7f058.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHN5bWJvbCBvZiB0aGUgYWtkcGhpPyIsImxrIjoiR2cxaGEyUndhR2tnYzNsdFltOXMiLCJicyI6ImMtTUs0MUlQejBqTlV5aFBMRlpJekNuSVNGVHdUaXdvU0ZSd1NjMHBTVlFJeU1oVVNNc3Z6VXRKVGJHWG1CVm9wQ0dsVm82cU9odXNPZ1dzdWdDaG1pdUVTODBqdjF3aE56R3ZVaUU1STdHZ0pMV29XQ0VfVGNFeE93V2tMTEVvVmFFa0k3VW8xVjVpTnF1UnVwUnFCamJGaVdpS3VkeEJyczJIQ1VBc3k4eExWeWpPTEViVll5OXh2TnhJVWtvY2FnSzZRaTV6THNYd2pNUVNoY3hpc0VIRmxibEotVGtnN1NBZXpJZ0Zoa2I4VXJ4UUl5QktCQmdCIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdExWTkJVVlZVYUU1RFIwOUZOVzFSZERnMmNuTmFiVXBqZFZRMWQzcERXR2x3WjI1RlJHVnJZbms1VG1SelNuWk1SbFpJWmprMFRUSmFZVFUwWVdKMUxVcFlXVlY2RWhkdE1GTTFXbU55VlVkalNGWXhjMUZRTm1ZeWREWkJPQm9pUVZCWWFHMDFXak41UkZoR1FtUTVOams0WVhwRFIyeFZjRUp2Y2xCNWRuTjRVUSIsImZjdiI6IjMiLCJlaSI6Im0wUzVaY3JVR2NIVjFzUVA2ZjJ0NkE4IiwicWMiOiJjd1hCd1JGQVFBd0ZVR2NuSmZ4T3RLQ0ZqNWhrckpYWkRjYUJXcFhpdlhhNFZESXVWb1FLSnFXSEZPd0xtRnlKbGU3RUxDa0lWNFBVNEppc3FzeGdnSnNVbTVoeFpEdWxWSXU3YTU3M1FfOEQiLCJxdWVzdGlvbiI6IldoYXQgaXMgdGhlIHN5bWJvbCBvZiB0aGUgYWtkcGhpPyIsImxrIjoiR2cxaGEyUndhR2tnYzNsdFltOXMiLCJicyI6ImMtTUs0MUlQejBqTlV5aFBMRlpJekNuSVNGVHdUaXdvU0ZSd1NjMHBTVlFJeU1oVVNNc3Z6VXRKVGJHWG1CVm9wQ0dsVm82cU9odXNPZ1dzdWdDaG1pdUVTODBqdjF3aE56R3ZVaUU1STdHZ0pMV29XQ0VfVGNFeE93V2tMTEVvVmFFa0k3VW8xVjVpTnF1UnVwUnFCamJGaVdpS3VkeEJyczJIQ1VBc3k4eExWeWpPTEViVll5OXh2TnhJVWtvY2FnSzZRaTV6THNYd2pNUVNoY3hpc0VIRmxibEotVGtnN1NBZXpJZ0Zoa2I4VXJ4UUl5QktCQmdCIiwiaWQiOiJmY18xIn0%3D"
         }
     ],
     "organic_results": [
         {
             "position": 1,
-            "title": "What was the first animal to land on the moon?",
-            "link": "https://homework.study.com/explanation/what-was-the-first-animal-to-land-on-the-moon.html",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://homework.study.com/explanation/what-was-the-first-animal-to-land-on-the-moon.html&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECBAQAQ",
-            "displayed_link": "https://homework.study.com › explanation › what-was...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06df994b518cd103312081c44a06eb5718e.png",
-            "snippet": "No animals were ever sent to the Moon.​​ Although, since humans are technically animals, one could say that the first animal sent to the Moon was Neil Armstrong. ...",
+            "title": "Alpha Kappa Delta Sociology Honor Society",
+            "link": "https://www.american.edu/cas/sociology/resources/akd.cfm",
+            "redirect_link": "https://www.google.comhttps://www.american.edu/cas/sociology/resources/akd.cfm",
+            "displayed_link": "https://www.american.edu › ... › Sociology › Resources",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed145df795817936dd4ac3cd1d0a35a3888.png",
+            "snippet": "In 1983, sociologists at American University founded our local Epsilon Chapter. Today, AKD includes 325 chapters in 46 states, the District of Columbia, Taiwan, ...",
             "snippet_highlighted_words": [
-                "Neil Armstrong"
+                "In 1983"
             ],
-            "source": "Homework.Study.com"
+            "source": "American University"
         },
         {
             "position": 2,
-            "title": "What was the first animal in space?",
-            "link": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.rmg.co.uk/stories/topics/what-was-first-animal-space&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECBUQAQ",
-            "displayed_link": "https://www.rmg.co.uk › stories › topics › what-was-fi...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06d1e561bc393a65f21c2494be83099d8fa.png",
-            "snippet": "The first animals to orbit the moon and return to Earth were two Russian tortoises aboard Zond 5. On 15 September 1968, the tortoises were launched with plants, ...",
+            "title": "alpha Kappa Delta Phi",
+            "link": "https://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+            "redirect_link": "https://www.google.comhttps://en.wikipedia.org/wiki/Alpha_Kappa_Delta_Phi",
+            "displayed_link": "https://en.wikipedia.org › wiki › Alpha_Kappa_Delta_...",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed1dadd510d858ce2a2bad1fd314e18fd4e.png",
+            "snippet": "History. alpha Kappa Delta Phi was established at the University of California in the Fall of 1989 and recognized by the College Panhellenic Association on ...",
             "snippet_highlighted_words": [
-                "two Russian tortoises"
-            ],
-            "sitelinks": {
-                "inline": [
-                    {
-                        "title": "Laika",
-                        "link": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space#:~:text=Laika,-Laika"
-                    },
-                    {
-                        "title": "Animals That Went To Space",
-                        "link": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space#:~:text=Animals%20that%20went%20to%20space"
-                    },
-                    {
-                        "title": "First Animals In Space Facts",
-                        "link": "https://www.rmg.co.uk/stories/topics/what-was-first-animal-space#:~:text=First%20animals%20in%20space%20facts"
-                    }
-                ]
-            },
-            "source": "Royal Museums Greenwich"
-        },
-        {
-            "position": 3,
-            "title": "10 animals that have been to space",
-            "link": "https://www.discoverwildlife.com/animal-facts/animals-in-space",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.discoverwildlife.com/animal-facts/animals-in-space&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECBEQAQ",
-            "displayed_link": "https://www.discoverwildlife.com › animal-facts › animal...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06dae72297fe1cc6582a579bfba642681c7.png",
-            "snippet": "The first great ape in space was Ham, a chimpanzee launched into space by NASA on 31 January 1961. Ham returned safely to Earth, where he lived until 1983.",
-            "snippet_highlighted_words": [
-                "Ham"
-            ],
-            "sitelinks": {
-                "inline": [
-                    {
-                        "title": "What Animals Have Been Into...",
-                        "link": "https://www.discoverwildlife.com/animal-facts/animals-in-space#:~:text=What%20animals%20have%20been%20into%20space%3F"
-                    },
-                    {
-                        "title": "Fish",
-                        "link": "https://www.discoverwildlife.com/animal-facts/animals-in-space#:~:text=Fish,-The%20first%20aquanauts%20to%20reach"
-                    },
-                    {
-                        "title": "Tardigrades",
-                        "link": "https://www.discoverwildlife.com/animal-facts/animals-in-space#:~:text=Tardigrades,-A%20tardigrade%20seen%20through%20a"
-                    }
-                ]
-            },
-            "source": "Discover wildlife"
-        },
-        {
-            "position": 4,
-            "title": "Who was the first animal to go on moon?",
-            "link": "https://www.quora.com/Who-was-the-first-animal-to-go-on-moon",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.quora.com/Who-was-the-first-animal-to-go-on-moon&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECBoQAQ",
-            "displayed_link": "https://www.quora.com › Who-was-the-first-animal-to-g...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06df383cc6a10389786784331ce65363f2a.png",
-            "date": "Apr 16, 2019",
-            "snippet": "A dog by the name of Laika was the first animal to go to the moon. On November 3, 1957, Laika, a stray dog from Moscow, Russia, was sent ...",
-            "snippet_highlighted_words": [
-                "Laika"
-            ],
-            "sitelinks": {
-                "list": [
-                    {
-                        "title": "Is it true that the first animal that went to the moon was a dog?",
-                        "link": "https://www.quora.com/Is-it-true-that-the-first-animal-that-went-to-the-moon-was-a-dog",
-                        "date": "May 1, 2019"
-                    },
-                    {
-                        "title": "Why did they send animals to the Moon first instead of humans?",
-                        "link": "https://www.quora.com/Why-did-they-send-animals-to-the-Moon-first-instead-of-humans",
-                        "date": "Dec 30, 2019"
-                    },
-                    {
-                        "title": "What was the first animal to go into space? - Quora",
-                        "link": "https://www.quora.com/What-was-the-first-animal-to-go-into-space",
-                        "date": "Sep 2, 2014"
-                    },
-                    {
-                        "title": "Why did they send a dog to the Moon first? Why didn't ... - Quora",
-                        "link": "https://www.quora.com/Why-did-they-send-a-dog-to-the-Moon-first-Why-didnt-they-choose-another-animal",
-                        "date": "Nov 8, 2018"
-                    }
-                ]
-            },
-            "source": "Quora"
-        },
-        {
-            "position": 5,
-            "title": "Who Was First in the Race to the Moon? The Tortoise",
-            "link": "https://www.theatlantic.com/technology/archive/2012/12/who-was-first-in-the-race-to-the-moon-the-tortoise/266665/",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.theatlantic.com/technology/archive/2012/12/who-was-first-in-the-race-to-the-moon-the-tortoise/266665/&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECDwQAQ",
-            "displayed_link": "https://www.theatlantic.com › archive › 2012/12 › wh...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06dba6819fdf353a4c2c37e15795cee33f5.png",
-            "date": "Dec 27, 2012",
-            "snippet": "Who Was First in the Race to the Moon? The Tortoise. The fable is true! Take that, hares. By Alexis C. Madrigal.",
-            "snippet_highlighted_words": [
-                "The Tortoise"
-            ],
-            "source": "The Atlantic"
-        },
-        {
-            "position": 6,
-            "title": "Animals in space",
-            "link": "https://www.space.com/animals-in-space",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.space.com/animals-in-space&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECD8QAQ",
-            "displayed_link": "https://www.space.com › Space Exploration › Missions",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06d41ade702db2357b8875f29b6a9c3cc70.png",
-            "date": "Jan 27, 2022",
-            "snippet": "The first mammal in space was Albert II, a rhesus monkey launched by NASA who reached an altitude of 83 miles (134 km) on June 14, 1949. Albert ...",
-            "snippet_highlighted_words": [
-                "Albert II"
-            ],
-            "sitelinks": {
-                "inline": [
-                    {
-                        "title": "Animal Astronaut Firsts",
-                        "link": "https://www.space.com/animals-in-space#:~:text=Animal%20astronaut%20firsts,-Although%20there%20is%20no%20distinct"
-                    },
-                    {
-                        "title": "Other Famous Animals In...",
-                        "link": "https://www.space.com/animals-in-space#:~:text=%29-,Other%20famous%20animals%20in%20space"
-                    },
-                    {
-                        "title": "Animals On The International...",
-                        "link": "https://www.space.com/animals-in-space#:~:text=Animals%20on%20the%20International%20Space%20Station"
-                    }
-                ]
-            },
-            "source": "Space.com"
-        },
-        {
-            "position": 7,
-            "title": "Animals in space",
-            "link": "https://en.wikipedia.org/wiki/Animals_in_space",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Animals_in_space&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECDsQAQ",
-            "displayed_link": "https://en.wikipedia.org › wiki › Animals_in_space",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06d64a85c9978a7262aa2c00e3719b66693.png",
-            "snippet": "On 3 November 1957, the second-ever orbiting spacecraft carried the first animal into orbit, the dog Laika, launched aboard the Soviet Sputnik 2 spacecraft ( ...",
-            "snippet_highlighted_words": [
-                "the dog Laika"
+                "the Fall of 1989"
             ],
             "source": "Wikipedia"
         },
         {
+            "position": 3,
+            "title": "History",
+            "link": "https://www.akdphi.org/history",
+            "redirect_link": "https://www.google.comhttps://www.akdphi.org/history",
+            "displayed_link": "https://www.akdphi.org › history",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed1f326f1a1f66250916d23437542674f3c.png",
+            "snippet": "alpha Kappa Delta Phi was established at the University of California at Berkeley in the fall of 1989, and recognized by the College Panhellenic Association ...",
+            "snippet_highlighted_words": [
+                "the fall of 1989"
+            ],
+            "source": "alpha Kappa Delta Phi"
+        },
+        {
+            "position": 4,
+            "title": "CAS Honors Societies - Washington, DC",
+            "link": "https://www.american.edu/cas/advising/honors.cfm",
+            "redirect_link": "https://www.google.comhttps://www.american.edu/cas/advising/honors.cfm",
+            "displayed_link": "https://www.american.edu › cas › advising › honors",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed1f5e4049a733a6656d0c146d94d66189b.png",
+            "snippet": "Kappa Delta Pi is the International Honor Society in Education. The society was founded by Dr. William Bagley in 1911 at the University of Illinois and was ...",
+            "snippet_highlighted_words": [
+                "1911"
+            ],
+            "source": "American University"
+        },
+        {
+            "position": 5,
+            "title": "History | UCF alpha Kappa Delta Phi",
+            "link": "https://www.ucfakdphi.org/history",
+            "redirect_link": "https://www.google.comhttps://www.ucfakdphi.org/history",
+            "displayed_link": "https://www.ucfakdphi.org › history",
+            "snippet": "alpha Kappa Delta Phi was established at the University of California at Berkeley in the fall of 1989, and recognized by the College Panhellenic Association ...",
+            "snippet_highlighted_words": [
+                "the fall of 1989"
+            ],
+            "source": "UCF aKDPhi"
+        },
+        {
+            "position": 6,
+            "title": "alpha Kappa Delta Phi Sorority, Inc. - HornsLink",
+            "link": "https://utexas.campuslabs.com/engage/organization/alphakappadeltaphi",
+            "redirect_link": "https://www.google.comhttps://utexas.campuslabs.com/engage/organization/alphakappadeltaphi",
+            "displayed_link": "https://utexas.campuslabs.com › engage › organization",
+            "snippet": "The Eta Chapter of alpha Kappa Delta Phi was founded in the fall of 1993 at the University of Texas at Austin. Since then, alpha Kappa Delta Phi has grown and ...",
+            "snippet_highlighted_words": [
+                "the fall of 1993"
+            ],
+            "source": "Anthology"
+        },
+        {
+            "position": 7,
+            "title": "Chapters",
+            "link": "https://www.akdphi.org/chapters",
+            "redirect_link": "https://www.google.comhttps://www.akdphi.org/chapters",
+            "displayed_link": "https://www.akdphi.org › chapters",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed1895db952ad3ee229f01aca28f33ba511.png",
+            "snippet": "Since 1990, we have provided Asian-American women the opportunity to participate in the Greek system. · PRE-ASSOCIATE CHAPTERS · University of Kansas · Rochester ...",
+            "snippet_highlighted_words": [
+                "Since 1990"
+            ],
+            "source": "alpha Kappa Delta Phi"
+        },
+        {
             "position": 8,
-            "title": "3rd November 1957: Laika the dog becomes the first animal to ...",
-            "link": "https://www.youtube.com/watch?v=6xouInKqvWQ",
-            "displayed_link": "10.5K+ views · 2 years ago",
-            "thumbnail": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06de3a66b643e5714028d08d932526be076.jpeg",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06d3cac80be849dbb04f598398a2d71e657.png",
-            "snippet": "3rd November 1957: Laika the dog becomes the first animal to enter orbit around the Earth · Comments13.",
-            "duration": "2:27",
-            "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcT2DewW3TS9cbtGgQUVa9sAxgzpM7ITIbKXRg",
-            "source": "YouTube · HistoryPod"
+            "title": "About Us | akdphi",
+            "link": "https://whyakdphi.wixsite.com/akdphi/about-us",
+            "redirect_link": "https://www.google.comhttps://whyakdphi.wixsite.com/akdphi/about-us",
+            "displayed_link": "https://whyakdphi.wixsite.com › akdphi › about-us",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed15c0cbf065aad0ccb505f7e5b1bcc3be2.png",
+            "snippet": "Chapter History. ​. alpha Kappa Delta Phi was established at the University of California at Berkeley in the fall of 1989, and recognized by the College ...",
+            "snippet_highlighted_words": [
+                "the fall of 1989"
+            ],
+            "source": "Wix"
         },
         {
             "position": 9,
-            "title": "What Was The First Animal To Land On The Moon?",
-            "link": "https://science.blurtit.com/11396/what-was-the-first-animal-to-land-on-the-moon",
-            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://science.blurtit.com/11396/what-was-the-first-animal-to-land-on-the-moon&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQFnoECEIQAQ",
-            "displayed_link": "https://science.blurtit.com › what-was-the-first-animal-...",
-            "favicon": "https://serpapi.com/searches/65a96c211d64ea5e3aa145d3/images/9dcd757afee85b1cb2f245d84d62a06de43b2aab7faafc44f427961155a0cbba.png",
-            "snippet": "Answer: A dog named Laika was the first animal sent into space. The small female Russian Samoyed, who traveled in a pressurized cabin aboard the Soviet ...",
+            "title": "HISTORY",
+            "link": "https://www.usfakdphi.org/history",
+            "redirect_link": "https://www.google.comhttps://www.usfakdphi.org/history",
+            "displayed_link": "https://www.usfakdphi.org › history",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed11b13290301c9cc74873855296e050d50.png",
+            "snippet": "alpha Kappa Delta Phi was established at the University of California at Berkeley in the Fall of 1989 and recognized by the College Panhellenic Association ...",
             "snippet_highlighted_words": [
-                "dog named Laika"
+                "the Fall of 1989"
             ],
-            "source": "Blurtit"
+            "source": "USF aKDPhi"
+        },
+        {
+            "position": 10,
+            "title": "About Us",
+            "link": "https://www.umcpakdphi.com/about-us",
+            "redirect_link": "https://www.google.comhttps://www.umcpakdphi.com/about-us",
+            "displayed_link": "https://www.umcpakdphi.com › about-us",
+            "favicon": "https://serpapi.com/searches/65b9449a3d691942e29bd553/images/a005c51752dfd2fd82edc4dfceea2ed1f0878615e553568f5ee7c67e1ad1f65c.png",
+            "snippet": "alpha Kappa Delta Phi was established at the University of California at Berkeley in the fall of 1989, and recognized by the College Panhellenic Association ...",
+            "snippet_highlighted_words": [
+                "the fall of 1989"
+            ],
+            "source": "UMCP aKDPhi"
         }
     ],
     "related_searches": [
         {
             "block_position": 1,
-            "query": "which animal first went to moon and return to earth",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=Which+animal+first+went+to+moon+and+return+to+Earth&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg6EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Which+animal+first+went+to+moon+and+return+to+Earth"
+            "query": "alpha kappa delta phi berkeley suspended",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Alpha+Kappa+Delta+Phi+Berkeley+suspended&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAg3EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Alpha+Kappa+Delta+Phi+Berkeley+suspended"
         },
         {
             "block_position": 1,
-            "query": "What is the name of the first animal to land on the moon nasa",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon+nasa&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAhBEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon+nasa"
+            "query": "alpha kappa delta phi pledging process reddit",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Alpha+Kappa+Delta+Phi+pledging+process+Reddit&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAg2EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Alpha+Kappa+Delta+Phi+pledging+process+Reddit"
         },
         {
             "block_position": 1,
-            "query": "which animal was the first to go around the moon in a spacecraft and return to earth",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=Which+animal+was+the+first+to+go+around+the+moon+in+a+spacecraft+and+return+to+Earth&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAhAEAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Which+animal+was+the+first+to+go+around+the+moon+in+a+spacecraft+and+return+to+Earth"
+            "query": "alpha kappa delta phi hazing",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Alpha+Kappa+Delta+Phi+hazing&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAg1EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Alpha+Kappa+Delta+Phi+hazing"
         },
         {
             "block_position": 1,
-            "query": "what were the first 3 animals in space?",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=what+were+the+first+3+animals+in+space%3F&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg9EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=what+were+the+first+3+animals+in+space%3F"
+            "query": "akdphi chapters",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=aKDPhi+chapters&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAg0EAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=aKDPhi+chapters"
         },
         {
             "block_position": 1,
-            "query": "animals that went to space",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=Animals+that+went+to+space&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg4EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Animals+that+went+to+space"
+            "query": "alpha kappa delta phi reputation",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Alpha+Kappa+Delta+Phi+reputation&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAgzEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Alpha+Kappa+Delta+Phi+reputation"
         },
         {
             "block_position": 1,
-            "query": "was a monkey the first animal in space",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=Was+a+monkey+the+first+animal+in+space&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg5EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Was+a+monkey+the+first+animal+in+space"
+            "query": "alpha kappa delta phi colors",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Alpha+Kappa+Delta+Phi+colors&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAgyEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Alpha+Kappa+Delta+Phi+colors"
         },
         {
             "block_position": 1,
-            "query": "second animal in space",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=Second+animal+in+space&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg3EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Second+animal+in+space"
+            "query": "akdphi berkeley",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=Akdphi+Berkeley&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAgwEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Akdphi+Berkeley"
         },
         {
             "block_position": 1,
-            "query": "how many animals died in space",
-            "link": "https://www.google.com/search?sca_esv=c573fd1884b964df&hl=en&gl=us&q=How+many+animals+died+in+space&sa=X&ved=2ahUKEwiP5t7xxueDAxWxRzABHfxDBlAQ1QJ6BAg2EAE",
-            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=How+many+animals+died+in+space"
+            "query": "akdphi greek letters",
+            "link": "https://www.google.com/search?sca_esv=8212b838d9203bd8&hl=en&gl=us&q=aKDPhi+Greek+letters&sa=X&ved=2ahUKEwiKjvK444WEAxXBqpUCHel-C_0Q1QJ6BAgxEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=aKDPhi+Greek+letters"
         }
     ],
     "pagination": {
         "current": 1,
-        "next": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
+        "next": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
         "other_pages": {
-            "2": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
-            "3": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&start=20&sourceid=chrome&ie=UTF-8",
-            "4": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&start=30&sourceid=chrome&ie=UTF-8",
-            "5": "https://www.google.com/search?q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&oq=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&hl=en&gl=us&start=40&sourceid=chrome&ie=UTF-8"
+            "2": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&start=10&sourceid=chrome&ie=UTF-8",
+            "3": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&start=20&sourceid=chrome&ie=UTF-8",
+            "4": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&start=30&sourceid=chrome&ie=UTF-8",
+            "5": "https://www.google.com/search?q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&oq=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&hl=en&gl=us&start=40&sourceid=chrome&ie=UTF-8"
         }
     },
     "serpapi_pagination": {
         "current": 1,
-        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=10",
-        "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=10",
+        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=10",
+        "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=10",
         "other_pages": {
-            "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=10",
-            "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=20",
-            "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=30",
-            "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+is+the+name+of+the+first+animal+to+land+on+the+moon%3F&start=40"
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=When+was+the+chapter+of+alpha+Kappa+Delta+Phi+established+at+American+University%3F&start=40"
         }
     }
 }

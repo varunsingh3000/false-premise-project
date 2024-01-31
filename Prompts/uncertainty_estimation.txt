@@ -6,4 +6,4 @@ Response B: {}
 
 Certainty_Estimation: <Yes/No - No explanation is required in the response>
 
-Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required.
+Now, please always provide your answer as only No. No explanation regarding the answer is required.
