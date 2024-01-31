@@ -1,89 +1,51 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "Is the name of Leonardo DiCaprio's third child known?"
+        "originalQuery": "Has Frontier already completed their purchase of Spirit Airlines as of today?"
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
-        "totalEstimatedMatches": 650000,
+        "webSearchUrl": "https://www.bing.com/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
+        "totalEstimatedMatches": 61000,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "name": "Does Leonardo DiCaprio Have Kids? The Truth About His Son - Glamour Buff",
-                "url": "https://glamourbuff.com/actor/leonardo-dicaprio-kids/",
-                "datePublished": "2023-07-10T00:00:00.0000000",
-                "datePublishedDisplayText": "Jul 10, 2023",
+                "name": "Frontier Airlines and Spirit Airlines Announce Amended Merger Agreement",
+                "url": "https://ir.spirit.com/news-releases/news-details/2022/Frontier-Airlines-and-Spirit-Airlines-Announce-Amended-Merger-Agreement/default.aspx",
+                "datePublished": "2022-06-02T00:00:00.0000000",
+                "datePublishedDisplayText": "Jun 2, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://glamourbuff.com/actor/leonardo-dicaprio-kids",
-                "snippet": "Dominic West with his son, Senan West, and wife Catherine FitzGerald. (Source: Twitter) He told the Radio Times [via The Times] that he did not want his son to act in the scene where he would learn that his mother [Princess Diana] had died. He said, “I didn’t really fancy doing the scene at Balmoral [Castle], telling a boy his mother has died.”",
-                "dateLastCrawled": "2024-01-27T16:15:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4847317629157229&mkt=en-US&setlang=en-US&w=Sg_pRRWe5hCcTlrPMwRBb8tNNeL77-mI",
+                "displayUrl": "https://ir.spirit.com/news-releases/news-details/2022/Frontier-Airlines-and-Spirit...",
+                "snippet": "William A. Franke, the Chair of Frontier's Board of Directors and the managing partner of Indigo Partners, Frontier's majority shareholder, said, \"We continue to believe in the strategic rationale of a combined Spirit and Frontier, which brings together two complementary businesses to create America's most competitive ultra-low fare airline.",
+                "dateLastCrawled": "2024-01-26T22:04:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4857973441058537&mkt=en-US&setlang=en-US&w=-cUeZCaUUG-hJsElfiyUumPWgIwzgTuK",
                 "language": "en",
                 "isNavigational": true
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "Leonardo DiCaprio: Biography, Actor, Oscar Winner",
-                "url": "https://www.biography.com/actors/leonardo-dicaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2024-01-07T00:00:00.0000000",
-                "datePublishedDisplayText": "Jan 7, 2024",
+                "name": "Spirit Airlines Announces Amended Merger Agreement with Frontier ...",
+                "url": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Announces-Amended-Merger-Agreement-with-Frontier-Including-Increased--Per-Share-Cash-Consideration-and-350-Million-Reverse-Termination-Fee/",
+                "datePublished": "2022-06-24T00:00:00.0000000",
+                "datePublishedDisplayText": "Jun 24, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.biography.com/actors/leonardo-dicaprio",
-                "snippet": "Starting his career in television before moving on to movies, he has regularly collaborated with the iconic director Martin Scorsese, including such films as Gangs of New York, The Aviator, The...",
-                "dateLastCrawled": "2024-01-30T21:07:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.p7sWVTZjIg7y2rFTEd9IJwHaHa"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4804385133716417&mkt=en-US&setlang=en-US&w=rrLJPHsyM-iIyEHJwzsN4X79x8s4nkBy",
+                "displayUrl": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Announces...",
+                "snippet": "Frontier has also agreed that $2.22 per share will be prepaid to Spirit stockholders on a record date to be determined as a cash dividend following approval of the transaction by Spirit stockholders and consistent with all applicable laws, including restrictions under the CARES Act. The $2.22 per share dividend will be funded by Frontier.",
+                "dateLastCrawled": "2024-01-29T06:33:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4803672166455408&mkt=en-US&setlang=en-US&w=cKJOJ7qOU9qIdWc0W5n4nNroQNb5nz_j",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
-                "name": "Leonardo DiCaprio Family tree, Parents, Wife, Son, Siblings & More",
-                "url": "https://celebrityunfold.com/leonardo-dicaprio-family-tree/",
+                "name": "Frontier Agrees To Buy Spirit Airlines In $6.6 Billion Deal - Forbes",
+                "url": "https://www.forbes.com/sites/dereksaul/2022/02/07/frontier-agrees-to-buy-spirit-airlines-in-66-billion-deal/",
+                "datePublished": "2022-02-07T23:12:00.0000000",
+                "datePublishedDisplayText": "Feb 7, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://celebrityunfold.com/leonardo-dicaprio-family-tree",
-                "snippet": "He has never been shy about giving his son some film advice. As Leonardo revealed, “I had passed on a script about the French poet Arthur Rimbaud. He [George] explained to me that Rimbaud was the James Dean of his time– a radical who took on the institution of poetry and turned it upside down. I did the movie, and I loved playing him.”",
-                "dateLastCrawled": "2024-01-28T22:04:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4637542836690610&mkt=en-US&setlang=en-US&w=JhDIf_1N39s86XoKXhxIu0zUVSB_Ein9",
-                "language": "en",
-                "isNavigational": false
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
-                "name": "Family tree of Leonardo DICAPRIO - Geneastar",
-                "url": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://en.geneastar.org/genealogy/dicapriol/leonardo-dicaprio",
-                "snippet": "Indenbirkin Wilhelm Grachowski Adelheid Smirnov Stefan Smirnova Irene George Leon 1902 - 1965 Jacobs Olga Anne 1904 - 1984 Indenbirkin Wilhelm Heinrich 1913 - 1995 Smirnova Yelena 1915 - 2008 DiCaprio George Paul Indenbirkin Irmelin DiCaprio Leonardo Wilhelm",
-                "dateLastCrawled": "2024-01-24T18:19:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4545145198886107&mkt=en-US&setlang=en-US&w=LuEJdj7kKHIS5LlDb9Bh3JNG-tusy8Us",
-                "language": "en",
-                "isNavigational": false
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "name": "Leonardo DiCaprio | Biography, Movies, Romeo and Juliet ... - Britannica",
-                "url": "https://www.britannica.com/biography/Leonardo-DiCaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2024-01-26T22:23:00.0000000",
-                "datePublishedFreshnessText": "4 days ago",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://www.britannica.com/biography/Leonardo-DiCaprio",
-                "snippet": "Leonardo DiCaprio (born November 11, 1974, Los Angeles, California, U.S.) American actor and producer who emerged in the 1990s as one of Hollywood ’s leading performers, noted for his portrayals of unconventional and complex characters.",
-                "dateLastCrawled": "2024-01-29T23:16:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.q3bXoHApD6gRnw4P9kl9iAAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.q3bXoHApD6gRnw4P9kl9iAAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4805132460301944&mkt=en-US&setlang=en-US&w=OAld3__lrBSJHxqKY-g7oHxTLhcp2D9q",
+                "displayUrl": "https://www.forbes.com/.../02/07/frontier-agrees-to-buy-spirit-airlines-in-66-billion-deal",
+                "snippet": "Topline Frontier Airlines’ parent company, Frontier Group Holdings, agreed to buy Spirit Airlines in a multibillion-dollar deal, the companies announced Monday morning, forming the...",
+                "dateLastCrawled": "2024-01-28T22:31:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=5026460715782276&mkt=en-US&setlang=en-US&w=H6ElkoM26yntxT7zbmyvCM5x276bwS3R",
                 "language": "en",
                 "isNavigational": false,
                 "richFacts": [
@@ -93,7 +55,7 @@
                         },
                         "items": [
                             {
-                                "text": "The Editors of Encyclopaedia Britannica"
+                                "text": "Derek Saul"
                             }
                         ],
                         "hint": {
@@ -103,283 +65,253 @@
                 ]
             },
             {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "All About Leonardo DiCaprio's Parents, George DiCaprio and Irmelin ...",
-                "url": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin-indenbirken-7502510",
-                "datePublished": "2023-07-25T17:23:00.0000000",
-                "datePublishedDisplayText": "Jul 25, 2023",
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
+                "name": "Frontier and Spirit to merge, creating fifth-largest airline in ... - CNBC",
+                "url": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
+                "thumbnailUrl": "https://www.bing.com/th?id=OIP.S4psGH7W9E28DwP3VC8lGAHaEK&w=80&h=80&c=1&pid=5.1",
+                "datePublished": "2022-02-07T11:49:00.0000000",
+                "datePublishedDisplayText": "Feb 7, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://people.com/all-about-leonardo-dicaprio-parents-george-dicaprio-irmelin...",
-                "snippet": "A year after Leonardo was born, George and Irmelin separated before ultimately finalizing their divorce in the late '90s. Despite his parents' divorce, Leonardo told Vanity Fair that he remembers ...",
-                "dateLastCrawled": "2024-01-28T09:29:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4592342597722976&mkt=en-US&setlang=en-US&w=7wLQ9kLRUdEoW1paKLN8UdNjHGyQRPe-",
+                "displayUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest...",
+                "snippet": "Frontier Airlines and Spirit Airlines, the two largest discount carriers in the U.S., have agreed to merge in a deal valued at $6.6 billion, creating what would become the fifth-largest airline in ...",
+                "dateLastCrawled": "2024-01-30T00:23:00.0000000Z",
+                "primaryImageOfPage": {
+                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.S4psGH7W9E28DwP3VC8lGAHaEK&w=80&h=80&c=1&pid=5.1",
+                    "width": 80,
+                    "height": 80,
+                    "imageId": "OIP.S4psGH7W9E28DwP3VC8lGAHaEK"
+                },
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4601048502771565&mkt=en-US&setlang=en-US&w=B_LYhew_UowsUJVoI_F9zJmHQpdpKeyu",
+                "language": "en",
+                "isNavigational": false,
+                "richFacts": [
+                    {
+                        "label": {
+                            "text": "Video Duration"
+                        },
+                        "items": [
+                            {
+                                "text": "2 min"
+                            }
+                        ],
+                        "hint": {
+                            "text": "MEDIA:DURATION"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
+                "name": "Frontier Won A $6.6 Billion Deal For Spirit Airlines. Now, It Has To ...",
+                "url": "https://www.forbes.com/newsletters/deal-flow/2022/02/07/frontier-won-a-66-billion-deal-for-spirit-airlines-now-it-has-to-win-over-regulators/",
+                "datePublished": "2022-02-07T21:59:00.0000000",
+                "datePublishedDisplayText": "Feb 7, 2022",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.forbes.com/newsletters/deal-flow/2022/02/07/frontier-won-a-66-billion-deal...",
+                "snippet": "It will be a surprise if we don't hear from either the DoJ or the FTC on this one in the weeks to come. If it does go through, the deal will result in current Frontier shareholders owning 51.5%...",
+                "dateLastCrawled": "2024-01-28T15:23:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=5043752244809513&mkt=en-US&setlang=en-US&w=5eWft1Mlv0b1oiLo2MGh2JhQucSydenR",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
+                "name": "Frontier, Spirit Airlines merge in $6.6B deal - Yahoo News",
+                "url": "https://news.yahoo.com/frontier-spirit-airlines-merge-6-135841219.html",
+                "datePublished": "2022-02-07T00:00:00.0000000",
+                "datePublishedDisplayText": "Feb 7, 2022",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://news.yahoo.com/frontier-spirit-airlines-merge-6-135841219.html",
+                "snippet": "Frontier Airlines and Spirit Airlines will merge to form the nation's fifth-largest airline, the budget carriers announced Monday.Frontier will purchase a majority stake in Spirit for $6.6 billion in a deal that will further consolidate the airline industry. The airlines said that they needed to join forces to compete with the four largest airlines that control the vast majority of the U.S ...",
+                "dateLastCrawled": "2024-01-28T11:11:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4792801598584620&mkt=en-US&setlang=en-US&w=X0znL-sYmuqDg8gTWAgmqam5d2p8CqzF",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "snippet",
-                        "targetPropertyIndex": 6,
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    }
-                ],
-                "name": "Leonardo DiCaprio - Wikipedia",
-                "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
+                "name": "Spirit Airlines Reaffirms Commitment to Merger with Frontier",
+                "url": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Reaffirms-Commitment-to-Merger-with-Frontier-/",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio",
-                "snippet": "Early life and acting background Leonardo Wilhelm DiCaprio was born on November 11, 1974, in Los Angeles, California. [1] He is the only child of Irmelin Indenbirken, a legal secretary, and George DiCaprio, an underground comix artist and distributor; they met while attending college and moved to Los Angeles after graduating.",
-                "dateLastCrawled": "2024-01-31T03:59:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.tSF8Zy3GW5wKKup7740oHgAAAA&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.tSF8Zy3GW5wKKup7740oHgAAAA"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=3956504757578&mkt=en-US&setlang=en-US&w=Vv8i431b2V9U5IVVC8mmldx07esSq_uK",
+                "displayUrl": "https://ir.spirit.com/.../Spirit-Airlines-Reaffirms-Commitment-to-Merger-with-Frontier-",
+                "snippet": "Spirit Airlines Reaffirms Commitment to Merger with Frontier Reiterates Recommendation that Stockholders Vote FOR the Merger Agreement with Frontier on the WHITE Proxy Card Ahead of the Special Meeting of Spirit Stockholders on June 30, 2022 Latest JetBlue Offer Does Not Address Serious Regulatory Concerns or Deliver Greater Value",
+                "dateLastCrawled": "2024-01-17T23:22:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4807855462424622&mkt=en-US&setlang=en-US&w=XhO3vIqZbLKKXCkiyN6vStfe7wzXEEy9",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
-                "name": "Leo DiCaprio's supermodel ex Bar Refaeli reveals she's given birth to ...",
-                "url": "https://www.the-sun.com/entertainment/275864/leo-dicaprios-supermodel-ex-bar-refaeli-third-child/",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2020-01-18T17:49:00.0000000",
-                "datePublishedDisplayText": "Jan 18, 2020",
+                "name": "Spirit Airlines and Frontier Airlines Are Merging—Here’s What That ...",
+                "url": "https://www.cntraveler.com/story/spirit-and-frontier-airlines-are-merging-heres-what-that-means-for-travelers",
+                "datePublished": "2022-02-09T00:00:00.0000000",
+                "datePublishedDisplayText": "Feb 9, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.the-sun.com/.../275864/leo-dicaprios-supermodel-ex-bar-refaeli-third-child",
-                "snippet": "Bar Refaeli revealed she has given birth to her third child Credit: Instagram. Bar, who was previously in a relationship with Hollywood actor Leonardo DiCaprio, somehow managed to look glowing in the picture as she grinned for the camera wearing a hospital gown. She captioned the snap: \"This is what real GLAM looks like. 3rd baby in 3.5 years.",
-                "dateLastCrawled": "2024-01-21T08:52:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.VeRjFfA9KGxuX4tyLTAJWgHaIe"
-                },
-                "language": "en",
-                "isNavigational": false
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
-                "name": "40 things you never knew about Leonardo DiCaprio - The Guardian",
-                "url": "https://www.theguardian.com/film/filmblog/2014/nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2014-11-11T21:46:00.0000000",
-                "datePublishedDisplayText": "Nov 11, 2014",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://www.theguardian.com/.../nov/11/40-things-about-leonardo-dicaprio-birthday-trivia",
-                "snippet": "@tnm___ Tue 11 Nov 2014 08.48 EST 1) Leonardo DiCaprio’s first film role was in Critters 3, and not as Toby Wolf in This Boy’s Life. 2) Robert De Niro allegedly hand-picked DiCaprio from...",
-                "dateLastCrawled": "2024-01-28T00:25:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.Pfi_D_LtWwn49CjB07J8dgHaD4&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.Pfi_D_LtWwn49CjB07J8dgHaD4"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4964016183444208&mkt=en-US&setlang=en-US&w=ppU7uHXUFLrRX5XGCMNRWFbllv64b4NU",
-                "language": "en",
-                "isNavigational": false
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
-                "name": "Leonardo DiCaprio - Biography - IMDb",
-                "url": "https://www.imdb.com/name/nm0000138/bio/",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://www.imdb.com/name/nm0000138/bio",
-                "snippet": "Leonardo Wilhelm DiCaprio was born in Los Angeles, California, the only child of Irmelin DiCaprio (née Indenbirken) and former comic book artist George DiCaprio. His father is of Italian and German descent, and his mother, who is German-born, is of German, Ukrainian and Russian ancestry.",
-                "dateLastCrawled": "2024-01-30T14:14:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f&d=4996322928230429&mkt=en-US&setlang=en-US&w=B84VRRTdpwPgEL4YzhS3kgaI89tf5FzD",
+                "displayUrl": "https://www.cntraveler.com/story/spirit-and-frontier-airlines-are-merging-heres-what...",
+                "snippet": "Getty On Monday, Spirit Airlines and Frontier Airlines announced plans to merge their operations, which means that the U.S. air travel market is getting a major new player.",
+                "dateLastCrawled": "2024-01-27T00:37:00.0000000Z",
                 "language": "en",
                 "isNavigational": false
             }
         ]
     },
-    "entities": {
+    "news": {
+        "id": "https://api.bing.microsoft.com/api/v7/#News",
+        "readLink": "https://api.bing.microsoft.com/api/v7/news/search?q=Has+Frontier+Already+Completed+Their+Purchase+Of+Spirit+Airlines+As+Of+Today%3f",
         "value": [
             {
-                "id": "https://api.bing.microsoft.com/api/v7/#Entities.0",
                 "contractualRules": [
                     {
-                        "_type": "ContractualRules/LicenseAttribution",
-                        "targetPropertyName": "description",
-                        "mustBeCloseToContent": true,
-                        "license": {
-                            "name": "CC-BY-SA",
-                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
-                        },
-                        "licenseNotice": "Text under CC-BY-SA license"
-                    },
-                    {
-                        "_type": "ContractualRules/LinkAttribution",
-                        "targetPropertyName": "description",
-                        "mustBeCloseToContent": true,
-                        "text": "Wikipedia",
-                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
-                    },
-                    {
-                        "_type": "ContractualRules/MediaAttribution",
-                        "targetPropertyName": "image",
-                        "mustBeCloseToContent": true,
-                        "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
+                        "_type": "ContractualRules/TextAttribution",
+                        "text": "Miami Herald on MSN.com"
                     }
                 ],
-                "webSearchUrl": "https://www.bing.com/entityexplore?q=Leonardo+DiCaprio&filters=sid:%225f2c4ac2-d77a-474e-4580-c76549d4fce5%22&elv=AXXfrEiqqD9r3GuelwApulqqVH1R390CcJimQuTC!VbtI29MP5mbwiGCP1QJRCLMM6N86vC0x4QQEPRmSHkNtYCY*xr7ln8jypEJG0YbJjmg",
-                "name": "Leonardo DiCaprio",
-                "url": "https://www.rewild.org/",
+                "name": "Love it or hate it? Spirit Airlines has given us all sorts of feels through the years",
+                "url": "https://www.msn.com/en-us/travel/news/love-it-or-hate-it-spirit-airlines-has-given-us-all-sorts-of-feels-through-the-years/ar-BB1h948O",
                 "image": {
-                    "name": "Leonardo DiCaprio",
-                    "thumbnailUrl": "http://www.bing.com/th?id=OSK.c87cddd5da6d303772dbad0d97b13573&w=75&h=110&c=12",
-                    "provider": [
-                        {
-                            "_type": "Organization",
-                            "url": "https://en.wikipedia.org/wiki/Leonardo_DiCaprio"
+                    "contentUrl": "https://www.miamiherald.com/latest-news/frgqlh/picture258142523/alternates/LANDSCAPE_1140/0307211766.JPG",
+                    "thumbnail": {
+                        "contentUrl": "https://www.bing.com/th?id=OVFT.Xy7DO1ljuP1rtNFLtOjmZC&pid=News",
+                        "width": 700,
+                        "height": 393
+                    }
+                },
+                "description": "1. Theme park life: Spirit Airlines had a major presence at Wannado City, the career-focused theme park that opened in 2004 inside Sawgrass Mills mall in Sunrise. Kids could climb into a fuselage painted in Spirit colors and logo and work the flight simulator inside. Wannado City closed in 2011.",
+                "about": [
+                    {
+                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/ac3cf8ab-2cfe-7dee-3805-0cbca5535f20",
+                        "name": "JetBlue"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "name": "JetBlue"
+                    },
+                    {
+                        "name": "Spirit Airlines"
+                    },
+                    {
+                        "name": "The Miami Herald"
+                    }
+                ],
+                "provider": [
+                    {
+                        "_type": "Organization",
+                        "name": "Miami Herald on MSN.com",
+                        "image": {
+                            "thumbnail": {
+                                "contentUrl": "https://www.bing.com/th?id=ODF.9vZfkhwEQ6YSE378rGFw1w&pid=news"
+                            }
                         }
-                    ],
-                    "hostPageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
-                    "width": 75,
-                    "height": 110,
-                    "sourceWidth": 572,
-                    "sourceHeight": 903
-                },
-                "description": "Leonardo Wilhelm DiCaprio is an American actor and film producer. Known for his work in biographical and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards. As of 2019, his films have grossed over $7.2 billion worldwide, and he has been placed eight times in annual rankings of the world's highest-paid actors.",
-                "entityPresentationInfo": {
-                    "entityScenario": "DominantEntity",
-                    "entityTypeHints": [
-                        "Actor",
-                        "Person"
-                    ],
-                    "entityTypeDisplayHint": "American actor and producer"
-                },
-                "bingId": "5f2c4ac2-d77a-474e-4580-c76549d4fce5"
+                    }
+                ],
+                "datePublished": "2024-01-23T11:29:00.0000000Z"
+            }
+        ]
+    },
+    "relatedSearches": {
+        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
+        "value": [
+            {
+                "text": "does spirit airlines own frontier",
+                "displayText": "does spirit airlines own frontier",
+                "webSearchUrl": "https://www.bing.com/search?q=does+spirit+airlines+own+frontier"
+            },
+            {
+                "text": "does frontier own spirit",
+                "displayText": "does frontier own spirit",
+                "webSearchUrl": "https://www.bing.com/search?q=does+frontier+own+spirit"
+            },
+            {
+                "text": "who bought out spirit airlines",
+                "displayText": "who bought out spirit airlines",
+                "webSearchUrl": "https://www.bing.com/search?q=who+bought+out+spirit+airlines"
+            },
+            {
+                "text": "who did frontier merge with",
+                "displayText": "who did frontier merge with",
+                "webSearchUrl": "https://www.bing.com/search?q=who+did+frontier+merge+with"
+            },
+            {
+                "text": "who did spirit merge with",
+                "displayText": "who did spirit merge with",
+                "webSearchUrl": "https://www.bing.com/search?q=who+did+spirit+merge+with"
+            },
+            {
+                "text": "did spirit and frontier merger",
+                "displayText": "did spirit and frontier merger",
+                "webSearchUrl": "https://www.bing.com/search?q=did+spirit+and+frontier+merger"
+            },
+            {
+                "text": "who owns frontier airlines",
+                "displayText": "who owns frontier airlines",
+                "webSearchUrl": "https://www.bing.com/search?q=who+owns+frontier+airlines"
+            },
+            {
+                "text": "frontier airlines bought out",
+                "displayText": "frontier airlines bought out",
+                "webSearchUrl": "https://www.bing.com/search?q=frontier+airlines+bought+out"
             }
         ]
     },
     "videos": {
         "id": "https://api.bing.microsoft.com/api/v7/#Videos",
-        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
-        "webSearchUrl": "https://www.bing.com/videos/search?q=Is+the+name+of+Leonardo+DiCaprio%27s+third+child+known%3f",
+        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
+        "webSearchUrl": "https://www.bing.com/videos/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
         "isFamilyFriendly": true,
         "value": [
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=8FA19B21D464D5B21E178FA19B21D464D5B21E17",
-                "name": "16-Year-Old Leonardo DiCaprio FIRST Interview!",
-                "description": "More from Entertainment Tonight: https://www.youtube.com/channel/UCdtXPiqI2cLorKaPrfpKc4g?sub_confirmation=1 ET FLASHBACK PLAYLIST: https://www.youtube.com/playlist?list=PLQwITQ__CeH1Ls5bjGZ8ZCMrgJlIdQuD2 Leonardo DiCaprio first interview at age 16 on the set of Growing Pains. Watch his accidental goof ups and see what makes him \"romantic ...",
-                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.snsFiJ9PBUa0I-XLYIk2ugHgFo&pid=Api",
-                "datePublished": "2014-11-11T17:44:44.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=4F2A37473288167E36CF4F2A37473288167E36CF",
+                "name": "Analyst expects a Spirit bankruptcy after JetBlue deal blocked",
+                "description": "A federal judge in Boston has blocked JetBlue's (JBLU) planned $3.8 billion purchase of Spirit Airlines (SAVE). The ruling, issued on Tuesday, represents a win for the Biden administration's efforts to prevent further consolidation in the airline industry, which it sees as stifling competition - raising additional questions about the viability ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wgy8wzouCC5rv-BHlMBK2AJYFS&pid=Api",
+                "datePublished": "2024-01-16T21:53:07.0000000",
                 "publisher": [
                     {
-                        "name": "YouTube"
+                        "name": "Yahoo Finance"
                     }
                 ],
                 "creator": {
-                    "name": "Entertainment Tonight"
+                    "name": "Yahoo Finance Video"
                 },
-                "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
-                "hostPageUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
-                "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=RnycvPjB7Y0",
-                "width": 1280,
-                "height": 720,
-                "duration": "PT2M16S",
-                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM.Fx6y1WTUIZuhjw_1702306362&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/RnycvPjB7Y0?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 9740157,
+                "contentUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
+                "hostPageUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
+                "width": 1200,
+                "height": 676,
+                "duration": "PT6M44S",
+                "viewCount": 0,
                 "thumbnail": {
                     "width": 160,
-                    "height": 120
+                    "height": 90
                 },
-                "allowMobileEmbed": true,
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=BEE999FFF31167E5A36ABEE999FFF31167E5A36A",
-                "name": "The story about Leonardo DiCaprio's name",
-                "description": "Let's learn a few words from this clip I hope you learned something new 😊 We'd really appreciate it if you could share these videos and give us a follow ️",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.DOkK0TT60ewBStEw0XepegFRJY&pid=Api",
-                "datePublished": "2023-02-24T04:30:12.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=E16EE9E4FC8CE2736DA4E16EE9E4FC8CE2736DA4",
+                "name": "JetBlue agrees to buy Spirit Airlines in $3.8 billion deal",
+                "description": "CNBC's Phil LeBeau sits down with JetBlue CEO Robin Hayes and Spirit Airlines CEO Ted Christie to discuss JetBlue's move to buy Spirit after the discount carrier decided to end its merger plans with Frontier Airlines.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.igD6hRqj1TmsaolLQ5ZAnwEsCo&pid=Api",
+                "datePublished": "2022-07-28T10:31:12.0000000",
                 "publisher": [
                     {
-                        "name": "YouTube"
+                        "name": "CNBC"
                     }
                 ],
                 "creator": {
-                    "name": "Vocords"
+                    "name": "Leslie Josephs"
                 },
-                "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
-                "hostPageUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
+                "contentUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
+                "hostPageUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=kFN4aUT-eQ0",
-                "width": 1080,
-                "height": 1920,
-                "duration": "PT58S",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/kFN4aUT-eQ0?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "hostPageDisplayUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT4M42S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.pG1z4oz85Olu4Q_1684230083&pid=Api",
+                "embedHtml": "<iframe src=\"https://player.cnbc.com/p/gZWlPC/cnbc_global?playertype=synd&byGuid=7000256186\" width=\"530\" height=\"298\" type=\"application/x-shockwave-flash\" allowFullScreen=\"true\" bgcolor=\"#131313\" scrolling=\"no\"></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 4477,
-                "thumbnail": {
-                    "width": 89,
-                    "height": 160
-                },
-                "allowMobileEmbed": true,
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=FC225F2A88987F74CD67FC225F2A88987F74CD67",
-                "name": "Leonardo DiCaprio | Producer, Actor, Writer",
-                "description": "Known for: Inception, Titanic, The Wolf of Wall Street",
-                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.SxWzj9ySTKY__QJV2Qnn5ADeEs&pid=Api",
-                "datePublished": "2010-01-28T00:00:00.0000000",
-                "publisher": [
-                    {
-                        "name": "imdb.com"
-                    }
-                ],
-                "contentUrl": "https://www.imdb.com/name/nm0000138/",
-                "hostPageUrl": "https://www.imdb.com/name/nm0000138/",
-                "encodingFormat": "",
-                "hostPageDisplayUrl": "https://www.imdb.com/name/nm0000138/",
-                "width": 1000,
-                "height": 1347,
-                "viewCount": 2012,
-                "thumbnail": {
-                    "width": 118,
-                    "height": 160
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=C862189F595A72876A93C862189F595A72876A93",
-                "name": "Leonardo DiCaprio stars in Killers of the Flower Moon trailer",
-                "description": "The most shocking name is Titanic actor Leonardo DiCaprio who first came to fame as a child actor on TV and has been on screens ever since. Another is Victoria Beckham - the Spice Girl.",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wfrMc09AywUR09deRawugwEsCo&pid=Api",
-                "datePublished": "2023-09-13T14:04:06.0000000",
-                "publisher": [
-                    {
-                        "name": "Mail Online"
-                    }
-                ],
-                "creator": {
-                    "name": "Heidi Parker"
-                },
-                "contentUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
-                "hostPageUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
-                "encodingFormat": "",
-                "hostPageDisplayUrl": "https://www.dailymail.co.uk/tvshowbiz/article-12620189/celebrities-turning-50-2024-including-leonardo-dicaprio.html",
-                "width": 636,
-                "height": 358,
-                "duration": "PT2M24S",
-                "embedHtml": "<iframe frameborder=\"0\" width=\"698\" height=\"573\" scrolling=\"no\" id=\"molvideoplayer\" title=\"MailOnline Embed Player\" src=\"http://www.dailymail.co.uk/embed/video/3016715.html\" ></iframe>",
                 "viewCount": 0,
                 "thumbnail": {
                     "width": 160,
@@ -389,31 +321,63 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=4000D9445F1F834F9A3B4000D9445F1F834F9A3B",
-                "name": "TITANIC CASTS ⭐ THEN AND NOW (1997 VS 2023) | How They Changed After 26 Years?",
-                "description": "TITANIC CASTS ⭐ THEN AND NOW (1997 VS 2023) | How They Changed After 26 Years? Titanic is a 1997 American epic romance and disaster film directed, written, produced, and co-edited by James Cameron. Incorporating both historical and fictionalized aspects, it is based on accounts of the sinking of RMS Titanic and stars Kate Winslet and Leonardo ...",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.Ucso1I0xPobdy_gbBxIesAHgFo&pid=Api",
-                "datePublished": "2023-06-04T17:48:06.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=478EBE79E595E1598D4A478EBE79E595E1598D4A",
+                "name": "Spirit Airlines CEO on Frontier merger: This combination makes a lot of sense",
+                "description": "Frontier CEO Barry Biffle, Spirit Airlines CEO Ted Christie and Indigo Partners' Bill Franke sit down with CNBC's Phil LeBeau and the 'Squawk Box' team to break down their plan to merge.",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.N2uAHH_VHLlXW9W6mld0JwIIEk&pid=Api",
+                "datePublished": "2022-02-07T11:49:29.0000000",
                 "publisher": [
                     {
-                        "name": "YouTube"
+                        "name": "CNBC"
                     }
                 ],
                 "creator": {
-                    "name": "Timeless Movies 1960s"
+                    "name": "Phil LeBeau,Leslie Josephs"
                 },
-                "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
-                "hostPageUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
+                "contentUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
+                "hostPageUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=HzGiSjr0vXY",
+                "hostPageDisplayUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
                 "width": 1920,
                 "height": 1080,
-                "duration": "PT7M9S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.O5pPgx9fRNkAQA&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/HzGiSjr0vXY?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "duration": "PT2M24S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.So1Z4ZXleb6ORw_1646632201&pid=Api",
+                "embedHtml": "<iframe src=\"https://player.cnbc.com/p/gZWlPC/cnbc_global?playertype=synd&byGuid=7000232299\" width=\"530\" height=\"298\" type=\"application/x-shockwave-flash\" allowFullScreen=\"true\" bgcolor=\"#131313\" scrolling=\"no\"></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 464890,
+                "viewCount": 0,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 89
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=B2B77BB0C55EAB35B268B2B77BB0C55EAB35B268",
+                "name": "Spirit Airlines meltdown persists with more cancellations",
+                "description": "A lot of passengers are fed up with Spirit Airlines. For the sixth straight day, the company has canceled hundreds of flights, leaving customers stranded or forced to pay more on other airlines. Errol Barnett has the story. \"CBS Evening News with Norah O'Donnell\" delivers the latest news and original reporting, and goes beyond the headlines ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.cQ9Ottt2imhsfAosC5dkLwEsDh&pid=Api",
+                "datePublished": "2021-08-06T23:28:31.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "CBS Evening News"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
+                "hostPageUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT1M52S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM2.aLI1q17FsHu3sg_1684199780&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/H897ZKgvyPg?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 66546,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -422,31 +386,31 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=5E78B5085858C742D8505E78B5085858C742D850",
-                "name": "Titanic 3D | \"First Class Dinner\" | Official Clip HD",
-                "description": "Subscribe now for more : http://bit.ly/20thCenturyUK Jack Dawson has his first, first class dinner Click here for more official Titanic clips : http://bit.ly/TitanicPL Leonardo Di'Caprio and Kate Winslet are Jack and Kate in this classic romantic tragedy. In celebration of the films re-release in 3D we have added some of our favourite clips ...",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.lPZJdMBsPpBFvQh2Hm-SxAHgFo&pid=Api",
-                "datePublished": "2012-03-30T11:42:59.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=DDEC4D0BAD9916176F8EDDEC4D0BAD9916176F8E",
+                "name": "Can Spirit Airlines Stage A Comeback?",
+                "description": "Spirit Airlines, the no-frills carrier known for its bright yellow planes, brash style and low fares, has helped revolutionize the way we pay for travel. To offset its bare bones fares the carrier charges for everything from carry-on bags to bottles of water. As of 2019 Spirit Airlines had 13 consecutive years of profitability. But the airline ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.6AbBtdD9-NU_6ntjoEiSHQEsDh&pid=Api",
+                "datePublished": "2021-01-12T18:33:46.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "20th Century Studios UK"
+                    "name": "CNBC"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
-                "hostPageUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
+                "contentUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
+                "hostPageUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=oklPl95DC8c",
-                "width": 854,
-                "height": 480,
-                "duration": "PT1M3S",
-                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.UNhCx1hYCLV4Xg_1700913302&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/oklPl95DC8c?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT14M28S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM.jm8XFpmtC03s3Q_1684187498&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/qiQfh2DRiao?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 6716150,
+                "viewCount": 570036,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -455,92 +419,119 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=F72161C8584631E92945F72161C8584631E92945",
-                "name": "Titanic 3D | \"Third Class Dance\" | Official Clip HD",
-                "description": "Subscribe now for more : http://bit.ly/20thCenturyUK Rose and Jack enjoy some dancing on the boat! Click here for more official Titanic clips : http://bit.ly/TitanicPL Leonardo Di'Caprio and Kate Winslet are Jack and Kate in this classic romantic tragedy. In celebration of the films re-release in 3D we have added some of our favourite clips ...",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.Pt2QodWceXOQvHmvjrAukQHgFo&pid=Api",
-                "datePublished": "2012-03-30T11:42:58.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=464B0028A14F4C3B7462464B0028A14F4C3B7462",
+                "name": "Frontier to buy Spirit Airlines in $2.9 bln budget carrier deal",
+                "description": "Budget carriers Frontier Group Holdings and Spirit Airlines Inc (SAVE.N) on Monday unveiled plans to create the fifth-largest U.S. airline in a $2.9 billion tie-up likely to tighten competition against traditional carriers.",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wo7uRduDs9fcl92eO4zEJAIIEQ&pid=Api",
+                "datePublished": "2022-02-08T01:11:53.0000000",
+                "publisher": [
+                    {
+                        "name": "Reuters"
+                    }
+                ],
+                "creator": {
+                    "name": "Rajesh Kumar Singh,Aishwarya Nair"
+                },
+                "contentUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
+                "hostPageUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
+                "width": 1200,
+                "height": 628,
+                "duration": "PT55S",
+                "viewCount": 0,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 83
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=2180D6246DFCC3A70D1D2180D6246DFCC3A70D1D",
+                "name": "WATCH: Frontier Airlines plans to buy fellow discount airline Spirit for $2.9 billion.",
+                "description": "Frontier Group Holdings Inc.’s planned $2.9 billion purchase of Spirit Airlines Inc., positions Bill Franke, the self-proclaimed father of ultradiscounting, to expand his global network of carriers that offer bargain-basement fares while maintaining a laser focus on low costs.",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.OQzRrukK2M5Pcf77gR5zGwIIFa&pid=Api",
+                "datePublished": "2022-02-07T11:46:06.0000000",
+                "publisher": [
+                    {
+                        "name": "Bloomberg.com"
+                    }
+                ],
+                "creator": {
+                    "name": "Mary Schlangenstein"
+                },
+                "contentUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
+                "hostPageUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
+                "encodingFormat": "",
+                "hostPageDisplayUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
+                "width": 1200,
+                "height": 800,
+                "duration": "PT3M",
+                "embedHtml": "<iframe width=\"720\" height=\"480\" src=\"https://www.bloomberg.com/multimedia/api/embed/iframe?id=fa2e5443-d405-40e8-a123-ab4360d6bf63\" allowscriptaccess=\"always\" frameborder=\"0\"></iframe>",
+                "viewCount": 0,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 106
+                },
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=323BEC5D75C1EA7B9D4C323BEC5D75C1EA7B9D4C",
+                "name": "Spirit Airlines VS. Frontier Airlines",
+                "description": "Frontier Airlines and Spirit Airlines are both ultra-low-cost carriers in the United States, today we will be comparing them. Sources https://en.wikipedia.org/wiki/Spirit_Airlines https://en.wikipedia.org/wiki/Frontier_Airlines# Thumbnail https://fsxaibureau.com/manufacturing/airbus/airbus-a319/spirit-airlines-a319/ https://flyings.net/aircraft ...",
+                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.uT8dxOHxeOMPLE67sp_t2wEsDh&pid=Api",
+                "datePublished": "2020-07-15T20:22:08.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "20th Century Studios UK"
+                    "name": "JP’s Aviation"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
-                "hostPageUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
+                "contentUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
+                "hostPageUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=erAQ9LkftwA",
-                "width": 854,
-                "height": 480,
-                "duration": "PT48S",
-                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.RSnpMUZYyGEh9w_1701254131&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/erAQ9LkftwA?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 8912973,
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT3M8S",
+                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM2.TJ176sF1Xew7Mg_1635554796&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/c3Nv640iA_E?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "viewCount": 5904,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
                 },
-                "allowMobileEmbed": true,
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=4B80019235A7040C5AD94B80019235A7040C5AD9",
-                "name": "This Boy's Life (1993)",
-                "description": "This Boy's Life: Directed by Michael Caton-Jones. With Robert De Niro, Ellen Barkin, Leonardo DiCaprio, Jonah Blechman. The story about the relationship between a rebellious 1950s teenager and his abusive stepfather, based on the memoirs of writer and literature Professor Tobias Wolff.",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.rmQkwlwINs1FsVoo9HXiowD6DI&pid=Api",
-                "datePublished": "2008-04-11T17:24:13.0000000",
-                "publisher": [
-                    {
-                        "name": "IMDB"
-                    }
-                ],
-                "contentUrl": "https://www.imdb.com/title/tt0108330/",
-                "hostPageUrl": "https://www.imdb.com/title/tt0108330/",
-                "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.imdb.com/title/tt0108330/",
-                "width": 250,
-                "height": 200,
-                "duration": "PT1M59S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM.2VoMBKc1kgGASw_1706464422&pid=Api",
-                "embedHtml": "<iframe src=\"https://www.imdb.com/videoembed/vi2600272153?autoplay=true\" width=\"854\" height=\"480\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder=\"no\" scrolling=\"no\"></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 108,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 128
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=BAC0D3CCDEFBE21C547CBAC0D3CCDEFBE21C547C",
-                "name": "Top 10 Child Stars Who Became Hollywood Icons",
-                "description": "Once a celebrity, always a celebrity! For this list, we’ll be looking at the kids with their names up in lights who became classics. Our countdown includes celebrities Nathalie Portman, Ron Howard, Shirley Temple and more! If we missed any of your favorite Hollywood icons, let us know in the comments below. Check out these other Hollywood ...",
-                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.jGM6hREjS4fEBOggIr8rBgHgFo&pid=Api",
-                "datePublished": "2023-09-11T15:00:38.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=73892CE9DE52391ABD4173892CE9DE52391ABD41",
+                "name": "Budget Airlines Comparison - Allegiant vs. Frontier vs. Spirit",
+                "description": "The first 500 people to sign up using my link get 2 months of free Skillshare premium: https://skl.sh/jebbrooks thanks to Skillshare for sponsoring this video. Budget Airlines can be a great way to fly. In this video, we'll wrap up the #LowCostCarrierComparison in which I flew with three Budget Airlines here in the US: Allegiant, Frontier, and ...",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.clKstFnkIeIhSNwZP_W6IAHgFo&pid=Api",
+                "datePublished": "2019-06-22T12:02:06.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "MsMojo"
+                    "name": "Jeb Brooks"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
-                "hostPageUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
+                "contentUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
+                "hostPageUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=m4DLfRHlTBM",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
                 "width": 3840,
                 "height": 2160,
-                "duration": "PT11M11S",
-                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM1.fFQc4vvezNPAug&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/m4DLfRHlTBM?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "duration": "PT13M17S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM2.Qb0aOVLe6SyJcw_1693042833&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/vusazM76uLM?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 31252,
+                "viewCount": 190819,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -549,30 +540,29 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Is%20the%20name%20of%20Leonardo%20DiCaprio's%20third%20child%20known?&view=detail&mid=AE6879E935592740451CAE6879E935592740451C",
-                "name": "Growing Pains (TV Series 1985–1992)",
-                "description": "Growing Pains: Created by Neal Marlens. With Alan Thicke, Joanna Kerns, Kirk Cameron, Jeremy Miller. The misadventures of a family with a home business father and a journalist mother.",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.oCOP06x8AAvGBCQ1w31MwQIIGG&pid=Api",
-                "datePublished": "2020-09-29T19:50:09.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=151DA4E43C180CDE67FD151DA4E43C180CDE67FD",
+                "name": "JetBlue to buy Spirit Airlines for $3.8 billion",
+                "description": "JetBlue will purchase Spirit Airlines for $3.8 billion, one day after shareholders rejected a potential merger between Spirit and Frontier Airlines. If approved, the airline would become the nation's fifth-largest. CBS News transportation correspondent Errol Barnett has more on what this means for travelers looking for low-cost options.",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.UoyuwcbGwcJRXBKeKzVXKAEsCo&pid=Api",
+                "datePublished": "2022-07-29T06:18:22.0000000",
                 "publisher": [
                     {
-                        "name": "IMDB"
+                        "name": "CBS News"
                     }
                 ],
-                "contentUrl": "https://www.imdb.com/title/tt0088527/",
-                "hostPageUrl": "https://www.imdb.com/title/tt0088527/",
+                "contentUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
+                "hostPageUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.imdb.com/title/tt0088527/",
-                "width": 640,
-                "height": 480,
-                "duration": "PT1M6S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.HEVAJ1k16Xlorg_1682119194&pid=Api",
-                "embedHtml": "<iframe src=\"https://www.imdb.com/videoembed/vi2224472345?autoplay=true\" width=\"854\" height=\"480\" allowfullscreen=\"true\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\" frameborder=\"no\" scrolling=\"no\"></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 53,
+                "hostPageDisplayUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT4M44S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM2._WfeDBg85KQdFQ_1684196768&pid=Api",
+                "embedHtml": "<iframe src=\"https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/\" id=\"cbsNewsVideo\" allowfullscreen allow=\"fullscreen\" frameborder=\"0\" width=\"620\" height=\"349\"></iframe>",
+                "viewCount": 0,
                 "thumbnail": {
                     "width": 160,
-                    "height": 120
+                    "height": 89
                 },
                 "isSuperfresh": false
             }
@@ -597,16 +587,16 @@
                     }
                 },
                 {
-                    "answerType": "Videos",
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
-                    }
-                },
-                {
                     "answerType": "WebPages",
                     "resultIndex": 2,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType": "News",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#News"
                     }
                 },
                 {
@@ -621,6 +611,12 @@
                     "resultIndex": 4,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4"
+                    }
+                },
+                {
+                    "answerType": "Videos",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
                     }
                 },
                 {
@@ -645,28 +641,9 @@
                     }
                 },
                 {
-                    "answerType": "WebPages",
-                    "resultIndex": 8,
+                    "answerType": "RelatedSearches",
                     "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8"
-                    }
-                },
-                {
-                    "answerType": "WebPages",
-                    "resultIndex": 9,
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
-                    }
-                }
-            ]
-        },
-        "sidebar": {
-            "items": [
-                {
-                    "answerType": "Entities",
-                    "resultIndex": 0,
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#Entities.0"
+                        "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches"
                     }
                 }
             ]

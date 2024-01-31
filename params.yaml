@@ -1,5 +1,5 @@
 {
-    "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106" meta.llama2-70b-chat-v1
+    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-1106" meta.llama2-70b-chat-v1
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
@@ -11,8 +11,8 @@
     "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
     "RESULT_SAVE_PATH": "Results\\auto_integrate_ignore_results", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
-    "MAX_CANDIDATE_RESPONSES": 5, #default - 3
-    "MAX_WORKFLOW_RUN_COUNT": 3, #default - 1
+    "MAX_CANDIDATE_RESPONSES": 3, #default - 3
+    "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1
     "MATCH_CRITERIA": "Half" #default - "Half", takes either "Half" or "Full" as valid input
 }
 

@@ -85,13 +85,14 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         responses_dict = {}
         # print(WORKFLOW_RUN_COUNT)
         responses_dict.update({WORKFLOW_RUN_COUNT:[]})
-        # original response is added to the first index of the responses_dict, the rest will be candidate responses
+        # original response is added to the zero index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(og_response_dict)
-        # external evidence is added to the second index of the responses_dict, the rest will be candidate responses
+        # external evidence is added to the first index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(external_evidence)
+        # question is added to the second index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(query)
         intial_explanation = og_response_dict['Explanation:']
-        initial_core_concept = og_response_dict['Core Concept:']
+        # initial_core_concept = og_response_dict['Core Concept:']
 
         match_count = 0
         confi_list = []
@@ -161,7 +162,7 @@ def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     print("OpenAI model response process starts")
     client = OpenAI() # defaults to os.environ.get("OPENAI_API_KEY")
     prompt_var_list = [query, external_evidence]
-    chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH,)
+    chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     # extract the key terms from the generated response into a dict
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
