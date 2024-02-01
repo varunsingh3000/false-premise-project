@@ -32,6 +32,8 @@ def perform_web_search(query,mkt,endpoint,subscription_key):
             print("Data has been saved to 'bing_search_results.json'")
     except Exception as ex:
         print("An error occured at perform_web_search: ", ex)
+        evidence_missing_message = "Web search was unsuccessful due to an error with the web search API, LLM use your knowledge."
+        response_json = {"message":evidence_missing_message}
     
     return response_json
 
@@ -70,6 +72,9 @@ def process_json(response_json):
             snippet = entityitem["description"]
             temp_dict = {"name":name,"url":url,"snippet":snippet}
             retrieved_info_dict["entities"].append(temp_dict)
+
+    if "message" in data:
+        retrieved_info_dict = data.copy()
 
     return retrieved_info_dict
 

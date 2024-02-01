@@ -20,7 +20,9 @@ def perform_web_search(params):
             print("Data has been saved to 'serpapi_search_results.json'")
     except Exception as ex:
         print("An error occured at perform_web_search: ", ex)
-    
+        evidence_missing_message = "Web search was unsuccessful due to an error with the web search API, LLM use your knowledge."
+        response_json = {"message":evidence_missing_message}
+        
     return response_json
 
 #Function to process the json response into a proper format
@@ -44,23 +46,6 @@ def process_json(response_json):
             # If any of the keys are missing, print a message and continue to the next item
             print(f"Key {e} not found. Skipping this item.")
 
-    # IMP: Organic results are not considered since they act as noise in the prompts for the evidence 
-    # Iterating through the webpages section
-    if 'organic_results' not in data:
-        print("Web pages are found as external evidence")
-        retrieved_info_dict.update({"organic_results":[]})
-        for webpageitem in data["organic_results"][:1]: #iterating through a list here
-            try:
-                name = webpageitem["title"]
-                url = webpageitem["link"]
-                snippet = webpageitem["snippet"]
-                temp_dict = {"name": name, "url": url, "snippet": snippet}
-                retrieved_info_dict["organic_results"].append(temp_dict)
-            except KeyError as e:
-                # If any of the keys are missing, print a message and continue to the next item
-                print(f"Key {e} not found. Skipping this item.")
-                continue
-
     if 'related_questions' in data:
         print("Related Questions are found as external evidence")
         retrieved_info_dict.update({"related_questions":[]})
@@ -76,6 +61,27 @@ def process_json(response_json):
                 print(f"Key {e} not found. Skipping this item.")
                 continue
 
+    # IMP: Organic results are not considered since they act as noise in the prompts for the evidence 
+    # organic results are only added if answer_box and related_question are not available
+    if 'answer_box' not in data and 'related_questions' not in data:
+        if 'organic_results' in data:
+            print("Web pages are found as external evidence")
+            retrieved_info_dict.update({"organic_results":[]})
+            for webpageitem in data["organic_results"][:1]: #iterating through a list here
+                try:
+                    name = webpageitem["title"]
+                    url = webpageitem["link"]
+                    snippet = webpageitem["snippet"]
+                    temp_dict = {"name": name, "url": url, "snippet": snippet}
+                    retrieved_info_dict["organic_results"].append(temp_dict)
+                except KeyError as e:
+                    # If any of the keys are missing, print a message and continue to the next item
+                    print(f"Key {e} not found. Skipping this item.")
+                    continue
+        
+    if "message" in data:
+        retrieved_info_dict = data.copy()
+    
     return retrieved_info_dict
 
 

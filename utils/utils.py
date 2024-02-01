@@ -23,6 +23,9 @@ def process_response(chat_completion):
     if last_term in text_without_newlines:
         split_text = text_without_newlines.split(last_term, 1)
         response_dict[last_term.strip()] = split_text[1].strip() if len(split_text) > 1 else ''
+    
+    if not response_dict: #if in case none of the keys were present simply insert the text as it is
+        response_dict['message'] = text
 
     return response_dict
 
@@ -72,3 +75,14 @@ def extract_question_after_binary(prompt):
             return "No question found after the Binary Question key."
     else:
         return "Binary question key not found."
+
+def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW_RUN_COUNT,MAX_CANDIDATE_RESPONSES):
+    dummy_response_dict = {
+        WORKFLOW_RUN_COUNT: [
+            og_response_dict,
+            external_evidence,
+            query,
+            *['candidate_response{} empty candidate response'.format(i) for i in range(MAX_CANDIDATE_RESPONSES)]
+        ]
+    }
+    return dummy_response_dict

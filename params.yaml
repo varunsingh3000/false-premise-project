@@ -1,14 +1,15 @@
 {
-    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-1106" meta.llama2-70b-chat-v1
+    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-small"
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.3, #default - 0.3
-    "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
+    "DATASET_NAME": "QAQA", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\" 
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
     "QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase.txt", #default - "Prompts\\question_rephrase.txt"
     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
     "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
+    "LLAMA_QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase_meta.txt", #default - "Prompts\\question_rephrase_meta.txt"
     "RESULT_SAVE_PATH": "Results\\auto_integrate_ignore_results", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
     "MAX_CANDIDATE_RESPONSES": 3, #default - 3
@@ -25,7 +26,11 @@
 #     "DATASET_NAME": "freshqa", #default - "freshqa", takes either well have to add over here!
 #     "DATASET_PATH": "Data\\", #add your own path if directories are changed 
 #     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #add your own path if directories are changed 
-#     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #add your own path if directories are changed 
+#     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #add your own path if directories are changed
+#     "QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase.txt", #add your own path if directories are changed
+#     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #add your own path if directories are changed
+#     "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #add your own path if directories are changed
+#     "LLAMA_QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase_meta.txt", #add your own path if directories are changed
 #     "RESULT_SAVE_PATH": "Results\\my_dataframe_MISTRAL.csv", #add your own path if directories are changed 
 #     "WORKFLOW_RUN_COUNT": 0, #should start from 0 but it can be increased to simulate the workflow repeat conditions
 #     "MAX_CANDIDATE_RESPONSES": 3, #possible value can be any integer higher than 0 but keep in mind the costs

@@ -10,6 +10,7 @@ from utils.utils import uncertainty_confidence_cal
 from utils.utils import matching_condition_check
 from utils.utils import check_dict_keys_condition
 from utils.utils import extract_question_after_binary
+from utils.utils import create_dummy_response_dict
 from web_search import start_web_search
 # from web_search_serp import start_web_search
 
@@ -101,9 +102,11 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             # if all keys are not present in the candidate response dict then skip the current iteration
             # the code logic ahead will not work without all keys and there would be too many conditions to make things work
             if not check_dict_keys_condition(response_dict):
-                print("It seems the candidate response {} was missing some keys in the response dict {} so the current \
+                message = "It seems the candidate response {} was missing some keys in the response dict {} so the current \
                       iteration of the candidate response generation has been skipped. The next iteration \
-                      will continue.".format(i,response_dict))
+                      will continue.".format(i,response_dict)
+                responses_dict[WORKFLOW_RUN_COUNT].append(message)
+                print(message)
                 continue
             print("Candidate response {}: {}".format(i,response_dict))
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
@@ -138,13 +141,13 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 return responses_dict, final_response, final_confidence_value
     else:
         print("It seems all the keys in the original response were not available so the current workflow \
-              iteration has been skipped and a repitation of the workflow with user input will be done. \
+              iteration has been skipped and a repitation of the workflow with rephrased input will be done. \
               {}".format(og_response_dict))
-        responses_dict = {}
-        initial_core_concept = query
+        responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
+                                                    WORKFLOW_RUN_COUNT,MAX_CANDIDATE_RESPONSES)
     # if the workflow has run till here then that means the matching condition was not satisfied and the workflow needs to repeat
     if WORKFLOW_RUN_COUNT < MAX_WORKFLOW_RUN_COUNT:
-        print("It seems that the LLM is uncertain about it's response. User clarification input is requested")
+        print("It seems that the LLM is uncertain about it's response. The query will now be rephrased and tried again.")
         WORKFLOW_RUN_COUNT += 1
         responses_dict, final_response, final_confidence_value = perform_clarification_ques(client,responses_dict,
                                                                         query,WORKFLOW_RUN_COUNT)

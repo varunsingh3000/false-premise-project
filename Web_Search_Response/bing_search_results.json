@@ -1,53 +1,25 @@
 {
     "_type": "SearchResponse",
     "queryContext": {
-        "originalQuery": "Has Frontier already completed their purchase of Spirit Airlines as of today?"
+        "originalQuery": "Does George end up with someone in Seinfeld?\n\nI hope this helps! Let me know if you have any other questions."
     },
     "webPages": {
-        "webSearchUrl": "https://www.bing.com/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
-        "totalEstimatedMatches": 61000,
+        "webSearchUrl": "https://www.bing.com/search?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.",
+        "totalEstimatedMatches": 33400,
         "value": [
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.0",
-                "name": "Frontier Airlines and Spirit Airlines Announce Amended Merger Agreement",
-                "url": "https://ir.spirit.com/news-releases/news-details/2022/Frontier-Airlines-and-Spirit-Airlines-Announce-Amended-Merger-Agreement/default.aspx",
-                "datePublished": "2022-06-02T00:00:00.0000000",
-                "datePublishedDisplayText": "Jun 2, 2022",
+                "name": "Seinfeld: George's Relationship Timeline, Season By Season - Screen Rant",
+                "url": "https://screenrant.com/seinfeld-george-relationship-timeline-each-season/",
+                "datePublished": "2022-04-07T00:00:00.0000000",
+                "datePublishedDisplayText": "Apr 7, 2022",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://ir.spirit.com/news-releases/news-details/2022/Frontier-Airlines-and-Spirit...",
-                "snippet": "William A. Franke, the Chair of Frontier's Board of Directors and the managing partner of Indigo Partners, Frontier's majority shareholder, said, \"We continue to believe in the strategic rationale of a combined Spirit and Frontier, which brings together two complementary businesses to create America's most competitive ultra-low fare airline.",
-                "dateLastCrawled": "2024-01-26T22:04:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4857973441058537&mkt=en-US&setlang=en-US&w=-cUeZCaUUG-hJsElfiyUumPWgIwzgTuK",
+                "displayUrl": "https://screenrant.com/seinfeld-george-relationship-timeline-each-season",
+                "snippet": "Home TV Lists Seinfeld: George's Relationship Timeline, Season By Season By Aya Tsintziras Published Apr 7, 2022 Fans see George date a lot on Seinfeld, and it's interesting to look at this beloved character's love life through all 9 seasons. George Costanza has an interesting love life on Seinfeld .",
+                "dateLastCrawled": "2024-01-29T01:52:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4534785738623843&mkt=en-US&setlang=en-US&w=RnJ2QAUp2WoOLsMF8BcBXjrdthbh9aSW",
                 "language": "en",
-                "isNavigational": true
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
-                "name": "Spirit Airlines Announces Amended Merger Agreement with Frontier ...",
-                "url": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Announces-Amended-Merger-Agreement-with-Frontier-Including-Increased--Per-Share-Cash-Consideration-and-350-Million-Reverse-Termination-Fee/",
-                "datePublished": "2022-06-24T00:00:00.0000000",
-                "datePublishedDisplayText": "Jun 24, 2022",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Announces...",
-                "snippet": "Frontier has also agreed that $2.22 per share will be prepaid to Spirit stockholders on a record date to be determined as a cash dividend following approval of the transaction by Spirit stockholders and consistent with all applicable laws, including restrictions under the CARES Act. The $2.22 per share dividend will be funded by Frontier.",
-                "dateLastCrawled": "2024-01-29T06:33:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4803672166455408&mkt=en-US&setlang=en-US&w=cKJOJ7qOU9qIdWc0W5n4nNroQNb5nz_j",
-                "language": "en",
-                "isNavigational": false
-            },
-            {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
-                "name": "Frontier Agrees To Buy Spirit Airlines In $6.6 Billion Deal - Forbes",
-                "url": "https://www.forbes.com/sites/dereksaul/2022/02/07/frontier-agrees-to-buy-spirit-airlines-in-66-billion-deal/",
-                "datePublished": "2022-02-07T23:12:00.0000000",
-                "datePublishedDisplayText": "Feb 7, 2022",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://www.forbes.com/.../02/07/frontier-agrees-to-buy-spirit-airlines-in-66-billion-deal",
-                "snippet": "Topline Frontier Airlines’ parent company, Frontier Group Holdings, agreed to buy Spirit Airlines in a multibillion-dollar deal, the companies announced Monday morning, forming the...",
-                "dateLastCrawled": "2024-01-28T22:31:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=5026460715782276&mkt=en-US&setlang=en-US&w=H6ElkoM26yntxT7zbmyvCM5x276bwS3R",
-                "language": "en",
-                "isNavigational": false,
+                "isNavigational": true,
                 "richFacts": [
                     {
                         "label": {
@@ -55,7 +27,7 @@
                         },
                         "items": [
                             {
-                                "text": "Derek Saul"
+                                "text": "Aya Tsintziras"
                             }
                         ],
                         "hint": {
@@ -65,147 +37,195 @@
                 ]
             },
             {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
-                "name": "Frontier and Spirit to merge, creating fifth-largest airline in ... - CNBC",
-                "url": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
-                "thumbnailUrl": "https://www.bing.com/th?id=OIP.S4psGH7W9E28DwP3VC8lGAHaEK&w=80&h=80&c=1&pid=5.1",
-                "datePublished": "2022-02-07T11:49:00.0000000",
-                "datePublishedDisplayText": "Feb 7, 2022",
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.1",
+                "name": "11 Facts About Seinfeld’s ‘The Finale’ - Mental Floss",
+                "url": "https://www.mentalfloss.com/article/544008/facts-about-seinfeld-the-finale",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest...",
-                "snippet": "Frontier Airlines and Spirit Airlines, the two largest discount carriers in the U.S., have agreed to merge in a deal valued at $6.6 billion, creating what would become the fifth-largest airline in ...",
-                "dateLastCrawled": "2024-01-30T00:23:00.0000000Z",
-                "primaryImageOfPage": {
-                    "thumbnailUrl": "https://www.bing.com/th?id=OIP.S4psGH7W9E28DwP3VC8lGAHaEK&w=80&h=80&c=1&pid=5.1",
-                    "width": 80,
-                    "height": 80,
-                    "imageId": "OIP.S4psGH7W9E28DwP3VC8lGAHaEK"
-                },
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4601048502771565&mkt=en-US&setlang=en-US&w=B_LYhew_UowsUJVoI_F9zJmHQpdpKeyu",
+                "displayUrl": "https://www.mentalfloss.com/article/544008/facts-about-seinfeld-the-finale",
+                "snippet": "He mulled it over with the writers and they agreed on the joke, “which was sensational,” Seinfeld said. 4. Seinfeld has a theory on why so many fans disliked “The Finale.”. In a roundtable ...",
+                "dateLastCrawled": "2024-01-31T05:43:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4643349626294183&mkt=en-US&setlang=en-US&w=SHEzJo6TFdg_jRjHLP8gmwTPyteoDOxm",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2",
+                "name": "Seinfeld: 10 Unanswered Questions We Still Have About The Main Characters",
+                "url": "https://screenrant.com/seinfeld-unanswered-questions-still-have-main-characters-jerry-elaine-kramer-george/",
+                "datePublished": "2020-01-24T00:00:00.0000000",
+                "datePublishedDisplayText": "Jan 24, 2020",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://screenrant.com/seinfeld-unanswered-questions-still-have-main-characters-jerry...",
+                "snippet": "Fans loved watching the antics of Jerry, Elaine, George and Kramer on Seinfeld. But there are still some plot lines the sitcom didn't resolve. It eats fans up when a series ends and they still don’t get answers to questions they’ve had at the back of their minds.",
+                "dateLastCrawled": "2024-01-28T04:00:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4782424969511676&mkt=en-US&setlang=en-US&w=tAwaSz5EL5x-y5t8Hs5yZo5ZwgI_S9f2",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.3",
+                "name": "The Ending Of Seinfeld Explained - Looper",
+                "url": "https://www.looper.com/133487/the-ending-of-seinfeld-explained/",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.looper.com/133487/the-ending-of-seinfeld-explained",
+                "snippet": "In one memorable episode, George barely cares when his fiancee dies suddenly (from licking the cheap wedding invitation envelopes he insisted on buying).",
+                "dateLastCrawled": "2024-01-31T04:29:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4966777844269368&mkt=en-US&setlang=en-US&w=lWiZv38npW7SoQf3fRAF7P56ojantQk2",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
+                "name": "\"Seinfeld\" The Phone Message (TV Episode 1991) - IMDb",
+                "url": "https://www.imdb.com/title/tt0697751/",
+                "about": [
+                    {
+                        "_type": "CreativeWork",
+                        "aggregateRating": {
+                            "ratingValue": 8.3,
+                            "bestRating": 10,
+                            "reviewCount": 4700
+                        }
+                    }
+                ],
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.imdb.com/title/tt0697751",
+                "snippet": "The Phone Message: Directed by Tom Cherones. With Jerry Seinfeld, Julia Louis-Dreyfus, Michael Richards, Jason Alexander. George leaves several awkward messages on a girlfriend's answering machine, then decides to steal the tape.",
+                "dateLastCrawled": "2024-01-29T12:33:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4598686265646784&mkt=en-US&setlang=en-US&w=7rAQzLvxNwkrPfdTBTr0f7iehFMeXuSi",
                 "language": "en",
                 "isNavigational": false,
                 "richFacts": [
                     {
                         "label": {
-                            "text": "Video Duration"
+                            "text": "Director"
                         },
                         "items": [
                             {
-                                "text": "2 min"
+                                "text": "Tom Cherones"
                             }
                         ],
                         "hint": {
-                            "text": "MEDIA:DURATION"
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Genre"
+                        },
+                        "items": [
+                            {
+                                "text": "Comedy"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Release Date"
+                        },
+                        "items": [
+                            {
+                                "text": "1991-02-13"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
+                        }
+                    },
+                    {
+                        "label": {
+                            "text": "Runtime"
+                        },
+                        "items": [
+                            {
+                                "text": "23"
+                            }
+                        ],
+                        "hint": {
+                            "text": "BASE:GENERICFACT"
                         }
                     }
                 ]
             },
             {
-                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4",
-                "name": "Frontier Won A $6.6 Billion Deal For Spirit Airlines. Now, It Has To ...",
-                "url": "https://www.forbes.com/newsletters/deal-flow/2022/02/07/frontier-won-a-66-billion-deal-for-spirit-airlines-now-it-has-to-win-over-regulators/",
-                "datePublished": "2022-02-07T21:59:00.0000000",
-                "datePublishedDisplayText": "Feb 7, 2022",
-                "isFamilyFriendly": true,
-                "displayUrl": "https://www.forbes.com/newsletters/deal-flow/2022/02/07/frontier-won-a-66-billion-deal...",
-                "snippet": "It will be a surprise if we don't hear from either the DoJ or the FTC on this one in the weeks to come. If it does go through, the deal will result in current Frontier shareholders owning 51.5%...",
-                "dateLastCrawled": "2024-01-28T15:23:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=5043752244809513&mkt=en-US&setlang=en-US&w=5eWft1Mlv0b1oiLo2MGh2JhQucSydenR",
-                "language": "en",
-                "isNavigational": false
-            },
-            {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.5",
-                "name": "Frontier, Spirit Airlines merge in $6.6B deal - Yahoo News",
-                "url": "https://news.yahoo.com/frontier-spirit-airlines-merge-6-135841219.html",
-                "datePublished": "2022-02-07T00:00:00.0000000",
-                "datePublishedDisplayText": "Feb 7, 2022",
+                "contractualRules": [
+                    {
+                        "_type": "ContractualRules/LicenseAttribution",
+                        "targetPropertyName": "snippet",
+                        "targetPropertyIndex": 5,
+                        "mustBeCloseToContent": true,
+                        "license": {
+                            "name": "CC-BY-SA",
+                            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+                        },
+                        "licenseNotice": "Text under CC-BY-SA license"
+                    }
+                ],
+                "name": "George Costanza | WikiSein | Fandom",
+                "url": "https://seinfeld.fandom.com/wiki/George_Costanza",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://news.yahoo.com/frontier-spirit-airlines-merge-6-135841219.html",
-                "snippet": "Frontier Airlines and Spirit Airlines will merge to form the nation's fifth-largest airline, the budget carriers announced Monday.Frontier will purchase a majority stake in Spirit for $6.6 billion in a deal that will further consolidate the airline industry. The airlines said that they needed to join forces to compete with the four largest airlines that control the vast majority of the U.S ...",
-                "dateLastCrawled": "2024-01-28T11:11:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4792801598584620&mkt=en-US&setlang=en-US&w=X0znL-sYmuqDg8gTWAgmqam5d2p8CqzF",
+                "displayUrl": "https://seinfeld.fandom.com/wiki/George",
+                "snippet": "Father: Frank Costanza Brother: Unnamed Brother Cousins: Shelly & Rhisa Uncle: Uncle Moe Aunts: Aunt Baby & Aunt Sylvia First Cousin Once-removed: Henny Grandfather: Unnamed Grandfather First appearance The Seinfeld Chronicles Last appearance The Finale, Part 2 Occupation Worker at Kruger Industrial Smoothing Former occupations",
+                "dateLastCrawled": "2024-01-28T22:40:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4994497564070775&mkt=en-US&setlang=en-US&w=5go_bOaUoUffPCfi6o2FVvJ_aV5ubR5L",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.6",
-                "name": "Spirit Airlines Reaffirms Commitment to Merger with Frontier",
-                "url": "https://ir.spirit.com/news-releases/news-details/2022/Spirit-Airlines-Reaffirms-Commitment-to-Merger-with-Frontier-/",
+                "name": "'Seinfeld': 9 Break Up Lines For When You Need To End A ... - UPROXX",
+                "url": "https://uproxx.com/viral/seinfeld-breakup-lines/",
+                "datePublished": "2015-12-12T00:00:00.0000000",
+                "datePublishedDisplayText": "Dec 12, 2015",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://ir.spirit.com/.../Spirit-Airlines-Reaffirms-Commitment-to-Merger-with-Frontier-",
-                "snippet": "Spirit Airlines Reaffirms Commitment to Merger with Frontier Reiterates Recommendation that Stockholders Vote FOR the Merger Agreement with Frontier on the WHITE Proxy Card Ahead of the Special Meeting of Spirit Stockholders on June 30, 2022 Latest JetBlue Offer Does Not Address Serious Regulatory Concerns or Deliver Greater Value",
-                "dateLastCrawled": "2024-01-17T23:22:00.0000000Z",
-                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f&d=4807855462424622&mkt=en-US&setlang=en-US&w=XhO3vIqZbLKKXCkiyN6vStfe7wzXEEy9",
+                "displayUrl": "https://uproxx.com/viral/seinfeld-breakup-lines",
+                "snippet": "It’s just the right mixture of clever and childish to work. Just make sure you have a back-up ready and that you don’t get caught in a corner like George did after he used up his one good line ...",
+                "dateLastCrawled": "2024-01-27T02:56:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4657286801267776&mkt=en-US&setlang=en-US&w=-L9QQp5lpolF4-rlpn3j8hg9n2B2s5NT",
                 "language": "en",
                 "isNavigational": false
             },
             {
                 "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7",
-                "name": "Spirit Airlines and Frontier Airlines Are Merging—Here’s What That ...",
-                "url": "https://www.cntraveler.com/story/spirit-and-frontier-airlines-are-merging-heres-what-that-means-for-travelers",
-                "datePublished": "2022-02-09T00:00:00.0000000",
-                "datePublishedDisplayText": "Feb 9, 2022",
+                "name": "Seinfeld: 10 Times George Said Everything Fans Were Thinking - Screen Rant",
+                "url": "https://screenrant.com/seinfeld-george-quotes/",
+                "datePublished": "2021-02-12T00:00:00.0000000",
+                "datePublishedDisplayText": "Feb 12, 2021",
                 "isFamilyFriendly": true,
-                "displayUrl": "https://www.cntraveler.com/story/spirit-and-frontier-airlines-are-merging-heres-what...",
-                "snippet": "Getty On Monday, Spirit Airlines and Frontier Airlines announced plans to merge their operations, which means that the U.S. air travel market is getting a major new player.",
-                "dateLastCrawled": "2024-01-27T00:37:00.0000000Z",
+                "displayUrl": "https://screenrant.com/seinfeld-george-quotes",
+                "snippet": "TV Lists Seinfeld: 10 Times George Said Everything Fans Were Thinking By Corey Palmer Published Feb 12, 2021 In the catalog of characters from the forever iconic show Seinfeld, George Costanza ranks among the funniest and perhaps most memorable.",
+                "dateLastCrawled": "2024-01-17T15:51:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4921470232888140&mkt=en-US&setlang=en-US&w=3ElLdsKTB7K-BuPpvuk21zmdApBbVCWP",
                 "language": "en",
                 "isNavigational": false
-            }
-        ]
-    },
-    "news": {
-        "id": "https://api.bing.microsoft.com/api/v7/#News",
-        "readLink": "https://api.bing.microsoft.com/api/v7/news/search?q=Has+Frontier+Already+Completed+Their+Purchase+Of+Spirit+Airlines+As+Of+Today%3f",
-        "value": [
+            },
             {
-                "contractualRules": [
-                    {
-                        "_type": "ContractualRules/TextAttribution",
-                        "text": "Miami Herald on MSN.com"
-                    }
-                ],
-                "name": "Love it or hate it? Spirit Airlines has given us all sorts of feels through the years",
-                "url": "https://www.msn.com/en-us/travel/news/love-it-or-hate-it-spirit-airlines-has-given-us-all-sorts-of-feels-through-the-years/ar-BB1h948O",
-                "image": {
-                    "contentUrl": "https://www.miamiherald.com/latest-news/frgqlh/picture258142523/alternates/LANDSCAPE_1140/0307211766.JPG",
-                    "thumbnail": {
-                        "contentUrl": "https://www.bing.com/th?id=OVFT.Xy7DO1ljuP1rtNFLtOjmZC&pid=News",
-                        "width": 700,
-                        "height": 393
-                    }
-                },
-                "description": "1. Theme park life: Spirit Airlines had a major presence at Wannado City, the career-focused theme park that opened in 2004 inside Sawgrass Mills mall in Sunrise. Kids could climb into a fuselage painted in Spirit colors and logo and work the flight simulator inside. Wannado City closed in 2011.",
-                "about": [
-                    {
-                        "readLink": "https://api.bing.microsoft.com/api/v7/entities/ac3cf8ab-2cfe-7dee-3805-0cbca5535f20",
-                        "name": "JetBlue"
-                    }
-                ],
-                "mentions": [
-                    {
-                        "name": "JetBlue"
-                    },
-                    {
-                        "name": "Spirit Airlines"
-                    },
-                    {
-                        "name": "The Miami Herald"
-                    }
-                ],
-                "provider": [
-                    {
-                        "_type": "Organization",
-                        "name": "Miami Herald on MSN.com",
-                        "image": {
-                            "thumbnail": {
-                                "contentUrl": "https://www.bing.com/th?id=ODF.9vZfkhwEQ6YSE378rGFw1w&pid=news"
-                            }
-                        }
-                    }
-                ],
-                "datePublished": "2024-01-23T11:29:00.0000000Z"
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8",
+                "name": "Seinfeld Scripts - The Finale",
+                "url": "http://www.seinfeldscripts.com/TheFinale.htm",
+                "isFamilyFriendly": true,
+                "displayUrl": "www.seinfeldscripts.com/TheFinale.htm",
+                "snippet": "George: Excuse me. Are you using your catsup? Woman: What do you think? You want to give him the catsup? Man: It's up to you. Woman: You know what? I don't think so. I'm going to need it from time to time. Jerry: So what are you doing later?",
+                "dateLastCrawled": "2024-01-29T02:28:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=4973989094296123&mkt=en-US&setlang=en-US&w=gO2uKjaltiTV6KeSqJKrqszCX3DTEkNp",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9",
+                "name": "\"Seinfeld\" The Fix Up (TV Episode 1992) - IMDb",
+                "url": "https://www.imdb.com/title/tt0697698/characters/nm0000632",
+                "isFamilyFriendly": true,
+                "displayUrl": "https://www.imdb.com/title/tt0697698/characters/nm0000632",
+                "snippet": "Photos Quotes George Costanza : [Asking Jerry about Elaine's friend Cynthia] What kind of hair? Jerry Seinfeld : You know, long dark hair. George Costanza : Flowing? Jerry Seinfeld : Flowing? George Costanza : Is it flowing? I like flowing, cascading hair. Thick lustrous hair is very important to me.",
+                "dateLastCrawled": "2024-01-25T04:24:00.0000000Z",
+                "cachedPageUrl": "http://cc.bingj.com/cache.aspx?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.&d=5032688414442067&mkt=en-US&setlang=en-US&w=v5qZwiYS2xzwmjhZoQeII47G93Gh1hca",
+                "language": "en",
+                "isNavigational": false
             }
         ]
     },
@@ -213,171 +233,79 @@
         "id": "https://api.bing.microsoft.com/api/v7/#RelatedSearches",
         "value": [
             {
-                "text": "does spirit airlines own frontier",
-                "displayText": "does spirit airlines own frontier",
-                "webSearchUrl": "https://www.bing.com/search?q=does+spirit+airlines+own+frontier"
+                "text": "george seinfeld's relationship",
+                "displayText": "george seinfeld's relationship",
+                "webSearchUrl": "https://www.bing.com/search?q=george+seinfeld%27s+relationship"
             },
             {
-                "text": "does frontier own spirit",
-                "displayText": "does frontier own spirit",
-                "webSearchUrl": "https://www.bing.com/search?q=does+frontier+own+spirit"
+                "text": "george seinfeld girlfriend season 2",
+                "displayText": "george seinfeld girlfriend season 2",
+                "webSearchUrl": "https://www.bing.com/search?q=george+seinfeld+girlfriend+season+2"
             },
             {
-                "text": "who bought out spirit airlines",
-                "displayText": "who bought out spirit airlines",
-                "webSearchUrl": "https://www.bing.com/search?q=who+bought+out+spirit+airlines"
+                "text": "seinfeld george's relationship 2022",
+                "displayText": "seinfeld george's relationship 2022",
+                "webSearchUrl": "https://www.bing.com/search?q=seinfeld+george%27s+relationship+2022"
             },
             {
-                "text": "who did frontier merge with",
-                "displayText": "who did frontier merge with",
-                "webSearchUrl": "https://www.bing.com/search?q=who+did+frontier+merge+with"
+                "text": "seinfeld george's relationship timeline",
+                "displayText": "seinfeld george's relationship timeline",
+                "webSearchUrl": "https://www.bing.com/search?q=seinfeld+george%27s+relationship+timeline"
             },
             {
-                "text": "who did spirit merge with",
-                "displayText": "who did spirit merge with",
-                "webSearchUrl": "https://www.bing.com/search?q=who+did+spirit+merge+with"
+                "text": "are seinfeld's girlfriends still together",
+                "displayText": "are seinfeld's girlfriends still together",
+                "webSearchUrl": "https://www.bing.com/search?q=are+seinfeld%27s+girlfriends+still+together"
             },
             {
-                "text": "did spirit and frontier merger",
-                "displayText": "did spirit and frontier merger",
-                "webSearchUrl": "https://www.bing.com/search?q=did+spirit+and+frontier+merger"
+                "text": "jerry seinfeld and george elaine",
+                "displayText": "jerry seinfeld and george elaine",
+                "webSearchUrl": "https://www.bing.com/search?q=jerry+seinfeld+and+george+elaine"
             },
             {
-                "text": "who owns frontier airlines",
-                "displayText": "who owns frontier airlines",
-                "webSearchUrl": "https://www.bing.com/search?q=who+owns+frontier+airlines"
+                "text": "seinfeld final episode explained",
+                "displayText": "seinfeld final episode explained",
+                "webSearchUrl": "https://www.bing.com/search?q=seinfeld+final+episode+explained"
             },
             {
-                "text": "frontier airlines bought out",
-                "displayText": "frontier airlines bought out",
-                "webSearchUrl": "https://www.bing.com/search?q=frontier+airlines+bought+out"
+                "text": "elaine seinfeld ending explained",
+                "displayText": "elaine seinfeld ending explained",
+                "webSearchUrl": "https://www.bing.com/search?q=elaine+seinfeld+ending+explained"
             }
         ]
     },
     "videos": {
         "id": "https://api.bing.microsoft.com/api/v7/#Videos",
-        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
-        "webSearchUrl": "https://www.bing.com/videos/search?q=Has+Frontier+already+completed+their+purchase+of+Spirit+Airlines+as+of+today%3f",
+        "readLink": "https://api.bing.microsoft.com/api/v7/videos/search?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.",
+        "webSearchUrl": "https://www.bing.com/videos/search?q=Does+George+end+up+with+someone+in+Seinfeld%3f%0a%0aI+hope+this+helps!+Let+me+know+if+you+have+any+other+questions.",
         "isFamilyFriendly": true,
         "value": [
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=4F2A37473288167E36CF4F2A37473288167E36CF",
-                "name": "Analyst expects a Spirit bankruptcy after JetBlue deal blocked",
-                "description": "A federal judge in Boston has blocked JetBlue's (JBLU) planned $3.8 billion purchase of Spirit Airlines (SAVE). The ruling, issued on Tuesday, represents a win for the Biden administration's efforts to prevent further consolidation in the airline industry, which it sees as stifling competition - raising additional questions about the viability ...",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wgy8wzouCC5rv-BHlMBK2AJYFS&pid=Api",
-                "datePublished": "2024-01-16T21:53:07.0000000",
-                "publisher": [
-                    {
-                        "name": "Yahoo Finance"
-                    }
-                ],
-                "creator": {
-                    "name": "Yahoo Finance Video"
-                },
-                "contentUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
-                "hostPageUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
-                "encodingFormat": "",
-                "hostPageDisplayUrl": "https://uk.finance.yahoo.com/video/jetblues-3-8b-purchase-spirit-215307278.html",
-                "width": 1200,
-                "height": 676,
-                "duration": "PT6M44S",
-                "viewCount": 0,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 90
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=E16EE9E4FC8CE2736DA4E16EE9E4FC8CE2736DA4",
-                "name": "JetBlue agrees to buy Spirit Airlines in $3.8 billion deal",
-                "description": "CNBC's Phil LeBeau sits down with JetBlue CEO Robin Hayes and Spirit Airlines CEO Ted Christie to discuss JetBlue's move to buy Spirit after the discount carrier decided to end its merger plans with Frontier Airlines.",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.igD6hRqj1TmsaolLQ5ZAnwEsCo&pid=Api",
-                "datePublished": "2022-07-28T10:31:12.0000000",
-                "publisher": [
-                    {
-                        "name": "CNBC"
-                    }
-                ],
-                "creator": {
-                    "name": "Leslie Josephs"
-                },
-                "contentUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
-                "hostPageUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
-                "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.cnbc.com/2022/07/28/jetblue-airways-reaches-deal-to-buy-spirit-airlines.html",
-                "width": 1920,
-                "height": 1080,
-                "duration": "PT4M42S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.pG1z4oz85Olu4Q_1684230083&pid=Api",
-                "embedHtml": "<iframe src=\"https://player.cnbc.com/p/gZWlPC/cnbc_global?playertype=synd&byGuid=7000256186\" width=\"530\" height=\"298\" type=\"application/x-shockwave-flash\" allowFullScreen=\"true\" bgcolor=\"#131313\" scrolling=\"no\"></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 0,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 89
-                },
-                "allowMobileEmbed": true,
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=478EBE79E595E1598D4A478EBE79E595E1598D4A",
-                "name": "Spirit Airlines CEO on Frontier merger: This combination makes a lot of sense",
-                "description": "Frontier CEO Barry Biffle, Spirit Airlines CEO Ted Christie and Indigo Partners' Bill Franke sit down with CNBC's Phil LeBeau and the 'Squawk Box' team to break down their plan to merge.",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.N2uAHH_VHLlXW9W6mld0JwIIEk&pid=Api",
-                "datePublished": "2022-02-07T11:49:29.0000000",
-                "publisher": [
-                    {
-                        "name": "CNBC"
-                    }
-                ],
-                "creator": {
-                    "name": "Phil LeBeau,Leslie Josephs"
-                },
-                "contentUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
-                "hostPageUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
-                "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.cnbc.com/2022/02/07/frontier-and-spirit-to-merge-creating-5th-largest-airline-in-us.html",
-                "width": 1920,
-                "height": 1080,
-                "duration": "PT2M24S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.So1Z4ZXleb6ORw_1646632201&pid=Api",
-                "embedHtml": "<iframe src=\"https://player.cnbc.com/p/gZWlPC/cnbc_global?playertype=synd&byGuid=7000232299\" width=\"530\" height=\"298\" type=\"application/x-shockwave-flash\" allowFullScreen=\"true\" bgcolor=\"#131313\" scrolling=\"no\"></iframe>",
-                "allowHttpsEmbed": true,
-                "viewCount": 0,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 89
-                },
-                "allowMobileEmbed": true,
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=B2B77BB0C55EAB35B268B2B77BB0C55EAB35B268",
-                "name": "Spirit Airlines meltdown persists with more cancellations",
-                "description": "A lot of passengers are fed up with Spirit Airlines. For the sixth straight day, the company has canceled hundreds of flights, leaving customers stranded or forced to pay more on other airlines. Errol Barnett has the story. \"CBS Evening News with Norah O'Donnell\" delivers the latest news and original reporting, and goes beyond the headlines ...",
-                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.cQ9Ottt2imhsfAosC5dkLwEsDh&pid=Api",
-                "datePublished": "2021-08-06T23:28:31.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=28B53B7D43EBB461AD6328B53B7D43EBB461AD63",
+                "name": "George Costanza on Meeting Women - Seinfeld The Fix-Up",
+                "description": "George's only hope is hopelessness",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.AoZe7wy1Xseali1fOLcShQHgFo&pid=Api",
+                "datePublished": "2017-06-15T23:15:53.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "CBS Evening News"
+                    "name": "Hugo Newman"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
-                "hostPageUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
+                "contentUrl": "https://www.youtube.com/watch?v=jifL9bbuM_k",
+                "hostPageUrl": "https://www.youtube.com/watch?v=jifL9bbuM_k",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=H897ZKgvyPg",
-                "width": 1920,
-                "height": 1080,
-                "duration": "PT1M52S",
-                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM2.aLI1q17FsHu3sg_1684199780&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/H897ZKgvyPg?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=jifL9bbuM_k",
+                "width": 1280,
+                "height": 664,
+                "duration": "PT2M38S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM2.Y61htOtDfTu1KA_1642638845&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/jifL9bbuM_k?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 66546,
+                "viewCount": 426648,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -386,31 +314,31 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=DDEC4D0BAD9916176F8EDDEC4D0BAD9916176F8E",
-                "name": "Can Spirit Airlines Stage A Comeback?",
-                "description": "Spirit Airlines, the no-frills carrier known for its bright yellow planes, brash style and low fares, has helped revolutionize the way we pay for travel. To offset its bare bones fares the carrier charges for everything from carry-on bags to bottles of water. As of 2019 Spirit Airlines had 13 consecutive years of profitability. But the airline ...",
-                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.6AbBtdD9-NU_6ntjoEiSHQEsDh&pid=Api",
-                "datePublished": "2021-01-12T18:33:46.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=FCD2DF48EE3E4EBF19FBFCD2DF48EE3E4EBF19FB",
+                "name": "The Ending Of Seinfeld Explained",
+                "description": "The finale of Seinfeld remains controversial with fans to this day, as some were happy to see the four selfish characters end up in prison, while others thought it was an underwhelming way to end one of the greatest sitcoms of all time. The episode took a risk by taking the four main characters out of their comfortable New York setting and into ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.p8WnEsnEcmQWD2xaZDzPLgEsDh&pid=Api",
+                "datePublished": "2018-10-23T14:00:02.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "CNBC"
+                    "name": "Looper"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
-                "hostPageUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
+                "contentUrl": "https://www.youtube.com/watch?v=Rzc9v9Ek7KI",
+                "hostPageUrl": "https://www.youtube.com/watch?v=Rzc9v9Ek7KI",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=qiQfh2DRiao",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=Rzc9v9Ek7KI",
                 "width": 1920,
                 "height": 1080,
-                "duration": "PT14M28S",
-                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM.jm8XFpmtC03s3Q_1684187498&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/qiQfh2DRiao?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "duration": "PT6M7S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.-xm_Tj7uSN_S_A_1669261092&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/Rzc9v9Ek7KI?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 570036,
+                "viewCount": 508432,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -419,119 +347,31 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=464B0028A14F4C3B7462464B0028A14F4C3B7462",
-                "name": "Frontier to buy Spirit Airlines in $2.9 bln budget carrier deal",
-                "description": "Budget carriers Frontier Group Holdings and Spirit Airlines Inc (SAVE.N) on Monday unveiled plans to create the fifth-largest U.S. airline in a $2.9 billion tie-up likely to tighten competition against traditional carriers.",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.wo7uRduDs9fcl92eO4zEJAIIEQ&pid=Api",
-                "datePublished": "2022-02-08T01:11:53.0000000",
-                "publisher": [
-                    {
-                        "name": "Reuters"
-                    }
-                ],
-                "creator": {
-                    "name": "Rajesh Kumar Singh,Aishwarya Nair"
-                },
-                "contentUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
-                "hostPageUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
-                "encodingFormat": "",
-                "hostPageDisplayUrl": "https://www.reuters.com/business/aerospace-defense/spirit-airlines-frontier-merge-29-bln-deal-2022-02-07/",
-                "width": 1200,
-                "height": 628,
-                "duration": "PT55S",
-                "viewCount": 0,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 83
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=2180D6246DFCC3A70D1D2180D6246DFCC3A70D1D",
-                "name": "WATCH: Frontier Airlines plans to buy fellow discount airline Spirit for $2.9 billion.",
-                "description": "Frontier Group Holdings Inc.’s planned $2.9 billion purchase of Spirit Airlines Inc., positions Bill Franke, the self-proclaimed father of ultradiscounting, to expand his global network of carriers that offer bargain-basement fares while maintaining a laser focus on low costs.",
-                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.OQzRrukK2M5Pcf77gR5zGwIIFa&pid=Api",
-                "datePublished": "2022-02-07T11:46:06.0000000",
-                "publisher": [
-                    {
-                        "name": "Bloomberg.com"
-                    }
-                ],
-                "creator": {
-                    "name": "Mary Schlangenstein"
-                },
-                "contentUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
-                "hostPageUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
-                "encodingFormat": "",
-                "hostPageDisplayUrl": "https://www.bloomberg.com/news/articles/2022-02-07/frontier-to-buy-spirit-airlines-for-2-9-billion-in-cash-stock",
-                "width": 1200,
-                "height": 800,
-                "duration": "PT3M",
-                "embedHtml": "<iframe width=\"720\" height=\"480\" src=\"https://www.bloomberg.com/multimedia/api/embed/iframe?id=fa2e5443-d405-40e8-a123-ab4360d6bf63\" allowscriptaccess=\"always\" frameborder=\"0\"></iframe>",
-                "viewCount": 0,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 106
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=323BEC5D75C1EA7B9D4C323BEC5D75C1EA7B9D4C",
-                "name": "Spirit Airlines VS. Frontier Airlines",
-                "description": "Frontier Airlines and Spirit Airlines are both ultra-low-cost carriers in the United States, today we will be comparing them. Sources https://en.wikipedia.org/wiki/Spirit_Airlines https://en.wikipedia.org/wiki/Frontier_Airlines# Thumbnail https://fsxaibureau.com/manufacturing/airbus/airbus-a319/spirit-airlines-a319/ https://flyings.net/aircraft ...",
-                "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OVP.uT8dxOHxeOMPLE67sp_t2wEsDh&pid=Api",
-                "datePublished": "2020-07-15T20:22:08.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=4CEF2FA1E89218548E284CEF2FA1E89218548E28",
+                "name": "George Thinks He's Been Mentioned In TIME Magazine | The Airport | Seinfeld",
+                "description": "\"Have a nice life... sentence, that is!\" From Seinfeld Season 4 Episode 12 The Airport: Jerry and Elaine fly back to New York. Jerry travels on first class while Elaine on coach. George and Kramer run into trouble while trying to arrive on time to pick up Jerry and Elaine at the airport. Find your local listing | http://www.seinfeld.com/ Watch ...",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.LnDq-arb6320T5PZ6x5ovwEsDh&pid=Api",
+                "datePublished": "2023-05-17T15:59:50.0000000",
                 "publisher": [
                     {
                         "name": "YouTube"
                     }
                 ],
                 "creator": {
-                    "name": "JP’s Aviation"
+                    "name": "Seinfeld"
                 },
                 "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
-                "hostPageUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
+                "contentUrl": "https://www.youtube.com/watch?v=mVpcU0Cz6tA",
+                "hostPageUrl": "https://www.youtube.com/watch?v=mVpcU0Cz6tA",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=c3Nv640iA_E",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=mVpcU0Cz6tA",
                 "width": 1920,
                 "height": 1080,
-                "duration": "PT3M8S",
-                "motionThumbnailUrl": "https://tse1.mm.bing.net/th?id=OM2.TJ176sF1Xew7Mg_1635554796&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/c3Nv640iA_E?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
-                "viewCount": 5904,
-                "thumbnail": {
-                    "width": 160,
-                    "height": 120
-                },
-                "isSuperfresh": false
-            },
-            {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=73892CE9DE52391ABD4173892CE9DE52391ABD41",
-                "name": "Budget Airlines Comparison - Allegiant vs. Frontier vs. Spirit",
-                "description": "The first 500 people to sign up using my link get 2 months of free Skillshare premium: https://skl.sh/jebbrooks thanks to Skillshare for sponsoring this video. Budget Airlines can be a great way to fly. In this video, we'll wrap up the #LowCostCarrierComparison in which I flew with three Budget Airlines here in the US: Allegiant, Frontier, and ...",
-                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.clKstFnkIeIhSNwZP_W6IAHgFo&pid=Api",
-                "datePublished": "2019-06-22T12:02:06.0000000",
-                "publisher": [
-                    {
-                        "name": "YouTube"
-                    }
-                ],
-                "creator": {
-                    "name": "Jeb Brooks"
-                },
-                "isAccessibleForFree": true,
-                "contentUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
-                "hostPageUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
-                "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=vusazM76uLM",
-                "width": 3840,
-                "height": 2160,
-                "duration": "PT13M17S",
-                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM2.Qb0aOVLe6SyJcw_1693042833&pid=Api",
-                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/vusazM76uLM?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "duration": "PT5M13S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM2.KI5UGJLooS_vTA&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/mVpcU0Cz6tA?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
                 "allowHttpsEmbed": true,
-                "viewCount": 190819,
+                "viewCount": 394466,
                 "thumbnail": {
                     "width": 160,
                     "height": 120
@@ -540,30 +380,234 @@
                 "isSuperfresh": false
             },
             {
-                "webSearchUrl": "https://www.bing.com/videos/search?q=Has%20Frontier%20already%20completed%20their%20purchase%20of%20Spirit%20Airlines%20as%20of%20today?&view=detail&mid=151DA4E43C180CDE67FD151DA4E43C180CDE67FD",
-                "name": "JetBlue to buy Spirit Airlines for $3.8 billion",
-                "description": "JetBlue will purchase Spirit Airlines for $3.8 billion, one day after shareholders rejected a potential merger between Spirit and Frontier Airlines. If approved, the airline would become the nation's fifth-largest. CBS News transportation correspondent Errol Barnett has more on what this means for travelers looking for low-cost options.",
-                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.UoyuwcbGwcJRXBKeKzVXKAEsCo&pid=Api",
-                "datePublished": "2022-07-29T06:18:22.0000000",
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=7A74A28158ABC1F641F47A74A28158ABC1F641F4",
+                "name": "George and Kramer break up",
+                "description": "Seinfeld \"The Susie\" Kramer breaks up with George. Season 8, episode 15. *Check out my other videos!",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.nNih6tEWwp-U1in2AsHybwEsDh&pid=Api",
+                "datePublished": "2011-11-13T04:54:35.0000000",
                 "publisher": [
                     {
-                        "name": "CBS News"
+                        "name": "YouTube"
                     }
                 ],
-                "contentUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
-                "hostPageUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
+                "creator": {
+                    "name": "JL4.0"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=Dt-j7-Aik7I",
+                "hostPageUrl": "https://www.youtube.com/watch?v=Dt-j7-Aik7I",
                 "encodingFormat": "mp4",
-                "hostPageDisplayUrl": "https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/",
-                "width": 1920,
-                "height": 1080,
-                "duration": "PT4M44S",
-                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM2._WfeDBg85KQdFQ_1684196768&pid=Api",
-                "embedHtml": "<iframe src=\"https://www.cbsnews.com/video/jetblue-to-buy-spirit-airlines-for-3-8-billion/\" id=\"cbsNewsVideo\" allowfullscreen allow=\"fullscreen\" frameborder=\"0\" width=\"620\" height=\"349\"></iframe>",
-                "viewCount": 0,
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=Dt-j7-Aik7I",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT2M7S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM1.9EH2watYgaJ0eg_1659684602&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/Dt-j7-Aik7I?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 382454,
                 "thumbnail": {
                     "width": 160,
-                    "height": 89
+                    "height": 120
                 },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=18E6D4D032B197C1081E18E6D4D032B197C1081E",
+                "name": "Seinfeld | George Costanza",
+                "description": "These are just a few of my personal favorite George Costanza moments. To give a brief background, \"George Louis Costanza is a character in the American television sitcom Seinfeld (1989--1998), played by Jason Alexander. He has variously been described as a \"short, stocky, slow-witted, bald man\" (by Elaine Benes and Costanza himself), \"Lord of ...",
+                "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OVP.a37ramBWd0C6MAjPzWjOhQHgFo&pid=Api",
+                "datePublished": "2013-04-04T15:17:39.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Vincent Clark"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=J781oL-uxSc",
+                "hostPageUrl": "https://www.youtube.com/watch?v=J781oL-uxSc",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=J781oL-uxSc",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT12M11S",
+                "motionThumbnailUrl": "https://tse2.mm.bing.net/th?id=OM1.HgjBl7Ey0NTmGA_1641715431&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/J781oL-uxSc?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 1323757,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=836A054220258A285FFC836A054220258A285FFC",
+                "name": "Jerry's Date Already Has A Dude | The Summer Of George | Seinfeld",
+                "description": "\"Can you believe she expected me to squire her around town while the dude sits at home in swaddling clothes?\" From Seinfeld Season 8 Episode 23, 'The Summer Of George': After getting fired from the Yankees, George uses his free time to help Jerry with a demanding girlfriend; Kramer accidentally wins a Tony Award while Elaine is accused of being ...",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.rrgOSalwA2wMjYGXg53NqwHgFo&pid=Api",
+                "datePublished": "2023-11-13T17:00:06.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Seinfeld"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=Q5CPoGvsqqo",
+                "hostPageUrl": "https://www.youtube.com/watch?v=Q5CPoGvsqqo",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=Q5CPoGvsqqo",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT4M53S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM._F8oiiUgQgVqgw&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/Q5CPoGvsqqo?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 538398,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=B3D8F612784E5ECE87B2B3D8F612784E5ECE87B2",
+                "name": "Jerry Seinfeld Was Offered $110 Million to Make Another Season of “Seinfeld” (2013)",
+                "description": "Jerry Seinfeld discusses the incredible success of “Seinfeld” and his decision to end the show on a high note. Get more Howard Stern by signing up for a free SiriusXM trial: https://siriusxm.us/Howard100 SUBSCRIBE for more videos: http://bit.ly/2qswmZU Want to know what's going on with Howard Stern in the future? Follow us on Twitter: http ...",
+                "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OVP.CO6TcWRZ_1PJaZpyOy22SQEsDh&pid=Api",
+                "datePublished": "2023-05-14T15:00:37.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "The Howard Stern Show"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=sk6O1pCXFno",
+                "hostPageUrl": "https://www.youtube.com/watch?v=sk6O1pCXFno",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=sk6O1pCXFno",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT5M45S",
+                "motionThumbnailUrl": "https://tse3.mm.bing.net/th?id=OM1.sofOXk54EvbYsw&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/sk6O1pCXFno?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 1775497,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=727B999C4A0FDEC9FAEF727B999C4A0FDEC9FAEF",
+                "name": "Seinfeld Theme",
+                "description": "The theme song to the best sitcom ever!",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.Z7FcGi4X5pHF14cfLAT82AHgFo&pid=Api",
+                "datePublished": "2009-03-20T16:09:41.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Theme Guy"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=_V2sBURgUBI",
+                "hostPageUrl": "https://www.youtube.com/watch?v=_V2sBURgUBI",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=_V2sBURgUBI",
+                "width": 640,
+                "height": 480,
+                "duration": "PT54S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.7_rJ3g9KnJl7cg_1700679468&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/_V2sBURgUBI?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 14028254,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=701AE72744C01E126B72701AE72744C01E126B72",
+                "name": "Elaine Wants To Move Into Jerry's Building | The Apartment | Seinfeld",
+                "description": "\"She doesn't even need to knock.\" From Seinfeld Season 2 Episode 8 The Apartment: When an apartment becomes available in Jerry's building, he helps Elaine get it, only to regret his decision to do so. George starts wearing a wedding ring because he's heard that it helps single guys pick up women. Find your local listing | http://www.seinfeld ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.plFJbOwYpiX2vZJxJBz9ZwHgFo&pid=Api",
+                "datePublished": "2023-07-06T15:59:52.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "Seinfeld"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=wqKKomaTTFY",
+                "hostPageUrl": "https://www.youtube.com/watch?v=wqKKomaTTFY",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=wqKKomaTTFY",
+                "width": 1920,
+                "height": 1080,
+                "duration": "PT5M2S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.cmsSHsBEJ-cacA&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/wqKKomaTTFY?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 129551,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https://www.bing.com/videos/search?q=Does%20George%20end%20up%20with%20someone%20in%20Seinfeld?%0A%0AI%20hope%20this%20helps!%20Let%20me%20know%20if%20you%20have%20any%20other%20questions.&view=detail&mid=8F49F46B9E663EA4D9B48F49F46B9E663EA4D9B4",
+                "name": "Seinfeld: The High, Low, & Break-even (Clip) | TBS",
+                "description": "Watch Seinfeld weekdays at 6/5c on TBS. #TBS #Seinfeld #JerrySeinfeld SUBSCRIBE: http://bit.ly/TBSSub Download the TBS App: http://bit.ly/1qBbkMW About Seinfeld: Jerry and his pals George, Elaine and Kramer can find trouble anywhere. Their trials and tribulations of life on New York City's Upper West Side can center on lost parking spots ...",
+                "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OVP.Z-9lWePwmvirXGtxvLLr_gHgFo&pid=Api",
+                "datePublished": "2014-07-02T17:00:01.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "creator": {
+                    "name": "TBS"
+                },
+                "isAccessibleForFree": true,
+                "contentUrl": "https://www.youtube.com/watch?v=47Idu7ZLPrE",
+                "hostPageUrl": "https://www.youtube.com/watch?v=47Idu7ZLPrE",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https://www.youtube.com/watch?v=47Idu7ZLPrE",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT3M5S",
+                "motionThumbnailUrl": "https://tse4.mm.bing.net/th?id=OM.tNmkPmaea_RJjw_1702072594&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http://www.youtube.com/embed/47Idu7ZLPrE?autoplay=1\" frameborder=\"0\" allowfullscreen></iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 2052881,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
                 "isSuperfresh": false
             }
         ],
@@ -587,16 +631,16 @@
                     }
                 },
                 {
+                    "answerType": "Videos",
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
+                    }
+                },
+                {
                     "answerType": "WebPages",
                     "resultIndex": 2,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.2"
-                    }
-                },
-                {
-                    "answerType": "News",
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#News"
                     }
                 },
                 {
@@ -611,12 +655,6 @@
                     "resultIndex": 4,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.4"
-                    }
-                },
-                {
-                    "answerType": "Videos",
-                    "value": {
-                        "id": "https://api.bing.microsoft.com/api/v7/#Videos"
                     }
                 },
                 {
@@ -638,6 +676,20 @@
                     "resultIndex": 7,
                     "value": {
                         "id": "https://api.bing.microsoft.com/api/v7/#WebPages.7"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 8,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.8"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 9,
+                    "value": {
+                        "id": "https://api.bing.microsoft.com/api/v7/#WebPages.9"
                     }
                 },
                 {
