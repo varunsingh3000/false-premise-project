@@ -1,11 +1,12 @@
 #This is the main file from where the execution of the workflow starts
 
+import json
 import yaml
 import pandas as pd
 
 from utils.dataset import start_dataset_processing
-from web_search import start_web_search
-# from web_search_serp import start_web_search
+# from web_search import start_web_search
+from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
 # from openai_gpt_workflow_test import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
@@ -17,6 +18,7 @@ with open('params.yaml', 'r') as file:
 # Retrieve parameters 
 MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
+EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
 UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
 RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
@@ -28,9 +30,21 @@ MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 # every question the WORKFLOW_RUN_COUNT is reset to 0 before being passed in the loop.
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
+def generate_evidence_batch(query_list):
+    # evidence list for saving results in batch
+    evidence_batch_list = []
+    for query in zip(query_list):
+        external_evidence = start_web_search(query)
+        evidence_batch_list.append(external_evidence)
+    
+    # Write the list to the JSON file
+    with open(EVIDENCE_BATCH_SAVE_PATH, 'w') as json_file:
+        json.dump(evidence_batch_list, json_file, indent=4)
+    
+
 # Func to start workflow for a query
-def start_workflow(query,MODEL,WORKFLOW_RUN_COUNT):
-    external_evidence = start_web_search(query)
+def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
+    # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
@@ -58,10 +72,17 @@ def start_complete_workflow():
     evidence_list = []
     candidate_responses_list = []
 
-    for ques_id,query,true_ans in zip(ques_id_list,query_list,ans_list):
+    #generate_evidence_batch is used to save evidence results in a batch
+    # if the function has been called before and results are already save then comment the function call
+    # generate_evidence_batch(query_list) 
+    with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
+        evidence_batch_list = json.load(json_file)
+        
+    for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value = start_workflow(query,MODEL,WORKFLOW_RUN_COUNT)
+        responses_dict, final_response, final_confidence_value = start_workflow(query,external_evidence,
+                                                                                MODEL,WORKFLOW_RUN_COUNT)
         print("RESPONSES DICT : ", responses_dict)
         print("QUERY HAS FINISHED"*4)    
 

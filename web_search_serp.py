@@ -15,9 +15,9 @@ def perform_web_search(params):
     try:
         response_json = dict(serpapi.search(params))
         # Save the web response results in json for review
-        with open('Web_Search_Response/serpapi_search_results.json', 'w', encoding='utf-8') as file:
-            json.dump(response_json, file, ensure_ascii=False, indent=4)
-            print("Data has been saved to 'serpapi_search_results.json'")
+        # with open('Web_Search_Response/serpapi_search_results.json', 'w', encoding='utf-8') as file:
+        #     json.dump(response_json, file, ensure_ascii=False, indent=4)
+        #     print("Data has been saved to 'serpapi_search_results.json'")
     except Exception as ex:
         print("An error occured at perform_web_search: ", ex)
         evidence_missing_message = "Web search was unsuccessful due to an error with the web search API, LLM use your knowledge."

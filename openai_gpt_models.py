@@ -4,6 +4,7 @@ import yaml
 import os 
 import requests
 from openai import OpenAI
+from rake_nltk import Rake
 
 from utils.utils import process_response
 from utils.utils import uncertainty_confidence_cal
@@ -11,8 +12,8 @@ from utils.utils import matching_condition_check
 from utils.utils import check_dict_keys_condition
 from utils.utils import extract_question_after_binary
 from utils.utils import create_dummy_response_dict
-from web_search import start_web_search
-# from web_search_serp import start_web_search
+# from web_search import start_web_search
+from web_search_serp import start_web_search
 
 
 with open('params.yaml', 'r') as file:
@@ -63,11 +64,17 @@ def perform_clarification_ques(client,responses_dict,query,WORKFLOW_RUN_COUNT):
     print("Clarification Question process starts")
     # cq_user_ques = f"What would you like to know about '{initial_core_concept}'"
     # cq_user_ans = f"I would like to know about '{initial_core_concept}'"
-    # cq_user_ans = input(f"What would you like to know about '{initial_core_concept}'")
-    prompt_var_list = [query]
-    rephrased_query_response=perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
-    rephrased_query = extract_question_after_binary(rephrased_query_response)
-    
+    # rephrased_query = input(f"What would you like to know about '{query}'")
+
+    # prompt_var_list = [query]
+    # rephrased_query_response=perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
+    # rephrased_query = extract_question_after_binary(rephrased_query_response)
+
+    r = Rake()
+    r.extract_keywords_from_text(query)
+    query_keyword_list = r.get_ranked_phrases()
+    rephrased_query = " AND ".join(query_keyword_list)
+
     external_evidence = start_web_search(rephrased_query)
     result = start_openai_api_model_response(rephrased_query,external_evidence,WORKFLOW_RUN_COUNT)
     # print("LENGTH OF RESULT : ", len(result))
