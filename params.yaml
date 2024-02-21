@@ -1,10 +1,10 @@
 {
-    "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-small"
+    "MODEL": "meta.llama2-70b-chat-v1", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-small"
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.7, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\"
-    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch.json", 
+    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_bing.json", 
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
     "QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase.txt", #default - "Prompts\\question_rephrase.txt"

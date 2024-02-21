@@ -12,8 +12,8 @@ from utils.utils import matching_condition_check
 from utils.utils import check_dict_keys_condition
 from utils.utils import extract_question_after_binary
 from utils.utils import create_dummy_response_dict
-# from web_search import start_web_search
-from web_search_serp import start_web_search
+from web_search import start_web_search
+# from web_search_serp import start_web_search
 
 
 with open('params.yaml', 'r') as file:

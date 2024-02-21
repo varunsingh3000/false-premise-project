@@ -4,6 +4,7 @@ import yaml
 import os 
 import boto3
 import json
+from rake_nltk import Rake
 
 from utils.utils import process_response
 from utils.utils import uncertainty_confidence_cal
@@ -64,9 +65,14 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
 # performs clarification process by asking the user the question
 def perform_clarification_ques(client,responses_dict,query,WORKFLOW_RUN_COUNT):
     print("Clarification Question process starts")
-    prompt_var_list = [query]
-    rephrased_query_response=perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
-    rephrased_query = extract_question_after_binary(rephrased_query_response)
+    # prompt_var_list = [query]
+    # rephrased_query_response=perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
+    # rephrased_query = extract_question_after_binary(rephrased_query_response)
+
+    r = Rake()
+    r.extract_keywords_from_text(query)
+    query_keyword_list = r.get_ranked_phrases()
+    rephrased_query = " AND ".join(query_keyword_list)
 
     external_evidence = start_web_search(rephrased_query)
     result = start_meta_api_model_response(rephrased_query,external_evidence,WORKFLOW_RUN_COUNT)

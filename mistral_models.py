@@ -1,7 +1,8 @@
 # Calling the OpenAI GPT models 3.5 and 4
 
 import yaml
-import os 
+import os
+from rake_nltk import Rake 
 from mistralai.client import MistralClient
 from mistralai.models.chat_completion import ChatMessage
 
@@ -60,9 +61,14 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
 def perform_clarification_ques(client,responses_dict,query,WORKFLOW_RUN_COUNT):
     print("Clarification Question process starts")
 
-    prompt_var_list = [query]
-    rephrased_query_response=perform_mistral_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
-    rephrased_query = extract_question_after_binary(rephrased_query_response)
+    # prompt_var_list = [query]
+    # rephrased_query_response=perform_mistral_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
+    # rephrased_query = extract_question_after_binary(rephrased_query_response)
+
+    r = Rake()
+    r.extract_keywords_from_text(query)
+    query_keyword_list = r.get_ranked_phrases()
+    rephrased_query = " AND ".join(query_keyword_list)
 
     external_evidence = start_web_search(rephrased_query)
     result = start_mistral_api_model_response(rephrased_query,external_evidence,WORKFLOW_RUN_COUNT)
