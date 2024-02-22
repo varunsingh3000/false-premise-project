@@ -1,5 +1,5 @@
 {
-    "MODEL": "meta.llama2-70b-chat-v1", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-small"
+    "MODEL": "gpt-3.5-turbo", #default - "gpt-3.5-turbo","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-small"
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.7, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", "QAQA"
@@ -8,6 +8,7 @@
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
     "QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase.txt", #default - "Prompts\\question_rephrase.txt"
+    "ADVERSARIAL_ATTACK_PROMPT_PATH":"Prompts\\adversarial_attack.txt",
     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
     "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
     "LLAMA_QUERY_REPHRASE_PROMPT_PATH": "Prompts\\question_rephrase_meta.txt", #default - "Prompts\\question_rephrase_meta.txt"

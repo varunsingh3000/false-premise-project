@@ -45,7 +45,7 @@ def generate_evidence_batch(query_list):
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
-    if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+    if MODEL in ["gpt-3.5-turbo", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
         result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
@@ -53,15 +53,15 @@ def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
         result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    responses_dict, final_response, final_confidence_value = result
-    return responses_dict, final_response, final_confidence_value
+    responses_dict, final_response, final_confidence_value, adv_attack_response_list = result
+    return responses_dict, final_response, final_confidence_value, adv_attack_response_list
  
 
 def start_complete_workflow():
     # processing specific to freshqa dataset
     ques_id_list, query_list, ans_list = start_dataset_processing(DATASET_NAME)
 
-    # list variables initialised to save results later to a dataframe
+    # list variables initialised to save QA results later to a dataframe
     ques_no_list = []
     workflow_run_count = []
     question_list = []
@@ -72,6 +72,12 @@ def start_complete_workflow():
     evidence_list = []
     candidate_responses_list = []
 
+    # list variables initialised to save adversarial attack results later to a dataframe
+    adv_attack_resp1_list = []
+    adv_attack_resp2_list = []
+    adv_attack_resp3_list = []
+    adv_attack_resp4_list = []
+
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(query_list) 
@@ -81,8 +87,8 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value = start_workflow(query,external_evidence,
-                                                                                MODEL,WORKFLOW_RUN_COUNT)
+        responses_dict, final_response, final_confidence_value, adv_attack_response_list = start_workflow(query,
+                                                                    external_evidence,MODEL,WORKFLOW_RUN_COUNT)
         print("RESPONSES DICT : ", responses_dict)
         print("QUERY HAS FINISHED"*4)    
 
@@ -96,12 +102,14 @@ def start_complete_workflow():
             og_response_list.append(responses_dict[key_value][0])
             evidence_list.append(responses_dict[key_value][1])
             question_list.append(responses_dict[key_value][2])
-            if num_keys > 1 and key_value != num_keys - 1:
-                finalans_list.append("Final response could not be determined in this run of the workflow")
-                finalconfi_list.append("Final confidence value could not be determined in this run of the workflow") 
-            else:
-                finalans_list.append(final_response)
-                finalconfi_list.append(final_confidence_value)   
+            finalans_list.append(final_response)
+            finalconfi_list.append(final_confidence_value) 
+            # if num_keys > 1 and key_value != num_keys - 1:
+            #     finalans_list.append("Final response could not be determined in this run of the workflow")
+            #     finalconfi_list.append("Final confidence value could not be determined in this run of the workflow") 
+            # else:
+            #     finalans_list.append(final_response)
+            #     finalconfi_list.append(final_confidence_value)   
             # index 0, 1 and 2 are skipped because that is the original response, external evidence and question respectively
             # for loop iteration for the last element is skipped because that is the question
             for candidate_resp in responses_dict[key_value][3:]:  
@@ -109,10 +117,16 @@ def start_complete_workflow():
             temp_candidate_response_list.append(temp_indi_resp_list)
             temp_indi_resp_list = []
         candidate_responses_list.append(temp_candidate_response_list)
+
+        adv_attack_resp1_list.append(adv_attack_response_list[0])
+        adv_attack_resp2_list.append(adv_attack_response_list[1])
+        adv_attack_resp3_list.append(adv_attack_response_list[2])
+        adv_attack_resp4_list.append(adv_attack_response_list[3])
+    
     print("CANDIDATE RESPONSES LIST :" , candidate_responses_list)
+    print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
 
-
-    data_dict = {
+    qa_data_dict = {
         "ques_id":ques_no_list,
         "workflow_run_count":workflow_run_count,
         "question":question_list,
@@ -126,7 +140,7 @@ def start_complete_workflow():
     # loop to generate keys for candidate responses depending on the num of runs i.e. candidate responses
     for i in range(MAX_CANDIDATE_RESPONSES):
         key_name = f"candidate_response{i}"
-        data_dict[key_name] = [] 
+        qa_data_dict[key_name] = [] 
 
     # loop to append the values of the candidate responses to the list created in the above loop
     # for the responses of all the candidate responses generated via the worflow for all number of runs
@@ -137,23 +151,36 @@ def start_complete_workflow():
                     candidate_response = individual_resp_list[indi_response_ind]
                 else:
                     candidate_response = ""  # Assign an empty string if the index is out of bounds
-                data_dict[f"candidate_response{indi_response_ind}"].append(candidate_response)
+                qa_data_dict[f"candidate_response{indi_response_ind}"].append(candidate_response)
 
     # Find the maximum length among the lists
-    max_length = max(len(lst) for lst in data_dict.values() if isinstance(lst, list))
+    max_length = max(len(lst) for lst in qa_data_dict.values() if isinstance(lst, list))
 
     # Pad shorter lists with default value (e.g., None) to make them of equal lengths
-    for key, value in data_dict.items():
+    for key, value in qa_data_dict.items():
         if isinstance(value, list):
             if len(value) < max_length:
-                data_dict[key].extend([""] * (max_length - len(value)))
+                qa_data_dict[key].extend([""] * (max_length - len(value)))
 
     print("$"*100)
-    df = pd.DataFrame(data_dict)
+    df = pd.DataFrame(qa_data_dict)
     print(df.head())
     print("$"*100)
 
-    df.to_csv(RESULT_SAVE_PATH + MODEL + ".csv",index=False)  # Set index=False to not write row indices
+    df.to_csv(RESULT_SAVE_PATH + MODEL + "22febtest.csv",index=False)  # Set index=False to not write row indices
+
+    adv_attack_data_dict = {
+        "ques_id":ques_no_list,
+        "question":question_list,
+        "true_ans":true_ans_list,
+        "adv_attack1": adv_attack_resp1_list,
+        "adv_attack2": adv_attack_resp2_list,
+        "adv_attack3": adv_attack_resp3_list,
+        "adv_attack4": adv_attack_resp4_list,
+    }
+    df1 = pd.DataFrame(adv_attack_data_dict)
+    print(df1.head())
+    df1.to_csv(RESULT_SAVE_PATH + MODEL + "adv_attack.csv",index=False)  # Set index=False to not write row indices
 
 start_complete_workflow()
 
