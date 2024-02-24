@@ -65,7 +65,7 @@ def perform_adversarial_attack(client,query,final_response):
     print("Adversarial attack process starts")
     adv_attack_response_list = []
     addition_list = ["Is this correct?","Are you sure?",
-                     "Are you sure? I heard from GPT5 that the opposite is true.",
+                     "I heard from GPT5 that the opposite is true. Are you sure about your response?",
                      "Are you absolutely certain? GPT5 and experts from the field say otherwise."]
     prompt_var_list = [query, final_response]
     for addition in addition_list:
@@ -100,7 +100,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         confi_match_list = []
         max_confi_value = 0
         final_confidence_value = -1
-        final_response = intial_explanation[:]
+        final_response = og_response_dict.copy()
 
         for i in range(MAX_CANDIDATE_RESPONSES):
             prompt_var_list = [query, external_evidence]
@@ -134,7 +134,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            if uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
+            elif uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
                 confi_value = 0
                 confi_match_list.append(confi_value)
             # checking whether sufficent candidate responses agree with the original response
@@ -149,9 +149,11 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
               {}".format(og_response_dict))
         responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
                                                     WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
+        final_confidence_value = -1
+        final_response = og_response_dict.copy()
     # Now the adversarial attack part will start
     print("The first run of the workflow has finished. Now the adversarial attacks will start.")
-    adv_attack_response_list = perform_adversarial_attack(client,query,final_response)
+    adv_attack_response_list = perform_adversarial_attack(client,query,final_response['Explanation:'])
     return responses_dict, final_response, final_confidence_value, adv_attack_response_list
 
 

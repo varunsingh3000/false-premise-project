@@ -45,7 +45,7 @@ def generate_evidence_batch(query_list):
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
-    if MODEL in ["gpt-3.5-turbo", "gpt-4-turbo-preview"]:
+    if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
         result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
@@ -167,7 +167,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_csv(RESULT_SAVE_PATH + MODEL + "22febtest.csv",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "22febtest.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -178,9 +178,31 @@ def start_complete_workflow():
         "adv_attack3": adv_attack_resp3_list,
         "adv_attack4": adv_attack_resp4_list,
     }
+
     df1 = pd.DataFrame(adv_attack_data_dict)
-    print(df1.head())
-    df1.to_csv(RESULT_SAVE_PATH + MODEL + "adv_attack.csv",index=False)  # Set index=False to not write row indices
+
+    # Initialize an empty dictionary to store the structured data
+    structured_data = {}
+
+    # Iterate through the DataFrame
+    for _, row in df1.iterrows():
+        ques_id = row['ques_id']
+        if ques_id not in structured_data:
+            structured_data[ques_id] = {
+                'question': row['question'],
+                'true_ans': row['true_ans'],
+                'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4']]
+            }
+
+    # Convert the structured data dictionary to JSON format
+    json_data = json.dumps(structured_data, indent=4)
+    # Write the dictionary to a JSON file
+    with open(RESULT_SAVE_PATH + MODEL + "adv_attack.json", 'w') as json_file:
+        json_file.write(json_data)
+
+    # df1 = pd.DataFrame(adv_attack_data_dict)
+    # print(df1.head())
+    # df1.to_csv(RESULT_SAVE_PATH + MODEL + "adv_attack.csv",index=False)  # Set index=False to not write row indices
 
 start_complete_workflow()
 

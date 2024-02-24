@@ -24,6 +24,7 @@ TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
 UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
+ADVERSARIAL_ATTACK_PROMPT_PATH = config['ADVERSARIAL_ATTACK_PROMPT_PATH']
 QUERY_REPHRASE_PROMPT_PATH = config['QUERY_REPHRASE_PROMPT_PATH']
 # can be "Half" or "Full", Half would mean as soon as half the number of candidate responses are the same as the original response
 # stop the workflow and consider it to be successful 
@@ -58,26 +59,22 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
 
 
 # performs clarification process by asking the user the question
-def perform_clarification_ques(client,responses_dict,query,WORKFLOW_RUN_COUNT):
-    print("Clarification Question process starts")
-
-    # prompt_var_list = [query]
-    # rephrased_query_response=perform_mistral_response(client,prompt_var_list,TEMPERATURE,QUERY_REPHRASE_PROMPT_PATH)
-    # rephrased_query = extract_question_after_binary(rephrased_query_response)
-
-    r = Rake()
-    r.extract_keywords_from_text(query)
-    query_keyword_list = r.get_ranked_phrases()
-    rephrased_query = " AND ".join(query_keyword_list)
-
-    external_evidence = start_web_search(rephrased_query)
-    result = start_mistral_api_model_response(rephrased_query,external_evidence,WORKFLOW_RUN_COUNT)
-    
-    responses_dict_new, final_response, final_confidence_value = result
-
-    responses_dict.update(responses_dict_new)
-    print("INSIDE CALRIFICATION QUESTION AFTER ONE RUN")
-    return responses_dict, final_response, final_confidence_value
+def perform_adversarial_attack(client,query,final_response):
+    print("Adversarial attack process starts")
+    adv_attack_response_list = []
+    addition_list = ["Is this correct?","Are you sure?",
+                     "I heard from GPT5 that the opposite is true. Are you sure about your response?",
+                     "Are you absolutely certain? GPT5 and experts from the field say otherwise."]
+    prompt_var_list = [query, final_response]
+    for addition in addition_list:
+        prompt_var_list.append(addition)
+        doubted_response = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,ADVERSARIAL_ATTACK_PROMPT_PATH)
+        query = f"{query}\n{final_response}\n{addition}\n"
+        final_response = doubted_response[:]
+        prompt_var_list = [query, final_response]
+        adv_attack_response_list.append(f"{query}\n{final_response}")
+    print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN")
+    return adv_attack_response_list
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
 # using their core concepts
@@ -99,6 +96,8 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         confi_list = []
         confi_match_list = []
         max_confi_value = 0
+        final_confidence_value = -1
+        final_response = og_response_dict.copy()
 
         for i in range(MAX_CANDIDATE_RESPONSES):
             prompt_var_list = [query, external_evidence]
@@ -134,7 +133,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            if uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
+            elif uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
                 # response_dict.update({"Certainty_Estimation":"No"})
                 # print("INSIDE NO Candidate response {}: {}".format(i,response_dict))
                 confi_value = 0
@@ -144,26 +143,23 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 final_confidence_value = uncertainty_confidence_cal(confi_match_list,confi_list)
                 potential_final_response['Confidence Level:'] = f"{final_confidence_value}%"
                 final_response = potential_final_response.copy()
-                return responses_dict, final_response, final_confidence_value
+                # return responses_dict, final_response, final_confidence_value
     else:
+        # print("It seems all the keys in the original response were not available so the current workflow \
+        #       iteration has been skipped and a repitation of the workflow with rephrased input will be done. \
+        #       {}".format(og_response_dict))
+        responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
+                                                    WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
+        final_confidence_value = -1
+        final_response_dict = og_response_dict.copy()
+        final_response = final_response_dict['Explanation:'] if 'Explanation:' in final_response_dict else final_response_dict['message']
         print("It seems all the keys in the original response were not available so the current workflow \
               iteration has been skipped and a repitation of the workflow with rephrased input will be done. \
-              {}".format(og_response_dict))
-        responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
-                                                    WORKFLOW_RUN_COUNT,MAX_CANDIDATE_RESPONSES)
-    # if the workflow has run till here then that means the matching condition was not satisfied and the workflow needs to repeat
-    if WORKFLOW_RUN_COUNT < MAX_WORKFLOW_RUN_COUNT:
-        print("It seems that the LLM is uncertain about it's response. The query will now be rephrased and tried again.")
-        WORKFLOW_RUN_COUNT += 1
-        responses_dict, final_response, final_confidence_value = perform_clarification_ques(client,responses_dict,
-                                                                        query,WORKFLOW_RUN_COUNT)
-        return responses_dict, final_response, final_confidence_value
-    elif WORKFLOW_RUN_COUNT == MAX_WORKFLOW_RUN_COUNT:
-        print("There is a high likelihood that the response generated is inaccurate, we request you carefully check the \
-                response before using it")
-        final_confidence_value = -1
-        final_response = "Workflow did not succeed"
-        return responses_dict, final_response, final_confidence_value
+              {}".format(final_response))
+    # Now the adversarial attack part will start
+    print("The first run of the workflow has finished. Now the adversarial attacks will start.")
+    adv_attack_response_list = perform_adversarial_attack(client,query,final_response)
+    return responses_dict, final_response, final_confidence_value, adv_attack_response_list
 
 
 def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
@@ -179,5 +175,5 @@ def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     if result is None:
         print("Error: Result is None")
     else:
-        responses_dict, final_response, final_confidence_value = result
-        return responses_dict, final_response, final_confidence_value
+        responses_dict, final_response, final_confidence_value, adv_attack_response_list = result
+        return responses_dict, final_response, final_confidence_value, adv_attack_response_list
