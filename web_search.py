@@ -51,7 +51,7 @@ def process_json(response_json):
     if 'webPages' in data and 'value' in data['webPages']:
         print("Web pages are found as external evidence")
         retrieved_info_dict.update({"webPages":[]})
-        for webpageitem in data["webPages"]["value"][:2]: #iterating through a list here
+        for webpageitem in data["webPages"]["value"][:5]: #iterating through a list here
             name = webpageitem["name"]
             url = webpageitem["url"]
             snippet = webpageitem["snippet"]

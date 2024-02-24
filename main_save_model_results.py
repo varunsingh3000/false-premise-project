@@ -153,7 +153,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_csv(RESULT_SAVE_PATH + MODEL + ".csv",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "evidence_increase.xlsx",index=False)  # Set index=False to not write row indices
 
 start_complete_workflow()
 
