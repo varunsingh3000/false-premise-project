@@ -8,7 +8,6 @@ from rake_nltk import Rake
 
 from utils.utils import process_response
 from utils.utils import check_dict_keys_condition
-from utils.utils import create_dummy_response_dict
 # from web_search import start_web_search
 # from web_search_serp import start_web_search
 
@@ -21,12 +20,6 @@ TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
 ADVERSARIAL_ATTACK_PROMPT_PATH = config['ADVERSARIAL_ATTACK_PROMPT_PATH']
-# can be "Half" or "Full", Half would mean as soon as half the number of candidate responses are the same as the original response
-# stop the workflow and consider it to be successful 
-MATCH_CRITERIA = config['MATCH_CRITERIA'] 
-# no of candidate responses to generate after the original response
-MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES'] 
-# no of times you want the workflow to run after the first time, so 1 means in total twice
 
 # call the openai api with either gpt 3.5 or gpt 4 latest model
 def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
@@ -77,7 +70,7 @@ def perform_adversarial_attack(client,query,final_response):
     return adv_attack_response_list, main_answers_list
 
 
-def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
+def start_openai_api_model_response(query,external_evidence):
     print("OpenAI model response process starts")
     client = OpenAI() # defaults to os.environ.get("OPENAI_API_KEY")
     prompt_var_list = [query, external_evidence]
@@ -87,8 +80,8 @@ def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     og_response_dict = process_response(chat_completion)
     print(og_response_dict)
     if not check_dict_keys_condition(og_response_dict):
-        og_response_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
-                                                    WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
+        og_response_dict['Answer:'] = og_response_dict
+        og_response_dict['Explanation:'] = og_response_dict
     adv_attack_response_list, main_answers_list = perform_adversarial_attack(client,query,(og_response_dict['Answer:'] + 
                                                                         og_response_dict['Explanation:']))
     print("OpenAI model response process ends")

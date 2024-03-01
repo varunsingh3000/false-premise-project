@@ -21,9 +21,6 @@ RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
 DATASET_NAME = config['DATASET_NAME']
 #defines the max no of candidate responses to generate, the actual no of responses could vary depending on the matching condition
 MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
-# WORKFLOW_RUN_COUNT variable keeps track of the amount of times the workflow has run, this has to be less than MAX_WORKFLOW_RUN_COUNT
-# If it exceeds the count then the workflow is terminated. It is necessary that this variable is defined in main.py since for
-# every question the WORKFLOW_RUN_COUNT is reset to 0 before being passed in the loop.
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
 def generate_evidence_batch(query_list):
@@ -39,16 +36,14 @@ def generate_evidence_batch(query_list):
     
 
 # Func to start workflow for a query
-def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
+def start_workflow(query,external_evidence,MODEL):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
-        # pass
-        result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
+        result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
-        # pass
-        result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
+        result = start_mistral_api_model_response(query,external_evidence)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
-        result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
+        result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
     og_response_dict, adv_attack_response_list, main_answers_list = result
@@ -85,8 +80,7 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        og_response_dict, adv_attack_response_list, main_answers_list = start_workflow(query,external_evidence,
-                                                                        MODEL,WORKFLOW_RUN_COUNT)
+        og_response_dict, adv_attack_response_list, main_answers_list = start_workflow(query,external_evidence,MODEL)
 
         ques_no_list.append(ques_id)
         true_ans_list.append(true_ans)
