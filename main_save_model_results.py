@@ -8,7 +8,6 @@ from utils.dataset import start_dataset_processing
 from web_search import start_web_search
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
-# from openai_gpt_workflow_test import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
 
@@ -17,10 +16,7 @@ with open('params.yaml', 'r') as file:
 
 # Retrieve parameters 
 MODEL = config['MODEL']
-TEMPERATURE = config['TEMPERATURE']
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
-QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
 RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
 DATASET_NAME = config['DATASET_NAME']
 #defines the max no of candidate responses to generate, the actual no of responses could vary depending on the matching condition
@@ -46,15 +42,17 @@ def generate_evidence_batch(query_list):
 def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+        # pass
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
+        # pass
         result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    responses_dict, final_response, final_confidence_value, adv_attack_response_list = result
-    return responses_dict, final_response, final_confidence_value, adv_attack_response_list
+    og_response_dict, adv_attack_response_list, main_answers_list = result
+    return og_response_dict, adv_attack_response_list, main_answers_list
  
 
 def start_complete_workflow():
@@ -63,104 +61,55 @@ def start_complete_workflow():
 
     # list variables initialised to save QA results later to a dataframe
     ques_no_list = []
-    workflow_run_count = []
     question_list = []
     true_ans_list = []
-    og_response_list = []
-    finalans_list = []
-    finalconfi_list = []
     evidence_list = []
-    candidate_responses_list = []
 
     # list variables initialised to save adversarial attack results later to a dataframe
     adv_attack_resp1_list = []
     adv_attack_resp2_list = []
     adv_attack_resp3_list = []
     adv_attack_resp4_list = []
+    adv_attack_resp5_list = []
+    adv_original_response_list = []
+    adv_final_response_list = []
 
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(query_list) 
+
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
         
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value, adv_attack_response_list = start_workflow(query,
-                                                                    external_evidence,MODEL,WORKFLOW_RUN_COUNT)
-        print("RESPONSES DICT : ", responses_dict)
-        print("QUERY HAS FINISHED"*4)    
+        og_response_dict, adv_attack_response_list, main_answers_list = start_workflow(query,external_evidence,
+                                                                        MODEL,WORKFLOW_RUN_COUNT)
 
-        num_keys = len(responses_dict)
-        temp_candidate_response_list = []
-        temp_indi_resp_list=[]
-        for key_value in responses_dict:
-            ques_no_list.append(ques_id)
-            true_ans_list.append(true_ans)
-            workflow_run_count.append(key_value)
-            og_response_list.append(responses_dict[key_value][0])
-            evidence_list.append(responses_dict[key_value][1])
-            question_list.append(responses_dict[key_value][2])
-            finalans_list.append(final_response)
-            finalconfi_list.append(final_confidence_value) 
-            # if num_keys > 1 and key_value != num_keys - 1:
-            #     finalans_list.append("Final response could not be determined in this run of the workflow")
-            #     finalconfi_list.append("Final confidence value could not be determined in this run of the workflow") 
-            # else:
-            #     finalans_list.append(final_response)
-            #     finalconfi_list.append(final_confidence_value)   
-            # index 0, 1 and 2 are skipped because that is the original response, external evidence and question respectively
-            # for loop iteration for the last element is skipped because that is the question
-            for candidate_resp in responses_dict[key_value][3:]:  
-                temp_indi_resp_list.append(candidate_resp)
-            temp_candidate_response_list.append(temp_indi_resp_list)
-            temp_indi_resp_list = []
-        candidate_responses_list.append(temp_candidate_response_list)
+        ques_no_list.append(ques_id)
+        true_ans_list.append(true_ans)
+        evidence_list.append(external_evidence)
+        question_list.append(query)
 
         adv_attack_resp1_list.append(adv_attack_response_list[0])
         adv_attack_resp2_list.append(adv_attack_response_list[1])
         adv_attack_resp3_list.append(adv_attack_response_list[2])
         adv_attack_resp4_list.append(adv_attack_response_list[3])
+        adv_attack_resp5_list.append(adv_attack_response_list[4])
+        adv_original_response_list.append(og_response_dict)
+        adv_final_response_list.append(main_answers_list[1])
     
-    print("CANDIDATE RESPONSES LIST :" , candidate_responses_list)
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
 
     qa_data_dict = {
         "ques_id":ques_no_list,
-        "workflow_run_count":workflow_run_count,
         "question":question_list,
         "true_ans":true_ans_list,
-        "original_response": og_response_list,
-        "final_ans":finalans_list,
-        "final_confi":finalconfi_list,
+        "original_response": adv_original_response_list,
+        "final_ans":adv_final_response_list,
         "evidence": evidence_list
     }
-
-    # loop to generate keys for candidate responses depending on the num of runs i.e. candidate responses
-    for i in range(MAX_CANDIDATE_RESPONSES):
-        key_name = f"candidate_response{i}"
-        qa_data_dict[key_name] = [] 
-
-    # loop to append the values of the candidate responses to the list created in the above loop
-    # for the responses of all the candidate responses generated via the worflow for all number of runs
-    for candidate_response_list in candidate_responses_list:
-        for individual_resp_list in candidate_response_list:
-            for indi_response_ind in range(MAX_CANDIDATE_RESPONSES):
-                if indi_response_ind < len(individual_resp_list):
-                    candidate_response = individual_resp_list[indi_response_ind]
-                else:
-                    candidate_response = ""  # Assign an empty string if the index is out of bounds
-                qa_data_dict[f"candidate_response{indi_response_ind}"].append(candidate_response)
-
-    # Find the maximum length among the lists
-    max_length = max(len(lst) for lst in qa_data_dict.values() if isinstance(lst, list))
-
-    # Pad shorter lists with default value (e.g., None) to make them of equal lengths
-    for key, value in qa_data_dict.items():
-        if isinstance(value, list):
-            if len(value) < max_length:
-                qa_data_dict[key].extend([""] * (max_length - len(value)))
 
     print("$"*100)
     df = pd.DataFrame(qa_data_dict)
@@ -173,10 +122,13 @@ def start_complete_workflow():
         "ques_id":ques_no_list,
         "question":question_list,
         "true_ans":true_ans_list,
+        "first_ans":adv_original_response_list,
+        "final_ans":adv_final_response_list,
         "adv_attack1": adv_attack_resp1_list,
         "adv_attack2": adv_attack_resp2_list,
         "adv_attack3": adv_attack_resp3_list,
         "adv_attack4": adv_attack_resp4_list,
+        "adv_attack5": adv_attack_resp5_list
     }
 
     df1 = pd.DataFrame(adv_attack_data_dict)
@@ -191,7 +143,9 @@ def start_complete_workflow():
             structured_data[ques_id] = {
                 'question': row['question'],
                 'true_ans': row['true_ans'],
-                'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4']]
+                'first_ans': row['first_ans'],
+                'final_ans': row['final_ans'],
+                'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4'], row['adv_attack5']]
             }
 
     # Convert the structured data dictionary to JSON format
@@ -206,42 +160,7 @@ def start_complete_workflow():
 
 start_complete_workflow()
 
-#############################################################
 
-# import argparse
-
-# def start_workflow(query, model, temperature, query_prompt_path, uncertainty_prompt_path, num_runs):
-#     external_evidence = start_web_search(query)
-#     start_openai_api_model_response(query, query_prompt_path, uncertainty_prompt_path, model, temperature, num_runs, external_evidence)
-
-# def main():
-#     parser = argparse.ArgumentParser(description="Run workflow with specified parameters")
-    
-#     parser.add_argument('--query', type=str, default="Why does Mars have three moons?", help='Query for the workflow')
-#     parser.add_argument('--model', type=str, default="gpt-3.5-turbo-1106", help='Model name')
-#     parser.add_argument('--temperature', type=float, default=0.0, help='Temperature value')
-#     parser.add_argument('--query-prompt-path', type=str, default=r"C:\GAMES_SETUP\Thesis\Code\Prompts\GPT3.5\initial_prompt_w_cot_single.txt", help='Path to query prompt')
-#     parser.add_argument('--uncertainty-prompt-path', type=str, default=r"C:\GAMES_SETUP\Thesis\Code\Prompts\GPT3.5\uncertainty_estimation_confidence.txt", help='Path to uncertainty prompt')
-#     parser.add_argument('--num-runs', type=int, default=3, help='Number of runs')
-    
-#     args = parser.parse_args()
-
-#     start_time = time.time()
-
-#     start_workflow(
-#         args.query,
-#         args.model,
-#         args.temperature,
-#         args.query_prompt_path,
-#         args.uncertainty_prompt_path,
-#         args.num_runs
-#     )
-
-#     end_time = time.time()
-#     print(f"Total time taken: {end_time - start_time} seconds")
-
-# if __name__ == "__main__":
-#     main()
 
 
 
