@@ -64,6 +64,7 @@ def start_complete_workflow():
     question_list = []
     true_ans_list = []
     evidence_list = []
+    original_response_list = []
 
     # list variables initialised to save adversarial attack results later to a dataframe
     adv_attack_resp1_list = []
@@ -91,13 +92,14 @@ def start_complete_workflow():
         true_ans_list.append(true_ans)
         evidence_list.append(external_evidence)
         question_list.append(query)
+        original_response_list.append(og_response_dict)
 
         adv_attack_resp1_list.append(adv_attack_response_list[0])
         adv_attack_resp2_list.append(adv_attack_response_list[1])
         adv_attack_resp3_list.append(adv_attack_response_list[2])
         adv_attack_resp4_list.append(adv_attack_response_list[3])
         adv_attack_resp5_list.append(adv_attack_response_list[4])
-        adv_original_response_list.append(og_response_dict)
+        adv_original_response_list.append(main_answers_list[0])
         adv_final_response_list.append(main_answers_list[1])
     
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
@@ -106,7 +108,7 @@ def start_complete_workflow():
         "ques_id":ques_no_list,
         "question":question_list,
         "true_ans":true_ans_list,
-        "original_response": adv_original_response_list,
+        "original_response": original_response_list,
         "final_ans":adv_final_response_list,
         "evidence": evidence_list
     }
