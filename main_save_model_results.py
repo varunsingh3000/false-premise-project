@@ -5,6 +5,9 @@ import yaml
 import pandas as pd
 
 from utils.dataset import start_dataset_processing
+from utils.utils import generate_evidence_batch
+from utils.utils import extract_value_from_single_key
+from utils.utils import auto_evaluation
 from web_search import start_web_search
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
@@ -23,17 +26,6 @@ DATASET_NAME = config['DATASET_NAME']
 MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
-def generate_evidence_batch(query_list):
-    # evidence list for saving results in batch
-    evidence_batch_list = []
-    for query in zip(query_list):
-        external_evidence = start_web_search(query)
-        evidence_batch_list.append(external_evidence)
-    
-    # Write the list to the JSON file
-    with open(EVIDENCE_BATCH_SAVE_PATH, 'w') as json_file:
-        json.dump(evidence_batch_list, json_file, indent=4)
-    
 
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL):
@@ -54,14 +46,14 @@ def start_complete_workflow():
     # processing specific to freshqa dataset
     ques_id_list, query_list, ans_list = start_dataset_processing(DATASET_NAME)
 
-    # list variables initialised to save QA results later to a dataframe
+    # list variables to save QA results later to a dataframe
     ques_no_list = []
     question_list = []
     true_ans_list = []
     evidence_list = []
     original_response_list = []
 
-    # list variables initialised to save adversarial attack results later to a dataframe
+    # list variables to save adversarial attack results later to a dataframe
     adv_attack_resp1_list = []
     adv_attack_resp2_list = []
     adv_attack_resp3_list = []
@@ -69,6 +61,10 @@ def start_complete_workflow():
     adv_attack_resp5_list = []
     adv_original_response_list = []
     adv_final_response_list = []
+    adv_final_resp_exp_list = []
+
+    #list variable to save automatic evaluation results
+    accuracy_result_list = []
 
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
@@ -82,19 +78,28 @@ def start_complete_workflow():
         print("NEW QUERY HAS STARTED"*4)
         og_response_dict, adv_attack_response_list, main_answers_list = start_workflow(query,external_evidence,MODEL)
 
+        #appending results for qa
         ques_no_list.append(ques_id)
         true_ans_list.append(true_ans)
         evidence_list.append(external_evidence)
         question_list.append(query)
         original_response_list.append(og_response_dict)
 
+        #appending results for adversarial attack
         adv_attack_resp1_list.append(adv_attack_response_list[0])
         adv_attack_resp2_list.append(adv_attack_response_list[1])
         adv_attack_resp3_list.append(adv_attack_response_list[2])
         adv_attack_resp4_list.append(adv_attack_response_list[3])
         adv_attack_resp5_list.append(adv_attack_response_list[4])
         adv_original_response_list.append(main_answers_list[0])
-        adv_final_response_list.append(main_answers_list[1])
+        extracted_final_response = extract_value_from_single_key(main_answers_list[1], key = "Final Answer:")
+        extracted_final_resp_exp = extract_value_from_single_key(main_answers_list[1], key = "Explanation:")
+        adv_final_response_list.append(extracted_final_response)
+        adv_final_resp_exp_list.append(extracted_final_resp_exp)
+
+        #appending results for accuracy
+        accuracy_response = auto_evaluation(true_ans,extracted_final_response)
+        accuracy_result_list.append(accuracy_response)
     
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
 
@@ -104,6 +109,8 @@ def start_complete_workflow():
         "true_ans":true_ans_list,
         "original_response": original_response_list,
         "final_ans":adv_final_response_list,
+        "final_ans_exp":adv_final_resp_exp_list,
+        "accuracy":accuracy_result_list,
         "evidence": evidence_list
     }
 
@@ -120,6 +127,7 @@ def start_complete_workflow():
         "true_ans":true_ans_list,
         "first_ans":adv_original_response_list,
         "final_ans":adv_final_response_list,
+        "final_ans_exp":adv_final_resp_exp_list,
         "adv_attack1": adv_attack_resp1_list,
         "adv_attack2": adv_attack_resp2_list,
         "adv_attack3": adv_attack_resp3_list,
@@ -141,6 +149,7 @@ def start_complete_workflow():
                 'true_ans': row['true_ans'],
                 'first_ans': row['first_ans'],
                 'final_ans': row['final_ans'],
+                'final_ans_exp': row['final_ans_exp'],
                 'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4'], row['adv_attack5']]
             }
 
