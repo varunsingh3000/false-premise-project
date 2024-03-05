@@ -15,7 +15,7 @@ External Sources: {}
 
 Use the following format always to provide your response
 Explanation: <text response of two to three sentences>
-Answer:
+Answer: <concise text response>
 Source: <Name of source and the url>
 Premise of the Question:
 

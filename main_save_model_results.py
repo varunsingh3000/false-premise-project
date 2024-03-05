@@ -98,7 +98,7 @@ def start_complete_workflow():
         adv_final_resp_exp_list.append(extracted_final_resp_exp)
 
         #appending results for accuracy
-        accuracy_response = auto_evaluation(true_ans,extracted_final_response)
+        accuracy_response = auto_evaluation(true_ans,extracted_final_response + " " + extracted_final_resp_exp)
         accuracy_result_list.append(accuracy_response)
     
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
