@@ -5,10 +5,11 @@ import yaml
 import pandas as pd
 
 from utils.dataset import start_dataset_processing
+from utils.utils import generate_evidence_batch
+from utils.utils import auto_evaluation
 from web_search import start_web_search
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
-# from openai_gpt_workflow_test import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
 
@@ -30,18 +31,6 @@ MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 # every question the WORKFLOW_RUN_COUNT is reset to 0 before being passed in the loop.
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
-def generate_evidence_batch(query_list):
-    # evidence list for saving results in batch
-    evidence_batch_list = []
-    for query in zip(query_list):
-        external_evidence = start_web_search(query)
-        evidence_batch_list.append(external_evidence)
-    
-    # Write the list to the JSON file
-    with open(EVIDENCE_BATCH_SAVE_PATH, 'w') as json_file:
-        json.dump(evidence_batch_list, json_file, indent=4)
-    
-
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
@@ -53,8 +42,8 @@ def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
         result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    responses_dict, final_response, final_confidence_value, adv_attack_response_list = result
-    return responses_dict, final_response, final_confidence_value, adv_attack_response_list
+    responses_dict, final_response, final_confidence_value = result
+    return responses_dict, final_response, final_confidence_value
  
 
 def start_complete_workflow():
@@ -67,16 +56,14 @@ def start_complete_workflow():
     question_list = []
     true_ans_list = []
     og_response_list = []
-    finalans_list = []
+    final_ans_dict_list = []
     finalconfi_list = []
     evidence_list = []
     candidate_responses_list = []
+    final_response_list = []
 
-    # list variables initialised to save adversarial attack results later to a dataframe
-    adv_attack_resp1_list = []
-    adv_attack_resp2_list = []
-    adv_attack_resp3_list = []
-    adv_attack_resp4_list = []
+    #list variable to save automatic evaluation results
+    accuracy_result_list = []
 
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
@@ -87,12 +74,11 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value, adv_attack_response_list = start_workflow(query,
-                                                                    external_evidence,MODEL,WORKFLOW_RUN_COUNT)
+        responses_dict, final_response, final_confidence_value = start_workflow(query,
+                                                            external_evidence,MODEL,WORKFLOW_RUN_COUNT)
         print("RESPONSES DICT : ", responses_dict)
         print("QUERY HAS FINISHED"*4)    
 
-        num_keys = len(responses_dict)
         temp_candidate_response_list = []
         temp_indi_resp_list=[]
         for key_value in responses_dict:
@@ -102,37 +88,30 @@ def start_complete_workflow():
             og_response_list.append(responses_dict[key_value][0])
             evidence_list.append(responses_dict[key_value][1])
             question_list.append(responses_dict[key_value][2])
-            finalans_list.append(final_response)
+            final_ans_dict_list.append(final_response)
             finalconfi_list.append(final_confidence_value) 
-            # if num_keys > 1 and key_value != num_keys - 1:
-            #     finalans_list.append("Final response could not be determined in this run of the workflow")
-            #     finalconfi_list.append("Final confidence value could not be determined in this run of the workflow") 
-            # else:
-            #     finalans_list.append(final_response)
-            #     finalconfi_list.append(final_confidence_value)   
-            # index 0, 1 and 2 are skipped because that is the original response, external evidence and question respectively
-            # for loop iteration for the last element is skipped because that is the question
+
             for candidate_resp in responses_dict[key_value][3:]:  
                 temp_indi_resp_list.append(candidate_resp)
             temp_candidate_response_list.append(temp_indi_resp_list)
             temp_indi_resp_list = []
         candidate_responses_list.append(temp_candidate_response_list)
-
-        adv_attack_resp1_list.append(adv_attack_response_list[0])
-        adv_attack_resp2_list.append(adv_attack_response_list[1])
-        adv_attack_resp3_list.append(adv_attack_response_list[2])
-        adv_attack_resp4_list.append(adv_attack_response_list[3])
     
-    print("CANDIDATE RESPONSES LIST :" , candidate_responses_list)
-    print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
+        #appending results for accuracy
+        final_resp_text = final_response['Answer:'] + " " + final_response['Explanation:']
+        accuracy_response = auto_evaluation(true_ans, final_resp_text)
+        accuracy_result_list.append(accuracy_response)
+        final_response_list.append(final_resp_text)
 
     qa_data_dict = {
         "ques_id":ques_no_list,
         "workflow_run_count":workflow_run_count,
         "question":question_list,
         "true_ans":true_ans_list,
+        "final_answer":final_response_list,
+        "accuracy":accuracy_result_list,
         "original_response": og_response_list,
-        "final_ans":finalans_list,
+        "final_ans_dict":final_ans_dict_list,
         "final_confi":finalconfi_list,
         "evidence": evidence_list
     }
@@ -169,79 +148,4 @@ def start_complete_workflow():
 
     df.to_excel(RESULT_SAVE_PATH + MODEL + "22febtest.xlsx",index=False)  # Set index=False to not write row indices
 
-    adv_attack_data_dict = {
-        "ques_id":ques_no_list,
-        "question":question_list,
-        "true_ans":true_ans_list,
-        "adv_attack1": adv_attack_resp1_list,
-        "adv_attack2": adv_attack_resp2_list,
-        "adv_attack3": adv_attack_resp3_list,
-        "adv_attack4": adv_attack_resp4_list,
-    }
-
-    df1 = pd.DataFrame(adv_attack_data_dict)
-
-    # Initialize an empty dictionary to store the structured data
-    structured_data = {}
-
-    # Iterate through the DataFrame
-    for _, row in df1.iterrows():
-        ques_id = row['ques_id']
-        if ques_id not in structured_data:
-            structured_data[ques_id] = {
-                'question': row['question'],
-                'true_ans': row['true_ans'],
-                'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4']]
-            }
-
-    # Convert the structured data dictionary to JSON format
-    json_data = json.dumps(structured_data, indent=4)
-    # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "adv_attack.json", 'w') as json_file:
-        json_file.write(json_data)
-
-    # df1 = pd.DataFrame(adv_attack_data_dict)
-    # print(df1.head())
-    # df1.to_csv(RESULT_SAVE_PATH + MODEL + "adv_attack.csv",index=False)  # Set index=False to not write row indices
-
 start_complete_workflow()
-
-#############################################################
-
-# import argparse
-
-# def start_workflow(query, model, temperature, query_prompt_path, uncertainty_prompt_path, num_runs):
-#     external_evidence = start_web_search(query)
-#     start_openai_api_model_response(query, query_prompt_path, uncertainty_prompt_path, model, temperature, num_runs, external_evidence)
-
-# def main():
-#     parser = argparse.ArgumentParser(description="Run workflow with specified parameters")
-    
-#     parser.add_argument('--query', type=str, default="Why does Mars have three moons?", help='Query for the workflow')
-#     parser.add_argument('--model', type=str, default="gpt-3.5-turbo-1106", help='Model name')
-#     parser.add_argument('--temperature', type=float, default=0.0, help='Temperature value')
-#     parser.add_argument('--query-prompt-path', type=str, default=r"C:\GAMES_SETUP\Thesis\Code\Prompts\GPT3.5\initial_prompt_w_cot_single.txt", help='Path to query prompt')
-#     parser.add_argument('--uncertainty-prompt-path', type=str, default=r"C:\GAMES_SETUP\Thesis\Code\Prompts\GPT3.5\uncertainty_estimation_confidence.txt", help='Path to uncertainty prompt')
-#     parser.add_argument('--num-runs', type=int, default=3, help='Number of runs')
-    
-#     args = parser.parse_args()
-
-#     start_time = time.time()
-
-#     start_workflow(
-#         args.query,
-#         args.model,
-#         args.temperature,
-#         args.query_prompt_path,
-#         args.uncertainty_prompt_path,
-#         args.num_runs
-#     )
-
-#     end_time = time.time()
-#     print(f"Total time taken: {end_time - start_time} seconds")
-
-# if __name__ == "__main__":
-#     main()
-
-
-

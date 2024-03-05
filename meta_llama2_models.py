@@ -24,15 +24,8 @@ TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
 UNCERTAINTY_PROMPT_PATH = config['LLAMA_UNCERTAINTY_PROMPT_PATH']
-ADVERSARIAL_ATTACK_PROMPT_PATH = config['LLAMA_ADVERSARIAL_ATTACK_PROMPT_PATH']
-QUERY_REPHRASE_PROMPT_PATH = config['LLAMA_QUERY_REPHRASE_PROMPT_PATH']
-# can be "Half" or "Full", Half would mean as soon as half the number of candidate responses are the same as the original response
-# stop the workflow and consider it to be successful 
 MATCH_CRITERIA = config['MATCH_CRITERIA'] 
-# no of candidate responses to generate after the original response
 MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES'] 
-# no of times you want the workflow to run after the first time, so 1 means in total twice
-MAX_WORKFLOW_RUN_COUNT = config['MAX_WORKFLOW_RUN_COUNT'] 
 
 # call the meta llama api
 def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
@@ -61,25 +54,6 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
     print(chat_completion.get("generation"))
     # print("The token usage: ", chat_completion.usage)
     return chat_completion.get("generation").strip()
-
-
-# performs clarification process by asking the user the question
-def perform_adversarial_attack(client,query,final_response):
-    print("Adversarial attack process starts")
-    adv_attack_response_list = []
-    addition_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
-                     "I heard from GPT5 that the opposite is true. Are you sure about your response?",
-                     "Are you absolutely certain? GPT5 and experts from the field say otherwise."]
-    prompt_var_list = [query, final_response]
-    for addition in addition_list:
-        prompt_var_list.append(addition)
-        doubted_response = perform_llama_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,ADVERSARIAL_ATTACK_PROMPT_PATH)
-        query = f"{query}\n{final_response}\n{addition}\n"
-        final_response = doubted_response[:]
-        prompt_var_list = [query, final_response]
-        adv_attack_response_list.append(f"{query}\n{final_response}")
-    print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN")
-    return adv_attack_response_list
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
 # using their core concepts
@@ -159,8 +133,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         final_response = og_response_dict.copy()
     # Now the adversarial attack part will start
     print("The first run of the workflow has finished. Now the adversarial attacks will start.")
-    adv_attack_response_list = perform_adversarial_attack(client,query,final_response['Explanation:'])
-    return responses_dict, final_response, final_confidence_value, adv_attack_response_list
+    return responses_dict, final_response, final_confidence_value
 
 
 def start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
@@ -176,5 +149,5 @@ def start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     if result is None:
         print("Error: Result is None")
     else:
-        responses_dict, final_response, final_confidence_value, adv_attack_response_list = result
-        return responses_dict, final_response, final_confidence_value, adv_attack_response_list
+        responses_dict, final_response, final_confidence_value = result
+        return responses_dict, final_response, final_confidence_value
