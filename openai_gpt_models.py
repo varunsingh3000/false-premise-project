@@ -135,7 +135,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
               as it is and the next question is answered. {}".format(og_response_dict))
         responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
                                                     WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
-        final_confidence_value = -1
+        final_confidence_value = '-1'
         final_response = og_response_dict.copy()
     # Now the adversarial attack part will start
     print("The first run of the workflow has finished. Now the adversarial attacks will start.")
