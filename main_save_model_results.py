@@ -107,10 +107,10 @@ def start_complete_workflow():
         "ques_id":ques_no_list,
         "question":question_list,
         "true_ans":true_ans_list,
-        "original_response": original_response_list,
         "final_ans":adv_final_response_list,
         "final_ans_exp":adv_final_resp_exp_list,
         "accuracy":accuracy_result_list,
+        "original_response": original_response_list,
         "evidence": evidence_list
     }
 
