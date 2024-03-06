@@ -103,7 +103,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             if uncertainty_response.startswith("Yes") or uncertainty_response.upper() == "YES":
                 #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
                 #and that response will be chosen as the potential final response
-                if confi_value > max_confi_value: 
+                if confi_value >= max_confi_value: 
                     max_confi_value = confi_value
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)

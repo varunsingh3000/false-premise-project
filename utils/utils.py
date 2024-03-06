@@ -68,7 +68,7 @@ def uncertainty_confidence_cal(confi_match_list,confi_list):
 def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA):
     if MATCH_CRITERIA == "Half":
         match_check = MAX_CANDIDATE_RESPONSES//2
-        if match_count > match_check:
+        if match_count >= match_check:
             return True
     if MATCH_CRITERIA == "Full":
         match_check = MAX_CANDIDATE_RESPONSES
