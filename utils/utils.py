@@ -14,6 +14,8 @@ EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
+AUTO_EVALUATION_BELIEF_PROMPT_PATH = config['AUTO_EVALUATION_BELIEF_PROMPT_PATH']
+
 
 def generate_evidence_batch(query_list):
     # evidence list for saving results in batch
@@ -118,10 +120,13 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
     return dummy_response_dict
 
 
-def auto_evaluation(true_answer,final_answer):
+def auto_evaluation(true_answer,final_answer,all_responses_list):
     prompt_var_list = [true_answer,final_answer]
     accuracy_response = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    return accuracy_response
+    belief_response = perform_gpt_response(all_responses_list,TEMPERATURE,AUTO_EVALUATION_BELIEF_PROMPT_PATH)
+    # task1 = extract_value_from_single_key(belief_response, key = "Task 1:")
+    # task2 = extract_value_from_single_key(belief_response, key = "Task 2:")
+    return accuracy_response, belief_response
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation

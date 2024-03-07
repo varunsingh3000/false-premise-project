@@ -38,8 +38,8 @@ def start_workflow(query,external_evidence,MODEL):
         result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    og_response_dict, adv_attack_response_list, main_answers_list = result
-    return og_response_dict, adv_attack_response_list, main_answers_list
+    og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list = result
+    return og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list
  
 
 def start_complete_workflow():
@@ -65,7 +65,7 @@ def start_complete_workflow():
 
     #list variable to save automatic evaluation results
     accuracy_result_list = []
-
+    beliefans_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(query_list) 
@@ -76,7 +76,8 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        og_response_dict, adv_attack_response_list, main_answers_list = start_workflow(query,external_evidence,MODEL)
+        og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list = start_workflow(query,
+                                                                    external_evidence,MODEL)
 
         #appending results for qa
         ques_no_list.append(ques_id)
@@ -98,9 +99,11 @@ def start_complete_workflow():
         adv_final_resp_exp_list.append(extracted_final_resp_exp)
 
         #appending results for accuracy
-        accuracy_response = auto_evaluation(true_ans,extracted_final_response + " " + extracted_final_resp_exp)
+        all_responses_list.append(true_ans) # adding ground truth response for comparison
+        accuracy_response, beliefans = auto_evaluation(true_ans,extracted_final_response + " " + extracted_final_resp_exp,all_responses_list)
         accuracy_result_list.append(accuracy_response)
-    
+        beliefans_list.append(beliefans)
+
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
 
     qa_data_dict = {
@@ -110,6 +113,7 @@ def start_complete_workflow():
         "final_ans":adv_final_response_list,
         "final_ans_exp":adv_final_resp_exp_list,
         "accuracy":accuracy_result_list,
+        "beliefans":beliefans_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
@@ -119,7 +123,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "22febtest.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "belieftest.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -156,7 +160,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "adv_attack.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "belieftest.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)
