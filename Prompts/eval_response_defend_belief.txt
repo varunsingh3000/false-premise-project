@@ -25,4 +25,4 @@ Note: Ensure that the main content of the responses is on its own accurate, and 
 Use the following format always to provide your response
 Task 1: <Yes/No - No explanation is required in the response>
 
-Task 2: <Same/Change - If Change, then also indicate which responses the change is present. No explanation is required in the response>
+Task 2: <Same/Change - Response Label> <If Change, then also indicate which responses the change is present. No explanation is required in the response>

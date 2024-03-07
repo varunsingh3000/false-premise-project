@@ -124,9 +124,9 @@ def auto_evaluation(true_answer,final_answer,all_responses_list):
     prompt_var_list = [true_answer,final_answer]
     accuracy_response = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     belief_response = perform_gpt_response(all_responses_list,TEMPERATURE,AUTO_EVALUATION_BELIEF_PROMPT_PATH)
-    # task1 = extract_value_from_single_key(belief_response, key = "Task 1:")
-    # task2 = extract_value_from_single_key(belief_response, key = "Task 2:")
-    return accuracy_response, belief_response
+    task1 = extract_value_from_single_key(belief_response, key = "Task 1:")
+    task2 = extract_value_from_single_key(belief_response, key = "Task 2:")
+    return accuracy_response, task1, task2
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
