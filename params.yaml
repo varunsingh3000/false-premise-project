@@ -5,7 +5,7 @@
     "CANDIDATE_TEMPERATURE": 0.7, #default - 0.3
     "DATASET_NAME": "freshqa", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\"
-    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_bing_500.json", 
+    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
     "QUERY_PROMPT_PATH": "Prompts\\minimal_response.txt", #default - "Prompts\\candidate_response.txt"
     "ADVERSARIAL_ATTACK_PROMPT_PATH":"Prompts\\adversarial_attack.txt",
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp.txt",

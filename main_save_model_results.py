@@ -8,7 +8,7 @@ from utils.dataset import start_dataset_processing
 from utils.utils import generate_evidence_batch
 from utils.utils import extract_value_from_single_key
 from utils.utils import auto_evaluation
-from web_search import start_web_search
+# from web_search import start_web_search
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
@@ -74,7 +74,7 @@ def start_complete_workflow():
 
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
-        
+                
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)

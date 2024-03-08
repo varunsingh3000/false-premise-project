@@ -4,7 +4,8 @@ import json
 from openai import OpenAI
 
 
-from web_search import start_web_search
+# from web_search import start_web_search
+from web_search_serp import start_web_search
 
 
 with open('params.yaml', 'r') as file:
