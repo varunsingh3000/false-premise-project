@@ -51,12 +51,17 @@ def process_json(response_json):
     if 'webPages' in data and 'value' in data['webPages']:
         print("Web pages are found as external evidence")
         retrieved_info_dict.update({"webPages":[]})
-        for webpageitem in data["webPages"]["value"][:2]: #iterating through a list here
-            name = webpageitem["name"]
-            url = webpageitem["url"]
-            snippet = webpageitem["snippet"]
-            temp_dict = {"name":name,"url":url,"snippet":snippet}
-            retrieved_info_dict["webPages"].append(temp_dict)
+        for webpageitem in data["webPages"]["value"][:4]: #iterating through a list here
+            try:
+                name = webpageitem["name"]
+                url = webpageitem["url"]
+                snippet = webpageitem["snippet"]
+                temp_dict = {"name":name,"url":url,"snippet":snippet}
+                retrieved_info_dict["webPages"].append(temp_dict)
+            except KeyError as e:
+                # If any of the keys are missing, print a message and continue to the next item
+                print(f"Key {e} not found. Skipping this item.")
+                continue
 
     # Iterating through the entities section
     # print('entities' in data and 'value' in data['entities'])
@@ -64,14 +69,18 @@ def process_json(response_json):
         print("Entities (knowledge graph) is found as external evidence")
         retrieved_info_dict.update({"entities":[]})
         for entityitem in data["entities"]["value"]: #iterating through a list here
-            name = entityitem["name"]
-            url = entityitem["image"]["provider"][0]["url"] if "image" in entityitem and "provider" in entityitem["image"] and \
-            entityitem["image"]["provider"] and entityitem["image"]["provider"][0] and "url" in entityitem["image"]["provider"][0] \
-            else entityitem["webSearchUrl"]
-            
-            snippet = entityitem["description"]
-            temp_dict = {"name":name,"url":url,"snippet":snippet}
-            retrieved_info_dict["entities"].append(temp_dict)
+            try:
+                name = entityitem["name"]
+                url = entityitem["image"]["provider"][0]["url"] if "image" in entityitem and "provider" in entityitem["image"] and \
+                entityitem["image"]["provider"] and entityitem["image"]["provider"][0] and "url" in entityitem["image"]["provider"][0] \
+                else entityitem["webSearchUrl"]
+                snippet = entityitem["description"]
+                temp_dict = {"name":name,"url":url,"snippet":snippet}
+                retrieved_info_dict["entities"].append(temp_dict)
+            except KeyError as e:
+                # If any of the keys are missing, print a message and continue to the next item
+                print(f"Key {e} not found. Skipping this item.")
+                continue
 
     if "message" in data:
         retrieved_info_dict = data.copy()

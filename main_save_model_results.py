@@ -32,7 +32,7 @@ def start_workflow(query,external_evidence,MODEL):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence)
-    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
+    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-large-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)
@@ -66,8 +66,8 @@ def start_complete_workflow():
     #list variable to save automatic evaluation results
     accuracy_result_list = []
     # beliefans_list = []
-    task1_list = []
-    task2_list = []
+    og_resp_veracity_list = []
+    resp_change_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(query_list) 
@@ -105,8 +105,8 @@ def start_complete_workflow():
         accuracy_response, task1, task2 = auto_evaluation(true_ans,extracted_final_response + " " + extracted_final_resp_exp,all_responses_list)
         accuracy_result_list.append(accuracy_response)
         # beliefans_list.append(beliefans)
-        task1_list.append(task1)
-        task2_list.append(task2)
+        og_resp_veracity_list.append(task1)
+        resp_change_list.append(task2)
 
     print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
 
@@ -118,8 +118,8 @@ def start_complete_workflow():
         "final_ans_exp":adv_final_resp_exp_list,
         "accuracy":accuracy_result_list,
         # "beliefans":beliefans_list,
-        "task1":task1_list,
-        "task2":task2_list,
+        "og_resp_veracity":og_resp_veracity_list,
+        "resp_change_label":resp_change_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
@@ -129,7 +129,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "belieftest.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "belieftest_500.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -166,7 +166,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "belieftest.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "belieftest_500.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)

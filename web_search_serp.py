@@ -67,7 +67,7 @@ def process_json(response_json):
         if 'organic_results' in data:
             print("Web pages are found as external evidence")
             retrieved_info_dict.update({"organic_results":[]})
-            for webpageitem in data["organic_results"][:1]: #iterating through a list here
+            for webpageitem in data["organic_results"][:4]: #iterating through a list here
                 try:
                     name = webpageitem["title"]
                     url = webpageitem["link"]
