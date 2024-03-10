@@ -98,7 +98,13 @@ def start_complete_workflow():
         candidate_responses_list.append(temp_candidate_response_list)
     
         #appending results for accuracy
-        final_resp_text = final_response['Answer:'] + " " + final_response['Explanation:']
+        final_resp_text = ""
+        if 'Answer:' in final_response:
+            final_resp_text += final_response['Answer:']
+        if 'Explanation:' in final_response:
+            if final_resp_text:  # If Answer: key exists and is not empty, add a space before Explanation:
+                final_resp_text += " "
+            final_resp_text += final_response['Explanation:']
         accuracy_response = auto_evaluation(true_ans, final_resp_text)
         accuracy_result_list.append(accuracy_response)
         final_response_list.append(final_resp_text)

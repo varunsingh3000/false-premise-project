@@ -38,8 +38,8 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
     #passing the query and the external evidence as variables into the prompt
     message = json.dumps({
     "prompt": file_content.format(*prompt_var_list),   #file_content.format(variable1,variable2)
-    "temperature": temperature
-    # "max_gen_len": 600
+    "temperature": temperature,
+    "max_gen_len": 600
     })
 
     accept = 'application/json'
