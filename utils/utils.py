@@ -135,8 +135,8 @@ def perform_gpt_response(prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=EVAL_MODEL,
-        temperature=temperature
-        # top_p=temperature
+        temperature=temperature,
+        max_tokens = 600
         )
     print("#"*20)
     print("INITIAL LLM RESPONSE")
