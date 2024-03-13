@@ -3,7 +3,7 @@ import json
 import yaml
 from openai import OpenAI
 
-from web_search import start_web_search
+from web_search_serp import start_web_search
 
 with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -14,11 +14,11 @@ EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
 
-def generate_evidence_batch(query_list):
+def generate_evidence_batch(ques_id_list,query_list):
     # evidence list for saving results in batch
     evidence_batch_list = []
-    for query in zip(query_list):
-        external_evidence = start_web_search(query)
+    for query_id,query in zip(ques_id_list,query_list):
+        external_evidence = start_web_search(query_id,query)
         evidence_batch_list.append(external_evidence)
     
     # Write the list to the JSON file
