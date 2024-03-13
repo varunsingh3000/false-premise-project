@@ -70,7 +70,7 @@ def start_complete_workflow():
     resp_change_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
-    # generate_evidence_batch(query_list) 
+    # generate_evidence_batch(ques_id_list, query_list) 
 
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
