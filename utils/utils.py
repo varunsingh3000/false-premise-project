@@ -121,13 +121,26 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
     return dummy_response_dict
 
 
-def auto_evaluation(true_answer,final_answer,all_responses_list):
-    prompt_var_list = [true_answer,final_answer]
-    accuracy_response = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    belief_response = perform_gpt_response(all_responses_list,TEMPERATURE,AUTO_EVALUATION_BELIEF_PROMPT_PATH)
-    task1 = extract_value_from_single_key(belief_response, key = "Task 1:")
-    task2 = extract_value_from_single_key(belief_response, key = "Task 2:")
-    return accuracy_response, task1, task2
+def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_final_response,bck_extracted_final_response,
+                    fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp):
+    prompt_var_list = [query,bck_extracted_final_question]
+    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    if len(fwd_extracted_final_response.split()) < 5:
+        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+
+    if len(bck_extracted_final_response.split()) < 5:
+        bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+
+    prompt_var_list = [fwd_extracted_final_response,bck_extracted_final_response]
+    same_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    if same_ans_resp == "Yes":
+        prompt_var_list = [true_ans,fwd_extracted_final_response]
+    else:
+        prompt_var_list = [true_ans,bck_extracted_final_response]
+    gt_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    accuracy = "Correct" if gt_ans_resp == "Yes" else "Incorrect"
+
+    return same_ques_resp, same_ans_resp, accuracy
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation

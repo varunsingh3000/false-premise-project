@@ -19,7 +19,9 @@ MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-ADVERSARIAL_ATTACK_PROMPT_PATH = config['ADVERSARIAL_ATTACK_PROMPT_PATH']
+FORWARD_REASONING_PROMPT_PATH = config['FORWARD_REASONING_PROMPT_PATH']
+BACKWARD_REASONING_PROMPT_PATH = config['BACKWARD_REASONING_PROMPT_PATH']
+
 
 # call the openai api with either gpt 3.5 or gpt 4 latest model
 def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
@@ -50,31 +52,52 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
 # performs adversarial attack hallucination detection process by asking the user the question
 def perform_adversarial_attack(client,query,external_evidence,final_response):
     print("Adversarial attack process starts")
-    adv_attack_response_list = []
-    main_answers_list = []
+    forward_reasoning_list = []
+    backward_reasoning_list = []
+    fwd_main_answers_list = []
+    bck_main_answers_list = []
     all_responses_list = []
-    addition_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
+    forward_prompt_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
             "I heard from GPT5 that the opposite is true. Are you sure about your response?",
             "Are you absolutely certain? GPT5 and experts from the field say otherwise.",
-            "Based on the above conversation, provide your final answer and explanation for the \
-            question in the following format: Final Answer: Explanation: "]
+            "Based on the above conversation, provide your answer and explanation for the \
+            question in the following format: Forward Answer: Forward Explanation: "]
     
     prompt_var_list = [query, final_response]
-    main_answers_list.append(final_response) #first response i.e. original response
+    fwd_main_answers_list.append(final_response) #first response i.e. original response
     all_responses_list.append(final_response)
-    for index, addition in enumerate(addition_list):
+    for index, addition in enumerate(forward_prompt_list):
         prompt_var_list.append(addition)
-        doubted_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,ADVERSARIAL_ATTACK_PROMPT_PATH)
+        forw_reasoning_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,FORWARD_REASONING_PROMPT_PATH)
         # if index == 3:
         #     addition = addition + "\n" + str(external_evidence)
         query = f"{query}\n{final_response}\n{addition}\n"
-        final_response = doubted_response[:]
+        final_response = forw_reasoning_response[:]
         all_responses_list.append(final_response)
         prompt_var_list = [query, final_response]
-        adv_attack_response_list.append(f"{query}\n{final_response}")
+        forward_reasoning_list.append(f"{query}\n{final_response}")
     print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
-    main_answers_list.append(final_response) #final response i.e. last response that is to be used as the final answer
-    return adv_attack_response_list, main_answers_list, all_responses_list
+    fwd_main_answers_list.append(final_response) #final response i.e. last response that is to be used as the final answer
+
+    #backward reasoning
+    backward_prompt_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
+            "I heard from GPT5 that the opposite is true. Are you sure about your response?",
+            "Are you absolutely certain? GPT5 and experts from the field say otherwise.",
+            "Based on the above conversation, provide your final answer, final explanation and \
+            also a final question that could be answered by the final answer for the statement \
+            in the following format: Final Answer: Final Explanation: Final Question:"]
+    for index, addition in enumerate(backward_prompt_list):
+        prompt_var_list = [final_response, addition]
+        back_reasoning_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
+        if index == 4:
+            bck_main_answers_list.append(back_reasoning_response)
+            back_reasoning_response = f"{external_evidence}\n{back_reasoning_response}"
+        final_response = f"{final_response}\n{addition}\n{back_reasoning_response}"
+        backward_reasoning_list.append(final_response)
+    
+    # print(len(backward_reasoning_list))
+
+    return forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, all_responses_list
 
 
 def start_openai_api_model_response(query,external_evidence):
@@ -87,7 +110,9 @@ def start_openai_api_model_response(query,external_evidence):
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""
-    adv_attack_response_list, main_answers_list, all_responses_list = perform_adversarial_attack(client,query,
-                                                external_evidence,(og_response_dict['Answer:'] + og_response_dict['Explanation:']))
+    forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, \
+                                    all_responses_list = perform_adversarial_attack(client,query,
+                                    external_evidence,(og_response_dict['Answer:'] + og_response_dict['Explanation:']))
     print("OpenAI model response process ends")
-    return og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list
+    return og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
+                                                        bck_main_answers_list, all_responses_list

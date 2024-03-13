@@ -7,7 +7,8 @@
     "DATASET_PATH": "Data\\", #default - "Data\\"
     "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
     "QUERY_PROMPT_PATH": "Prompts\\minimal_response.txt", #default - "Prompts\\candidate_response.txt"
-    "ADVERSARIAL_ATTACK_PROMPT_PATH":"Prompts\\adversarial_attack.txt",
+    "FORWARD_REASONING_PROMPT_PATH":"Prompts\\forward_reasoning.txt",
+    "BACKWARD_REASONING_PROMPT_PATH":"Prompts\\backward_reasoning.txt",
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp.txt",
     "AUTO_EVALUATION_BELIEF_PROMPT_PATH": "Prompts\\eval_response_defend_belief.txt",
     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\minimal_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"

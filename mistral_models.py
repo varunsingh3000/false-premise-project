@@ -19,7 +19,7 @@ MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-ADVERSARIAL_ATTACK_PROMPT_PATH = config['ADVERSARIAL_ATTACK_PROMPT_PATH']
+FORWARD_REASONING_PROMPT_PATH = config['FORWARD_REASONING_PROMPT_PATH']
 
 # call the mistral api with either tiny or small model
 def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
@@ -62,7 +62,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
     all_responses_list.append(final_response)
     for addition in addition_list:
         prompt_var_list.append(addition)
-        doubted_response = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,ADVERSARIAL_ATTACK_PROMPT_PATH)
+        doubted_response = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,FORWARD_REASONING_PROMPT_PATH)
         query = f"{query}\n{final_response}\n{addition}\n"
         final_response = doubted_response[:]
         all_responses_list.append(final_response)

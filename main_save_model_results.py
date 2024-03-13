@@ -38,8 +38,10 @@ def start_workflow(query,external_evidence,MODEL):
         result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list = result
-    return og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list
+    og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
+                bck_main_answers_list, all_responses_list = result
+    return og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
+                bck_main_answers_list, all_responses_list
  
 
 def start_complete_workflow():
@@ -53,21 +55,29 @@ def start_complete_workflow():
     evidence_list = []
     original_response_list = []
 
-    # list variables to save adversarial attack results later to a dataframe
-    adv_attack_resp1_list = []
-    adv_attack_resp2_list = []
-    adv_attack_resp3_list = []
-    adv_attack_resp4_list = []
-    adv_attack_resp5_list = []
-    adv_original_response_list = []
-    adv_final_response_list = []
-    adv_final_resp_exp_list = []
+    # list variables to save reasoning results later to a dataframe
+    fwd_reasoning_resp1_list = []
+    fwd_reasoning_resp2_list = []
+    fwd_reasoning_resp3_list = []
+    fwd_reasoning_resp4_list = []
+    fwd_reasoning_resp5_list = []
+    fwd_original_response_list = []
+    fwd_final_response_list = []
+    fwd_final_resp_exp_list = []
+
+    bck_reasoning_resp1_list = []
+    bck_reasoning_resp2_list = []
+    bck_reasoning_resp3_list = []
+    bck_reasoning_resp4_list = []
+    bck_reasoning_resp5_list = []
+    bck_final_response_list = []
+    bck_final_resp_exp_list = []
+    bck_final_question_list = []
 
     #list variable to save automatic evaluation results
-    accuracy_result_list = []
-    # beliefans_list = []
-    og_resp_veracity_list = []
-    resp_change_list = []
+    final_accuracy_list = []
+    same_answer_list = []
+    same_question_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list, query_list) 
@@ -78,8 +88,8 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         print("NEW QUERY HAS STARTED"*4)
-        og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list = start_workflow(query,
-                                                                    external_evidence,MODEL)
+        og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
+                            bck_main_answers_list, all_responses_list = start_workflow(query,external_evidence,MODEL)
 
         #appending results for qa
         ques_no_list.append(ques_id)
@@ -88,38 +98,54 @@ def start_complete_workflow():
         question_list.append(query)
         original_response_list.append(og_response_dict)
 
-        #appending results for adversarial attack
-        adv_attack_resp1_list.append(adv_attack_response_list[0])
-        adv_attack_resp2_list.append(adv_attack_response_list[1])
-        adv_attack_resp3_list.append(adv_attack_response_list[2])
-        adv_attack_resp4_list.append(adv_attack_response_list[3])
-        adv_attack_resp5_list.append(adv_attack_response_list[4])
-        adv_original_response_list.append(main_answers_list[0])
-        extracted_final_response = extract_value_from_single_key(main_answers_list[1], key = "Final Answer:")
-        extracted_final_resp_exp = extract_value_from_single_key(main_answers_list[1], key = "Explanation:")
-        adv_final_response_list.append(extracted_final_response)
-        adv_final_resp_exp_list.append(extracted_final_resp_exp)
+        #appending results for forward reasoning
+        fwd_reasoning_resp1_list.append(forward_reasoning_list[0])
+        fwd_reasoning_resp2_list.append(forward_reasoning_list[1])
+        fwd_reasoning_resp3_list.append(forward_reasoning_list[2])
+        fwd_reasoning_resp4_list.append(forward_reasoning_list[3])
+        fwd_reasoning_resp5_list.append(forward_reasoning_list[4])
+        fwd_original_response_list.append(fwd_main_answers_list[0])
+        fwd_extracted_final_response = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Answer:")
+        fwd_extracted_final_resp_exp = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Explanation:")
+        fwd_final_response_list.append(fwd_extracted_final_response)
+        fwd_final_resp_exp_list.append(fwd_extracted_final_resp_exp)
 
-        #appending results for accuracy
-        all_responses_list.append(true_ans) # adding ground truth response for comparison
-        accuracy_response, task1, task2 = auto_evaluation(true_ans,extracted_final_response + " " + extracted_final_resp_exp,all_responses_list)
-        accuracy_result_list.append(accuracy_response)
-        # beliefans_list.append(beliefans)
-        og_resp_veracity_list.append(task1)
-        resp_change_list.append(task2)
+        #appending results for backward attack
+        bck_reasoning_resp1_list.append(backward_reasoning_list[0])
+        bck_reasoning_resp2_list.append(backward_reasoning_list[1])
+        bck_reasoning_resp3_list.append(backward_reasoning_list[2])
+        bck_reasoning_resp4_list.append(backward_reasoning_list[3])
+        bck_reasoning_resp5_list.append(backward_reasoning_list[4])
+        bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Answer:")
+        bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Explanation:")
+        bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
+        bck_final_response_list.append(bck_extracted_final_response)
+        bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
+        bck_final_question_list.append(bck_extracted_final_question)
 
-    print("ADVERSARIAL ATTACK LIST: ", adv_attack_response_list)
+        #auto evaluation
+        same_ques_resp, same_ans_resp, accuracy = auto_evaluation(query,bck_extracted_final_question,true_ans,
+                                                fwd_extracted_final_response,bck_extracted_final_response,
+                                                fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp)
+        same_question_list.append(same_ques_resp)
+        same_answer_list.append(same_ans_resp)
+        final_accuracy_list.append(accuracy)
+
+
+    print("ADVERSARIAL ATTACK LIST: ", forward_reasoning_list)
 
     qa_data_dict = {
         "ques_id":ques_no_list,
         "question":question_list,
         "true_ans":true_ans_list,
-        "final_ans":adv_final_response_list,
-        "final_ans_exp":adv_final_resp_exp_list,
-        "accuracy":accuracy_result_list,
-        # "beliefans":beliefans_list,
-        "og_resp_veracity":og_resp_veracity_list,
-        "resp_change_label":resp_change_list,
+        "fwd_final_ans":fwd_final_response_list,
+        "fwd_final_ans_exp":fwd_final_resp_exp_list,
+        "bck_final_ans":bck_final_response_list,
+        "bck_final_ans_exp":bck_final_resp_exp_list,
+        "bck_final_question":bck_final_question_list,
+        "same_question":same_question_list,
+        "same_answer":same_answer_list,
+        "final_accuracy":final_accuracy_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
@@ -129,20 +155,27 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "belieftest_all.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
         "question":question_list,
         "true_ans":true_ans_list,
-        "first_ans":adv_original_response_list,
-        "final_ans":adv_final_response_list,
-        "final_ans_exp":adv_final_resp_exp_list,
-        "adv_attack1": adv_attack_resp1_list,
-        "adv_attack2": adv_attack_resp2_list,
-        "adv_attack3": adv_attack_resp3_list,
-        "adv_attack4": adv_attack_resp4_list,
-        "adv_attack5": adv_attack_resp5_list
+        "first_ans":fwd_original_response_list,
+        "fwd_final_ans":fwd_final_response_list,
+        "fwd_final_ans_exp":fwd_final_resp_exp_list,
+        "bck_final_ans":bck_final_response_list,
+        "bck_final_ans_exp":bck_final_resp_exp_list,
+        "fwd_resp_1": fwd_reasoning_resp1_list,
+        "fwd_resp_2": fwd_reasoning_resp2_list,
+        "fwd_resp_3": fwd_reasoning_resp3_list,
+        "fwd_resp_4": fwd_reasoning_resp4_list,
+        "fwd_resp_5": fwd_reasoning_resp5_list,
+        "bck_resp_1": bck_reasoning_resp1_list,
+        "bck_resp_2": bck_reasoning_resp2_list,
+        "bck_resp_3": bck_reasoning_resp3_list,
+        "bck_resp_4": bck_reasoning_resp4_list,
+        "bck_resp_5": bck_reasoning_resp5_list
     }
 
     df1 = pd.DataFrame(adv_attack_data_dict)
@@ -158,15 +191,18 @@ def start_complete_workflow():
                 'question': row['question'],
                 'true_ans': row['true_ans'],
                 'first_ans': row['first_ans'],
-                'final_ans': row['final_ans'],
-                'final_ans_exp': row['final_ans_exp'],
-                'adv_attacks': [row['adv_attack1'], row['adv_attack2'], row['adv_attack3'], row['adv_attack4'], row['adv_attack5']]
+                'fwd_final_ans': row['fwd_final_ans'],
+                'fwd_final_ans_exp': row['fwd_final_ans_exp'],
+                'bck_final_ans': row['bck_final_ans'],
+                'bck_final_ans_exp': row['bck_final_ans_exp'],
+                'forw_reasoning': [row['fwd_resp_1'], row['fwd_resp_2'], row['fwd_resp_3'], row['fwd_resp_4'], row['fwd_resp_5']],
+                'back_reasoning': [row['bck_resp_1'], row['bck_resp_2'], row['bck_resp_3'], row['bck_resp_4'], row['bck_resp_5']]
             }
 
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "belieftest_all.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "for_back_reasoning.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)
