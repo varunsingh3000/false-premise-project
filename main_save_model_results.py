@@ -6,6 +6,7 @@ import pandas as pd
 
 from utils.dataset import start_dataset_processing
 from utils.utils import generate_evidence_batch
+from utils.utils import modify_evidence_batch_dict
 from utils.utils import extract_value_from_single_key
 from utils.utils import auto_evaluation
 # from web_search import start_web_search
@@ -30,7 +31,7 @@ WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL):
     # external_evidence = start_web_search(query)
-    if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+    if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-large-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
@@ -60,7 +61,6 @@ def start_complete_workflow():
     fwd_reasoning_resp2_list = []
     fwd_reasoning_resp3_list = []
     fwd_reasoning_resp4_list = []
-    fwd_reasoning_resp5_list = []
     fwd_original_response_list = []
     fwd_final_response_list = []
     fwd_final_resp_exp_list = []
@@ -69,7 +69,6 @@ def start_complete_workflow():
     bck_reasoning_resp2_list = []
     bck_reasoning_resp3_list = []
     bck_reasoning_resp4_list = []
-    bck_reasoning_resp5_list = []
     bck_final_response_list = []
     bck_final_resp_exp_list = []
     bck_final_question_list = []
@@ -84,6 +83,10 @@ def start_complete_workflow():
 
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
+    
+    for i, d in enumerate(evidence_batch_list):
+        evidence_batch_list[i] = modify_evidence_batch_dict(d)
+
                 
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
@@ -103,7 +106,6 @@ def start_complete_workflow():
         fwd_reasoning_resp2_list.append(forward_reasoning_list[1])
         fwd_reasoning_resp3_list.append(forward_reasoning_list[2])
         fwd_reasoning_resp4_list.append(forward_reasoning_list[3])
-        fwd_reasoning_resp5_list.append(forward_reasoning_list[4])
         fwd_original_response_list.append(fwd_main_answers_list[0])
         fwd_extracted_final_response = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Answer:")
         fwd_extracted_final_resp_exp = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Explanation:")
@@ -115,7 +117,6 @@ def start_complete_workflow():
         bck_reasoning_resp2_list.append(backward_reasoning_list[1])
         bck_reasoning_resp3_list.append(backward_reasoning_list[2])
         bck_reasoning_resp4_list.append(backward_reasoning_list[3])
-        bck_reasoning_resp5_list.append(backward_reasoning_list[4])
         bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Answer:")
         bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Explanation:")
         bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
@@ -170,12 +171,10 @@ def start_complete_workflow():
         "fwd_resp_2": fwd_reasoning_resp2_list,
         "fwd_resp_3": fwd_reasoning_resp3_list,
         "fwd_resp_4": fwd_reasoning_resp4_list,
-        "fwd_resp_5": fwd_reasoning_resp5_list,
         "bck_resp_1": bck_reasoning_resp1_list,
         "bck_resp_2": bck_reasoning_resp2_list,
         "bck_resp_3": bck_reasoning_resp3_list,
         "bck_resp_4": bck_reasoning_resp4_list,
-        "bck_resp_5": bck_reasoning_resp5_list
     }
 
     df1 = pd.DataFrame(adv_attack_data_dict)
@@ -195,8 +194,8 @@ def start_complete_workflow():
                 'fwd_final_ans_exp': row['fwd_final_ans_exp'],
                 'bck_final_ans': row['bck_final_ans'],
                 'bck_final_ans_exp': row['bck_final_ans_exp'],
-                'forw_reasoning': [row['fwd_resp_1'], row['fwd_resp_2'], row['fwd_resp_3'], row['fwd_resp_4'], row['fwd_resp_5']],
-                'back_reasoning': [row['bck_resp_1'], row['bck_resp_2'], row['bck_resp_3'], row['bck_resp_4'], row['bck_resp_5']]
+                'forw_reasoning': [row['fwd_resp_1'], row['fwd_resp_2'], row['fwd_resp_3'], row['fwd_resp_4']],
+                'back_reasoning': [row['bck_resp_1'], row['bck_resp_2'], row['bck_resp_3'], row['bck_resp_4']]
             }
 
     # Convert the structured data dictionary to JSON format

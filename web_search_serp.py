@@ -37,9 +37,9 @@ def process_json(query_id, response_json):
         print("Answer Box is found as external evidence")
         retrieved_info_dict.update({"answer_box":[]})
         try:
-            name = data["answer_box"]["title"]
-            url = data["answer_box"]["link"]
-            snippet = data["answer_box"]["snippet"]
+            name = data["answer_box"].get("title", "")
+            url = data["answer_box"].get("link", "")
+            snippet = data["answer_box"].get("snippet", "")
             temp_dict = {"name": name, "url": url, "snippet": snippet}
             retrieved_info_dict["answer_box"].append(temp_dict)
         except KeyError as e:
@@ -51,9 +51,9 @@ def process_json(query_id, response_json):
         retrieved_info_dict.update({"related_questions":[]})
         for relatedquesitem in data["related_questions"][:]: #iterating through a list here
             try:
-                name = relatedquesitem["question"]
-                url = relatedquesitem["link"]
-                snippet = relatedquesitem["snippet"]
+                name = relatedquesitem.get("question", "")
+                url = relatedquesitem.get("link", "")
+                snippet = relatedquesitem.get("snippet", "")
                 temp_dict = {"name": name, "url": url, "snippet": snippet}
                 retrieved_info_dict["related_questions"].append(temp_dict)
             except KeyError as e:
@@ -69,9 +69,9 @@ def process_json(query_id, response_json):
         retrieved_info_dict.update({"organic_results":[]})
         for webpageitem in data["organic_results"][:4]: #iterating through a list here
             try:
-                name = webpageitem["title"]
-                url = webpageitem["link"]
-                snippet = webpageitem["snippet"]
+                name = webpageitem.get("title", "")
+                url = webpageitem.get("link", "")
+                snippet = webpageitem.get("snippet", "")
                 temp_dict = {"name": name, "url": url, "snippet": snippet}
                 retrieved_info_dict["organic_results"].append(temp_dict)
             except KeyError as e:

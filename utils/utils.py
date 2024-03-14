@@ -29,6 +29,19 @@ def generate_evidence_batch(ques_id_list,query_list):
     with open(EVIDENCE_BATCH_SAVE_PATH, 'w') as json_file:
         json.dump(evidence_batch_list, json_file, indent=4)
 
+def modify_evidence_batch_dict(evidence_batch_list):
+    modified_evidence_batch_list = {}
+    if 'QueryID' in evidence_batch_list:
+        modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
+    if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
+        modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
+        return modified_evidence_batch_list
+    if 'organic_results' in evidence_batch_list:
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
+    if 'related_questions' in evidence_batch_list:
+        modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:2]
+    return modified_evidence_batch_list
+
 # function to parse through the api response and extract certain keywords in a dict
 def process_response(chat_completion):
     #use the chat_completion object to retrieve the textual LLM response
@@ -159,8 +172,8 @@ def perform_gpt_response(prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=EVAL_MODEL,
-        temperature=temperature
-        # top_p=temperature
+        temperature=temperature,
+        max_tokens=600
         )
     print("#"*20)
     print("INITIAL LLM RESPONSE")

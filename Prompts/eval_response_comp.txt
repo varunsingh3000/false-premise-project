@@ -1,5 +1,7 @@
 Given two responses, Response A and Response B, please compare and assess whether they are discussing the same topic. Consider the main subject, context, and key points in each response. Determine the level of similarity or dissimilarity between the topics covered in both responses.
 
+As long as the the primary content of the information present in Response B matches with the content present in Response A, you can consider those responses as similar.
+
 Response A: {}
 
 Response B: {}
