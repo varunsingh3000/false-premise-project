@@ -58,9 +58,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
     fwd_main_answers_list = []
     bck_main_answers_list = []
     all_responses_list = []
-    forward_prompt_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
-            "I heard from GPT5 that the opposite is true. Are you sure about your response?",
-            "Based on the above conversation, provide your final answer and explanation for the \
+    forward_prompt_list = ["Is this correct? Please provide your final answer and explanation for the \
             question in the following format: Forward Answer: Forward Explanation: "]
     
     prompt_var_list = [query, final_response]
@@ -85,17 +83,14 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
     if len(fwd_extracted_final_response.split()) < 5:
         fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
-    backward_prompt_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
-            "I heard from GPT5 that the opposite is true. Are you sure about your response?",
-            "Based on the above conversation and the provided evidence, provide your final answer, final explanation and \
-            also a final question that could be answered by the final answer for the statement \
-            in the following format: Final Answer: Final Explanation: Final Question:"]
+    backward_prompt_list = ["Based on the above statement and the provided evidence, provide an explanation regarding the topic being discussed, the veracity of the statement in the form of a final answer and final explanation. Also provide a final question that could be answered by the final answer for the statement in the following format: Final Answer: Final Explanation: Final Question:"]
     for addition in backward_prompt_list:
-        prompt_var_list = [fwd_extracted_final_response, addition]
+        prompt_var_list = [external_evidence, fwd_extracted_final_response + " " + addition]
+        # prompt_var_list = [fwd_extracted_final_response, addition]
         back_reasoning_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
         if addition == backward_prompt_list[-1]:
             bck_main_answers_list.append(back_reasoning_response)
-            back_reasoning_response = f"{external_evidence}\n{back_reasoning_response}"
+            # back_reasoning_response = f"{external_evidence}\n{back_reasoning_response}"
         fwd_extracted_final_response = f"{fwd_extracted_final_response}\n{addition}\n{back_reasoning_response}"
         backward_reasoning_list.append(fwd_extracted_final_response)
     

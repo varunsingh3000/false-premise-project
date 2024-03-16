@@ -15,7 +15,10 @@ with open('params.yaml', 'r') as file:
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
+CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
+AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
+
 
 
 def generate_evidence_batch(ques_id_list,query_list):
@@ -37,7 +40,7 @@ def modify_evidence_batch_dict(evidence_batch_list):
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
         return modified_evidence_batch_list
     if 'related_questions' in evidence_batch_list:
-        modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:2]
+        modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
         modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
     return modified_evidence_batch_list
@@ -147,13 +150,19 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     prompt_var_list = [fwd_extracted_final_response,bck_extracted_final_response]
     same_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     if same_ans_resp == "Yes":
+        # prompt_var_list = [query,true_ans,fwd_extracted_final_response]
         prompt_var_list = [true_ans,fwd_extracted_final_response]
     else:
+        # prompt_var_list = [query,true_ans,bck_extracted_final_response]
         prompt_var_list = [true_ans,bck_extracted_final_response]
     gt_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    # extracted_gt_ans_resp = extract_value_from_single_key(gt_ans_resp, key = "evaluation:")
+    # comment = extract_value_from_single_key(gt_ans_resp, key = "comment:")
+    # accuracy = "Correct" if extracted_gt_ans_resp == "Yes" else "Incorrect"
     accuracy = "Correct" if gt_ans_resp == "Yes" else "Incorrect"
 
-    return same_ques_resp, same_ans_resp, accuracy
+
+    return same_ques_resp, same_ans_resp, accuracy #, comment
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation

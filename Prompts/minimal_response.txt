@@ -7,6 +7,8 @@ Note: The source can either be the URL links from the External sources or your k
 
 Note: The premise of the question indicates whether the information contained in the question leads to a valid answer consistent with our knowledge. If this is the case then denote the premise as Valid otherwise it is Invalid. Also provide a short explanation for it by analysing the premise and your knowledge.
 
+Note: If the information presented in the sources are conflicting with each other then carefully consider the relevant ones and make a decision to proceed with the most recent information.
+
 Note that the external sources is only for your reference. Your confidence level should represent your certainty in your own answer, rather than the accuracy of the information provided in the external sources. 
 
 Question: {}

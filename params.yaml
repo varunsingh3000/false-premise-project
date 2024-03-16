@@ -2,14 +2,15 @@
     "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-medium-latest","mistral-large-latest"
     "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-3.5-turbo-0125"
     "TEMPERATURE": 0.0, #default - 0.0
-    "CANDIDATE_TEMPERATURE": 0.7, #default - 0.3
-    "DATASET_NAME": "freshqa", #default - "freshqa", "QAQA"
+    "CANDIDATE_TEMPERATURE": 0.5, #default - 0.3
+    "DATASET_NAME": "QAQA", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\"
-    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
+    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_qaqa.json", 
     "QUERY_PROMPT_PATH": "Prompts\\minimal_response.txt", #default - "Prompts\\candidate_response.txt"
     "FORWARD_REASONING_PROMPT_PATH":"Prompts\\forward_reasoning.txt",
     "BACKWARD_REASONING_PROMPT_PATH":"Prompts\\backward_reasoning.txt",
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp.txt",
+    "AUTO_EVALUATION_QUERY_PROMPT_PATH": "Prompts\\eval_question_comp.txt",
     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\minimal_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
     "LLAMA_ADVERSARIAL_ATTACK_PROMPT_PATH":"Prompts\\adversarial_attack_meta.txt",
     "LLAMA_AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp_meta.txt",

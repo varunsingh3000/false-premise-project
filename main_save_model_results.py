@@ -77,12 +77,15 @@ def start_complete_workflow():
     final_accuracy_list = []
     same_answer_list = []
     same_question_list = []
+    final_accuracy_comment_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list, query_list) 
 
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
+        # print(evidence_batch_list)
+        # exit(1)
     
     for i, d in enumerate(evidence_batch_list):
         evidence_batch_list[i] = modify_evidence_batch_dict(d)
@@ -103,9 +106,9 @@ def start_complete_workflow():
 
         #appending results for forward reasoning
         fwd_reasoning_resp1_list.append(forward_reasoning_list[0])
-        fwd_reasoning_resp2_list.append(forward_reasoning_list[1])
-        fwd_reasoning_resp3_list.append(forward_reasoning_list[2])
-        fwd_reasoning_resp4_list.append(forward_reasoning_list[3])
+        # fwd_reasoning_resp2_list.append(forward_reasoning_list[1])
+        # fwd_reasoning_resp3_list.append(forward_reasoning_list[2])
+        # fwd_reasoning_resp4_list.append(forward_reasoning_list[3])
         fwd_original_response_list.append(fwd_main_answers_list[0])
         fwd_extracted_final_response = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Answer:")
         fwd_extracted_final_resp_exp = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Explanation:")
@@ -114,9 +117,9 @@ def start_complete_workflow():
 
         #appending results for backward attack
         bck_reasoning_resp1_list.append(backward_reasoning_list[0])
-        bck_reasoning_resp2_list.append(backward_reasoning_list[1])
-        bck_reasoning_resp3_list.append(backward_reasoning_list[2])
-        bck_reasoning_resp4_list.append(backward_reasoning_list[3])
+        # bck_reasoning_resp2_list.append(backward_reasoning_list[1])
+        # bck_reasoning_resp3_list.append(backward_reasoning_list[2])
+        # bck_reasoning_resp4_list.append(backward_reasoning_list[3])
         bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Answer:")
         bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Explanation:")
         bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
@@ -131,6 +134,7 @@ def start_complete_workflow():
         same_question_list.append(same_ques_resp)
         same_answer_list.append(same_ans_resp)
         final_accuracy_list.append(accuracy)
+        # final_accuracy_comment_list.append(comment)
 
 
     print("ADVERSARIAL ATTACK LIST: ", forward_reasoning_list)
@@ -147,6 +151,7 @@ def start_complete_workflow():
         "same_question":same_question_list,
         "same_answer":same_answer_list,
         "final_accuracy":final_accuracy_list,
+        # "final_accuracy_comment":final_accuracy_comment_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
@@ -168,13 +173,13 @@ def start_complete_workflow():
         "bck_final_ans":bck_final_response_list,
         "bck_final_ans_exp":bck_final_resp_exp_list,
         "fwd_resp_1": fwd_reasoning_resp1_list,
-        "fwd_resp_2": fwd_reasoning_resp2_list,
-        "fwd_resp_3": fwd_reasoning_resp3_list,
-        "fwd_resp_4": fwd_reasoning_resp4_list,
-        "bck_resp_1": bck_reasoning_resp1_list,
-        "bck_resp_2": bck_reasoning_resp2_list,
-        "bck_resp_3": bck_reasoning_resp3_list,
-        "bck_resp_4": bck_reasoning_resp4_list,
+        # "fwd_resp_2": fwd_reasoning_resp2_list,
+        # "fwd_resp_3": fwd_reasoning_resp3_list,
+        # "fwd_resp_4": fwd_reasoning_resp4_list,
+        "bck_resp_1": bck_reasoning_resp1_list
+        # "bck_resp_2": bck_reasoning_resp2_list,
+        # "bck_resp_3": bck_reasoning_resp3_list,
+        # "bck_resp_4": bck_reasoning_resp4_list,
     }
 
     df1 = pd.DataFrame(adv_attack_data_dict)
@@ -194,8 +199,10 @@ def start_complete_workflow():
                 'fwd_final_ans_exp': row['fwd_final_ans_exp'],
                 'bck_final_ans': row['bck_final_ans'],
                 'bck_final_ans_exp': row['bck_final_ans_exp'],
-                'forw_reasoning': [row['fwd_resp_1'], row['fwd_resp_2'], row['fwd_resp_3'], row['fwd_resp_4']],
-                'back_reasoning': [row['bck_resp_1'], row['bck_resp_2'], row['bck_resp_3'], row['bck_resp_4']]
+                'forw_reasoning': [row['fwd_resp_1']],
+                'back_reasoning': [row['bck_resp_1']]
+                # 'forw_reasoning': [row['fwd_resp_1'], row['fwd_resp_2'], row['fwd_resp_3'], row['fwd_resp_4']],
+                # 'back_reasoning': [row['bck_resp_1'], row['bck_resp_2'], row['bck_resp_3'], row['bck_resp_4']]
             }
 
     # Convert the structured data dictionary to JSON format
