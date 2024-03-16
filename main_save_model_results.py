@@ -33,7 +33,7 @@ def start_workflow(query,external_evidence,MODEL):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence)
-    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-large-latest"]:
+    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)
@@ -156,7 +156,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "16thMar_for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -201,7 +201,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "for_back_reasoning.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "16thMar_for_back_reasoning.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)

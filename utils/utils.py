@@ -1,6 +1,7 @@
 import numpy as np
 import yaml
 import json
+import os
 from openai import OpenAI
 
 
@@ -15,7 +16,6 @@ EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
-AUTO_EVALUATION_BELIEF_PROMPT_PATH = config['AUTO_EVALUATION_BELIEF_PROMPT_PATH']
 
 
 def generate_evidence_batch(ques_id_list,query_list):
@@ -36,10 +36,10 @@ def modify_evidence_batch_dict(evidence_batch_list):
     if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
         return modified_evidence_batch_list
-    if 'organic_results' in evidence_batch_list:
-        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:2]
+    if 'organic_results' in evidence_batch_list:
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
     return modified_evidence_batch_list
 
 # function to parse through the api response and extract certain keywords in a dict
@@ -158,7 +158,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
 def perform_gpt_response(prompt_var_list,temperature,prompt_path):
-    client = OpenAI()
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
     with open(prompt_path, 'r') as file:
         file_content = file.read()
