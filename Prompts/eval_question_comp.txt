@@ -1,37 +1,14 @@
-Please evaluate the response to each given question under a relaxed evaluation, where hallucinations, outdated 
-information, and ill-formed answers are allowed, as long as the primary answer is accurate. Please credit the 
-response only if it provides a confident and definitive answer, or the correct answer can be obviously inferred 
-from the response. The primary or final answer when standing alone must be accurate. Any additional 
-information that is provided must not contradict the primary answer or reshape one's perception of it. For 
-answers that involve names of entities (e.g., people), complete names or commonly recognized names are 
-expected. We accept ill-formed responses (including those in a non-English language), as well as 
-hallucinated or outdated information that does not significantly impact the primary answer.
+Question 1: {}
+Answer 1: {}
 
-question: Is Tesla's stock price above $250 a share?
-correct answer(s): Yes
-response: Yes, it is. The stock price is currently at $207.
-comment: This is a valid question. While the primary answer in the response (Yes) is accurate, the additional 
-information contradicts the primary answer ($207 is not above $250). Thus, the response is not credited.
-evaluation: No
+Question 2: {} 
+Answer 2: {}
 
+If both answers provide the necessary information to satisfactorily answer their respective questions in more or less the same manner then consider them as same, even if the wording or approach may differ.
 
-question: Who is the latest winner of the Formula 1 world championship?
-correct answer(s): Max Verstappen | Max Emilian Verstappen
-response: Max Verstappen won the 2022 Formula 1 world championship. He is a Dutch racing driver who 
-competes in Formula One for Red Bull Racing. He is the son of former Formula One driver Jos Verstappen. 
-Verstappen started his racing career in karting at the age of seven. He won the 2013 European Karting 
-Championship and the 2013 World Karting Championship. In 2014, he moved to single-seater racing, competing 
-in the European Formula Three Championship. He won the championship in his first season, becoming the first 
-driver to do so since Nico Rosberg in 2005… # the rest is omitted for brevity
-comment: This is a valid question. Even though the response contains several instances of hallucinated 
-information (e.g., Max Verstappen did not win the Formula Three European Championship in 2014), the primary 
-answer in the response (Max Verstappen) is still accurate. Thus, the response is credited.
-evaluation: Yes
+Do not scrutinize every specific point or detail. If there is extra information present ignore that while making the comparison. 
 
-question: {}
-correct answer(s): {}
-response: {}
-comment: <Provide a short explanation>
-evaluation: <Yes/No - Provide response as only Yes or No>
+Give your response in the following format:
 
-Now, please always provide your comment and evaluation.
+comment: <explanation>
+evaluation: <Yes/No> 

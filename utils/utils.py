@@ -38,6 +38,8 @@ def modify_evidence_batch_dict(evidence_batch_list):
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
     if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
+        if 'related_questions' in evidence_batch_list:
+            modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
         return modified_evidence_batch_list
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
@@ -139,30 +141,53 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
 
 def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_final_response,bck_extracted_final_response,
                     fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp):
-    prompt_var_list = [query,bck_extracted_final_question]
-    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    
     if len(fwd_extracted_final_response.split()) < 5:
         fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
-
     if len(bck_extracted_final_response.split()) < 5:
         bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
 
-    prompt_var_list = [fwd_extracted_final_response,bck_extracted_final_response]
-    same_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    if same_ans_resp == "Yes":
-        # prompt_var_list = [query,true_ans,fwd_extracted_final_response]
-        prompt_var_list = [true_ans,fwd_extracted_final_response]
+    prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
+    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
+    comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
+
+    if extracted_gt_ans_resp1 == "Yes":
+        prompt_var_list = [query,true_ans,query,bck_extracted_final_response]
     else:
-        # prompt_var_list = [query,true_ans,bck_extracted_final_response]
-        prompt_var_list = [true_ans,bck_extracted_final_response]
-    gt_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+        prompt_var_list = [query,true_ans,query,bck_extracted_final_response]
+
+    accuracy_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
+    accuracy_comment = extract_value_from_single_key(accuracy_resp, key = "comment:")
+
+    accuracy = "Correct" if extracted_accuracy_resp == "Yes" else "Incorrect"
+    print(extracted_gt_ans_resp1, accuracy)
+    return extracted_gt_ans_resp1, comment1, accuracy, accuracy_comment
+    # prompt_var_list = [query,bck_extracted_final_question]
+    # same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    # if len(fwd_extracted_final_response.split()) < 5:
+    #     fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+
+    # if len(bck_extracted_final_response.split()) < 5:
+    #     bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+
+    # prompt_var_list = [fwd_extracted_final_response,bck_extracted_final_response]
+    # same_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    # if same_ans_resp == "Yes":
+    #     # prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+    #     prompt_var_list = [true_ans,fwd_extracted_final_response]
+    # else:
+    #     # prompt_var_list = [query,true_ans,bck_extracted_final_response]
+    #     prompt_var_list = [true_ans,bck_extracted_final_response]
+    # gt_ans_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     # extracted_gt_ans_resp = extract_value_from_single_key(gt_ans_resp, key = "evaluation:")
     # comment = extract_value_from_single_key(gt_ans_resp, key = "comment:")
     # accuracy = "Correct" if extracted_gt_ans_resp == "Yes" else "Incorrect"
-    accuracy = "Correct" if gt_ans_resp == "Yes" else "Incorrect"
+    # accuracy = "Correct" if gt_ans_resp == "Yes" else "Incorrect"
 
 
-    return same_ques_resp, same_ans_resp, accuracy #, comment
+    # return same_ques_resp, same_ans_resp, accuracy #, comment
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
@@ -184,8 +209,8 @@ def perform_gpt_response(prompt_var_list,temperature,prompt_path):
         temperature=temperature,
         max_tokens=600
         )
-    print("#"*20)
-    print("INITIAL LLM RESPONSE")
-    print(chat_completion.choices[0].message)
-    print("The token usage: ", chat_completion.usage)
+    # print("#"*20)
+    # print("INITIAL LLM RESPONSE")
+    # print(chat_completion.choices[0].message)
+    # print("The token usage: ", chat_completion.usage)
     return chat_completion.choices[0].message.content.strip()

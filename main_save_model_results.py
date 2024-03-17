@@ -128,13 +128,13 @@ def start_complete_workflow():
         bck_final_question_list.append(bck_extracted_final_question)
 
         #auto evaluation
-        same_ques_resp, same_ans_resp, accuracy = auto_evaluation(query,bck_extracted_final_question,true_ans,
+        same_ques_resp, same_ans_resp, accuracy, comment = auto_evaluation(query,bck_extracted_final_question,true_ans,
                                                 fwd_extracted_final_response,bck_extracted_final_response,
                                                 fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp)
         same_question_list.append(same_ques_resp)
         same_answer_list.append(same_ans_resp)
         final_accuracy_list.append(accuracy)
-        # final_accuracy_comment_list.append(comment)
+        final_accuracy_comment_list.append(comment)
 
 
     print("ADVERSARIAL ATTACK LIST: ", forward_reasoning_list)
@@ -151,7 +151,7 @@ def start_complete_workflow():
         "same_question":same_question_list,
         "same_answer":same_answer_list,
         "final_accuracy":final_accuracy_list,
-        # "final_accuracy_comment":final_accuracy_comment_list,
+        "final_accuracy_comment":final_accuracy_comment_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
