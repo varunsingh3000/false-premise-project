@@ -34,7 +34,7 @@ WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
-    if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+    if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-0125","gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium"]:
         result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)

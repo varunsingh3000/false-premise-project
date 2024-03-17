@@ -6,7 +6,7 @@ Answer 2: {}
 
 If both answers provide the necessary information to satisfactorily answer their respective questions in more or less the same manner then consider them as same, even if the wording or approach may differ.
 
-Do not scrutinize every specific point or detail. If there is extra information present ignore that while making the comparison. 
+If there is extra information present ignore that while making the comparison as long as the main information content between both the questions and answers is the same. 
 
 Give your response in the following format:
 

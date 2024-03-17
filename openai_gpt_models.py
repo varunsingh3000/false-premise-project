@@ -88,12 +88,12 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 responses_dict[WORKFLOW_RUN_COUNT].append(message)
                 print(message)
                 continue
-            print("Candidate response {}: {}".format(i,response_dict))
+            # print("Candidate response {}: {}".format(i,response_dict))
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             prompt_var_list = [intial_explanation, response_dict['Answer:'] + response_dict['Explanation:']]
             uncertainty_response = perform_gpt_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
-            print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
+            # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
@@ -143,7 +143,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
 
 def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     print("OpenAI model response process starts")
-    client = OpenAI() # defaults to os.environ.get("OPENAI_API_KEY")
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY_NEW")) # defaults to os.environ.get("OPENAI_API_KEY")
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     # extract the key terms from the generated response into a dict
