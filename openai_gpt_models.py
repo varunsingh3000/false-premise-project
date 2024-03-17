@@ -41,13 +41,13 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=MODEL,
-        temperature=temperature
-        # top_p=temperature
+        temperature=temperature,
+        max_tokens = 600
         )
-    print("#"*20)
-    print("INITIAL LLM RESPONSE")
-    print(chat_completion.choices[0].message)
-    print("The token usage: ", chat_completion.usage)
+    # print("#"*20)
+    # print("INITIAL LLM RESPONSE")
+    # print(chat_completion.choices[0].message)
+    # print("The token usage: ", chat_completion.usage)
     return chat_completion.choices[0].message.content.strip()
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
@@ -149,7 +149,7 @@ def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     # extract the key terms from the generated response into a dict
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
-    print(WORKFLOW_RUN_COUNT)
+    # print(WORKFLOW_RUN_COUNT)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
     print("OpenAI model response process ends")
     if result is None:

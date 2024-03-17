@@ -64,7 +64,7 @@ def start_complete_workflow():
 
     #list variable to save automatic evaluation results
     accuracy_result_list = []
-
+    final_accuracy_comment_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list,query_list)
@@ -79,7 +79,7 @@ def start_complete_workflow():
         print("NEW QUERY HAS STARTED"*4)
         responses_dict, final_response, final_confidence_value = start_workflow(query,
                                                             external_evidence,MODEL,WORKFLOW_RUN_COUNT)
-        print("RESPONSES DICT : ", responses_dict)
+        # print("RESPONSES DICT : ", responses_dict)
         print("QUERY HAS FINISHED"*4)    
 
         temp_candidate_response_list = []
@@ -108,8 +108,9 @@ def start_complete_workflow():
             if final_resp_text:  # If Answer: key exists and is not empty, add a space before Explanation:
                 final_resp_text += " "
             final_resp_text += final_response['Explanation:']
-        accuracy_response = auto_evaluation(true_ans, final_resp_text)
-        accuracy_result_list.append(accuracy_response)
+        extracted_gt_ans_resp1, accuracy_comment, accuracy = auto_evaluation(query,true_ans,final_resp_text)
+        accuracy_result_list.append(accuracy)
+        final_accuracy_comment_list.append(accuracy_comment)
         final_response_list.append(final_resp_text)
 
     qa_data_dict = {
@@ -119,6 +120,7 @@ def start_complete_workflow():
         "true_ans":true_ans_list,
         "final_answer":final_response_list,
         "accuracy":accuracy_result_list,
+        "accuracy_comment":final_accuracy_comment_list,
         "original_response": og_response_list,
         "final_ans_dict":final_ans_dict_list,
         "final_confi":finalconfi_list,

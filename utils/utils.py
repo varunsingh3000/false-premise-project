@@ -12,7 +12,9 @@ with open('params.yaml', 'r') as file:
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
+CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
+AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
 
 def generate_evidence_batch(ques_id_list,query_list):
     # evidence list for saving results in batch
@@ -24,6 +26,21 @@ def generate_evidence_batch(ques_id_list,query_list):
     # Write the list to the JSON file
     with open(EVIDENCE_BATCH_SAVE_PATH, 'w') as json_file:
         json.dump(evidence_batch_list, json_file, indent=4)
+
+def modify_evidence_batch_dict(evidence_batch_list):
+    modified_evidence_batch_list = {}
+    if 'QueryID' in evidence_batch_list:
+        modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
+    if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
+        modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
+        if 'related_questions' in evidence_batch_list:
+            modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
+        return modified_evidence_batch_list
+    if 'related_questions' in evidence_batch_list:
+        modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
+    if 'organic_results' in evidence_batch_list:
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
+    return modified_evidence_batch_list
 
 
 # function to parse through the api response and extract certain keywords in a dict
@@ -82,6 +99,30 @@ def check_dict_keys_condition(response_dict):
         return True
     return False
 
+def extract_value_from_single_key(response, key):
+    # Find the index of key
+    index = response.find(key)
+
+    if index != -1:
+        # Extract the text after key
+        text = response[index + len(key):].strip()
+        
+        # Find the next space after the value
+        next_space_index = text.find("\n")
+        if next_space_index == -1:
+            next_space_index = len(text)
+
+        # Extract the value after the key
+        if next_space_index != -1:
+            extracted_text = text[:next_space_index].strip()
+            return extracted_text
+        else:
+            print("No value found after the {} key.".format(key))
+    else:
+        print("{} key not found".format(key))
+
+    return response
+
 def extract_question_after_binary(prompt):
     # Find the index of "Binary Question: "
     binary_index = prompt.find("Binary Question:")
@@ -113,10 +154,14 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
     }
     return dummy_response_dict
 
-def auto_evaluation(true_answer,final_answer):
-    prompt_var_list = [true_answer,final_answer]
-    accuracy_response = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    return accuracy_response
+def auto_evaluation(query,true_ans,final_resp_text):
+    prompt_var_list = [query,true_ans,query,final_resp_text]
+    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
+    accuracy_comment = extract_value_from_single_key(same_ques_resp, key = "comment:")
+    accuracy = "Correct" if extracted_gt_ans_resp1 == "Yes" else "Incorrect"
+    print(extracted_gt_ans_resp1, accuracy)
+    return extracted_gt_ans_resp1, accuracy_comment, accuracy
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
