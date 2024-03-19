@@ -83,10 +83,10 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
     if len(fwd_extracted_final_response.split()) < 5:
         fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
-    backward_prompt_list = ["Based on the above discussion, provide an explanation regarding the topic being discussed, the veracity of the discussion and whether it is logical and makes sense. Based on your explanation provide your answer and explanation. Also provide a question that is answered by your answer, ensure that your answer directly answers your generated question as much as possible. Use the following format: Final Answer: Final Explanation: Final Question:"]
+    backward_prompt_list = ["Based on the above discussion, provide an explanation regarding the topic being discussed, the veracity of the discussion and whether it is logical using your knowledge and the external sources. Based on your explanation provide your answer and explanation. Also provide a question that is answered by your answer, ensure that your answer directly answers your generated question as much as possible. Use the following format: Final Answer: Final Explanation: Final Question:"]
     for addition in backward_prompt_list:
-        prompt_var_list = [fwd_extracted_final_response, addition]
-        # prompt_var_list = [external_evidence, fwd_extracted_final_response + " " + addition]
+        # prompt_var_list = [fwd_extracted_final_response, addition]
+        prompt_var_list = [external_evidence, fwd_extracted_final_response + " " + addition]
         # prompt_var_list = [fwd_extracted_final_response, addition]
         back_reasoning_response = perform_gpt_response(client,prompt_var_list,TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
         if addition == backward_prompt_list[-1]:
