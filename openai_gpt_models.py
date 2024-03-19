@@ -118,7 +118,11 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
     
         # if we are here then that means the matching condition was unsuccessful, this means that the final response
         # will be the one with the highest verbalise confidence
-        
+        message = "It seems the candidate responses could not reach an agreement for self-consistency to work."
+        print(message)
+        final_confidence_value = '-1'
+        final_response = message
+        return responses_dict, final_response, final_confidence_value
         # Flatten the list of dictionaries
         # all_candi_resp = [entry for sublist in responses_dict.values() for entry in sublist]
         # Filter out non-dictionary elements from the list, this is done to ensure get method below doesn't throw an error
