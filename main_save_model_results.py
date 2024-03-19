@@ -62,9 +62,7 @@ def start_complete_workflow():
     candidate_responses_list = []
     final_response_list = []
 
-    #list variable to save automatic evaluation results
-    accuracy_result_list = []
-    final_accuracy_comment_list = []
+    
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list,query_list)
@@ -108,9 +106,7 @@ def start_complete_workflow():
             if final_resp_text:  # If Answer: key exists and is not empty, add a space before Explanation:
                 final_resp_text += " "
             final_resp_text += final_response['Explanation:']
-        extracted_gt_ans_resp1, accuracy_comment, accuracy = auto_evaluation(query,true_ans,final_resp_text)
-        accuracy_result_list.append(accuracy)
-        final_accuracy_comment_list.append(accuracy_comment)
+        
         final_response_list.append(final_resp_text)
 
     qa_data_dict = {
@@ -119,8 +115,6 @@ def start_complete_workflow():
         "question":question_list,
         "true_ans":true_ans_list,
         "final_answer":final_response_list,
-        "accuracy":accuracy_result_list,
-        "accuracy_comment":final_accuracy_comment_list,
         "original_response": og_response_list,
         "final_ans_dict":final_ans_dict_list,
         "final_confi":finalconfi_list,
@@ -159,4 +153,26 @@ def start_complete_workflow():
 
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest.xlsx",index=False)  # Set index=False to not write row indices
 
-start_complete_workflow()
+
+def start_evaluation():
+    #list variable to save automatic evaluation results
+    accuracy_result_list = []
+    final_accuracy_comment_list = []
+    path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
+    # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
+    df = pd.read_excel(path)
+    query_list = df["question"].tolist()
+    true_ans_list = df["true_ans"].tolist()
+    final_answer_list = df["final_answer"].tolist()
+    for query,true_ans,final_resp_text in zip(query_list,true_ans_list,final_answer_list):
+        extracted_gt_ans_resp1, accuracy_comment, accuracy = auto_evaluation(query,true_ans,final_resp_text)
+        accuracy_result_list.append(accuracy)
+        final_accuracy_comment_list.append(accuracy_comment)
+
+    df["accuracy"] = accuracy_result_list
+    df["accuracy_comment"] = final_accuracy_comment_list
+
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
+
+# start_complete_workflow()
+start_evaluation()

@@ -156,11 +156,11 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
     return dummy_response_dict
 
 def auto_evaluation(query,true_ans,final_resp_text):
-    prompt_var_list = [query,true_ans,query,final_resp_text]
-    same_ques_resp = perform_gpt_response(prompt_var_list,CANDIDATE_TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    prompt_var_list = [query,true_ans,final_resp_text]
+    same_ques_resp = perform_gpt_response(prompt_var_list,CANDIDATE_TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(same_ques_resp, key = "comment:")
-    accuracy = "Correct" if extracted_gt_ans_resp1 == "Yes" else "Incorrect"
+    accuracy = "Correct" if extracted_gt_ans_resp1 == "correct" else "Incorrect"
     print(query,extracted_gt_ans_resp1, accuracy,accuracy_comment)
     return extracted_gt_ans_resp1, accuracy_comment, accuracy
 
