@@ -74,11 +74,11 @@ def start_complete_workflow():
         
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
-        print("NEW QUERY HAS STARTED"*4)
+        # print("NEW QUERY HAS STARTED"*4)
         responses_dict, final_response, final_confidence_value = start_workflow(query,
                                                             external_evidence,MODEL,WORKFLOW_RUN_COUNT)
         # print("RESPONSES DICT : ", responses_dict)
-        print("QUERY HAS FINISHED"*4)    
+        # print("QUERY HAS FINISHED"*4)    
 
         temp_candidate_response_list = []
         temp_indi_resp_list=[]
@@ -174,5 +174,5 @@ def start_evaluation():
 
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
 
-# start_complete_workflow()
+start_complete_workflow()
 start_evaluation()

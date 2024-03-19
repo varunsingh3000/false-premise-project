@@ -34,9 +34,9 @@ def modify_evidence_batch_dict(evidence_batch_list):
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
     if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
-        # if 'related_questions' in evidence_batch_list:
-        #     modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
-        # return modified_evidence_batch_list
+        if 'related_questions' in evidence_batch_list:
+            modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
+        return modified_evidence_batch_list
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
@@ -157,17 +157,17 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
 
 def auto_evaluation(query,true_ans,final_resp_text):
     prompt_var_list = [query,true_ans,final_resp_text]
-    same_ques_resp = perform_gpt_response(prompt_var_list,CANDIDATE_TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(same_ques_resp, key = "comment:")
     accuracy = "Correct" if extracted_gt_ans_resp1 == "correct" else "Incorrect"
-    print(query,extracted_gt_ans_resp1, accuracy,accuracy_comment)
+    print(query,accuracy,accuracy_comment)
     return extracted_gt_ans_resp1, accuracy_comment, accuracy
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
 def perform_gpt_response(prompt_var_list,temperature,prompt_path):
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY_NEW"))
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
     with open(prompt_path, 'r') as file:
         file_content = file.read()

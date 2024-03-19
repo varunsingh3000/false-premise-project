@@ -53,7 +53,7 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
 # function to call the LLM to generate multiple responses which will then be compared with the original response
 # using their core concepts
 def perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT):
-    print("Uncertainty Estimation process starts")
+    # print("Uncertainty Estimation process starts")
     if check_dict_keys_condition(og_response_dict):
         responses_dict = {}
         # print(WORKFLOW_RUN_COUNT)
@@ -136,14 +136,14 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         final_confidence_value = '-1'
         final_response = og_response_dict.copy()
     # Now the adversarial attack part will start
-    print("The first run of the workflow has finished. Now the adversarial attacks will start.")
+    # print("The first run of the workflow has finished. Now the adversarial attacks will start.")
     return responses_dict, final_response, final_confidence_value
 
 
 
 def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
-    print("OpenAI model response process starts")
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY_NEW")) # defaults to os.environ.get("OPENAI_API_KEY")
+    print("OpenAI model response process starts: ", query)
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY")) # defaults to os.environ.get("OPENAI_API_KEY")
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     # extract the key terms from the generated response into a dict
@@ -151,7 +151,7 @@ def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     og_response_dict = process_response(chat_completion)
     # print(WORKFLOW_RUN_COUNT)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
-    print("OpenAI model response process ends")
+    # print("OpenAI model response process ends")
     if result is None:
         print("Error: Result is None")
     else:
