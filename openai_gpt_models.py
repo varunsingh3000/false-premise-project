@@ -52,7 +52,7 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
 
 # performs adversarial attack hallucination detection process by asking the user the question
 def perform_adversarial_attack(client,query,external_evidence,final_response):
-    print("Adversarial attack process starts")
+    # print("Adversarial attack process starts")
     forward_reasoning_list = []
     backward_reasoning_list = []
     fwd_main_answers_list = []
@@ -74,7 +74,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
         all_responses_list.append(final_response)
         prompt_var_list = [query, final_response]
         forward_reasoning_list.append(f"{query}\n{final_response}")
-    print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
+    # print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
     fwd_main_answers_list.append(final_response) #final response i.e. last response that is to be used as the final answer
 
     #backward reasoning
@@ -101,7 +101,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
 
 
 def start_openai_api_model_response(query,external_evidence):
-    print("OpenAI model response process starts")
+    print("OpenAI model response process starts",query)
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY")) # defaults to os.environ.get("OPENAI_API_KEY")
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
@@ -113,6 +113,6 @@ def start_openai_api_model_response(query,external_evidence):
     forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, \
                                     all_responses_list = perform_adversarial_attack(client,query,
                                     external_evidence,(og_response_dict['Answer:'] + og_response_dict['Explanation:']))
-    print("OpenAI model response process ends")
+    # print("OpenAI model response process ends")
     return og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
                                                         bck_main_answers_list, all_responses_list
