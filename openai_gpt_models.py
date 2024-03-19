@@ -120,21 +120,20 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         # will be the one with the highest verbalise confidence
         
         # Flatten the list of dictionaries
-        all_candi_resp = [entry for sublist in responses_dict.values() for entry in sublist]
+        # all_candi_resp = [entry for sublist in responses_dict.values() for entry in sublist]
         # Filter out non-dictionary elements from the list, this is done to ensure get method below doesn't throw an error
-        all_candi_resp = [entry for entry in all_candi_resp if isinstance(entry, dict)]
+        # all_candi_resp = [entry for entry in all_candi_resp if isinstance(entry, dict)]
         # Find the dictionary entry with the highest confidence
-        final_response = max(all_candi_resp, key=lambda x: x.get('Confidence Level:', '-1'))
-        final_confidence_value = final_response['Confidence Level:']
-
-    else:
-        print("It seems all the keys in the original response were not available so candidate response generation \
-              for the self-consistency approach cannot happen. In this case the original response is considered \
-              as it is and the next question is answered. {}".format(og_response_dict))
-        responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
-                                                    WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
-        final_confidence_value = '-1'
-        final_response = og_response_dict.copy()
+        # final_response = max(all_candi_resp, key=lambda x: x.get('Confidence Level:', '-1'))
+        # final_confidence_value = final_response['Confidence Level:']
+            
+    message = "It seems all the keys in the original response were not available so candidate response generation \
+            for the self-consistency approach cannot happen."
+    print(message)
+    responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
+                                                WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
+    final_confidence_value = '-1'
+    final_response = message
     # Now the adversarial attack part will start
     # print("The first run of the workflow has finished. Now the adversarial attacks will start.")
     return responses_dict, final_response, final_confidence_value
