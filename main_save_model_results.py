@@ -73,11 +73,6 @@ def start_complete_workflow():
     bck_final_resp_exp_list = []
     bck_final_question_list = []
 
-    #list variable to save automatic evaluation results
-    final_accuracy_list = []
-    same_answer_list = []
-    same_question_list = []
-    final_accuracy_comment_list = []
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list, query_list) 
@@ -127,15 +122,6 @@ def start_complete_workflow():
         bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
         bck_final_question_list.append(bck_extracted_final_question)
 
-        #auto evaluation
-        same_ques_resp, same_ans_resp, accuracy, comment = auto_evaluation(query,bck_extracted_final_question,true_ans,
-                                                fwd_extracted_final_response,bck_extracted_final_response,
-                                                fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp)
-        same_question_list.append(same_ques_resp)
-        same_answer_list.append(same_ans_resp)
-        final_accuracy_list.append(accuracy)
-        final_accuracy_comment_list.append(comment)
-
 
     print("ADVERSARIAL ATTACK LIST: ", forward_reasoning_list)
 
@@ -148,10 +134,6 @@ def start_complete_workflow():
         "bck_final_ans":bck_final_response_list,
         "bck_final_ans_exp":bck_final_resp_exp_list,
         "bck_final_question":bck_final_question_list,
-        "same_question":same_question_list,
-        "same_answer":same_answer_list,
-        "final_accuracy":final_accuracy_list,
-        "final_accuracy_comment":final_accuracy_comment_list,
         "original_response": original_response_list,
         "evidence": evidence_list
     }
@@ -215,9 +197,44 @@ def start_complete_workflow():
     # print(df1.head())
     # df1.to_csv(RESULT_SAVE_PATH + MODEL + "adv_attack.csv",index=False)  # Set index=False to not write row indices
 
-start_complete_workflow()
+def start_evaluation():
+    #list variable to save automatic evaluation results
+    final_accuracy_list = []
+    same_answer_list = []
+    same_question_list = []
+    final_accuracy_comment_list = []
+    path = RESULT_SAVE_PATH + MODEL + "16thMar_for_back_reasoning_og50.xlsx"
+    # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
+    df = pd.read_excel(path)
+    query_list = df["question"].tolist()
+    bck_extracted_final_question_list = df["bck_final_question"].tolist()
+    true_ans_list = df["true_ans"].tolist()
+    fwd_extracted_final_response_list = df["fwd_final_ans"].tolist()
+    fwd_extracted_final_response_exp_list = df["fwd_final_ans_exp"].tolist()
+    bwd_extracted_final_response_list = df["bck_final_ans"].tolist()
+    bwd_extracted_final_response_exp_list = df["bck_final_ans_exp"].tolist()
+    for query,bck_extracted_final_question,true_ans,fwd_extracted_final_response, \
+        bck_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp \
+        in zip(query_list,bck_extracted_final_question_list,true_ans_list,fwd_extracted_final_response_list,
+               bwd_extracted_final_response_list,fwd_extracted_final_response_exp_list,bwd_extracted_final_response_exp_list):
+        same_ques_resp, same_ans_resp, accuracy, comment = auto_evaluation(query,bck_extracted_final_question,true_ans,
+                                                fwd_extracted_final_response,bck_extracted_final_response,
+                                                fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp)
+        same_question_list.append(same_ques_resp)
+        same_answer_list.append(same_ans_resp)
+        final_accuracy_list.append(accuracy)
+        final_accuracy_comment_list.append(comment)
+
+    df["same_question"] = same_question_list
+    df["same_answer"] = same_answer_list
+    df["final_accuracy"] = final_accuracy_list
+    df["final_accuracy_comment"] = final_accuracy_comment_list
+
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)    
 
 
+# start_complete_workflow()
+start_evaluation()
 
 
 

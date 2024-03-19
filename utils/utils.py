@@ -142,27 +142,29 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
 def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_final_response,bck_extracted_final_response,
                     fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp):
     
-    if len(fwd_extracted_final_response.split()) < 5:
-        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
-    if len(bck_extracted_final_response.split()) < 5:
-        bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+    # if len(fwd_extracted_final_response.split()) < 5:
+    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+    # if len(bck_extracted_final_response.split()) < 5:
+    bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
 
     prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
     same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    print(same_ques_resp)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
 
-    if extracted_gt_ans_resp1 == "Yes":
-        prompt_var_list = [query,true_ans,query,bck_extracted_final_response]
+    if extracted_gt_ans_resp1 == "Identical":
+        prompt_var_list = [query,true_ans,bck_extracted_final_response]
     else:
-        prompt_var_list = [query,true_ans,query,bck_extracted_final_response]
+        prompt_var_list = [query,true_ans,bck_extracted_final_response]
 
-    accuracy_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    accuracy_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    print(accuracy_resp)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(accuracy_resp, key = "comment:")
 
-    accuracy = "Correct" if extracted_accuracy_resp == "Yes" else "Incorrect"
-    print(extracted_gt_ans_resp1, accuracy)
+    accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
+    # print(query,comment1,accuracy_comment,accuracy)
     return extracted_gt_ans_resp1, comment1, accuracy, accuracy_comment
     # prompt_var_list = [query,bck_extracted_final_question]
     # same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
