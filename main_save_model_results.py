@@ -20,15 +20,9 @@ with open('params.yaml', 'r') as file:
 MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
-QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
 RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
 DATASET_NAME = config['DATASET_NAME']
-#defines the max no of candidate responses to generate, the actual no of responses could vary depending on the matching condition
 MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
-# WORKFLOW_RUN_COUNT variable keeps track of the amount of times the workflow has run, this has to be less than MAX_WORKFLOW_RUN_COUNT
-# If it exceeds the count then the workflow is terminated. It is necessary that this variable is defined in main.py since for
-# every question the WORKFLOW_RUN_COUNT is reset to 0 before being passed in the loop.
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
 # Func to start workflow for a query

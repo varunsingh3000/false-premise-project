@@ -15,7 +15,6 @@ EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
-AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
 
 def generate_evidence_batch(ques_id_list,query_list):
     # evidence list for saving results in batch

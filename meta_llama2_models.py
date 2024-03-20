@@ -1,5 +1,3 @@
-# Calling the OpenAI GPT models 3.5 and 4
-
 import yaml
 import os 
 import boto3

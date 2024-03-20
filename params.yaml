@@ -1,5 +1,5 @@
 {
-    "MODEL": "mistral-small", #default - "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-medium-latest"
+    "MODEL": "gpt-3.5-turbo-0125", #default - "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-medium-latest"
     "EVAL_MODEL": "gpt-4-turbo-preview",
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 0.8, #default - 0.3
@@ -9,10 +9,8 @@
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_resp_fresh.txt",
-    "AUTO_EVALUATION_QUERY_PROMPT_PATH": "Prompts\\eval_question_comp.txt",
     "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
     "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
-    "LLAMA_AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp_meta.txt",
     "RESULT_SAVE_PATH": "Results\\evidence_test_", #default - "Results\\my_dataframe6.csv"
     "WORKFLOW_RUN_COUNT": 0, #default - 0
     "MAX_CANDIDATE_RESPONSES": 5, #default - 3
