@@ -43,19 +43,21 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
         model=MODEL,
         temperature=temperature,
         messages=message,
+        max_tokens=600
     )
     print("#"*20)
     print("INITIAL LLM RESPONSE")
     print(chat_completion.choices[0].message)
-    # print("The token usage: ", chat_completion.usage)
+    print("The token usage: ", chat_completion.usage)
     return chat_completion.choices[0].message.content.strip()
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
 # using their core concepts
 def perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT):
-    print("Uncertainty Estimation process starts")
+    # print("Uncertainty Estimation process starts")
     if check_dict_keys_condition(og_response_dict):
         responses_dict = {}
+        # print(WORKFLOW_RUN_COUNT)
         responses_dict.update({WORKFLOW_RUN_COUNT:[]})
         # original response is added to the zero index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(og_response_dict)
@@ -92,24 +94,20 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             prompt_var_list = [intial_explanation, response_dict['Answer:'] + response_dict['Explanation:']]
             uncertainty_response = perform_mistral_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
-            print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
+            # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
             # checking if the candidate response agrees with the original response
             if uncertainty_response.startswith("Yes") or uncertainty_response.upper() == "YES":
-                # response_dict.update({"Certainty_Estimation":"Yes"})
-                # print("INSIDE YES Candidate response {}: {}".format(i,response_dict))
                 #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
                 #and that response will be chosen as the potential final response
-                if confi_value > max_confi_value: 
+                if confi_value >= max_confi_value: 
                     max_confi_value = confi_value
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
             elif uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
-                # response_dict.update({"Certainty_Estimation":"No"})
-                # print("INSIDE NO Candidate response {}: {}".format(i,response_dict))
                 confi_value = 0
                 confi_match_list.append(confi_value)
             # checking whether sufficent candidate responses agree with the original response
@@ -118,28 +116,14 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 potential_final_response['Confidence Level:'] = f"{final_confidence_value}%"
                 final_response = potential_final_response.copy()
                 return responses_dict, final_response, final_confidence_value
+    
         # if we are here then that means the matching condition was unsuccessful, this means that the final response
         # will be the one with the highest verbalise confidence
-        
-        # Flatten the list of dictionaries
-        all_candi_resp = [entry for sublist in responses_dict.values() for entry in sublist]
-        # Filter out non-dictionary elements from the list, this is done to ensure get method below doesn't throw an error
-        all_candi_resp = [entry for entry in all_candi_resp if isinstance(entry, dict)]
-        # Find the dictionary entry with the highest confidence
-        final_response = max(all_candi_resp, key=lambda x: x.get('Confidence Level:', '-1'))
-        final_confidence_value = final_response['Confidence Level:']
-    
-    else:
-        print("It seems all the keys in the original response were not available so candidate response generation \
-              for the self-consistency approach cannot happen. In this case the original response is considered \
-              as it is and the next question is answered. {}".format(og_response_dict))
-        responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
-                                                    WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
+        message = "It seems the candidate responses could not reach an agreement for self-consistency to work."
+        print(message)
         final_confidence_value = '-1'
-        final_response = og_response_dict.copy()
-    # Now the adversarial attack part will start
-    print("The first run of the workflow has finished. Now the adversarial attacks will start.")
-    return responses_dict, final_response, final_confidence_value
+        final_response = message
+        return responses_dict, final_response, final_confidence_value
 
 
 def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
