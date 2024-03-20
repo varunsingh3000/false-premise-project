@@ -16,7 +16,6 @@ comment: While the primary answer in the response (Yes) is accurate, the additio
 information contradicts the primary answer ($207 is not above $250). Thus, the response is not credited.
 evaluation: incorrect
 
-
 question: Who is the latest winner of the Formula 1 world championship?
 correct answer(s): Max Verstappen | Max Emilian Verstappen
 response: Max Verstappen won the 2022 Formula 1 world championship. He is a Dutch racing driver who 

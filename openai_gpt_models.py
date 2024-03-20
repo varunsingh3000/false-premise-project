@@ -64,7 +64,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         responses_dict[WORKFLOW_RUN_COUNT].append(external_evidence)
         # question is added to the second index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(query)
-        intial_explanation = og_response_dict['Explanation:']
+        intial_explanation = og_response_dict['Answer:'] + og_response_dict['Explanation:']
         # initial_core_concept = og_response_dict['Core Concept:']
 
         match_count = 0
@@ -98,7 +98,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
             # checking if the candidate response agrees with the original response
-            if uncertainty_response.startswith("Yes") or uncertainty_response.upper() == "YES":
+            if uncertainty_response.startswith("Yes") or "YES" in uncertainty_response.upper():
                 #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
                 #and that response will be chosen as the potential final response
                 if confi_value >= max_confi_value: 
@@ -106,7 +106,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                     potential_final_response = response_dict.copy()
                 confi_match_list.append(confi_value)
                 match_count += 1
-            elif uncertainty_response.startswith("No") or uncertainty_response.upper() == "NO":
+            elif uncertainty_response.startswith("No") or "NO" in uncertainty_response.upper():
                 confi_value = 0
                 confi_match_list.append(confi_value)
             # checking whether sufficent candidate responses agree with the original response
