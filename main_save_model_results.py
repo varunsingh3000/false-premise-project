@@ -23,8 +23,6 @@ MODEL = config['MODEL']
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
 RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
 DATASET_NAME = config['DATASET_NAME']
-#defines the max no of candidate responses to generate, the actual no of responses could vary depending on the matching condition
-MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
 
@@ -233,7 +231,7 @@ def start_evaluation():
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)    
 
 
-start_complete_workflow()
+# start_complete_workflow()
 start_evaluation()
 
 

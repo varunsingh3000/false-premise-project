@@ -6,8 +6,8 @@ import requests
 from openai import OpenAI
 from rake_nltk import Rake
 
-from utils.utils import extract_value_from_single_key
 from utils.utils import process_response
+from utils.utils import extract_value_from_single_key
 from utils.utils import check_dict_keys_condition
 # from web_search import start_web_search
 # from web_search_serp import start_web_search
@@ -42,7 +42,7 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
         messages=message,
         model=MODEL,
         temperature=temperature,
-        max_tokens=600
+        max_tokens=1200
         )
     # print("#"*20)
     # print("INITIAL LLM RESPONSE")
@@ -80,8 +80,8 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
     #backward reasoning
     fwd_extracted_final_response = extract_value_from_single_key(final_response, key = "Forward Answer:")
     fwd_extracted_final_resp_exp = extract_value_from_single_key(final_response, key = "Forward Explanation:")
-    if len(fwd_extracted_final_response.split()) < 5:
-        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+    # if len(fwd_extracted_final_response.split()) < 5:
+    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
     backward_prompt_list = ["Based on the above discussion, provide an explanation regarding the topic being discussed, the veracity of the discussion and whether it is logical using your knowledge and the external sources. Based on your explanation provide your answer and explanation. Also provide a question that is answered by your answer, ensure that your answer directly answers your generated question as much as possible. Use the following format: Final Answer: Final Explanation: Final Question:"]
     for addition in backward_prompt_list:

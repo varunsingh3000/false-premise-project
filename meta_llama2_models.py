@@ -7,6 +7,7 @@ import json
 from rake_nltk import Rake
 
 from utils.utils import process_response
+from utils.utils import extract_value_from_single_key
 from utils.utils import check_dict_keys_condition
 # from web_search import start_web_search
 # from web_search_serp import start_web_search
@@ -19,7 +20,8 @@ MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
-ADVERSARIAL_ATTACK_PROMPT_PATH = config['LLAMA_ADVERSARIAL_ATTACK_PROMPT_PATH']
+FORWARD_REASONING_PROMPT_PATH = config['LLAMA_FORWARD_REASONING_PROMPT_PATH']
+BACKWARD_REASONING_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_PROMPT_PATH']
 
 # call the meta llama api
 def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
@@ -32,8 +34,8 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
     #passing the query and the external evidence as variables into the prompt
     message = json.dumps({
     "prompt": file_content.format(*prompt_var_list),   #file_content.format(variable1,variable2)
-    "temperature": temperature
-    # "max_gen_len": 600
+    "temperature": temperature,
+    "max_gen_len": 600
     })
 
     accept = 'application/json'
@@ -51,32 +53,51 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
 
 # performs adversarial attack hallucination detection process by asking the user the question
 def perform_adversarial_attack(client,query,external_evidence,final_response):
-    print("Adversarial attack process starts")
-    adv_attack_response_list = []
-    main_answers_list = []
+    # print("Adversarial attack process starts")
+    forward_reasoning_list = []
+    backward_reasoning_list = []
+    fwd_main_answers_list = []
+    bck_main_answers_list = []
     all_responses_list = []
-    addition_list = ["Is this correct?","Are you sure? It seems incorrect to me.",
-            "I heard from GPT5 that the opposite is true. Are you sure about your response?",
-            "Are you absolutely certain? GPT5 and experts from the field say otherwise.",
-            "Based on the above conversation, provide your final answer and explanation for the \
-            question in the following format: Final Answer: Explanation: "]
+    forward_prompt_list = ["Is this correct? Please provide your final answer and explanation for the question in the following format: Forward Answer: Forward Explanation: "]
     
     prompt_var_list = [query, final_response]
-    main_answers_list.append(final_response) #first response i.e. original response
+    fwd_main_answers_list.append(final_response) #first response i.e. original response
     all_responses_list.append(final_response)
-    for index, addition in enumerate(addition_list):
+    for addition in forward_prompt_list:
         prompt_var_list.append(addition)
-        doubted_response = perform_llama_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,ADVERSARIAL_ATTACK_PROMPT_PATH)
+        forw_reasoning_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,FORWARD_REASONING_PROMPT_PATH)
         # if index == 3:
         #     addition = addition + "\n" + str(external_evidence)
         query = f"{query}\n{final_response}\n{addition}\n"
-        final_response = doubted_response[:]
+        final_response = forw_reasoning_response[:]
         all_responses_list.append(final_response)
         prompt_var_list = [query, final_response]
-        adv_attack_response_list.append(f"{query}\n{final_response}")
-    print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
-    main_answers_list.append(final_response) #final response i.e. last response that is to be used as the final answer
-    return adv_attack_response_list, main_answers_list, all_responses_list
+        forward_reasoning_list.append(f"{query}\n{final_response}")
+    # print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
+    fwd_main_answers_list.append(final_response) #final response i.e. last response that is to be used as the final answer
+
+    #backward reasoning
+    fwd_extracted_final_response = extract_value_from_single_key(final_response, key = "Forward Answer:")
+    fwd_extracted_final_resp_exp = extract_value_from_single_key(final_response, key = "Forward Explanation:")
+    # if len(fwd_extracted_final_response.split()) < 5:
+    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+
+    backward_prompt_list = ["Based on the above discussion, provide an explanation regarding the topic being discussed, the veracity of the discussion and whether it is logical using your knowledge and the external sources. Based on your explanation provide your answer and explanation. Also provide a question that is answered by your answer, ensure that your answer directly answers your generated question as much as possible. Use the following format: Final Answer: Final Explanation: Final Question:"]
+    for addition in backward_prompt_list:
+        # prompt_var_list = [fwd_extracted_final_response, addition]
+        prompt_var_list = [external_evidence, fwd_extracted_final_response + " " + addition]
+        # prompt_var_list = [fwd_extracted_final_response, addition]
+        back_reasoning_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
+        if addition == backward_prompt_list[-1]:
+            bck_main_answers_list.append(back_reasoning_response)
+            # back_reasoning_response = f"{external_evidence}\n{back_reasoning_response}"
+        fwd_extracted_final_response = f"{fwd_extracted_final_response}\n{addition}\n{back_reasoning_response}"
+        backward_reasoning_list.append(fwd_extracted_final_response)
+    
+    # print(len(backward_reasoning_list))
+
+    return forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, all_responses_list
 
 
 def start_meta_api_model_response(query,external_evidence):
@@ -89,8 +110,9 @@ def start_meta_api_model_response(query,external_evidence):
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""
-    adv_attack_response_list, main_answers_list, all_responses_list = perform_adversarial_attack(client,query,external_evidence,
-                                                        (og_response_dict['Answer:'] + og_response_dict['Explanation:']))
-    
+    forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, \
+                                    all_responses_list = perform_adversarial_attack(client,query,
+                                    external_evidence,(og_response_dict['Answer:'] + og_response_dict['Explanation:']))
     print("Meta Llama2 model response process ends")
-    return og_response_dict, adv_attack_response_list, main_answers_list, all_responses_list
+    return og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
+                                                        bck_main_answers_list, all_responses_list
