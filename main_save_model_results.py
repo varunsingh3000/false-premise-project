@@ -141,7 +141,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "18thMar_for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -188,7 +188,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "18thMar_for_back_reasoning.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)
@@ -201,7 +201,7 @@ def start_evaluation():
     same_answer_list = []
     same_question_list = []
     final_accuracy_comment_list = []
-    path = RESULT_SAVE_PATH + MODEL + "18thMar_for_back_reasoning.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
@@ -228,7 +228,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
     df["final_accuracy_comment"] = final_accuracy_comment_list
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "21stMar_alltest_eval.xlsx",index=False)    
 
 
 # start_complete_workflow()
