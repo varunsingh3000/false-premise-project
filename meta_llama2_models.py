@@ -45,9 +45,9 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
 
     chat_completion = json.loads(response.get("body").read())
 
-    print("#"*20)
-    print("INITIAL LLM RESPONSE")
-    print(chat_completion.get("generation"))
+    # print("#"*20)
+    # print("INITIAL LLM RESPONSE")
+    # print(chat_completion.get("generation"))
     # print("The token usage: ", chat_completion.usage)
     return chat_completion.get("generation").strip()
 
@@ -101,18 +101,18 @@ def perform_adversarial_attack(client,query,external_evidence,final_response):
 
 
 def start_meta_api_model_response(query,external_evidence):
-    print("Meta Llama2 model response process starts")
+    print("Meta Llama2 model response process starts",query)
     client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     og_response_dict = process_response(chat_completion)
-    print(og_response_dict)
+    # print(og_response_dict)
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""
     forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, \
                                     all_responses_list = perform_adversarial_attack(client,query,
                                     external_evidence,(og_response_dict['Answer:'] + og_response_dict['Explanation:']))
-    print("Meta Llama2 model response process ends")
+    # print("Meta Llama2 model response process ends")
     return og_response_dict, forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, \
                                                         bck_main_answers_list, all_responses_list

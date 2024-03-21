@@ -142,6 +142,8 @@ def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW
 def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_final_response,bck_extracted_final_response,
                     fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp):
     
+    fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp = \
+            map(str,(fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp))
     # if len(fwd_extracted_final_response.split()) < 5:
     fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
     # if len(bck_extracted_final_response.split()) < 5:
