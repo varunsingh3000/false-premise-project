@@ -231,7 +231,7 @@ def start_evaluation():
     df.to_excel(RESULT_SAVE_PATH + MODEL + "21stMar_alltest_eval.xlsx",index=False)    
 
 
-# start_complete_workflow()
+start_complete_workflow()
 start_evaluation()
 
 
