@@ -140,7 +140,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
 
 
 def start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
-    print("Meta Llama2 model response process starts")
+    print("Meta Llama2 model response process starts ", query)
     client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
@@ -148,7 +148,7 @@ def start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
-    print("Meta Llama2 model response process ends")
+    # print("Meta Llama2 model response process ends")
     if result is None:
         print("Error: Result is None")
     else:

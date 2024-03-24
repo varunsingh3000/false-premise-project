@@ -45,10 +45,10 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
         messages=message,
         max_tokens=600
     )
-    print("#"*20)
-    print("INITIAL LLM RESPONSE")
-    print(chat_completion.choices[0].message)
-    print("The token usage: ", chat_completion.usage)
+    # print("#"*20)
+    # print("INITIAL LLM RESPONSE")
+    # print(chat_completion.choices[0].message)
+    # print("The token usage: ", chat_completion.usage)
     return chat_completion.choices[0].message.content.strip()
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
@@ -89,7 +89,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 responses_dict[WORKFLOW_RUN_COUNT].append(message)
                 print(message)
                 continue
-            print("Candidate response {}: {}".format(i,response_dict))
+            # print("Candidate response {}: {}".format(i,response_dict))
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             prompt_var_list = [intial_explanation, response_dict['Answer:'] + response_dict['Explanation:']]
@@ -138,7 +138,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
 
 
 def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
-    print("Mistral model response process starts")
+    print("Mistral model response process starts ", query)
     client = MistralClient(api_key=os.environ["MISTRAL_API_KEY"])
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_mistral_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
@@ -146,7 +146,7 @@ def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
-    print("Mistral model response process ends")
+    # print("Mistral model response process ends")
     if result is None:
         print("Error: Result is None")
     else:
