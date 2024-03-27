@@ -80,7 +80,7 @@ def start_complete_workflow():
         # print(evidence_batch_list)
         # exit(1)
     
-    for i, d in enumerate(evidence_batch_list):
+    for i, d in enumerate(evidence_batch_list[:]):
         evidence_batch_list[i] = modify_evidence_batch_dict(d)
 
                 
@@ -102,9 +102,11 @@ def start_complete_workflow():
         # fwd_reasoning_resp2_list.append(forward_reasoning_list[1])
         # fwd_reasoning_resp3_list.append(forward_reasoning_list[2])
         # fwd_reasoning_resp4_list.append(forward_reasoning_list[3])
-        fwd_original_response_list.append(fwd_main_answers_list[0])
-        fwd_extracted_final_response = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Answer:")
-        fwd_extracted_final_resp_exp = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Explanation:")
+        fwd_original_response_list.append(str(fwd_main_answers_list[0] + fwd_main_answers_list[1]))
+        fwd_extracted_final_response = fwd_main_answers_list[0]
+        fwd_extracted_final_resp_exp = fwd_main_answers_list[1]
+        # fwd_extracted_final_response = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Answer:")
+        # fwd_extracted_final_resp_exp = extract_value_from_single_key(fwd_main_answers_list[1], key = "Forward Explanation:")
         fwd_final_response_list.append(fwd_extracted_final_response)
         fwd_final_resp_exp_list.append(fwd_extracted_final_resp_exp)
 
@@ -141,7 +143,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -188,7 +190,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)
@@ -201,9 +203,10 @@ def start_evaluation():
     same_answer_list = []
     same_question_list = []
     final_accuracy_comment_list = []
-    path = RESULT_SAVE_PATH + MODEL + "21stMar_for_back_reasoning.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
-    df = pd.read_excel(path)
+    df_og = pd.read_excel(path)
+    df = df_og[:]
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
     true_ans_list = df["true_ans"].tolist()
@@ -228,7 +231,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
     df["final_accuracy_comment"] = final_accuracy_comment_list
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "21stMar_alltest_eval.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "27thMar_alltest_evalv1abd.xlsx",index=False)    
 
 
 start_complete_workflow()

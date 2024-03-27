@@ -1,9 +1,13 @@
-Please evaluate whether the questions provided, if they are answered could provide identical or similar information.
-Consider the main subject, context, and key points in each information.
-Please credit the questions only if they provide identical or nearly indentical information.
-Ignore any wording or phrasing differences between the questions as long as they do not significantly impact
-the possible information of each respective question. Ignore any additional information present in the questions
-as long as they do not significantly impact the potential information that could be inferred from each respective question. 
+Please evaluate the questions and their respective answers under a relaxed evaluation where hallucinations, outdated 
+information, and ill-formed answers are allowed, as long as the information presented in them is identical or nearly indentical.
+Please credit the questions and their respective answers only if they provide identical or nearly indentical information.
+Ignore any wording or phrasing differences between the questions and their answers as long as they do not significantly impact
+the primary answer of each respective question. Ignore any additional information present in the questions and their answers
+as long as they do not significantly impact the primary answer of each respective question. For questions and answers that 
+involve names of entities (e.g., people), complete names or commonly recognized names are expected. Regarding numerical 
+answers, approximate numbers are generally accepted as long as the information presented does not change significantly. 
+We accept ill-formed questions and their respective answers (including those in a non-English language), as well as 
+hallucinated or outdated information that does not significantly impact the information presented.
 
 Question 1: Why does Mars have three moons?
 Answer 1: Mars does not have three moons.
@@ -23,7 +27,7 @@ Question 2: When did basketball become a provisonal sport in the olympics?
 Answer 2: Basketball became a provisonal sport in the year 2000 after much consideration.
 
 comment: These two questions and their responses are different. Both the answers directly answer their respective questions.
-However the answers themselves are different because the questions are different. Question 1 asks whether basketball is an olympic 
+However the answers themselves are different because the questions are different. Questions asks whether basketball is an olympic 
 sport whereas Question 2 enquires when did basketball gain the status of a provisonal sport in the olympics which is different in
 terms of the information being provided. Questions 2 assumes that basketball is a provisional whereas Question 1 asks whether
 basketball is an olympic sport and this changes their answers significantly.

@@ -1,0 +1,35 @@
+Please evaluate whether the questions provided, if they are answered could provide identical or similar information.
+If there is a strong possiblity that the same information could be a part of both the questions then consider them as identical.
+Please credit the questions only if they provide identical or nearly indentical information.
+Ignore any wording or phrasing differences between the questions as long as they do not significantly impact
+the possible primary information of each respective question. Ignore any additional information present in the questions
+as long as they do not significantly impact the primary information of each respective question. 
+
+Question 1: Why does Mars have three moons?
+
+Question 2: How many moons does Mars have?
+
+comment: These two questions and their potential responses could be nearly identifical. Question 1 asks why Mars has three 
+moons which could have a potential answers that explains why Mars has the moons it does. Question 2 directly asks the number of moons
+Mars has which could also lead to the same level of information as Question 1. Although the questions are phrased slightly 
+different but overall the questions and possible information that could be conveyed is the same.
+evaluation: identical 
+
+Question 1: Is basketball an olympic sport?
+
+Question 2: When did basketball become a provisonal sport in the olympics?
+
+comment: These two questions are different. Question 1 asks whether basketball is an olympic 
+sport whereas Question 2 enquires when did basketball gain the status of a provisonal sport in the olympics which is different in
+terms of the information being provided. Questions 2 assumes that basketball is a provisional whereas Question 1 asks whether
+basketball is an olympic sport and this changes their possible answers significantly.
+evaluation: different 
+
+Question 1: {}
+
+Question 2: {}
+
+Use the following format for the output:
+
+comment: <explanation>
+evaluation: <identical/different> 

@@ -34,6 +34,11 @@ def generate_evidence_batch(ques_id_list,query_list):
 
 def modify_evidence_batch_dict(evidence_batch_list):
     modified_evidence_batch_list = {}
+    for key, value in evidence_batch_list.items():
+        if isinstance(value, list):
+            for item in value:
+                item.pop("url", None)
+    
     if 'QueryID' in evidence_batch_list:
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
     if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
@@ -144,19 +149,21 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     
     fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp = \
             map(str,(fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp))
+    
     # if len(fwd_extracted_final_response.split()) < 5:
     fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
     # if len(bck_extracted_final_response.split()) < 5:
     bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
 
-    prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
+    prompt_var_list = [query,bck_extracted_final_question]
+    # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
     same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
     print(same_ques_resp)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
 
-    if extracted_gt_ans_resp1 == "Identical":
-        prompt_var_list = [query,true_ans,bck_extracted_final_response]
+    if extracted_gt_ans_resp1 == "identical":
+        prompt_var_list = [query,true_ans,fwd_extracted_final_response]
     else:
         prompt_var_list = [query,true_ans,bck_extracted_final_response]
 
