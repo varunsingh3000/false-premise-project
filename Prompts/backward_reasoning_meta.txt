@@ -1,3 +1,15 @@
 <s>[INST] <<SYS>> External Sources: {}
 
-{} <</SYS>> [/INST]
+Statement: {}
+
+Based on the above Statement, provide an explanation regarding the topic being discussed using abductive reasoning. 
+Provide your comments on whether the Statement is accurate and logical using your knowledge and the External Sources. 
+
+Next given the Statement, engage in abductive reasoning to form a question that directly addresses the information 
+provided in the Statement. Ensure that the question is concise, clear, and directly relevant to the content of Statement.
+
+Use the following format for the output:
+
+Final Answer: <based on your explanation about the topic, a final answer response>
+Final Explanation: <your explanation response>
+Final Question: <based on abductive reasoning, the final question> <</SYS>> [/INST]

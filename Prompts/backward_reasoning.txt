@@ -13,4 +13,3 @@ Use the following format for the output:
 Final Answer: <based on your explanation about the topic, a final answer response>
 Final Explanation: <your explanation response>
 Final Question: <based on abductive reasoning, the final question>
-
