@@ -3,7 +3,9 @@ import yaml
 import json
 import os
 from openai import OpenAI
-
+import boto3
+from mistralai.client import MistralClient
+from mistralai.models.chat_completion import ChatMessage
 
 # from web_search import start_web_search
 from web_search_serp import start_web_search
@@ -13,11 +15,14 @@ with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
+MODEL = config['MODEL']
 EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
 AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
+LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH = config['LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH']
+
 
 
 
@@ -150,14 +155,21 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp = \
             map(str,(fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp))
     
-    # if len(fwd_extracted_final_response.split()) < 5:
-    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
-    # if len(bck_extracted_final_response.split()) < 5:
-    bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+    if len(fwd_extracted_final_response.split()) < 5:
+        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+    if len(bck_extracted_final_response.split()) < 5:
+        bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+    # bck_extracted_final_response = bck_extracted_final_resp_exp
 
     prompt_var_list = [query,bck_extracted_final_question]
     # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
-    same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+        same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
+        same_ques_resp = perform_mistral_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+    elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
+        same_ques_resp = perform_llama_response(prompt_var_list,MODEL,TEMPERATURE,LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH)
+
     print(same_ques_resp)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
@@ -167,7 +179,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     else:
         prompt_var_list = [query,true_ans,bck_extracted_final_response]
 
-    accuracy_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     print(accuracy_resp)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(accuracy_resp, key = "comment:")
@@ -177,9 +189,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     return extracted_gt_ans_resp1, comment1, accuracy, accuracy_comment
     
 
-# this func is provided for easy access to the gpt model api for any use case
-# presently this is used for automatic evaluation
-def perform_gpt_response(prompt_var_list,temperature,prompt_path):
+def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
     with open(prompt_path, 'r') as file:
@@ -193,12 +203,47 @@ def perform_gpt_response(prompt_var_list,temperature,prompt_path):
     ]
     chat_completion = client.chat.completions.create(
         messages=message,
-        model=EVAL_MODEL,
+        model=model,
         temperature=temperature,
         max_tokens=600
         )
-    # print("#"*20)
-    # print("INITIAL LLM RESPONSE")
-    # print(chat_completion.choices[0].message)
-    # print("The token usage: ", chat_completion.usage)
+    
+    return chat_completion.choices[0].message.content.strip()
+
+def perform_llama_response(prompt_var_list,model,temperature,prompt_path):
+    client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
+    with open(prompt_path, 'r') as file:
+        file_content = file.read()
+    
+    message = json.dumps({
+    "prompt": file_content.format(*prompt_var_list),
+    "temperature": temperature,
+    "max_gen_len": 600
+    })
+
+    accept = 'application/json'
+    contentType = 'application/json'
+
+    response = client.invoke_model(body=message, modelId=model, accept=accept, contentType=contentType)
+
+    chat_completion = json.loads(response.get("body").read())
+
+    return chat_completion.get("generation").strip()
+
+def perform_mistral_response(prompt_var_list,model,temperature,prompt_path):
+    client = MistralClient(api_key=os.environ["MISTRAL_API_KEY"])
+    with open(prompt_path, 'r') as file:
+        file_content = file.read()
+    
+    message = [
+        ChatMessage(role="user", content=file_content.format(*prompt_var_list))
+    ]
+
+    chat_completion = client.chat(
+        model=model,
+        temperature=temperature,
+        messages=message,
+        max_tokens=600
+    )
+    
     return chat_completion.choices[0].message.content.strip()

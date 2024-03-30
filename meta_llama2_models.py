@@ -9,9 +9,6 @@ from rake_nltk import Rake
 from utils.utils import process_response
 from utils.utils import extract_value_from_single_key
 from utils.utils import check_dict_keys_condition
-# from web_search import start_web_search
-# from web_search_serp import start_web_search
-
 
 with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -20,20 +17,16 @@ MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
-FORWARD_REASONING_PROMPT_PATH = config['LLAMA_FORWARD_REASONING_PROMPT_PATH']
 BACKWARD_REASONING_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_PROMPT_PATH']
 
 # call the meta llama api
 def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
-    # variable1 and variable2 in general are the first and second input passed to the prompt
-    # this can be query and external evidence or original response and candidate response
-    #Read the prompts from txt files
+    
     with open(prompt_path, 'r') as file:
         file_content = file.read()
     
-    #passing the query and the external evidence as variables into the prompt
     message = json.dumps({
-    "prompt": file_content.format(*prompt_var_list),   #file_content.format(variable1,variable2)
+    "prompt": file_content.format(*prompt_var_list), 
     "temperature": temperature,
     "max_gen_len": 600
     })
@@ -45,10 +38,6 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
 
     chat_completion = json.loads(response.get("body").read())
 
-    # print("#"*20)
-    # print("INITIAL LLM RESPONSE")
-    # print(chat_completion.get("generation"))
-    # print("The token usage: ", chat_completion.usage)
     return chat_completion.get("generation").strip()
 
 # performs adversarial attack hallucination detection process by asking the user the question
@@ -59,15 +48,9 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
     fwd_main_answers_list = []
     bck_main_answers_list = []
     all_responses_list = []
-    forward_prompt_list = ["Is this correct? Please provide your final answer and explanation for the \
-            question in the following format: Forward Answer: Forward Explanation: "]
     
-    # prompt_var_list = [query, final_response]
     fwd_main_answers_list.append(final_response_ans) #first response i.e. original response
-    # all_responses_list.append(final_response_ans)
-
     forward_reasoning_list.append(f"{final_response_ans}\n{final_response_exp}")
-    # print("INSIDE CLARIFICATION QUESTION AFTER ONE RUN",final_response)
     fwd_main_answers_list.append(final_response_exp) #final response i.e. last response that is to be used as the final answer
 
     #backward reasoning
@@ -77,9 +60,10 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
     # if len(fwd_extracted_final_response.split()) < 5:
     fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
-    
+    external_evidence = json.dumps(external_evidence, indent=4)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
     back_reasoning_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
+    # print(back_reasoning_response)
     bck_main_answers_list.append(back_reasoning_response)
     backward_reasoning_list.append(back_reasoning_response)
     

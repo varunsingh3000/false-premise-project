@@ -1,6 +1,6 @@
 Please evaluate the response to each given question under a relaxed evaluation, where hallucinations, outdated 
 information, and ill-formed answers are allowed, as long as the primary answer is accurate. Please credit the 
-response only if it provides a confident and definitive answer, or the correct answer can be obviously inferred 
+response only if it provides a correct answer, or the correct answer can be obviously inferred 
 from the response. The primary or final answer when standing alone must be accurate. Any additional 
 information that is provided must not contradict the primary answer or reshape one's perception of it. For 
 answers that involve names of entities (e.g., people), complete names or commonly recognized names are 

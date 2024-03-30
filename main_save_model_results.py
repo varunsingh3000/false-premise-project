@@ -116,8 +116,10 @@ def start_complete_workflow():
         # bck_reasoning_resp3_list.append(backward_reasoning_list[2])
         # bck_reasoning_resp4_list.append(backward_reasoning_list[3])
         bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Answer:")
+        # bck_extracted_final_response = ""
         bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Explanation:")
         bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
+        # bck_extracted_final_question = query
         bck_final_response_list.append(bck_extracted_final_response)
         bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
         bck_final_question_list.append(bck_extracted_final_question)
@@ -143,7 +145,7 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "30thMar_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
 
     adv_attack_data_dict = {
         "ques_id":ques_no_list,
@@ -190,7 +192,7 @@ def start_complete_workflow():
     # Convert the structured data dictionary to JSON format
     json_data = json.dumps(structured_data, indent=4)
     # Write the dictionary to a JSON file
-    with open(RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.json", 'w') as json_file:
+    with open(RESULT_SAVE_PATH + MODEL + "30thMar_for_back_reasoningabd.json", 'w') as json_file:
         json_file.write(json_data)
 
     # df1 = pd.DataFrame(adv_attack_data_dict)
@@ -203,10 +205,9 @@ def start_evaluation():
     same_answer_list = []
     same_question_list = []
     final_accuracy_comment_list = []
-    path = RESULT_SAVE_PATH + MODEL + "27thMar_for_back_reasoningabd.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "30thMar_for_back_reasoningabd.xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
-    df_og = pd.read_excel(path)
-    df = df_og[:]
+    df = pd.read_excel(path)
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
     true_ans_list = df["true_ans"].tolist()
@@ -231,7 +232,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
     df["final_accuracy_comment"] = final_accuracy_comment_list
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "27thMar_alltest_evalabd.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "30thMar_alltest_evalabd.xlsx",index=False)    
 
 
 start_complete_workflow()

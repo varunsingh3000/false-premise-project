@@ -1,6 +1,7 @@
 # Calling the OpenAI GPT models 3.5 and 4
 
 import yaml
+import json
 import os
 from rake_nltk import Rake 
 from mistralai.client import MistralClient
@@ -20,14 +21,11 @@ MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
-FORWARD_REASONING_PROMPT_PATH = config['FORWARD_REASONING_PROMPT_PATH']
 BACKWARD_REASONING_PROMPT_PATH = config['BACKWARD_REASONING_PROMPT_PATH']
 
 # call the mistral api with either tiny or small model
 def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
-    # variable1 and variable2 in general are the first and second input passed to the prompt
-    # this can be query and external evidence or original response and candidate response
-    #Read the prompts from txt files
+    
     with open(prompt_path, 'r') as file:
         file_content = file.read()
     
@@ -41,10 +39,7 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
         messages=message,
         max_tokens=600
     )
-    # print("#"*20)
-    # print("INITIAL LLM RESPONSE")
-    # print(chat_completion.choices[0].message)
-    # print("The token usage: ", chat_completion.usage)
+    
     return chat_completion.choices[0].message.content.strip()
 
 
@@ -74,7 +69,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
     # if len(fwd_extracted_final_response.split()) < 5:
     fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
-    
+    external_evidence = json.dumps(external_evidence, indent=4)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
     back_reasoning_response = perform_mistral_response(client,prompt_var_list,TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
     bck_main_answers_list.append(back_reasoning_response)

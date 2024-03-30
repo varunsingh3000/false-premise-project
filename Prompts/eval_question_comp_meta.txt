@@ -1,9 +1,8 @@
-Please evaluate whether the questions provided, if they are answered could provide identical or similar information.
-Consider the main subject, context, and key points in each information.
-Please credit the questions only if they provide identical or nearly indentical information.
+<s>[INST] <<SYS>> Please evaluate whether the questions provided, if they are answered could provide identical or similar information.
+If there is a possiblity that the same information could be a part of both the questions then consider them as identical.
 Ignore any wording or phrasing differences between the questions as long as they do not significantly impact
-the possible information of each respective question. Ignore any additional information present in the questions
-as long as they do not significantly impact the potential information that could be inferred from each respective question. 
+the possible primary information of each respective question. Ignore any additional information present in the questions
+as long as they do not significantly impact the primary information of each respective question. 
 
 Question 1: Why does Mars have three moons?
 
@@ -29,7 +28,7 @@ Question 1: {}
 
 Question 2: {}
 
-Give your response in the following format:
+Use the following format for the output:
 
 comment: <explanation>
-evaluation: <identical/different> 
+evaluation: <identical/different> <</SYS>> [/INST]
