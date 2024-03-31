@@ -31,7 +31,7 @@ def start_workflow(query,external_evidence,MODEL):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence)
-    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
+    elif MODEL in ["mistral-small-latest", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)

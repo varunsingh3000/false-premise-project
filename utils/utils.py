@@ -155,17 +155,17 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp = \
             map(str,(fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp))
     
-    if len(fwd_extracted_final_response.split()) < 5:
-        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
-    if len(bck_extracted_final_response.split()) < 5:
-        bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
+    # if len(fwd_extracted_final_response.split()) < 5:
+    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+    # if len(bck_extracted_final_response.split()) < 5:
+    bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
     # bck_extracted_final_response = bck_extracted_final_resp_exp
 
     prompt_var_list = [query,bck_extracted_final_question]
     # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
     if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
-    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
+    elif MODEL in ["mistral-small-latest", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
         same_ques_resp = perform_mistral_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         same_ques_resp = perform_llama_response(prompt_var_list,MODEL,TEMPERATURE,LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH)

@@ -4,6 +4,8 @@ Ignore any wording or phrasing differences between the questions as long as they
 the possible primary information of each respective question. Ignore any additional information present in the questions
 as long as they do not significantly impact the primary information of each respective question. 
 
+Here are some examples:
+
 Question 1: Why does Mars have three moons?
 
 Question 2: How many moons does Mars have?
@@ -23,6 +25,8 @@ sport whereas Question 2 enquires when did basketball gain the status of a provi
 terms of the information being provided. Questions 2 assumes that basketball is a provisional whereas Question 1 asks whether
 basketball is an olympic sport and this changes their possible answers significantly.
 evaluation: different 
+
+Now do the same for the questions given below:
 
 Question 1: {}
 

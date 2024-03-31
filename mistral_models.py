@@ -66,8 +66,8 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
     
     fwd_extracted_final_response = final_response_ans[:]
     fwd_extracted_final_resp_exp = final_response_exp[:]
-    # if len(fwd_extracted_final_response.split()) < 5:
-    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
+    if len(fwd_extracted_final_response.split()) < 5:
+        fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
     external_evidence = json.dumps(external_evidence, indent=4)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]

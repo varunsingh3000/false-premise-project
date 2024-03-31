@@ -24,7 +24,7 @@ competes in Formula One for Red Bull Racing. He is the son of former Formula One
 Verstappen started his racing career in karting at the age of seven. He won the 2013 European Karting 
 Championship and the 2013 World Karting Championship. In 2014, he moved to single-seater racing, competing 
 in the European Formula Three Championship. He won the championship in his first season, becoming the first 
-driver to do so since Nico Rosberg in 2005… # the rest is omitted for brevity
+driver to do so since Nico Rosberg in 2005.
 comment: Even though the response contains several instances of hallucinated 
 information (e.g., Max Verstappen did not win the Formula Three European Championship in 2014), the primary 
 answer in the response (Max Verstappen) is still accurate. Thus, the response is credited.
