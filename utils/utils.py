@@ -36,15 +36,17 @@ def modify_evidence_batch_dict(evidence_batch_list):
 
     if 'QueryID' in evidence_batch_list:
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
-    if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
+    if 'answer_box' in evidence_batch_list:
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
-        if 'related_questions' in evidence_batch_list:
-            modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
-        return modified_evidence_batch_list
+    # if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
+    #     modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
+    #     if 'related_questions' in evidence_batch_list:
+    #         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
+    #     return modified_evidence_batch_list
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
-        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:]
     return modified_evidence_batch_list
 
 
@@ -56,7 +58,7 @@ def process_response(chat_completion):
     text_without_newlines = text.replace('\n', '')
 
     # Define key terms to split the text into sections
-    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
     response_dict = {}
     # Splitting the text into sections based on key terms
     for i in range(len(key_terms) - 1):
@@ -98,7 +100,7 @@ def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA)
             return True
 
 def check_dict_keys_condition(response_dict):
-    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
     keys_present = all(key in response_dict for key in key_terms)
     if keys_present:
         return True

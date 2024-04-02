@@ -1,9 +1,9 @@
-Given two responses, Response A and Response B, please compare and assess whether they are discussing the same topic. Consider the main subject, context, and key points in each response. Determine the level of similarity or dissimilarity between the topics covered in both responses.
-
 Response A: {}
 
 Response B: {}
 
-Certainty_Estimation: <Yes/No - No explanation is required in the response>
+Compare Response B with Response A and determine if they are semantically the same.
+Credit the responses as only Yes when they are the same and only No when they are different.
 
-Now, please always provide your answer as only Yes or No. No explanation regarding the answer is required.
+Certainty_Estimation:
+

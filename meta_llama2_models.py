@@ -36,8 +36,7 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
     #passing the query and the external evidence as variables into the prompt
     message = json.dumps({
     "prompt": file_content.format(*prompt_var_list),   #file_content.format(variable1,variable2)
-    "temperature": temperature,
-    "top_p":1.0
+    "temperature": temperature
     #"max_gen_len": 600
     })
 
@@ -69,8 +68,8 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         # question is added to the second index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(query)
         intial_explanation = og_response_dict['Answer:']
-        if len(og_response_dict['Answer:']) < 5:
-            intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
+        # if len(og_response_dict['Answer:']) < 5:
+        #     intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
         # initial_core_concept = og_response_dict['Core Concept:']
 
         match_count = 0
@@ -98,8 +97,8 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             candidate_resp = response_dict['Answer:']
-            if len(response_dict['Answer:']) < 5:
-                candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
+            # if len(response_dict['Answer:']) < 5:
+            #     candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
             prompt_var_list = [intial_explanation, candidate_resp]
             uncertainty_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
             # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))

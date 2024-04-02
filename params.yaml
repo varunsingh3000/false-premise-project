@@ -1,11 +1,11 @@
 {
-    "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106","meta.llama2-70b-chat-v1","mistral-small"
-    "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-4-turbo-preview",
+    "MODEL": "mistral-small-latest", #default - "gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106","meta.llama2-70b-chat-v1","mistral-small"
+    "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-4-turbo-preview", mistral-small-latest
     "TEMPERATURE": 0.0, #default - 0.0
-    "CANDIDATE_TEMPERATURE": 1.4, #default - 0.3
+    "CANDIDATE_TEMPERATURE": 1.0, #gpt0125 0.5, rest max
     "DATASET_NAME": "freshqa", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\"
-    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
+    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa_new.json", 
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
     "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_resp_fresh.txt",

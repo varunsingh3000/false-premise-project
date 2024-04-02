@@ -65,8 +65,8 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         # question is added to the second index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(query)
         intial_explanation = og_response_dict['Answer:']
-        if len(og_response_dict['Answer:']) < 5:
-            intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
+        # if len(og_response_dict['Answer:']) < 5:
+        #     intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
 
         match_count = 0
         confi_list = []
@@ -93,13 +93,13 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             candidate_resp = response_dict['Answer:']
-            if len(response_dict['Answer:']) < 5:
-                candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
+            # if len(response_dict['Answer:']) < 5:
+            #     candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
             prompt_var_list = [intial_explanation, candidate_resp]
             uncertainty_response = perform_gpt_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
             # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
-            # print(response_dict)
+            print(response_dict)
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
             # checking if the candidate response agrees with the original response
@@ -137,7 +137,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         # final_confidence_value = final_response['Confidence Level:']
             
     message = "It seems all the keys in the original response were not available so candidate response generation \
-            for the self-consistency approach cannot happen."
+            for the self-consistency approach cannot happen. {}".format(og_response_dict)
     print(message)
     responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
                                                 WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)

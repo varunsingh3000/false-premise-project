@@ -1,18 +1,13 @@
 <s>[INST] <<SYS>>
-Please read the question and give the answer with an explanation, indicate your level of confidence, your source reference, and also indicate if the question contains a false premise. 
-
-Use your world knowledge and the provided External Source for reference while providing your response. Do not assume the External Source to be correct.
-
+External Sources: {} 
 Question: {}
 
-External Sources: {} 
+Please read the question and provide your answer, indicate your level of confidence as percentage, your source reference, 
+and also indicate the premise of the question. 
 
-Use the following format always to provide your response:
-
-Explanation: <text response of two to three sentences>
-Answer: <text response final answer>
-Confidence Level: <numerical response e.g. 70%>
-Source: <Name of source and the url>
-Premise of the Question: <text response of only Valid or Invalid>
+Answer: 
+Confidence Level: 
+Source: 
+Premise of the Question:
 
 Let's think it step by step. <</SYS>> [/INST]
