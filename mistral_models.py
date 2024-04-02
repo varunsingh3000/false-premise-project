@@ -71,11 +71,12 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
 
     external_evidence = json.dumps(external_evidence, indent=4)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
-    back_reasoning_response = perform_mistral_response(client,prompt_var_list,TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
+    back_reasoning_response = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_PROMPT_PATH)
     bck_main_answers_list.append(back_reasoning_response)
     backward_reasoning_list.append(back_reasoning_response)
+
     
-    # print(len(backward_reasoning_list))
+    print(backward_reasoning_list)
 
     return forward_reasoning_list, backward_reasoning_list, fwd_main_answers_list, bck_main_answers_list, all_responses_list
 
