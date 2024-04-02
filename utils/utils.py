@@ -29,6 +29,11 @@ def generate_evidence_batch(ques_id_list,query_list):
 
 def modify_evidence_batch_dict(evidence_batch_list):
     modified_evidence_batch_list = {}
+    # for key, value in evidence_batch_list.items():
+    #     if isinstance(value, list):
+    #         for item in value:
+    #             item.pop("url", None)
+
     if 'QueryID' in evidence_batch_list:
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
     if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
@@ -51,7 +56,7 @@ def process_response(chat_completion):
     text_without_newlines = text.replace('\n', '')
 
     # Define key terms to split the text into sections
-    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Core Concept:', 'Premise of the Question:']
+    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
     response_dict = {}
     # Splitting the text into sections based on key terms
     for i in range(len(key_terms) - 1):
@@ -93,7 +98,7 @@ def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA)
             return True
 
 def check_dict_keys_condition(response_dict):
-    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Core Concept:', 'Premise of the Question:']
+    key_terms = ['Explanation:', 'Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
     keys_present = all(key in response_dict for key in key_terms)
     if keys_present:
         return True
@@ -160,7 +165,7 @@ def auto_evaluation(query,true_ans,final_resp_text):
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(same_ques_resp, key = "comment:")
     accuracy = "Correct" if extracted_gt_ans_resp1 == "correct" else "Incorrect"
-    print(query,accuracy,accuracy_comment)
+    print(query,accuracy)
     return extracted_gt_ans_resp1, accuracy_comment, accuracy
 
 # this func is provided for easy access to the gpt model api for any use case

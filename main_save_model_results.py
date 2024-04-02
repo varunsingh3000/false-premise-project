@@ -6,6 +6,7 @@ import pandas as pd
 
 from utils.dataset import start_dataset_processing
 from utils.utils import generate_evidence_batch
+from utils.utils import modify_evidence_batch_dict
 from utils.utils import auto_evaluation
 # from web_search import start_web_search
 # from web_search_serp import start_web_search
@@ -30,7 +31,7 @@ def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
     # external_evidence = start_web_search(query)
     if MODEL in ["gpt-3.5-turbo", "gpt-3.5-turbo-0125","gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
-    elif MODEL in ["mistral-tiny", "mistral-small", "mistral-medium", "mistral-medium-latest"]:
+    elif MODEL in ["mistral-tiny", "mistral-small","mistral-small-latest", "mistral-medium", "mistral-medium-latest"]:
         result = start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
@@ -65,7 +66,11 @@ def start_complete_workflow():
         evidence_batch_list = json.load(json_file)
         # print(evidence_batch_list)
         # exit(1)
-        
+    for i, d in enumerate(evidence_batch_list[:]):
+        evidence_batch_list[i] = modify_evidence_batch_dict(d)
+    
+    # print(evidence_batch_list[0])
+
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         # print("NEW QUERY HAS STARTED"*4)

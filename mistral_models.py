@@ -26,7 +26,7 @@ QUERY_PROMPT_PATH = config['QUERY_PROMPT_PATH']
 UNCERTAINTY_PROMPT_PATH = config['UNCERTAINTY_PROMPT_PATH']
 MATCH_CRITERIA = config['MATCH_CRITERIA'] 
 MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES'] 
-
+print(CANDIDATE_TEMPERATURE)
 # call the mistral api with either tiny or small model
 def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
     # variable1 and variable2 in general are the first and second input passed to the prompt
@@ -42,8 +42,8 @@ def perform_mistral_response(client,prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat(
         model=MODEL,
         temperature=temperature,
-        messages=message,
-        max_tokens=600
+        messages=message
+        #max_tokens=600
     )
     # print("#"*20)
     # print("INITIAL LLM RESPONSE")
@@ -65,8 +65,9 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
         responses_dict[WORKFLOW_RUN_COUNT].append(external_evidence)
         # question is added to the second index of the responses_dict, the rest will be candidate responses
         responses_dict[WORKFLOW_RUN_COUNT].append(query)
-        intial_explanation = og_response_dict['Answer:'] + og_response_dict['Explanation:']
-        # initial_core_concept = og_response_dict['Core Concept:']
+        intial_explanation = og_response_dict['Answer:']
+        if len(og_response_dict['Answer:']) < 5:
+            intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
 
         match_count = 0
         confi_list = []
@@ -92,7 +93,10 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
             # print("Candidate response {}: {}".format(i,response_dict))
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
-            prompt_var_list = [intial_explanation, response_dict['Answer:'] + response_dict['Explanation:']]
+            candidate_resp = response_dict['Answer:']
+            if len(response_dict['Answer:']) < 5:
+                candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
+            prompt_var_list = [intial_explanation, candidate_resp]
             uncertainty_response = perform_mistral_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
             # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
@@ -145,6 +149,7 @@ def start_mistral_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     # extract the key terms from the generated response into a dict
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
+    # print(og_response_dict)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
     # print("Mistral model response process ends")
     if result is None:
