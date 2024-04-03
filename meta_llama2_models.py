@@ -32,12 +32,14 @@ def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
     #Read the prompts from txt files
     with open(prompt_path, 'r') as file:
         file_content = file.read()
-    
+    # print(temperature)
     #passing the query and the external evidence as variables into the prompt
     message = json.dumps({
     "prompt": file_content.format(*prompt_var_list),   #file_content.format(variable1,variable2)
-    "temperature": temperature
-    #"max_gen_len": 600
+    "temperature": temperature,
+    "max_gen_len": 400
+    # "top_p":0.4
+    #
     })
 
     accept = 'application/json'
@@ -94,15 +96,21 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
                 print(message)
                 continue
             # print("Candidate response {}: {}".format(i,response_dict))
-            responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
+            # responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             # concepts are passed instead of query and external evidence since the function basically just needs to call the api
             candidate_resp = response_dict['Answer:']
-            # if len(response_dict['Answer:']) < 5:
-            #     candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
-            prompt_var_list = [intial_explanation, candidate_resp]
-            uncertainty_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
+            if len(candidate_resp) > 0:
+                print("lenght greater : ", candidate_resp)
+                # if len(response_dict['Answer:']) < 5:
+                #     candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
+                prompt_var_list = [intial_explanation, candidate_resp]
+                uncertainty_response = perform_llama_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
+            else:
+                uncertainty_response = "No"
+                print("lenght lower : ", candidate_resp)
             # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
             response_dict.update({"Certainty_Estimation":uncertainty_response})
+            responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
             print(response_dict)
             confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
             confi_list.append(confi_value)
@@ -153,6 +161,7 @@ def start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     # extract the key terms from the generated response into a dict
     # this is needed later for uncertainty estimation calculation
     og_response_dict = process_response(chat_completion)
+    print(og_response_dict)
     result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
     # print("Meta Llama2 model response process ends")
     if result is None:

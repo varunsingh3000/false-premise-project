@@ -66,7 +66,7 @@ def start_complete_workflow():
         evidence_batch_list = json.load(json_file)
         # print(evidence_batch_list)
         # exit(1)
-    for i, d in enumerate(evidence_batch_list[:]):
+    for i, d in enumerate(evidence_batch_list[300:500]):
         evidence_batch_list[i] = modify_evidence_batch_dict(d)
     
     # print(evidence_batch_list[0])
@@ -107,7 +107,10 @@ def start_complete_workflow():
         #     final_resp_text += final_response['Explanation:']
         
         # final_response_list.append(final_resp_text)
-        final_response_list.append(final_response)
+        if 'Answer:' in final_response:
+            final_response_list.append(final_response['Answer:'])
+        else:
+            final_response_list.append(final_response)
 
     qa_data_dict = {
         "ques_id":ques_no_list,

@@ -2,7 +2,7 @@ External Sources: {}
 Question: {}
 
 Please read the question and provide your answer, indicate your level of confidence as percentage, your source reference,
-and also indicate the premise of the question. 
+and also indicate the premise of the question as given below:
 
 Answer: 
 Confidence Level: 
