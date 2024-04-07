@@ -59,7 +59,7 @@ def process_response(chat_completion):
 
     # Define key terms to split the text into sections
     # key_terms = ['Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
-    key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Source:', 'Premise of the Question:']
     response_dict = {}
     # Splitting the text into sections based on key terms
     for i in range(len(key_terms) - 1):
@@ -101,7 +101,7 @@ def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA)
             return True
 
 def check_dict_keys_condition(response_dict):
-    key_terms = ['Answer:', 'Confidence Level:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Source:', 'Premise of the Question:']
     keys_present = all(key in response_dict for key in key_terms)
     if keys_present:
         return True

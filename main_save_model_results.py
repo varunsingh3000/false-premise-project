@@ -109,10 +109,12 @@ def start_complete_workflow():
         #     final_resp_text += final_response['Explanation:']
         
         # final_response_list.append(final_resp_text)
-        if 'Answer:' in final_response:
-            final_response_list.append(final_response['Answer:'])
-        else:
-            final_response_list.append(final_response)
+        # if 'Answer:' in final_response:
+        #     final_response_list.append(final_response['Answer:'])
+        # else:
+        #     final_response_list.append(final_response)
+        
+        final_response_list.append(final_response)
 
     qa_data_dict = {
         "ques_id":ques_no_list,

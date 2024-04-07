@@ -1,9 +1,10 @@
-Response A: {}
+Response 1: {}
+Response 2: {}
+Response 3: {}
 
-Response B: {}
+Given a set of responses to a question, select the response that appears the majority of times. 
+Consider whether these responses are semantically similar while making your selection.
 
-Compare Response B with Response A and determine if they are semantically the same.
-Credit the responses as only Yes when they are the same and only No when they are different.
+Only Output the response that is your selected response in the format given below. No explanation for selection is required.
 
-Certainty_Estimation:
-
+Final Response: <final selected text response>

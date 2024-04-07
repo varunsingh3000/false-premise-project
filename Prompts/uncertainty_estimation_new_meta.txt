@@ -1,9 +1,11 @@
 <s>[INST] <<SYS>>
-Responses: {}
+Response 1: {}
+Response 2: {}
+Response 3: {}
 
 Given a set of responses to a question, select the response that appears the majority of times. 
 Consider whether these responses are semantically similar while making your selection.
 
-Output the response that is your selected response in the format given below.
+Only Output the response that is your selected response in the format given below. No explanation for selection is required.
 
-Certainty_Estimation: <</SYS>> [/INST]
+Final Response: <final selected text response><</SYS>> [/INST]

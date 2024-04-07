@@ -1,16 +1,12 @@
 import yaml
 import os 
-import requests
 from openai import OpenAI
-from rake_nltk import Rake
 
 from utils.utils import process_response
-from utils.utils import uncertainty_confidence_cal
-from utils.utils import matching_condition_check
 from utils.utils import check_dict_keys_condition
-from utils.utils import create_dummy_response_dict
-from web_search import start_web_search
-# from web_search_serp import start_web_search
+
+from sentence_transformers import SentenceTransformer
+from scipy.spatial.distance import cosine
 
 
 with open('params.yaml', 'r') as file:
@@ -26,9 +22,7 @@ MAX_CANDIDATE_RESPONSES = config['MAX_CANDIDATE_RESPONSES']
 
 # call the openai api with either gpt 3.5 or gpt 4 latest model
 def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
-    # all the variables needed for the prompt are in the prompt_var_list
-    # this can be query and external evidence or original response and candidate response
-    #Read the prompts from txt files
+    
     with open(prompt_path, 'r') as file:
         file_content = file.read()
 
@@ -52,99 +46,51 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
 
 # function to call the LLM to generate multiple responses which will then be compared with the original response
 # using their core concepts
-def perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT):
+def perform_uncertainty_estimation(client,query,external_evidence,WORKFLOW_RUN_COUNT):
     # print("Uncertainty Estimation process starts")
-    if check_dict_keys_condition(og_response_dict):
-        responses_dict = {}
-        # print(WORKFLOW_RUN_COUNT)
-        responses_dict.update({WORKFLOW_RUN_COUNT:[]})
-        # original response is added to the zero index of the responses_dict, the rest will be candidate responses
-        responses_dict[WORKFLOW_RUN_COUNT].append(og_response_dict)
-        # external evidence is added to the first index of the responses_dict, the rest will be candidate responses
-        responses_dict[WORKFLOW_RUN_COUNT].append(external_evidence)
-        # question is added to the second index of the responses_dict, the rest will be candidate responses
-        responses_dict[WORKFLOW_RUN_COUNT].append(query)
-        intial_explanation = og_response_dict['Answer:']
-        # if len(og_response_dict['Answer:']) < 5:
-        #     intial_explanation = og_response_dict['Answer:'] + " " + og_response_dict['Explanation:']
+    og_response_dict = "test of new sc"
+    final_confidence_value = -1
+    candi_resp_list = []
+    responses_dict = {}
+    # print(WORKFLOW_RUN_COUNT)
+    responses_dict.update({WORKFLOW_RUN_COUNT:[]})
+    # original response is added to the zero index of the responses_dict, the rest will be candidate responses
+    responses_dict[WORKFLOW_RUN_COUNT].append(og_response_dict)
+    # external evidence is added to the first index of the responses_dict, the rest will be candidate responses
+    responses_dict[WORKFLOW_RUN_COUNT].append(external_evidence)
+    # question is added to the second index of the responses_dict, the rest will be candidate responses
+    responses_dict[WORKFLOW_RUN_COUNT].append(query)
 
-        match_count = 0
-        confi_list = []
-        confi_match_list = []
-        max_confi_value = 0
-        final_confidence_value = -1
-        final_response = og_response_dict.copy()
-
-        for i in range(MAX_CANDIDATE_RESPONSES):
-            prompt_var_list = [query, external_evidence]
-            # candidate responses are generated
-            chat_completion_resp_obj = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,QUERY_PROMPT_PATH)
-            response_dict = process_response(chat_completion_resp_obj)
-            # if all keys are not present in the candidate response dict then skip the current iteration
-            # the code logic ahead will not work without all keys and there would be too many conditions to make things work
-            if not check_dict_keys_condition(response_dict):
-                message = "It seems the candidate response {} was missing some keys in the response dict {} so the current \
-                      iteration of the candidate response generation has been skipped. The next iteration \
-                      will continue.".format(i,response_dict)
-                responses_dict[WORKFLOW_RUN_COUNT].append(message)
-                print(message)
-                continue
-            # print("Candidate response {}: {}".format(i,response_dict))
+    for i in range(MAX_CANDIDATE_RESPONSES):
+        prompt_var_list = [query, external_evidence]
+        # candidate responses are generated
+        chat_completion_resp_obj = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,QUERY_PROMPT_PATH)
+        response_dict = process_response(chat_completion_resp_obj)
+        print(response_dict)
+        if not check_dict_keys_condition(response_dict):
+            message = "It seems a proper response could not be generated."
+            print(i,response_dict)
             responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
-            # concepts are passed instead of query and external evidence since the function basically just needs to call the api
-            candidate_resp = response_dict['Answer:']
-            # if len(response_dict['Answer:']) < 5:
-            #     candidate_resp = response_dict['Answer:'] + " " + response_dict['Explanation:']
-            prompt_var_list = [intial_explanation, candidate_resp]
-            uncertainty_response = perform_gpt_response(client,prompt_var_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
-            # print("Uncertainty estimation response {}: {}".format(i,uncertainty_response))
-            response_dict.update({"Certainty_Estimation":uncertainty_response})
-            print(response_dict)
-            confi_value = int(response_dict['Confidence Level:'][:-1]) if response_dict['Confidence Level:'][:-1].isdigit() else 0
-            confi_list.append(confi_value)
-            # checking if the candidate response agrees with the original response
-            if uncertainty_response.startswith("Yes") or "YES" in uncertainty_response.upper():
-                #Max confidence value itself is not used but this condition is used to identify the response with the highest confidence
-                #and that response will be chosen as the potential final response
-                if confi_value >= max_confi_value: 
-                    max_confi_value = confi_value
-                    potential_final_response = response_dict.copy()
-                confi_match_list.append(confi_value)
-                match_count += 1
-            elif uncertainty_response.startswith("No") or "NO" in uncertainty_response.upper():
-                confi_value = 0
-                confi_match_list.append(confi_value)
-            # checking whether sufficent candidate responses agree with the original response
-            if matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA): 
-                final_confidence_value = uncertainty_confidence_cal(confi_match_list,confi_list)
-                potential_final_response['Confidence Level:'] = f"{final_confidence_value}%"
-                final_response = potential_final_response.copy()
-                return responses_dict, final_response, final_confidence_value
-    
-        # if we are here then that means the matching condition was unsuccessful, this means that the final response
-        # will be the one with the highest verbalise confidence
-        message = "It seems the candidate responses could not reach an agreement for self-consistency to work."
-        print(message)
-        final_confidence_value = '-1'
-        final_response = message
-        return responses_dict, final_response, final_confidence_value
-        # Flatten the list of dictionaries
-        # all_candi_resp = [entry for sublist in responses_dict.values() for entry in sublist]
-        # Filter out non-dictionary elements from the list, this is done to ensure get method below doesn't throw an error
-        # all_candi_resp = [entry for entry in all_candi_resp if isinstance(entry, dict)]
-        # Find the dictionary entry with the highest confidence
-        # final_response = max(all_candi_resp, key=lambda x: x.get('Confidence Level:', '-1'))
-        # final_confidence_value = final_response['Confidence Level:']
-            
-    message = "It seems all the keys in the original response were not available so candidate response generation \
-            for the self-consistency approach cannot happen. {}".format(og_response_dict)
-    print(message)
-    responses_dict = create_dummy_response_dict(og_response_dict,external_evidence,query,
-                                                WORKFLOW_RUN_COUNT, MAX_CANDIDATE_RESPONSES)
-    final_confidence_value = '-1'
-    final_response = message
-    # Now the adversarial attack part will start
-    # print("The first run of the workflow has finished. Now the adversarial attacks will start.")
+            candi_resp_list.append(message)
+            continue
+        candi_resp_list.append(response_dict['Answer:'])
+        responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
+
+    model = SentenceTransformer('bert-base-nli-mean-tokens')
+    embeddings = model.encode(candi_resp_list)
+    similarities = [
+    1 - cosine(embeddings[0], embeddings[1]),
+    1 - cosine(embeddings[0], embeddings[2]),
+    1 - cosine(embeddings[1], embeddings[2])
+    ]
+    max_index = similarities.index(max(similarities))
+
+    final_response = candi_resp_list[max_index]
+    # uncertainty_response = perform_llama_response(client,candi_resp_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
+    # print(uncertainty_response)
+    # extract_value_from_single_key(uncertainty_response, 'Final Response:')
+    # final_response = uncertainty_response
+    print("Final response is: ", final_response)
     return responses_dict, final_response, final_confidence_value
 
 
@@ -152,13 +98,7 @@ def perform_uncertainty_estimation(og_response_dict,client,query,external_eviden
 def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):
     print("OpenAI model response process starts: ", query)
     client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY")) # defaults to os.environ.get("OPENAI_API_KEY")
-    prompt_var_list = [query, external_evidence]
-    chat_completion = perform_gpt_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
-    # extract the key terms from the generated response into a dict
-    # this is needed later for uncertainty estimation calculation
-    og_response_dict = process_response(chat_completion)
-    # print(WORKFLOW_RUN_COUNT)
-    result = perform_uncertainty_estimation(og_response_dict,client,query,external_evidence,WORKFLOW_RUN_COUNT)
+    result = perform_uncertainty_estimation(client,query,external_evidence,WORKFLOW_RUN_COUNT)
     # print("OpenAI model response process ends")
     if result is None:
         print("Error: Result is None")
