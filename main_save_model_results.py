@@ -12,7 +12,9 @@ from utils.utils import auto_evaluation
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
-from meta_llama2_models import start_meta_api_model_response
+# from meta_llama2_models import start_meta_api_model_response
+from meta_llama2_models_test import start_meta_api_model_response
+
 
 with open('params.yaml', 'r') as file:
     config = yaml.safe_load(file)
@@ -66,7 +68,7 @@ def start_complete_workflow():
         evidence_batch_list = json.load(json_file)
         # print(evidence_batch_list)
         # exit(1)
-    for i, d in enumerate(evidence_batch_list[300:500]):
+    for i, d in enumerate(evidence_batch_list[:]):
         evidence_batch_list[i] = modify_evidence_batch_dict(d)
     
     # print(evidence_batch_list[0])
@@ -178,4 +180,4 @@ def start_evaluation():
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
 
 start_complete_workflow()
-start_evaluation()
+# start_evaluation()

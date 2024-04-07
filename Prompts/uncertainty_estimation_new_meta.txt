@@ -1,0 +1,9 @@
+<s>[INST] <<SYS>>
+Responses: {}
+
+Given a set of responses to a question, select the response that appears the majority of times. 
+Consider whether these responses are semantically similar while making your selection.
+
+Output the response that is your selected response in the format given below.
+
+Certainty_Estimation: <</SYS>> [/INST]
