@@ -1,0 +1,29 @@
+{
+    "0": {
+        "question": "What is the name of the first animal to land on the moon?",
+        "true_ans": "No animal has ever landed on the moon yet.",
+        "fwd_final_ans": "Neil Armstrong",
+        "fwd_final_ans_exp": "The first animal to land on the moon was actually a human, Neil Armstrong, who belonged to the species Homo sapiens. No animals were ever sent to the moon.",
+        "bck_final_ans": "The conclusion is plausible as no animals were ever sent to the moon, so the first \"animal\" to land on the moon was actually Neil Armstrong, a human.",
+        "bck_final_ans_exp": "The conclusion aligns with the observation that no animals were ever sent to the moon and that Neil Armstrong, a human, was the first to land on the moon. Therefore, the conclusion logically follows from these premises and is consistent with our broader understanding of reality.",
+        "bck_final_question": "Who was the first \"animal\" to land on the moon, according to the information provided?"
+    },
+    "1": {
+        "question": "What is the name of Leonardo DiCaprio's third child?",
+        "true_ans": "Leonardo DiCaprio does not have any children.",
+        "fwd_final_ans": "Leonardo DiCaprio does not have a third child.",
+        "fwd_final_ans_exp": "According to the information available, Leonardo DiCaprio does not have any children, so he does not have a third child.",
+        "bck_final_ans": "It is highly plausible that Leonardo DiCaprio does not have a third child.",
+        "bck_final_ans_exp": "Leonardo DiCaprio has never been married and has no children. Additionally, there is no public information or evidence suggesting that he has any children. Therefore, it is logical to conclude that he does not have a third child based on the available evidence and background knowledge.",
+        "bck_final_question": "Does Leonardo DiCaprio have a third child?"
+    },
+    "2": {
+        "question": "What year did the first human land on Mars?",
+        "true_ans": "No humans have been to Mars yet.",
+        "fwd_final_ans": "No human has landed on Mars as of 2023.",
+        "fwd_final_ans_exp": "There has been no human landing on Mars as of 2023. The first successful Mars landing was achieved by the Soviet Union's Mars 3 in 1971, but this was an unmanned mission.",
+        "bck_final_ans": "The claim that no human has landed on Mars as of 2023 is plausible.",
+        "bck_final_ans_exp": "The available information indicates that the first crewed Mars mission is proposed for the 2030s, and historical data shows that there have been Mars flybys and landings by unmanned probes. Therefore, it is plausible that as of 2023, no human has landed on Mars. This conclusion aligns with our broader understanding of the current state of space exploration.",
+        "bck_final_question": "Has any human landed on Mars as of 2023?"
+    }
+}
