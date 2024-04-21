@@ -2,6 +2,10 @@ import numpy as np
 import yaml
 import json
 import os
+
+from sentence_transformers import SentenceTransformer
+from scipy.spatial.distance import cosine
+
 from openai import OpenAI
 import boto3
 from mistralai.client import MistralClient
@@ -162,22 +166,32 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     # bck_extracted_final_response = bck_extracted_final_resp_exp
 
     prompt_var_list = [query,bck_extracted_final_question]
-    # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
-    if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
-        same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
-    elif MODEL in ["mistral-small-latest", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
-        same_ques_resp = perform_mistral_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
-    elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
-        same_ques_resp = perform_llama_response(prompt_var_list,MODEL,TEMPERATURE,LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH)
 
-    print(same_ques_resp)
-    extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
-    comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
+    model = SentenceTransformer('bert-base-nli-mean-tokens')
+    embeddings = model.encode(prompt_var_list)
+    similarity = 1 - cosine(embeddings[0], embeddings[1])
+    if similarity <= 0.95:
+        # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
+        if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
+            same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+        elif MODEL in ["mistral-small-latest", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
+            same_ques_resp = perform_mistral_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
+        elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
+            same_ques_resp = perform_llama_response(prompt_var_list,MODEL,TEMPERATURE,LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH)
 
-    if extracted_gt_ans_resp1 == "identical":
-        prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+        print(same_ques_resp)
+        extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
+        comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
+
+        if extracted_gt_ans_resp1 == "identical":
+            prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+        else:
+            prompt_var_list = [query,true_ans,bck_extracted_final_response]
+    
     else:
-        prompt_var_list = [query,true_ans,bck_extracted_final_response]
+        prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+        extracted_gt_ans_resp1 = "semantic similarity"
+        comment1 = "semantic similarity"
 
     accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     print(accuracy_resp)
