@@ -69,7 +69,7 @@ def start_complete_workflow():
         # print(evidence_batch_list)
         # exit(1)
     
-    for i, d in enumerate(evidence_batch_list[500:]):
+    for i, d in enumerate(evidence_batch_list[:]):
         evidence_batch_list[i] = modify_evidence_batch_dict(d)
 
                 
