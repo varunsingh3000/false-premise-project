@@ -1,7 +1,8 @@
 External Sources: {} 
 Question: {}
 
-Please read the question and provide your response, your source reference, and also indicate the premise of the question.
+Please read the question and provide your response, your source reference, and also indicate the premise of the question
+in the format given below.
 
 Answer: 
 Source: 
