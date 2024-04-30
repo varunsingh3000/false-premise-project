@@ -48,9 +48,8 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
 # using their core concepts
 def perform_uncertainty_estimation(client,query,external_evidence,WORKFLOW_RUN_COUNT):
     # print("Uncertainty Estimation process starts")
-    og_response_dict = "test of new sc"
+    og_response_dict = "test of baseline"
     final_confidence_value = -1
-    candi_resp_list = []
     responses_dict = {}
     # print(WORKFLOW_RUN_COUNT)
     responses_dict.update({WORKFLOW_RUN_COUNT:[]})
@@ -61,38 +60,15 @@ def perform_uncertainty_estimation(client,query,external_evidence,WORKFLOW_RUN_C
     # question is added to the second index of the responses_dict, the rest will be candidate responses
     responses_dict[WORKFLOW_RUN_COUNT].append(query)
 
-    for i in range(MAX_CANDIDATE_RESPONSES):
-        prompt_var_list = [query, external_evidence]
-        # candidate responses are generated
-        chat_completion_resp_obj = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,QUERY_PROMPT_PATH)
-        response_dict = process_response(chat_completion_resp_obj)
-        print(response_dict)
-        if not check_dict_keys_condition(response_dict):
-            message = "It seems a proper response could not be generated."
-            print(i,response_dict)
-            responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
-            candi_resp_list.append(message)
-            continue
-        candi_resp_list.append(response_dict['Answer:'])
-        responses_dict[WORKFLOW_RUN_COUNT].append(response_dict)
-
-    model = SentenceTransformer('bert-base-nli-mean-tokens')
-    embeddings = model.encode(candi_resp_list)
-    similarities = [
-    1 - cosine(embeddings[0], embeddings[1]),
-    1 - cosine(embeddings[0], embeddings[2]),
-    1 - cosine(embeddings[1], embeddings[2])
-    ]
-    max_index = similarities.index(max(similarities))
-
-    final_response = candi_resp_list[max_index]
+    
+    prompt_var_list = [query]
+    final_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,QUERY_PROMPT_PATH)
     # uncertainty_response = perform_llama_response(client,candi_resp_list,TEMPERATURE,UNCERTAINTY_PROMPT_PATH)
     # print(uncertainty_response)
     # extract_value_from_single_key(uncertainty_response, 'Final Response:')
     # final_response = uncertainty_response
     print("Final response is: ", final_response)
     return responses_dict, final_response, final_confidence_value
-
 
 
 def start_openai_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT):

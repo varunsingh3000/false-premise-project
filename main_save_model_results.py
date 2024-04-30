@@ -165,7 +165,8 @@ def start_evaluation():
     #list variable to save automatic evaluation results
     accuracy_result_list = []
     final_accuracy_comment_list = []
-    path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
+    # path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
+    path = r"C:\GAMES_SETUP\Thesis\results\qaqa_answers_test (4).xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
@@ -181,5 +182,5 @@ def start_evaluation():
 
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
 
-start_complete_workflow()
+# start_complete_workflow()
 start_evaluation()

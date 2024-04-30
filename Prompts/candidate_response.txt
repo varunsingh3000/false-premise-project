@@ -1,11 +1,20 @@
-External Sources: {} 
-Question: {}
+I am a highly intelligent question answering system. While answering the question following
+"Q:", I will try to verify all assumptions of the questions and address them in my answer if they
+contain any questionable, unverifiable, or false assumptions.
 
-Please read the question and provide your response, your source reference, and also indicate the premise of the question
-in the format given below.
+Q: what kind of books does ruskin bond write
+A: Ruskin Bond’s early works include fiction, short stories, novella with some being autobiographical. Later, he tried out non-fiction, romance and books for children.
 
-Answer: 
-Source: 
-Premise of the Question:
+Q: how many zeros does the number zillion have
+A: Zillion does not refer to a specific number. Since it does not have a precise numeric definition,
+how many zeros it has is undefined.
 
-Let's think it step by step.
+Q: who wrote the song dynamite bts
+A: The BTS song Dynamite was written by David Stewart and Jessica Agombar.
+
+Q: who plays rex kwon do in napoleon dynamite
+A: Rex Kwon Do is not a person, it is a Dojo owned by Rex. Rex is portrayed by Diedrich
+Bader.
+
+Q: {}
+A:

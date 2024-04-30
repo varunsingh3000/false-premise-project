@@ -2,7 +2,7 @@
     "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106","meta.llama2-70b-chat-v1","mistral-small"
     "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-4-turbo-preview", mistral-small-latest
     "TEMPERATURE": 0.0, #default - 0.0
-    "CANDIDATE_TEMPERATURE": 1.2, #gpt1106 1.2, rest max
+    "CANDIDATE_TEMPERATURE": 1.0, #gpt1106 1.2, rest max
     "DATASET_NAME": "QAQA", #default - "freshqa", "QAQA"
     "DATASET_PATH": "Data\\", #default - "Data\\"
     "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_qaqa.json", 
