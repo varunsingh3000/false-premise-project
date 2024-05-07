@@ -34,7 +34,5 @@ question: {}
 correct answer: {}
 response: {}
 
-Use the following format for the output:
-
 comment: <explanation>
-evaluation: <correct/incorrect> 
+evaluation: <provide answer accuracy> 

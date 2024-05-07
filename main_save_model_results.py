@@ -160,9 +160,9 @@ def start_evaluation():
     same_answer_list = []
     same_question_list = []
     final_accuracy_comment_list = []
-    path = RESULT_SAVE_PATH + MODEL + "21stApr_for_back_reasoningabd.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "30thMar_for_back_reasoningabd.xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
-    df = pd.read_excel(path)
+    df = pd.read_excel(path)[:]
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
     true_ans_list = df["true_ans"].tolist()
