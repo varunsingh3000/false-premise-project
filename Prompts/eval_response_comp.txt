@@ -35,4 +35,4 @@ correct answer: {}
 response: {}
 
 comment: <explanation>
-evaluation: <provide answer accuracy> 
+evaluation: 
