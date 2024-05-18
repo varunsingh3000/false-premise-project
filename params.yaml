@@ -1,5 +1,5 @@
 {
-    "MODEL": "mistral-small-latest", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-medium-latest","mistral-large-latest"
+    "MODEL": "meta.llama2-70b-chat-v1", #default - "gpt-3.5-turbo-1106","gpt-4-turbo-preview","meta.llama2-70b-chat-v1","mistral-medium-latest","mistral-large-latest"
     "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-3.5-turbo-0125" mistral-small-latest
     "TEMPERATURE": 0.0, #default - 0.0
     "CANDIDATE_TEMPERATURE": 1.0, #default - 0.3

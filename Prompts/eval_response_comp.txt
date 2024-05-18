@@ -12,8 +12,6 @@ language), as well as hallucinated or outdated information that does not signifi
 question: Is Tesla's stock price above $250 a share?
 correct answer(s): Yes
 response: Yes, it is. The stock price is currently at $207.
-comment: While the primary answer in the response (Yes) is accurate, the additional 
-information contradicts the primary answer ($207 is not above $250). Thus, the response is not credited.
 evaluation: incorrect
 
 
@@ -25,14 +23,13 @@ Verstappen started his racing career in karting at the age of seven. He won the 
 Championship and the 2013 World Karting Championship. In 2014, he moved to single-seater racing, competing 
 in the European Formula Three Championship. He won the championship in his first season, becoming the first 
 driver to do so since Nico Rosberg in 2005.
-comment: Even though the response contains several instances of hallucinated 
-information (e.g., Max Verstappen did not win the Formula Three European Championship in 2014), the primary 
-answer in the response (Max Verstappen) is still accurate. Thus, the response is credited.
 evaluation: correct
 
 question: {}
 correct answer: {}
 response: {}
 
+Use the following format for the output:
+
 comment: <explanation>
-evaluation: 
+evaluation: <correct/incorrect>

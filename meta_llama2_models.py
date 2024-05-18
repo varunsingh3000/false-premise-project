@@ -70,11 +70,9 @@ def start_meta_api_model_response(query,external_evidence):
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     og_response_dict = process_response(chat_completion)
-    # print(og_response_dict)
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""
     fwd_main_answers_list, bck_main_answers_list = perform_adversarial_attack(client,query,external_evidence,
                                        og_response_dict['Answer:'],og_response_dict['Explanation:'])
-    # print("Mistral model response process ends")
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list

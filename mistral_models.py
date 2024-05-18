@@ -58,7 +58,6 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
 
     external_evidence = json.dumps(external_evidence, indent=4)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
-    # prompt_var_list1 = [external_evidence,query,fwd_extracted_final_response]
     back_reasoning_response_query = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_QUERY_PROMPT_PATH)
     back_reasoning_response = perform_mistral_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_RESP_PROMPT_PATH)
     bck_main_answers_list.append(back_reasoning_response_query)
@@ -73,7 +72,7 @@ def start_mistral_api_model_response(query,external_evidence):
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_mistral_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     og_response_dict = process_response(chat_completion)
-    # print(og_response_dict)
+    
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""

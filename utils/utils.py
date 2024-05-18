@@ -170,7 +170,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     model = SentenceTransformer('bert-base-nli-mean-tokens')
     embeddings = model.encode(prompt_var_list)
     similarity = 1 - cosine(embeddings[0], embeddings[1])
-    if similarity <= 0.5:
+    if similarity <= 0.7:
         # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
         # if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         #     same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
@@ -203,6 +203,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
 
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
     # print(query,comment1,accuracy_comment,accuracy)
+    print(accuracy_comment)
     return extracted_gt_ans_resp1, comment1, accuracy, accuracy_comment
     
 
