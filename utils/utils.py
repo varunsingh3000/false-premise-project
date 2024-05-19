@@ -58,7 +58,7 @@ def modify_evidence_batch_dict(evidence_batch_list):
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
-        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:]
     return modified_evidence_batch_list
 
 # function to parse through the api response and extract certain keywords in a dict
@@ -170,7 +170,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     model = SentenceTransformer('bert-base-nli-mean-tokens')
     embeddings = model.encode(prompt_var_list)
     similarity = 1 - cosine(embeddings[0], embeddings[1])
-    if similarity <= 0.7:
+    if similarity <= 0.9:
         # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
         # if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         #     same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
@@ -196,7 +196,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
         extracted_gt_ans_resp1 = "identical"
         comment1 = similarity
 
-    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,CANDIDATE_TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     print("Accuracy response text: ", accuracy_resp)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy_comment = extract_value_from_single_key(accuracy_resp, key = "comment:")
