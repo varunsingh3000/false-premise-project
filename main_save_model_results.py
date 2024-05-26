@@ -44,8 +44,14 @@ def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
 
 def start_complete_workflow():
     # processing specific to freshqa dataset
-    ques_id_list, query_list, ans_list = start_dataset_processing(DATASET_NAME)
 
+    dataset_elements = start_dataset_processing(DATASET_NAME)
+    if len(dataset_elements) == 6:
+        ques_id_list, query_list, ans_list, effective_year_list, \
+        num_hops_list, fact_type_list = dataset_elements
+    elif len(dataset_elements) == 3:
+        ques_id_list, query_list, ans_list = dataset_elements
+    
     # list variables initialised to save QA results later to a dataframe
     ques_no_list = []
     question_list = []
@@ -74,12 +80,23 @@ def start_complete_workflow():
         question_list.append(query)   
         final_response_list.append(final_response)
 
-    qa_data_dict = {
-        "ques_id":ques_no_list,
-        "question":question_list,
-        "true_ans":true_ans_list,
-        "final_answer":final_response_list
-    }
+    if DATASET_NAME == "freshqa":
+        qa_data_dict = {
+            "ques_id":ques_no_list,
+            "question":question_list,
+            "true_ans":true_ans_list,
+            "final_answer":final_response_list,
+            "effective_year":effective_year_list,
+            "num_hops":num_hops_list,
+            "fact_type":fact_type_list
+        }
+    elif DATASET_NAME == "QAQA":
+        qa_data_dict = {
+            "ques_id":ques_no_list,
+            "question":question_list,
+            "true_ans":true_ans_list,
+            "final_answer":final_response_list
+        }
 
     print("$"*100)
     df = pd.DataFrame(qa_data_dict)

@@ -3,7 +3,7 @@
     "EVAL_MODEL": "gpt-4-turbo-preview",
     "TEMPERATURE": 0.0,
     "CANDIDATE_TEMPERATURE": 1.0,
-    "DATASET_NAME": "freshqa", 
+    "DATASET_NAME": "QAQA", 
     "DATASET_PATH": "Data\\",
     "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
     "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", 

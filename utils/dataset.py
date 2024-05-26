@@ -16,7 +16,10 @@ def process_freshqa(dataset_name):
     query_list = df["question"].tolist()
     ans_list = df["answer_0"].tolist()
     ques_id_list = df["id"].tolist()
-    return ques_id_list, query_list, ans_list
+    effective_year_list = df["effective_year"].tolist()
+    num_hops_list = df["num_hops"].tolist()
+    fact_type_list = df["fact_type"].tolist()
+    return ques_id_list, query_list, ans_list, effective_year_list, num_hops_list, fact_type_list
 
 def process_QAQA(dataset_name):
     # processing specific to freshqa dataset
@@ -31,10 +34,10 @@ def process_QAQA(dataset_name):
 def start_dataset_processing(dataset_name):
     print("Dataset processing started")
     if dataset_name == "freshqa":
-        ques_id_list, query_list, ans_list = process_freshqa(dataset_name)
+        dataset_elements = process_freshqa(dataset_name)
     elif dataset_name == "QAQA":
-        ques_id_list, query_list, ans_list = process_QAQA(dataset_name)
+        dataset_elements = process_QAQA(dataset_name)
     
     print("Dataset processing ended")
-    return ques_id_list, query_list, ans_list
+    return dataset_elements
 
