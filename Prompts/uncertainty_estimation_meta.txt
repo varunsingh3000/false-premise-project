@@ -1,9 +1,0 @@
-<s>[INST] <<SYS>>
-Response A: {}
-
-Response B: {}
-
-Compare Response B with Response A and determine if they are semantically the same.
-Credit the responses as only Yes when they are the same and only No when they are different.
-
-Certainty_Estimation:<</SYS>> [/INST]

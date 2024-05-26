@@ -1,19 +1,17 @@
 {
-    "MODEL": "gpt-3.5-turbo-1106", #default - "gpt-3.5-turbo-1106","meta.llama2-70b-chat-v1","mistral-small"
-    "EVAL_MODEL": "gpt-4-turbo-preview", # "gpt-4-turbo-preview", mistral-small-latest
-    "TEMPERATURE": 0.0, #default - 0.0
-    "CANDIDATE_TEMPERATURE": 1.0, #gpt1106 1.2, rest max
-    "DATASET_NAME": "QAQA", #default - "freshqa", "QAQA"
-    "DATASET_PATH": "Data\\", #default - "Data\\"
-    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_qaqa.json", 
-    "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", #default - "Prompts\\candidate_response.txt"
-    "UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation.txt", #default - "Prompts\\uncertainty_estimation_confidence.txt"
+    "MODEL": "gpt-3.5-turbo-1106",
+    "EVAL_MODEL": "gpt-4-turbo-preview",
+    "TEMPERATURE": 0.0,
+    "CANDIDATE_TEMPERATURE": 1.0,
+    "DATASET_NAME": "freshqa", 
+    "DATASET_PATH": "Data\\",
+    "EVIDENCE_BATCH_SAVE_PATH": "Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", 
+    "QUERY_PROMPT_PATH": "Prompts\\candidate_response.txt", 
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_resp_fresh.txt",
-    "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", #default - "Prompts\\candidate_response_meta.txt"
-    "LLAMA_UNCERTAINTY_PROMPT_PATH": "Prompts\\uncertainty_estimation_new_meta.txt", #default - "Prompts\\uncertainty_estimation_meta.txt"
-    "RESULT_SAVE_PATH": "Results\\evidence_test_", #default - "Results\\my_dataframe6.csv"
-    "WORKFLOW_RUN_COUNT": 0, #default - 0
-    "MAX_CANDIDATE_RESPONSES": 3, #default - 3
-    "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1
-    "MATCH_CRITERIA": "Half" #default - "Half", takes either "Half" or "Full" as valid input
+    "LLAMA_QUERY_PROMPT_PATH": "Prompts\\candidate_response_meta.txt", 
+    "RESULT_SAVE_PATH": "Results\\evidence_test_", 
+    "WORKFLOW_RUN_COUNT": 0, 
+    "MAX_CANDIDATE_RESPONSES": 3, 
+    "MAX_WORKFLOW_RUN_COUNT": 1, 
+    "MATCH_CRITERIA": "Half"
 }

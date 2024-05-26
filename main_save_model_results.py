@@ -12,8 +12,7 @@ from utils.utils import auto_evaluation
 # from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
-# from meta_llama2_models import start_meta_api_model_response
-from meta_llama2_models_test import start_meta_api_model_response
+from meta_llama2_models import start_meta_api_model_response
 
 
 with open('params.yaml', 'r') as file:
@@ -39,8 +38,8 @@ def start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT):
         result = start_meta_api_model_response(query,external_evidence,WORKFLOW_RUN_COUNT)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    responses_dict, final_response, final_confidence_value = result
-    return responses_dict, final_response, final_confidence_value
+    final_response = result
+    return final_response
  
 
 def start_complete_workflow():
@@ -49,19 +48,12 @@ def start_complete_workflow():
 
     # list variables initialised to save QA results later to a dataframe
     ques_no_list = []
-    workflow_run_count = []
     question_list = []
     true_ans_list = []
-    og_response_list = []
-    final_ans_dict_list = []
-    finalconfi_list = []
-    evidence_list = []
-    candidate_responses_list = []
     final_response_list = []
 
-    
     #generate_evidence_batch is used to save evidence results in a batch
-    # if the function has been called before and results are already save then comment the function call
+    # if the function has been called before and results are already saved then comment the function call
     # generate_evidence_batch(ques_id_list,query_list)
 
     with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
@@ -75,83 +67,19 @@ def start_complete_workflow():
 
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
-        # print("NEW QUERY HAS STARTED"*4)
-        responses_dict, final_response, final_confidence_value = start_workflow(query,
-                                                            external_evidence,MODEL,WORKFLOW_RUN_COUNT)
-        # print("RESPONSES DICT : ", responses_dict)
-        # print("QUERY HAS FINISHED"*4)    
-
-        temp_candidate_response_list = []
-        temp_indi_resp_list=[]
-        for key_value in responses_dict:
-            ques_no_list.append(ques_id)
-            true_ans_list.append(true_ans)
-            workflow_run_count.append(key_value)
-            og_response_list.append(responses_dict[key_value][0])
-            evidence_list.append(responses_dict[key_value][1])
-            question_list.append(responses_dict[key_value][2])
-            final_ans_dict_list.append(final_response)
-            finalconfi_list.append(final_confidence_value) 
-
-            for candidate_resp in responses_dict[key_value][3:]:  
-                temp_indi_resp_list.append(candidate_resp)
-            temp_candidate_response_list.append(temp_indi_resp_list)
-            temp_indi_resp_list = []
-        candidate_responses_list.append(temp_candidate_response_list)
-    
-        #appending results for accuracy
-        # final_resp_text = ""
-        # if 'Answer:' in final_response:
-        #     final_resp_text += final_response['Answer:']
-        # if 'Explanation:' in final_response:
-        #     if final_resp_text:  # If Answer: key exists and is not empty, add a space before Explanation:
-        #         final_resp_text += " "
-        #     final_resp_text += final_response['Explanation:']
         
-        # final_response_list.append(final_resp_text)
-        # if 'Answer:' in final_response:
-        #     final_response_list.append(final_response['Answer:'])
-        # else:
-        #     final_response_list.append(final_response)
-        
+        final_response = start_workflow(query,external_evidence,MODEL,WORKFLOW_RUN_COUNT)
+        ques_no_list.append(ques_id)
+        true_ans_list.append(true_ans)
+        question_list.append(query)   
         final_response_list.append(final_response)
 
     qa_data_dict = {
         "ques_id":ques_no_list,
-        "workflow_run_count":workflow_run_count,
         "question":question_list,
         "true_ans":true_ans_list,
-        "final_answer":final_response_list,
-        "original_response": og_response_list,
-        "final_ans_dict":final_ans_dict_list,
-        "final_confi":finalconfi_list,
-        "evidence": evidence_list
+        "final_answer":final_response_list
     }
-
-    # loop to generate keys for candidate responses depending on the num of runs i.e. candidate responses
-    for i in range(MAX_CANDIDATE_RESPONSES):
-        key_name = f"candidate_response{i}"
-        qa_data_dict[key_name] = [] 
-
-    # loop to append the values of the candidate responses to the list created in the above loop
-    # for the responses of all the candidate responses generated via the worflow for all number of runs
-    for candidate_response_list in candidate_responses_list:
-        for individual_resp_list in candidate_response_list:
-            for indi_response_ind in range(MAX_CANDIDATE_RESPONSES):
-                if indi_response_ind < len(individual_resp_list):
-                    candidate_response = individual_resp_list[indi_response_ind]
-                else:
-                    candidate_response = ""  # Assign an empty string if the index is out of bounds
-                qa_data_dict[f"candidate_response{indi_response_ind}"].append(candidate_response)
-
-    # Find the maximum length among the lists
-    max_length = max(len(lst) for lst in qa_data_dict.values() if isinstance(lst, list))
-
-    # Pad shorter lists with default value (e.g., None) to make them of equal lengths
-    for key, value in qa_data_dict.items():
-        if isinstance(value, list):
-            if len(value) < max_length:
-                qa_data_dict[key].extend([""] * (max_length - len(value)))
 
     print("$"*100)
     df = pd.DataFrame(qa_data_dict)
@@ -164,23 +92,17 @@ def start_complete_workflow():
 def start_evaluation():
     #list variable to save automatic evaluation results
     accuracy_result_list = []
-    final_accuracy_comment_list = []
-    # path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
-    path = r"C:\GAMES_SETUP\Thesis\results\qaqa_answers_test (4).xlsx"
-    # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_gpt-3.5-turbo-1106alltest.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
     true_ans_list = df["true_ans"].tolist()
     final_answer_list = df["final_answer"].tolist()
     for query,true_ans,final_resp_text in zip(query_list,true_ans_list,final_answer_list):
-        extracted_gt_ans_resp1, accuracy_comment, accuracy = auto_evaluation(query,true_ans,final_resp_text)
+        accuracy = auto_evaluation(query,true_ans,final_resp_text)
         accuracy_result_list.append(accuracy)
-        final_accuracy_comment_list.append(accuracy_comment)
 
     df["accuracy"] = accuracy_result_list
-    df["accuracy_comment"] = final_accuracy_comment_list
-
     df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
 
-# start_complete_workflow()
+start_complete_workflow()
 start_evaluation()

@@ -1,4 +1,3 @@
-import numpy as np
 import json
 import yaml
 import os
@@ -29,20 +28,18 @@ def generate_evidence_batch(ques_id_list,query_list):
 
 def modify_evidence_batch_dict(evidence_batch_list):
     modified_evidence_batch_list = {}
-    # for key, value in evidence_batch_list.items():
-    #     if isinstance(value, list):
-    #         for item in value:
-    #             item.pop("url", None)
+    for key, value in evidence_batch_list.items():
+        if isinstance(value, list):
+            for item in value:
+                item.pop("url", None)
 
     if 'QueryID' in evidence_batch_list:
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
-    if 'answer_box' in evidence_batch_list:
+    if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
         modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
-    # if 'answer_box' in evidence_batch_list and evidence_batch_list['answer_box']:
-    #     modified_evidence_batch_list['answer_box'] = evidence_batch_list['answer_box']
-    #     if 'related_questions' in evidence_batch_list:
-    #         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
-    #     return modified_evidence_batch_list
+        if 'related_questions' in evidence_batch_list:
+            modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
+        return modified_evidence_batch_list
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
@@ -79,16 +76,6 @@ def process_response(chat_completion):
         response_dict['message'] = text
 
     return response_dict
-
-
-def uncertainty_confidence_cal(confi_match_list,confi_list):
-    # first we remove the % symbol from the list values
-    if np.sum(confi_list) != 0:
-        final_confidence_value = round(np.divide(np.sum(confi_match_list),np.sum(confi_list)) * 100, 2)
-    else:
-        return 0
-    return final_confidence_value
-
 
 def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA):
     if MATCH_CRITERIA == "Half":
@@ -131,26 +118,6 @@ def extract_value_from_single_key(response, key):
 
     return response
 
-def extract_question_after_binary(prompt):
-    # Find the index of "Binary Question: "
-    binary_index = prompt.find("Binary Question:")
-
-    if binary_index != -1:
-        # Extract the text after "Binary Question: "
-        binary_question_text = prompt[binary_index + len("Binary Question:"):].strip()
-        
-        # Find the next space after the binary question text
-        next_space_index = binary_question_text.find("")
-
-        # Extract the question after the binary question key
-        if next_space_index != -1:
-            extracted_question = binary_question_text[next_space_index:].strip()
-            return extracted_question
-        else:
-            return "No question found after the Binary Question key."
-    else:
-        return "Binary question key not found."
-
 def create_dummy_response_dict(og_response_dict,external_evidence,query,WORKFLOW_RUN_COUNT,MAX_CANDIDATE_RESPONSES):
     dummy_response_dict = {
         WORKFLOW_RUN_COUNT: [
@@ -166,10 +133,9 @@ def auto_evaluation(query,true_ans,final_resp_text):
     prompt_var_list = [query,true_ans,final_resp_text]
     same_ques_resp = perform_gpt_response(prompt_var_list,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
     extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
-    accuracy_comment = extract_value_from_single_key(same_ques_resp, key = "comment:")
     accuracy = "Correct" if extracted_gt_ans_resp1 == "correct" else "Incorrect"
     print(query,accuracy)
-    return extracted_gt_ans_resp1, accuracy_comment, accuracy
+    return accuracy
 
 # this func is provided for easy access to the gpt model api for any use case
 # presently this is used for automatic evaluation
@@ -188,11 +154,9 @@ def perform_gpt_response(prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=EVAL_MODEL,
-        temperature=temperature,
-        max_tokens = 600
+        temperature=temperature
         )
-    # print("#"*20)
-    # print("INITIAL LLM RESPONSE")
+    
     # print(chat_completion.choices[0].message)
     # print("The token usage: ", chat_completion.usage)
     return chat_completion.choices[0].message.content.strip()
