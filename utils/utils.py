@@ -69,7 +69,7 @@ def process_response(chat_completion):
     text_without_newlines = text.replace('\n', '')
 
     # Define key terms to split the text into sections
-    key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Source:', 'Premise of the Question:']
     response_dict = {}
     # Splitting the text into sections based on key terms
     for i in range(len(key_terms) - 1):
