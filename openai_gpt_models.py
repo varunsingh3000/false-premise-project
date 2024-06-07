@@ -37,8 +37,7 @@ def perform_gpt_response(client,prompt_var_list,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=MODEL,
-        temperature=temperature,
-        max_tokens=600
+        temperature=temperature
         )
     
     return chat_completion.choices[0].message.content.strip()
@@ -59,6 +58,7 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
         fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
     external_evidence = json.dumps(external_evidence, indent=4)
+    # print(external_evidence)
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
     back_reasoning_response_query = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_QUERY_PROMPT_PATH)
     back_reasoning_response = perform_gpt_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_RESP_PROMPT_PATH)

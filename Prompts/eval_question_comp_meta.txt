@@ -34,5 +34,4 @@ Question 2: {}
 
 Use the following format for the output:
 
-comment: <explanation>
 evaluation: <identical/different> <</SYS>> [/INST]

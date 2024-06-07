@@ -28,8 +28,6 @@ AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
 LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH = config['LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH']
 
 
-
-
 def generate_evidence_batch(ques_id_list,query_list):
     # evidence list for saving results in batch
     evidence_batch_list = []
@@ -43,10 +41,10 @@ def generate_evidence_batch(ques_id_list,query_list):
 
 def modify_evidence_batch_dict(evidence_batch_list):
     modified_evidence_batch_list = {}
-    for key, value in evidence_batch_list.items():
-        if isinstance(value, list):
-            for item in value:
-                item.pop("url", None)
+    # for key, value in evidence_batch_list.items():
+    #     if isinstance(value, list):
+    #         for item in value:
+    #             item.pop("url", None)
     
     if 'QueryID' in evidence_batch_list:
         modified_evidence_batch_list['QueryID'] = evidence_batch_list['QueryID']
@@ -58,7 +56,7 @@ def modify_evidence_batch_dict(evidence_batch_list):
     if 'related_questions' in evidence_batch_list:
         modified_evidence_batch_list['related_questions'] = evidence_batch_list['related_questions'][:]
     if 'organic_results' in evidence_batch_list:
-        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:]
+        modified_evidence_batch_list['organic_results'] = evidence_batch_list['organic_results'][:2]
     return modified_evidence_batch_list
 
 # function to parse through the api response and extract certain keywords in a dict
@@ -69,7 +67,7 @@ def process_response(chat_completion):
     text_without_newlines = text.replace('\n', '')
 
     # Define key terms to split the text into sections
-    key_terms = ['Answer:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
     response_dict = {}
     # Splitting the text into sections based on key terms
     for i in range(len(key_terms) - 1):
@@ -89,16 +87,6 @@ def process_response(chat_completion):
         response_dict['message'] = text
 
     return response_dict
-
-
-def uncertainty_confidence_cal(confi_match_list,confi_list):
-    # first we remove the % symbol from the list values
-    if np.sum(confi_list) != 0:
-        final_confidence_value = round(np.divide(np.sum(confi_match_list),np.sum(confi_list)) * 100, 2)
-    else:
-        return 0
-    return final_confidence_value
-
 
 def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA):
     if MATCH_CRITERIA == "Half":
@@ -171,40 +159,19 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     embeddings = model.encode(prompt_var_list)
     similarity = 1 - cosine(embeddings[0], embeddings[1])
     if similarity <= 0.9:
-        # prompt_var_list = [query,fwd_extracted_final_response,bck_extracted_final_question,bck_extracted_final_response]
-        # if MODEL in ["gpt-3.5-turbo-0125", "gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
-        #     same_ques_resp = perform_gpt_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
-        # elif MODEL in ["mistral-small-latest", "mistral-small", "mistral-medium", "mistral-medium-latest", "mistral-large-latest"]:
-        #     same_ques_resp = perform_mistral_response(prompt_var_list,MODEL,TEMPERATURE,AUTO_EVALUATION_QUERY_PROMPT_PATH)
-        # elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
-        #     same_ques_resp = perform_llama_response(prompt_var_list,MODEL,TEMPERATURE,LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH)
-
-        # print(same_ques_resp)
-        # extracted_gt_ans_resp1 = extract_value_from_single_key(same_ques_resp, key = "evaluation:")
-        # comment1 = extract_value_from_single_key(same_ques_resp, key = "comment:")
-
-        # if extracted_gt_ans_resp1 == "identical":
-        #     prompt_var_list = [query,true_ans,fwd_extracted_final_response]
-        # else:
-        #     prompt_var_list = [query,true_ans,bck_extracted_final_response]
         prompt_var_list = [query,true_ans,bck_extracted_final_response]
         extracted_gt_ans_resp1 = "different"
-        comment1 = similarity # comment1 = "semantic similarity"
     
     else:
         prompt_var_list = [query,true_ans,fwd_extracted_final_response]
         extracted_gt_ans_resp1 = "identical"
-        comment1 = similarity
 
-    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    print("Accuracy response text: ", accuracy_resp)
+    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,CANDIDATE_TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
+    # print("Accuracy response text: ", accuracy_resp)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
-    accuracy_comment = extract_value_from_single_key(accuracy_resp, key = "comment:")
-
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
-    # print(query,comment1,accuracy_comment,accuracy)
-    print(accuracy_comment)
-    return extracted_gt_ans_resp1, comment1, accuracy, accuracy_comment
+    print(accuracy)
+    return extracted_gt_ans_resp1, accuracy
     
 
 def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
@@ -222,8 +189,7 @@ def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
     chat_completion = client.chat.completions.create(
         messages=message,
         model=model,
-        temperature=temperature,
-        max_tokens=600
+        temperature=temperature
         )
     
     return chat_completion.choices[0].message.content.strip()
@@ -235,8 +201,7 @@ def perform_llama_response(prompt_var_list,model,temperature,prompt_path):
     
     message = json.dumps({
     "prompt": file_content.format(*prompt_var_list),
-    "temperature": temperature,
-    "max_gen_len": 600
+    "temperature": temperature
     })
 
     accept = 'application/json'
@@ -260,8 +225,7 @@ def perform_mistral_response(prompt_var_list,model,temperature,prompt_path):
     chat_completion = client.chat(
         model=model,
         temperature=temperature,
-        messages=message,
-        max_tokens=600
+        messages=message
     )
     
     return chat_completion.choices[0].message.content.strip()
