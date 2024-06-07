@@ -103,13 +103,14 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest-QA2.xlsx",index=False)  # Set index=False to not write row indices
 
 
 def start_evaluation():
     #list variable to save automatic evaluation results
     accuracy_result_list = []
-    path = RESULT_SAVE_PATH + MODEL + "alltest.xlsx"
+    # path = RESULT_SAVE_PATH + MODEL + "alltest-QA2.xlsx"
+    path = "C:\GAMES_SETUP\Thesis\Code\Results\mistral-small-latest-freshprompt-freshqa.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
     true_ans_list = df["true_ans"].tolist()
@@ -119,7 +120,8 @@ def start_evaluation():
         accuracy_result_list.append(accuracy)
 
     df["accuracy"] = accuracy_result_list
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval.xlsx",index=False)
+    # df.to_excel(RESULT_SAVE_PATH + MODEL + "alltest_eval-QA2.xlsx",index=False)
+    df.to_excel(RESULT_SAVE_PATH + "mistral-small-latest-freshprompt-freshqa_eval.xlsx",index=False)
 
-start_complete_workflow()
+# start_complete_workflow()
 start_evaluation()
