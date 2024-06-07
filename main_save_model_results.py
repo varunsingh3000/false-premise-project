@@ -47,9 +47,7 @@ def start_complete_workflow():
         ques_id_list, query_list, ans_list, effective_year_list, \
         num_hops_list, fact_type_list = dataset_elements
     elif len(dataset_elements) == 3:
-        # ques_id_list, query_list, ans_list = dataset_elements
-        print("Ablation study was only done on FreshQA, you will need to implement for QA2.")
-        exit(1)
+        ques_id_list, query_list, ans_list = dataset_elements
 
     # list variables to save QA results later to a dataframe
     ques_no_list = []
@@ -101,20 +99,33 @@ def start_complete_workflow():
         bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
         bck_final_question_list.append(bck_extracted_final_question)
 
-    qa_data_dict = {
-        "ques_id":ques_no_list,
-        "question":question_list,
-        "true_ans":true_ans_list,
-        "fwd_final_ans":fwd_final_response_list,
-        "fwd_final_ans_exp":fwd_final_resp_exp_list,
-        "bck_final_ans":bck_final_response_list,
-        "bck_final_ans_exp":bck_final_resp_exp_list,
-        "bck_final_question":bck_final_question_list,
-        "original_response": original_response_list,
-        "effective_year":effective_year_list,
-        "num_hops":num_hops_list,
-        "fact_type":fact_type_list
-    }
+    if DATASET_NAME == "freshqa":
+        qa_data_dict = {
+            "ques_id":ques_no_list,
+            "question":question_list,
+            "true_ans":true_ans_list,
+            "fwd_final_ans":fwd_final_response_list,
+            "fwd_final_ans_exp":fwd_final_resp_exp_list,
+            "bck_final_ans":bck_final_response_list,
+            "bck_final_ans_exp":bck_final_resp_exp_list,
+            "bck_final_question":bck_final_question_list,
+            "original_response": original_response_list,
+            "effective_year":effective_year_list,
+            "num_hops":num_hops_list,
+            "fact_type":fact_type_list
+        }
+    elif DATASET_NAME == "QAQA":
+        qa_data_dict = {
+            "ques_id":ques_no_list,
+            "question":question_list,
+            "true_ans":true_ans_list,
+            "fwd_final_ans":fwd_final_response_list,
+            "fwd_final_ans_exp":fwd_final_resp_exp_list,
+            "bck_final_ans":bck_final_response_list,
+            "bck_final_ans_exp":bck_final_resp_exp_list,
+            "bck_final_question":bck_final_question_list,
+            "original_response": original_response_list
+        }
 
     print("$"*100)
     df = pd.DataFrame(qa_data_dict)
