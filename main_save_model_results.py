@@ -33,7 +33,7 @@ def start_workflow(query,external_evidence,MODEL):
         result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-small-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
-    elif MODEL in ["meta.llama2-13b-chat-v1", "meta.llama2-70b-chat-v1"]:
+    elif MODEL in ["meta.llama3-8b-instruct-v1:0", "meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
