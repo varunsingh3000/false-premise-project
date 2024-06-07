@@ -14,9 +14,16 @@ with open('params.yaml', 'r') as file:
 MODEL = config['MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
-QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
-BACKWARD_REASONING_RESP_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH']
-BACKWARD_REASONING_QUERY_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH']
+
+
+if MODEL == "meta.llama2-70b-chat-v1":
+    QUERY_PROMPT_PATH = config['LLAMA_QUERY_PROMPT_PATH']
+    BACKWARD_REASONING_RESP_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH']
+    BACKWARD_REASONING_QUERY_PROMPT_PATH = config['LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH']
+elif MODEL == "meta.llama3-8b-instruct-v1:0" or MODEL == "meta.llama3-70b-instruct-v1:0":
+    QUERY_PROMPT_PATH = config['LLAMA3_QUERY_PROMPT_PATH']
+    BACKWARD_REASONING_RESP_PROMPT_PATH = config['LLAMA3_BACKWARD_REASONING_RESP_PROMPT_PATH']
+    BACKWARD_REASONING_QUERY_PROMPT_PATH = config['LLAMA3_BACKWARD_REASONING_QUERY_PROMPT_PATH']
 
 # call the meta llama api
 def perform_llama_response(client,prompt_var_list,temperature,prompt_path):
@@ -59,21 +66,21 @@ def perform_adversarial_attack(client,query,external_evidence,final_response_ans
     back_reasoning_response = perform_llama_response(client,prompt_var_list,CANDIDATE_TEMPERATURE,BACKWARD_REASONING_RESP_PROMPT_PATH)
     bck_main_answers_list.append(back_reasoning_response_query)
     bck_main_answers_list.append(back_reasoning_response)
-
+    print(bck_main_answers_list)
     return fwd_main_answers_list, bck_main_answers_list
 
 
 def start_meta_api_model_response(query,external_evidence):
-    print("Meta Llama2 model response process starts",query)
+    print("Meta Llama model response process starts",query)
     client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
     prompt_var_list = [query, external_evidence]
     chat_completion = perform_llama_response(client,prompt_var_list,TEMPERATURE,QUERY_PROMPT_PATH)
     og_response_dict = process_response(chat_completion)
-    # print(og_response_dict)
+    print(og_response_dict)
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
         og_response_dict['Explanation:'] = ""
     fwd_main_answers_list, bck_main_answers_list = perform_adversarial_attack(client,query,external_evidence,
                                        og_response_dict['Answer:'],og_response_dict['Explanation:'])
-    # print("Mistral model response process ends")
+
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list

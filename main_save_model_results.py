@@ -33,7 +33,7 @@ def start_workflow(query,external_evidence,MODEL):
         result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-small-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
-    elif MODEL in ["meta.llama3-8b-instruct-v1:0", "meta.llama2-70b-chat-v1"]:
+    elif MODEL in ["meta.llama3-8b-instruct-v1:0", "meta.llama3-70b-instruct-v1:0","meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
@@ -120,15 +120,15 @@ def start_complete_workflow():
     df = pd.DataFrame(qa_data_dict)
     print(df.head())
     print("$"*100)
-
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "9thMay_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
+    
+    df.to_excel(RESULT_SAVE_PATH + "meta3" + "9thMay_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
 
 
 def start_evaluation():
     #list variable to save automatic evaluation results
     final_accuracy_list = []
     same_question_list = []
-    path = RESULT_SAVE_PATH + MODEL + "9thMay_for_back_reasoningabd.xlsx"
+    path = RESULT_SAVE_PATH + "meta3" + "9thMay_for_back_reasoningabd.xlsx"
     df = pd.read_excel(path)[:]
 
     query_list = df["question"].tolist()
@@ -152,7 +152,8 @@ def start_evaluation():
     df["same_question"] = same_question_list
     df["final_accuracy"] = final_accuracy_list
 
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "9thMay_alltest_evalabd.xlsx",index=False)    
+    print(df.head())
+    df.to_excel(RESULT_SAVE_PATH + "meta3" + "9thMay_alltest_evalabd.xlsx",index=False)    
 
 start_complete_workflow()
 start_evaluation()
