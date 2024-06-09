@@ -1,0 +1,17 @@
+[INST] <<SYS>> observation (o1): {}
+
+conclusion (o2): {}
+
+Given the conclusion o2, engage in abductive reasoning to form a question that directly addresses the information 
+provided in the conclusion o2. Ensure that the question is concise, clear, and directly relevant to the content of Statement.
+
+Note: Your response should not mention any variables such as o1 and o2 or reference them in the response. 
+
+Note: Formulate your response without any dependency on variables names, your response should make sense on its own.
+
+Note: Ensure that your responses are direct, concise and clear.
+
+Use the following format for the output:
+
+Final Question: <based on abductive reasoning, the final question without variable names> <</SYS>> [/INST]
+

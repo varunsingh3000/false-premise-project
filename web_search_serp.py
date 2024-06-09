@@ -26,20 +26,20 @@ def perform_web_search(params):
     return response_json
 
 #Function to process the json response into a proper format
-def process_json(response_json):
+def process_json(query_id, response_json):
     # Load the external evidence into a new var for data parsing
     data = response_json.copy()
     # We will gather all the relevant info and store it in a dictionary
     # We are only interested in the webpages and entities (knowledgegraphs)
-    retrieved_info_dict = {}
+    retrieved_info_dict = {"QueryID":query_id}
         
     if 'answer_box' in data:
         print("Answer Box is found as external evidence")
         retrieved_info_dict.update({"answer_box":[]})
         try:
-            name = data["answer_box"]["title"]
-            url = data["answer_box"]["link"]
-            snippet = data["answer_box"]["snippet"]
+            name = data["answer_box"].get("title", "")
+            url = data["answer_box"].get("link", "")
+            snippet = data["answer_box"].get("snippet", "")
             temp_dict = {"name": name, "url": url, "snippet": snippet}
             retrieved_info_dict["answer_box"].append(temp_dict)
         except KeyError as e:
@@ -51,9 +51,9 @@ def process_json(response_json):
         retrieved_info_dict.update({"related_questions":[]})
         for relatedquesitem in data["related_questions"][:]: #iterating through a list here
             try:
-                name = relatedquesitem["question"]
-                url = relatedquesitem["link"]
-                snippet = relatedquesitem["snippet"]
+                name = relatedquesitem.get("question", "")
+                url = relatedquesitem.get("link", "")
+                snippet = relatedquesitem.get("snippet", "")
                 temp_dict = {"name": name, "url": url, "snippet": snippet}
                 retrieved_info_dict["related_questions"].append(temp_dict)
             except KeyError as e:
@@ -63,21 +63,21 @@ def process_json(response_json):
 
     # IMP: Organic results are not considered since they act as noise in the prompts for the evidence 
     # organic results are only added if answer_box and related_question are not available
-    if 'answer_box' not in data and 'related_questions' not in data:
-        if 'organic_results' in data:
-            print("Web pages are found as external evidence")
-            retrieved_info_dict.update({"organic_results":[]})
-            for webpageitem in data["organic_results"][:1]: #iterating through a list here
-                try:
-                    name = webpageitem["title"]
-                    url = webpageitem["link"]
-                    snippet = webpageitem["snippet"]
-                    temp_dict = {"name": name, "url": url, "snippet": snippet}
-                    retrieved_info_dict["organic_results"].append(temp_dict)
-                except KeyError as e:
-                    # If any of the keys are missing, print a message and continue to the next item
-                    print(f"Key {e} not found. Skipping this item.")
-                    continue
+    # if 'answer_box' not in data and 'related_questions' not in data:
+    if 'organic_results' in data:
+        print("Web pages are found as external evidence")
+        retrieved_info_dict.update({"organic_results":[]})
+        for webpageitem in data["organic_results"][:4]: #iterating through a list here
+            try:
+                name = webpageitem.get("title", "")
+                url = webpageitem.get("link", "")
+                snippet = webpageitem.get("snippet", "")
+                temp_dict = {"name": name, "url": url, "snippet": snippet}
+                retrieved_info_dict["organic_results"].append(temp_dict)
+            except KeyError as e:
+                # If any of the keys are missing, print a message and continue to the next item
+                print(f"Key {e} not found. Skipping this item.")
+                continue
         
     if "message" in data:
         retrieved_info_dict = data.copy()
@@ -85,7 +85,7 @@ def process_json(response_json):
     return retrieved_info_dict
 
 
-def start_web_search(query):
+def start_web_search(query_id,query):
     print("Web search process starts")
     # Add your SerpAPI Web Search API key to your environment variables.
     subscription_key = os.environ.get("SERP_API_WEB_SEARCH")
@@ -96,7 +96,7 @@ def start_web_search(query):
     # call the web search api and get the response as json back
     response_json = perform_web_search(params)
     # process the json response into a suitable format of dictionary later used
-    external_evidence = process_json(response_json)
+    external_evidence = process_json(query_id,response_json)
     print("Web search process ends")
     return external_evidence
 
