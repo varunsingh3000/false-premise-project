@@ -46,8 +46,8 @@ def start_complete_workflow():
     if len(dataset_elements) == 6:
         ques_id_list, query_list, ans_list, effective_year_list, \
         num_hops_list, fact_type_list = dataset_elements
-    elif len(dataset_elements) == 3:
-        ques_id_list, query_list, ans_list = dataset_elements
+    elif len(dataset_elements) == 4:
+        ques_id_list, query_list, ans_list, premise_list = dataset_elements
 
     # list variables to save QA results later to a dataframe
     ques_no_list = []
@@ -124,7 +124,8 @@ def start_complete_workflow():
             "bck_final_ans":bck_final_response_list,
             "bck_final_ans_exp":bck_final_resp_exp_list,
             "bck_final_question":bck_final_question_list,
-            "original_response": original_response_list
+            "original_response": original_response_list,
+            "all_assumptions_valid": premise_list
         }
 
     print("$"*100)
@@ -132,16 +133,15 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
     
-    df.to_excel(RESULT_SAVE_PATH + "meta3" + "9thMay_for_back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
 
 
 def start_evaluation():
     #list variable to save automatic evaluation results
     final_accuracy_list = []
     same_question_list = []
-    path = RESULT_SAVE_PATH + "meta3" + "9thMay_for_back_reasoningabd.xlsx"
-    df = pd.read_excel(path)[:]
-
+    path = RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx"
+    df = pd.read_excel(path)
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
     true_ans_list = df["true_ans"].tolist()
@@ -164,7 +164,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
 
     print(df.head())
-    df.to_excel(RESULT_SAVE_PATH + "meta3" + "9thMay_alltest_evalabd.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd.xlsx",index=False)    
 
 start_complete_workflow()
 start_evaluation()

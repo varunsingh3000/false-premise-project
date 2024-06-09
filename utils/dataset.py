@@ -28,7 +28,8 @@ def process_QAQA(dataset_name):
     query_list = df["question"].tolist()
     ans_list = df["abstractive_answer"].tolist()
     ques_id_list = df["idx"].tolist()
-    return ques_id_list, query_list, ans_list
+    premise_list = df["all_assumptions_valid"].tolist()
+    return ques_id_list, query_list, ans_list, premise_list
 
 # function to start the processing of dataset based on which dataset is called
 def start_dataset_processing(dataset_name):
