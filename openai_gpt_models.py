@@ -79,5 +79,4 @@ def start_openai_api_model_response(query,external_evidence):
         og_response_dict['Explanation:'] = ""
     fwd_main_answers_list, bck_main_answers_list = perform_adversarial_attack(client,query,external_evidence,
                                        og_response_dict['Answer:'],og_response_dict['Explanation:'])
-    # print("Mistral model response process ends")
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list
