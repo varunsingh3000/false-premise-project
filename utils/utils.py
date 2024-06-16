@@ -158,7 +158,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     model = SentenceTransformer('bert-base-nli-mean-tokens')
     embeddings = model.encode(prompt_var_list)
     similarity = 1 - cosine(embeddings[0], embeddings[1])
-    if similarity <= 0.9:
+    if similarity <= 0.7:
         prompt_var_list = [query,true_ans,bck_extracted_final_response]
         extracted_gt_ans_resp1 = "different"
     

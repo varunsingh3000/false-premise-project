@@ -141,8 +141,8 @@ def start_evaluation():
     #list variable to save automatic evaluation results
     final_accuracy_list = []
     same_question_list = []
-    # path = RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx"
-    path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
+    path = RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx"
+    # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
@@ -166,7 +166,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
 
     print(df.head())
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd_09.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd.xlsx",index=False)    
 
 # start_complete_workflow()
 start_evaluation()
