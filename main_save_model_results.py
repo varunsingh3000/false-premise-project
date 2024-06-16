@@ -33,7 +33,7 @@ def start_workflow(query,external_evidence,MODEL):
         result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-small-latest"]:
         result = start_mistral_api_model_response(query,external_evidence)
-    elif MODEL in ["meta.llama3-8b-instruct-v1:0", "meta.llama3-70b-instruct-v1:0","meta.llama2-70b-chat-v1"]:
+    elif MODEL in ["meta.llama2-70b-chat-v1"]:
         result = start_meta_api_model_response(query,external_evidence)
     else:
         print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
@@ -43,9 +43,9 @@ def start_workflow(query,external_evidence,MODEL):
 
 def start_complete_workflow():
     dataset_elements = start_dataset_processing(DATASET_NAME)
-    if len(dataset_elements) == 6:
+    if len(dataset_elements) == 7:
         ques_id_list, query_list, ans_list, effective_year_list, \
-        num_hops_list, fact_type_list = dataset_elements
+        num_hops_list, fact_type_list, premise_list = dataset_elements
     elif len(dataset_elements) == 4:
         ques_id_list, query_list, ans_list, premise_list = dataset_elements
 
@@ -112,7 +112,8 @@ def start_complete_workflow():
             "original_response": original_response_list,
             "effective_year":effective_year_list,
             "num_hops":num_hops_list,
-            "fact_type":fact_type_list
+            "fact_type":fact_type_list,
+            "premise":premise_list
         }
     elif DATASET_NAME == "QAQA":
         qa_data_dict = {
@@ -141,7 +142,7 @@ def start_evaluation():
     final_accuracy_list = []
     same_question_list = []
     # path = RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx"
-    path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_mistral-small-latest30thMar_for_back_reasoningabd.xlsx"
+    path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
     bck_extracted_final_question_list = df["bck_final_question"].tolist()
@@ -165,7 +166,7 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
 
     print(df.head())
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd_085.xlsx",index=False)    
+    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd_09.xlsx",index=False)    
 
 # start_complete_workflow()
 start_evaluation()

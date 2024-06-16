@@ -171,7 +171,7 @@ def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_fi
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
     print(accuracy)
-    return extracted_gt_ans_resp1, accuracy
+    return similarity, accuracy
     
 
 def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):

@@ -19,7 +19,8 @@ def process_freshqa(dataset_name):
     effective_year_list = df["effective_year"].tolist()
     num_hops_list = df["num_hops"].tolist()
     fact_type_list = df["fact_type"].tolist()
-    return ques_id_list, query_list, ans_list, effective_year_list, num_hops_list, fact_type_list
+    premise_list = df["false_premise"].tolist()
+    return ques_id_list, query_list, ans_list, effective_year_list, num_hops_list, fact_type_list, premise_list
 
 def process_QAQA(dataset_name):
     # processing specific to freshqa dataset
