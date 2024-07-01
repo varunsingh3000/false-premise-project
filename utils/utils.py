@@ -7,9 +7,6 @@ from sentence_transformers import SentenceTransformer
 from scipy.spatial.distance import cosine
 
 from openai import OpenAI
-import boto3
-from mistralai.client import MistralClient
-from mistralai.models.chat_completion import ChatMessage
 
 # from web_search import start_web_search
 from web_search_serp import start_web_search

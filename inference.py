@@ -3,6 +3,7 @@
 import json
 import pandas as pd
 import argparse
+from importlib import import_module
 
 from utils.dataset import start_dataset_processing
 from utils.utils import generate_evidence_batch
@@ -10,27 +11,33 @@ from utils.utils import modify_evidence_batch_dict
 from utils.utils import extract_value_from_single_key
 from utils.utils import auto_evaluation
 from web_search_serp import start_web_search
-from openai_gpt_models import start_openai_api_model_response
-from mistral_models import start_mistral_api_model_response
-from meta_llama2_models import start_meta_api_model_response
 
 
-# Func to start workflow for a query
-def start_workflow(query,external_evidence,MODEL):
-    
-    if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
-        result = start_openai_api_model_response(query,external_evidence)
-    elif MODEL in ["mistral-small-latest"]:
-        result = start_mistral_api_model_response(query,external_evidence)
-    elif MODEL in ["meta.llama2-70b-chat-v1"]:
-        result = start_meta_api_model_response(query,external_evidence)
-    else:
-        print("Please enter a valid MODEL id in the next attempt for the workflow to execute")
-    og_response_dict, fwd_main_answers_list, bck_main_answers_list = result
-    return og_response_dict, fwd_main_answers_list, bck_main_answers_list
+def start_fp_detc(args,query,external_evidence):
+    #make sure that the names of the files in methods matches with the ones given here for import
+    model_name = "gpt"
+    if "mistral" in args.MODEL_API:
+        model_name = "mistral"
+    elif "llama2" in args.MODEL_API:
+        model_name = "llama2"
+    # Import the appropriate module dynamically based on the method
+    method_module = import_module(f"Methods.{args.METHOD}.{model_name}")
+    # Call the method-specific function from the imported module
+    result = method_module.start_model_response(args,query,external_evidence)
+    return result
  
 
-def start_complete_workflow(args):
+def start_workflow(args):
+
+    if args.METHOD == "fpdar":
+        pass
+    elif args.METHOD == "self-consistency":
+        pass
+    elif args.METHOD == "four-shot":
+        args.QUERY_PROMPT_PATH = "Prompts\\FourShot\\resp_generation.txt"
+        args.LLAMA_QUERY_PROMPT_PATH = "Prompts\\FourShot\\resp_generation_meta.txt"
+        args.EVIDENCE_ALLOWED = 0
+
     dataset_elements = start_dataset_processing(args.DATASET_NAME)
     if len(dataset_elements) == 7:
         ques_id_list, query_list, ans_list, effective_year_list, \
@@ -52,14 +59,14 @@ def start_complete_workflow(args):
     bck_final_resp_exp_list = []
     bck_final_question_list = []
 
-    if args.EVIDENCE_BATCH_GENERATE:
+    if args.EVIDENCE_BATCH_GENERATE and args.EVIDENCE_ALLOWED:
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # OR make sure the default value of args.EVIDENCE_BATCH_GENERATE is not true
         # generate_evidence_batch(ques_id_list, query_list)
         print("test batch generate")
 
-    if args.EVIDENCE_BATCH_USE:
+    if args.EVIDENCE_BATCH_USE and args.EVIDENCE_ALLOWED:
         with open(args.EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
             evidence_batch_list = json.load(json_file)
         
@@ -71,12 +78,11 @@ def start_complete_workflow(args):
                 
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
         
-        if not args.EVIDENCE_BATCH_USE:
+        if not args.EVIDENCE_BATCH_USE and args.EVIDENCE_ALLOWED:
         # this evidence will be used when the batch evidence is not being used
             external_evidence = start_web_search(ques_id,query)
-        print(external_evidence)
         # print("NEW QUERY HAS STARTED"*4)
-        og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_workflow(query,external_evidence,args.MODEL)
+        og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_fp_detc(args,query,external_evidence)
 
         #appending results for qa
         ques_no_list.append(ques_id)
@@ -132,14 +138,14 @@ def start_complete_workflow(args):
     print(df.head())
     print("$"*100)
     
-    df.to_excel(args.RESULT_SAVE_PATH + args.MODEL + "back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_csv(args.RESULT_SAVE_PATH + args.MODEL_API + "back_reasoningabd.csv",index=False)  # Set index=False to not write row indices
 
 
 def start_evaluation(args):
     #list variable to save automatic evaluation results
     final_accuracy_list = []
     same_question_list = []
-    path = args.RESULT_SAVE_PATH + args.MODEL + "back_reasoningabd.xlsx"
+    path = args.RESULT_SAVE_PATH + args.MODEL_API + "back_reasoningabd.csv"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
@@ -164,31 +170,35 @@ def start_evaluation(args):
     df["final_accuracy"] = final_accuracy_list
 
     print(df.head())
-    df.to_excel(args.RESULT_SAVE_PATH + args.MODEL + "evalabd.xlsx",index=False)    
+    df.to_csv(args.RESULT_SAVE_PATH + args.MODEL_API + "evalabd.csv",index=False)
 
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Script parameters")
     
-    parser.add_argument('--MODEL', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
-                        default="gpt-3.5-turbo-1106", help='Model to use')
+    parser.add_argument('--METHOD', type=str, choices=["FPDAR", "SC", "FourShot"],
+                        default="FPDAR", help='Method to use. This will decide which prompts are used going further.')
+    parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
+                        default="gpt-3.5-turbo-1106", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
-    parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
-    parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
+    parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
+    parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
+    parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses')
+    parser.add_argument('--EVIDENCE_ALLOWED', type=int, default=1, help='Boolean to decide to whether evidence should be used')
     parser.add_argument('--EVIDENCE_BATCH_GENERATE', type=int, default=0, help='Boolean to decide whether evidence is generated in batch or indiviudally for each question. Zero means by default batch will not be generated.')
     parser.add_argument('--EVIDENCE_BATCH_USE', type=int, default=1, help='Boolean to decide whether batch evidence has to be used. One means by default batch will be used.')
     parser.add_argument('--EVIDENCE_BATCH_SAVE_PATH', type=str, default="Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", help='Path to save evidence batch results')
-    parser.add_argument('--QUERY_PROMPT_PATH', type=str, default="Prompts\\minimal_response.txt", help='Path to the query prompt file')
-    parser.add_argument('--BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_resp.txt", help='Path to the backward reasoning response prompt file')
-    parser.add_argument('--BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_query.txt", help='Path to the backward reasoning query prompt file')
-    parser.add_argument('--LLAMA_QUERY_PROMPT_PATH', type=str, default="Prompts\\minimal_response_meta.txt", help='Path to the LLAMA query prompt file')
-    parser.add_argument('--LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_resp_meta.txt", help='Path to the LLAMA backward reasoning response prompt file')
-    parser.add_argument('--LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_query_meta.txt", help='Path to the LLAMA backward reasoning query prompt file')
-    parser.add_argument('--AUTO_EVALUATION_PROMPT_PATH', type=str, default="Prompts\\eval_response_comp.txt", help='Path to the auto evaluation prompt file')
+    parser.add_argument('--QUERY_PROMPT_PATH', type=str, default="Prompts\\Common\\resp_generation.txt", help='Path to the query prompt file')
+    parser.add_argument('--BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_resp.txt", help='Path to the backward reasoning response prompt file')
+    parser.add_argument('--BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_query.txt", help='Path to the backward reasoning query prompt file')
+    parser.add_argument('--LLAMA_QUERY_PROMPT_PATH', type=str, default="Prompts\\Common\\resp_generation_meta.txt", help='Path to the LLAMA query prompt file')
+    parser.add_argument('--LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_resp_meta.txt", help='Path to the LLAMA backward reasoning response prompt file')
+    parser.add_argument('--LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_query_meta.txt", help='Path to the LLAMA backward reasoning query prompt file')
+    parser.add_argument('--AUTO_EVALUATION_PROMPT_PATH', type=str, default="Prompts\\Common\\response_evaluation.txt", help='Path to the auto evaluation prompt file')
     parser.add_argument('--RESULT_SAVE_PATH', type=str, default="Results\\", help='Path to save results')
-    parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses')
+    
 
     return parser
 
@@ -201,8 +211,8 @@ def main():
     
     # Print the parsed arguments (or use them as needed)
     print(args)
-    start_complete_workflow(args)
-    start_evaluation(args)
+    start_workflow(args)
+    # start_evaluation(args)
 
 
 if __name__ == "__main__":
