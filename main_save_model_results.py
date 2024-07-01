@@ -1,8 +1,8 @@
 #This is the main file from where the execution of the workflow starts
 
 import json
-import yaml
 import pandas as pd
+import argparse
 
 from utils.dataset import start_dataset_processing
 from utils.utils import generate_evidence_batch
@@ -14,16 +14,6 @@ from utils.utils import auto_evaluation
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
-
-with open('params.yaml', 'r') as file:
-    config = yaml.safe_load(file)
-
-# Retrieve parameters 
-MODEL = config['MODEL']
-EVIDENCE_BATCH_SAVE_PATH = config['EVIDENCE_BATCH_SAVE_PATH']
-RESULT_SAVE_PATH = config['RESULT_SAVE_PATH']
-DATASET_NAME = config['DATASET_NAME']
-WORKFLOW_RUN_COUNT = config['WORKFLOW_RUN_COUNT']
 
 
 # Func to start workflow for a query
@@ -41,8 +31,8 @@ def start_workflow(query,external_evidence,MODEL):
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list
  
 
-def start_complete_workflow():
-    dataset_elements = start_dataset_processing(DATASET_NAME)
+def start_complete_workflow(args):
+    dataset_elements = start_dataset_processing(args.DATASET_NAME)
     if len(dataset_elements) == 7:
         ques_id_list, query_list, ans_list, effective_year_list, \
         num_hops_list, fact_type_list, premise_list = dataset_elements
@@ -67,7 +57,7 @@ def start_complete_workflow():
     # if the function has been called before and results are already save then comment the function call
     # generate_evidence_batch(ques_id_list, query_list) 
 
-    with open(EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
+    with open(args.EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
         evidence_batch_list = json.load(json_file)
         # print(evidence_batch_list)
         # exit(1)
@@ -78,7 +68,7 @@ def start_complete_workflow():
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
     
         # print("NEW QUERY HAS STARTED"*4)
-        og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_workflow(query,external_evidence,MODEL)
+        og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_workflow(query,external_evidence,args.MODEL)
 
         #appending results for qa
         ques_no_list.append(ques_id)
@@ -99,7 +89,7 @@ def start_complete_workflow():
         bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
         bck_final_question_list.append(bck_extracted_final_question)
 
-    if DATASET_NAME == "freshqa":
+    if args.DATASET_NAME == "freshqa":
         qa_data_dict = {
             "ques_id":ques_no_list,
             "question":question_list,
@@ -115,7 +105,7 @@ def start_complete_workflow():
             "fact_type":fact_type_list,
             "premise":premise_list
         }
-    elif DATASET_NAME == "QAQA":
+    elif args.DATASET_NAME == "QAQA":
         qa_data_dict = {
             "ques_id":ques_no_list,
             "question":question_list,
@@ -134,14 +124,14 @@ def start_complete_workflow():
     print(df.head())
     print("$"*100)
     
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
+    df.to_excel(args.RESULT_SAVE_PATH + args.MODEL + "back_reasoningabd.xlsx",index=False)  # Set index=False to not write row indices
 
 
-def start_evaluation():
+def start_evaluation(args):
     #list variable to save automatic evaluation results
     final_accuracy_list = []
     same_question_list = []
-    path = RESULT_SAVE_PATH + MODEL + "back_reasoningabd.xlsx"
+    path = args.RESULT_SAVE_PATH + args.MODEL + "back_reasoningabd.xlsx"
     # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
     df = pd.read_excel(path)
     query_list = df["question"].tolist()
@@ -166,9 +156,47 @@ def start_evaluation():
     df["final_accuracy"] = final_accuracy_list
 
     print(df.head())
-    df.to_excel(RESULT_SAVE_PATH + MODEL + "evalabd.xlsx",index=False)    
+    df.to_excel(args.RESULT_SAVE_PATH + args.MODEL + "evalabd.xlsx",index=False)    
 
 # start_complete_workflow()
-start_evaluation()
+# start_evaluation()
+
+def create_parser():
+    parser = argparse.ArgumentParser(description="Script parameters")
+    
+    parser.add_argument('--MODEL', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
+                        default="gpt-3.5-turbo-1106", help='Model to use')
+    parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
+    parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
+    parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
+    parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
+    parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
+    # parser.add_argument('--EVIDENCE_', type=str, default="Data\\", help='Path to the dataset')
+    parser.add_argument('--EVIDENCE_BATCH_SAVE_PATH', type=str, default="Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", help='Path to save evidence batch results')
+    parser.add_argument('--QUERY_PROMPT_PATH', type=str, default="Prompts\\minimal_response.txt", help='Path to the query prompt file')
+    parser.add_argument('--BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_resp.txt", help='Path to the backward reasoning response prompt file')
+    parser.add_argument('--BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_query.txt", help='Path to the backward reasoning query prompt file')
+    parser.add_argument('--LLAMA_QUERY_PROMPT_PATH', type=str, default="Prompts\\minimal_response_meta.txt", help='Path to the LLAMA query prompt file')
+    parser.add_argument('--LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_resp_meta.txt", help='Path to the LLAMA backward reasoning response prompt file')
+    parser.add_argument('--LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_query_meta.txt", help='Path to the LLAMA backward reasoning query prompt file')
+    parser.add_argument('--AUTO_EVALUATION_PROMPT_PATH', type=str, default="Prompts\\eval_response_comp.txt", help='Path to the auto evaluation prompt file')
+    parser.add_argument('--RESULT_SAVE_PATH', type=str, default="Results\\", help='Path to save results')
+    parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses')
+
+    return parser
+
+def main():
+    
+    parser = create_parser()
+    
+    # Parse the command-line arguments
+    args = parser.parse_args()
+    
+    # Print the parsed arguments (or use them as needed)
+    print(args)
+    start_complete_workflow(args)
+    # start_evaluation(args)
 
 
+if __name__ == "__main__":
+    main()

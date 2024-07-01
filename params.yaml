@@ -13,11 +13,6 @@
     "LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH":"Prompts\\backward_reasoning_resp_meta.txt",
     "LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH":"Prompts\\backward_reasoning_query_meta.txt",
     "AUTO_EVALUATION_PROMPT_PATH": "Prompts\\eval_response_comp.txt",
-    "AUTO_EVALUATION_QUERY_PROMPT_PATH": "Prompts\\eval_question_comp.txt",
-    "LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH": "Prompts\\eval_question_comp_meta.txt",
     "RESULT_SAVE_PATH": "Results\\",
-    "WORKFLOW_RUN_COUNT": 0, #default - 0
-    "MAX_CANDIDATE_RESPONSES": 3, #default - 3
-    "MAX_WORKFLOW_RUN_COUNT": 1, #default - 1
-    "MATCH_CRITERIA": "Half" #default - "Half", takes either "Half" or "Full" as valid input
+    "MAX_CANDIDATE_RESPONSES": 3 #default - 3
 }

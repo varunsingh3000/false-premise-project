@@ -24,8 +24,6 @@ EVAL_MODEL = config['EVAL_MODEL']
 TEMPERATURE = config['TEMPERATURE']
 CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
 AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
-AUTO_EVALUATION_QUERY_PROMPT_PATH = config['AUTO_EVALUATION_QUERY_PROMPT_PATH']
-LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH = config['LLAMA_AUTO_EVALUATION_QUERY_PROMPT_PATH']
 
 
 def generate_evidence_batch(ques_id_list,query_list):
@@ -87,16 +85,6 @@ def process_response(chat_completion):
         response_dict['message'] = text
 
     return response_dict
-
-def matching_condition_check(match_count,MAX_CANDIDATE_RESPONSES,MATCH_CRITERIA):
-    if MATCH_CRITERIA == "Half":
-        match_check = MAX_CANDIDATE_RESPONSES//2
-        if match_count > match_check:
-            return True
-    if MATCH_CRITERIA == "Full":
-        match_check = MAX_CANDIDATE_RESPONSES
-        if match_count == match_check:
-            return True
 
 def check_dict_keys_condition(response_dict):
     key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
