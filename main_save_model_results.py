@@ -9,8 +9,7 @@ from utils.utils import generate_evidence_batch
 from utils.utils import modify_evidence_batch_dict
 from utils.utils import extract_value_from_single_key
 from utils.utils import auto_evaluation
-# from web_search import start_web_search
-# from web_search_serp import start_web_search
+from web_search_serp import start_web_search
 from openai_gpt_models import start_openai_api_model_response
 from mistral_models import start_mistral_api_model_response
 from meta_llama2_models import start_meta_api_model_response
@@ -18,7 +17,7 @@ from meta_llama2_models import start_meta_api_model_response
 
 # Func to start workflow for a query
 def start_workflow(query,external_evidence,MODEL):
-    # external_evidence = start_web_search(query)
+    
     if MODEL in ["gpt-3.5-turbo-1106", "gpt-4-turbo-preview"]:
         result = start_openai_api_model_response(query,external_evidence)
     elif MODEL in ["mistral-small-latest"]:
@@ -53,20 +52,29 @@ def start_complete_workflow(args):
     bck_final_resp_exp_list = []
     bck_final_question_list = []
 
+    if args.EVIDENCE_BATCH_GENERATE:
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
-    # generate_evidence_batch(ques_id_list, query_list) 
+    # OR make sure the default value of args.EVIDENCE_BATCH_GENERATE is not true
+        # generate_evidence_batch(ques_id_list, query_list)
+        print("test batch generate")
 
-    with open(args.EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
-        evidence_batch_list = json.load(json_file)
-        # print(evidence_batch_list)
-        # exit(1)
-    
-    for i, d in enumerate(evidence_batch_list[:]):
-        evidence_batch_list[i] = modify_evidence_batch_dict(d)
+    if args.EVIDENCE_BATCH_USE:
+        with open(args.EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
+            evidence_batch_list = json.load(json_file)
+        
+        for i, d in enumerate(evidence_batch_list[:]):
+            evidence_batch_list[i] = modify_evidence_batch_dict(d)
+    else:
+        # this is just used to ensure the loop below works with minimal changes
+        evidence_batch_list = [0] * len(ques_id_list)
                 
     for ques_id,query,true_ans,external_evidence in zip(ques_id_list,query_list,ans_list,evidence_batch_list):
-    
+        
+        if not args.EVIDENCE_BATCH_USE:
+        # this evidence will be used when the batch evidence is not being used
+            external_evidence = start_web_search(ques_id,query)
+        print(external_evidence)
         # print("NEW QUERY HAS STARTED"*4)
         og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_workflow(query,external_evidence,args.MODEL)
 
@@ -158,8 +166,6 @@ def start_evaluation(args):
     print(df.head())
     df.to_excel(args.RESULT_SAVE_PATH + args.MODEL + "evalabd.xlsx",index=False)    
 
-# start_complete_workflow()
-# start_evaluation()
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Script parameters")
@@ -171,7 +177,8 @@ def create_parser():
     parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
-    # parser.add_argument('--EVIDENCE_', type=str, default="Data\\", help='Path to the dataset')
+    parser.add_argument('--EVIDENCE_BATCH_GENERATE', type=int, default=0, help='Boolean to decide whether evidence is generated in batch or indiviudally for each question. Zero means by default batch will not be generated.')
+    parser.add_argument('--EVIDENCE_BATCH_USE', type=int, default=1, help='Boolean to decide whether batch evidence has to be used. One means by default batch will be used.')
     parser.add_argument('--EVIDENCE_BATCH_SAVE_PATH', type=str, default="Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", help='Path to save evidence batch results')
     parser.add_argument('--QUERY_PROMPT_PATH', type=str, default="Prompts\\minimal_response.txt", help='Path to the query prompt file')
     parser.add_argument('--BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\backward_reasoning_resp.txt", help='Path to the backward reasoning response prompt file')
@@ -195,7 +202,7 @@ def main():
     # Print the parsed arguments (or use them as needed)
     print(args)
     start_complete_workflow(args)
-    # start_evaluation(args)
+    start_evaluation(args)
 
 
 if __name__ == "__main__":

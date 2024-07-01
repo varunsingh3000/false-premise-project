@@ -182,38 +182,3 @@ def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
     
     return chat_completion.choices[0].message.content.strip()
 
-# def perform_llama_response(prompt_var_list,model,temperature,prompt_path):
-#     client = boto3.client(service_name='bedrock-runtime', region_name='us-east-1')
-#     with open(prompt_path, 'r') as file:
-#         file_content = file.read()
-    
-#     message = json.dumps({
-#     "prompt": file_content.format(*prompt_var_list),
-#     "temperature": temperature
-#     })
-
-#     accept = 'application/json'
-#     contentType = 'application/json'
-
-#     response = client.invoke_model(body=message, modelId=model, accept=accept, contentType=contentType)
-
-#     chat_completion = json.loads(response.get("body").read())
-
-#     return chat_completion.get("generation").strip()
-
-# def perform_mistral_response(prompt_var_list,model,temperature,prompt_path):
-#     client = MistralClient(api_key=os.environ["MISTRAL_API_KEY"])
-#     with open(prompt_path, 'r') as file:
-#         file_content = file.read()
-    
-#     message = [
-#         ChatMessage(role="user", content=file_content.format(*prompt_var_list))
-#     ]
-
-#     chat_completion = client.chat(
-#         model=model,
-#         temperature=temperature,
-#         messages=message
-#     )
-    
-#     return chat_completion.choices[0].message.content.strip()
