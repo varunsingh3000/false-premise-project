@@ -65,6 +65,11 @@ def start_workflow(args):
         args.LLAMA_QUERY_PROMPT_PATH = f"{args.PROMPT_PATH}{args.METHOD}\\resp_generation_meta.txt"
         args.EVIDENCE_ALLOWED = 0
 
+        full_response_save_path = (
+            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
+            f"{args.CANDIDATE_TEMPERATURE}_{args.MODEL_API}"
+        )
+
     # retrieve the datasets fields in proper formats
     dataset_elements = start_dataset_processing(args)
     ques_id_list, query_list = dataset_elements[:2]
@@ -150,80 +155,3 @@ def start_workflow(args):
     
     
     df.to_csv(full_response_save_path + "_responses.csv",index=False)
-
-
-def start_evaluation(args):
-    #list variable to save automatic evaluation results
-    final_accuracy_list = []
-    same_question_list = []
-    path = args.RESULT_SAVE_PATH + args.MODEL_API + "back_reasoningabd.csv"
-    # path = "C:\GAMES_SETUP\Thesis\Code\Results\evidence_test_meta.llama2-70b-chat-v121stApr_for_back_reasoningabd.xlsx"
-    df = pd.read_csv(path)
-    query_list = df["question"].tolist()
-    bck_extracted_final_question_list = df["bck_final_question"].tolist()
-    true_ans_list = df["true_ans"].tolist()
-    fwd_extracted_final_response_list = df["fwd_final_ans"].tolist()
-    fwd_extracted_final_response_exp_list = df["fwd_final_ans_exp"].tolist()
-    bwd_extracted_final_response_list = df["bck_final_ans"].tolist()
-    bwd_extracted_final_response_exp_list = df["bck_final_ans_exp"].tolist()
-
-    for query,bck_extracted_final_question,true_ans,fwd_extracted_final_response, \
-        bck_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp \
-        in zip(query_list,bck_extracted_final_question_list,true_ans_list,fwd_extracted_final_response_list,
-               bwd_extracted_final_response_list,fwd_extracted_final_response_exp_list,bwd_extracted_final_response_exp_list):
-        same_ques_resp, accuracy = auto_evaluation(query,bck_extracted_final_question,true_ans,
-                                                fwd_extracted_final_response,bck_extracted_final_response,
-                                                fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp)
-        same_question_list.append(same_ques_resp)
-        final_accuracy_list.append(accuracy)
-
-    df["same_question"] = same_question_list
-    df["final_accuracy"] = final_accuracy_list
-
-    print(df.head())
-    df.to_csv(args.RESULT_SAVE_PATH + args.MODEL_API + "evalabd.csv",index=False)
-
-
-# def create_parser():
-#     parser = argparse.ArgumentParser(description="Script parameters")
-    
-#     parser.add_argument('--METHOD', type=str, choices=["FPDAR", "SC", "FourShot"],
-#                         default="FPDAR", help='Method to use. This will decide which prompts are used going further.')
-#     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
-#                         default="gpt-3.5-turbo-1106", help='Model API to use')
-#     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
-#     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
-#     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
-#     parser.add_argument('--PROMPT_PATH', type=str, default="Prompts\\", help='Path to the prompts')
-#     parser.add_argument('--SIMILARITY_THRESHOLD', type=float, default=0.7, help='Similarity threshold value for FPDAR FP Detection')
-#     parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
-#     parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
-#     parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses to be generated for SC method')
-#     parser.add_argument('--EVIDENCE_ALLOWED', type=int, default=1, help='Boolean to decide to whether evidence should be used')
-#     parser.add_argument('--EVIDENCE_BATCH_GENERATE', type=int, default=0, help='Boolean to decide whether evidence is generated in batch or indiviudally for each question. Zero means by default batch will not be generated.')
-#     parser.add_argument('--EVIDENCE_BATCH_USE', type=int, default=1, help='Boolean to decide whether batch evidence has to be used. One means by default batch will be used.')
-#     parser.add_argument('--EVIDENCE_BATCH_SAVE_PATH', type=str, default="Web_Search_Response\\evidence_results_batch_serp_all_freshqa.json", help='Path to save evidence batch results')
-#     parser.add_argument('--QUERY_PROMPT_PATH', type=str, default="Prompts\\Common\\resp_generation.txt", help='Path to the query prompt file')
-#     parser.add_argument('--BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_resp.txt", help='Path to the backward reasoning response prompt file')
-#     parser.add_argument('--BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_query.txt", help='Path to the backward reasoning query prompt file')
-#     parser.add_argument('--LLAMA_QUERY_PROMPT_PATH', type=str, default="Prompts\\Common\\resp_generation_meta.txt", help='Path to the LLAMA query prompt file')
-#     parser.add_argument('--LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_resp_meta.txt", help='Path to the LLAMA backward reasoning response prompt file')
-#     parser.add_argument('--LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH', type=str, default="Prompts\\FPDAR\\backward_reasoning_query_meta.txt", help='Path to the LLAMA backward reasoning query prompt file')
-#     parser.add_argument('--AUTO_EVALUATION_PROMPT_PATH', type=str, default="Prompts\\Common\\response_evaluation.txt", help='Path to the auto evaluation prompt file')
-#     parser.add_argument('--RESULT_SAVE_PATH', type=str, default="Results\\", help='Path to save results')
-    
-#     return parser
-
-# def main():
-#     parser = create_parser()
-#     # Parse the command-line arguments
-#     args = parser.parse_args()
-#     # Print the parsed arguments (or use them as needed)
-#     print(args)
-#     # Start the main fp detection workflow and prepare the responses to be processed for evaluation
-#     start_workflow(args)
-#     # start_evaluation(args)
-
-
-# if __name__ == "__main__":
-#     main()

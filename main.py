@@ -1,12 +1,13 @@
 import argparse
 
 from inference import start_workflow
+from evaluation import start_evaluation
 
 def create_parser():
     parser = argparse.ArgumentParser(description="Script parameters")
     
     parser.add_argument('--METHOD', type=str, choices=["FPDAR", "SC", "FourShot"],
-                        default="FPDAR", help='Method to use. This will decide which prompts are used going further.')
+                        default="FourShot", help='Method to use. This will decide which prompts are used going further.')
     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
                         default="gpt-3.5-turbo-1106", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
@@ -40,7 +41,8 @@ def main():
     print(args)
     # Start the main fp detection workflow and prepare the responses to be processed for evaluation
     start_workflow(args)
-    # start_evaluation(args)
+    # Start the main evaluation process
+    start_evaluation(args)
 
 
 if __name__ == "__main__":
