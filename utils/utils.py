@@ -84,7 +84,8 @@ def process_response(chat_completion):
     return response_dict
 
 def check_dict_keys_condition(response_dict):
-    key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
+    key_terms = ['Answer:', 'Source:', 'Premise of the Question:']
+    # key_terms = ['Explanation:', 'Answer:', 'Source:', 'Premise of the Question:']
     keys_present = all(key in response_dict for key in key_terms)
     if keys_present:
         return True
