@@ -49,11 +49,14 @@ def start_workflow(args):
         final_response_list = []
 
     elif args.METHOD == "FourShot":
-        args.QUERY_PROMPT_PATH = "Prompts\\FourShot\\resp_generation.txt"
-        args.LLAMA_QUERY_PROMPT_PATH = "Prompts\\FourShot\\resp_generation_meta.txt"
+        # list variables to save QA results later to a dataframe
+        final_response_list = []
+        # fourshot method has different prompts without evidence, so those are assigned here
+        args.QUERY_PROMPT_PATH = f"{args.PROMPT_PATH}{args.METHOD}\\resp_generation.txt"
+        args.LLAMA_QUERY_PROMPT_PATH = f"{args.PROMPT_PATH}{args.METHOD}\\resp_generation_meta.txt"
         args.EVIDENCE_ALLOWED = 0
 
-
+    # retrieve the datasets fields in proper formats
     dataset_elements = start_dataset_processing(args)
     ques_id_list, query_list = dataset_elements[:2]
 
@@ -126,46 +129,11 @@ def start_workflow(args):
         
         elif args.METHOD == "FourShot":
             final_response = start_fp_detc(args,query,external_evidence)
-            ques_no_list.append(ques_id)
-            true_ans_list.append(true_ans)
-            question_list.append(query)   
             final_response_list.append(final_response)
-
-
+            combined_result_list = [final_response_list,dataset_elements]
 
     qa_data_dict = start_result_processing(args,combined_result_list)
-
-
-    # if args.DATASET_NAME == "freshqa":
-    #     qa_data_dict = {
-    #         "ques_id":ques_no_list,
-    #         "question":question_list,
-    #         "true_ans":true_ans_list,
-    #         "fwd_final_ans":fwd_final_response_list,
-    #         "fwd_final_ans_exp":fwd_final_resp_exp_list,
-    #         "bck_final_ans":bck_final_response_list,
-    #         "bck_final_ans_exp":bck_final_resp_exp_list,
-    #         "bck_final_question":bck_final_question_list,
-    #         "original_response": original_response_list,
-    #         "effective_year":effective_year_list,
-    #         "num_hops":num_hops_list,
-    #         "fact_type":fact_type_list,
-    #         "premise":premise_list
-    #     }
-    # elif args.DATASET_NAME == "QAQA":
-    #     qa_data_dict = {
-    #         "ques_id":ques_no_list,
-    #         "question":question_list,
-    #         "true_ans":true_ans_list,
-    #         "fwd_final_ans":fwd_final_response_list,
-    #         "fwd_final_ans_exp":fwd_final_resp_exp_list,
-    #         "bck_final_ans":bck_final_response_list,
-    #         "bck_final_ans_exp":bck_final_resp_exp_list,
-    #         "bck_final_question":bck_final_question_list,
-    #         "original_response": original_response_list,
-    #         "all_assumptions_valid": premise_list
-    #     }
-
+    
     print("$"*100)
     df = pd.DataFrame(qa_data_dict)
     print(df.head())
@@ -216,6 +184,7 @@ def create_parser():
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="QAQA", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
+    parser.add_argument('--PROMPT_PATH', type=str, default="Prompts\\", help='Path to the prompts')
     parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
     parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
     parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses to be generated for SC method')

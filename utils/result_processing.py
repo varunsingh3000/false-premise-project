@@ -63,7 +63,16 @@ def processing_sc(MAX_CANDIDATE_RESPONSES,combined_result_list,qa_data_dict):
     return qa_data_dict
 
 def processing_fourshot(combined_result_list,qa_data_dict):
-    pass
+    # Unpack the combined_result_list into individual lists
+    final_response_list = combined_result_list[0]
+
+    result_dict = {
+            "final_answer":final_response_list
+        }
+    # Add new keys and values to the existing dictionary
+    qa_data_dict.update(result_dict)
+
+    return qa_data_dict
 
 def start_result_processing(args,combined_result_list):
 
