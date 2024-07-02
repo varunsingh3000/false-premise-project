@@ -74,7 +74,7 @@ def processing_fourshot(combined_result_list,qa_data_dict):
 
     return qa_data_dict
 
-def start_result_processing(args,combined_result_list):
+def start_response_processing(args,combined_result_list):
 
     if args.DATASET_NAME == "freshqa":
         ques_id_list, query_list, ans_list, effective_year_list, \
