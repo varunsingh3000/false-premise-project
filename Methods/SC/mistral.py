@@ -1,5 +1,3 @@
-# Calling the OpenAI GPT models 3.5 and 4
-
 import numpy as np
 import os
 from mistralai.client import MistralClient

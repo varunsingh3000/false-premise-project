@@ -1,24 +1,5 @@
-import numpy as np
-import yaml
 import json
-import os
-
-from sentence_transformers import SentenceTransformer
-from scipy.spatial.distance import cosine
-from openai import OpenAI
-
 from web_search_serp import start_web_search
-
-
-with open('params.yaml', 'r') as file:
-    config = yaml.safe_load(file)
-
-MODEL = config['MODEL']
-EVAL_MODEL = config['EVAL_MODEL']
-TEMPERATURE = config['TEMPERATURE']
-CANDIDATE_TEMPERATURE = config['CANDIDATE_TEMPERATURE']
-AUTO_EVALUATION_PROMPT_PATH = config['AUTO_EVALUATION_PROMPT_PATH']
-
 
 def generate_evidence_batch(EVIDENCE_BATCH_SAVE_PATH,ques_id_list,query_list):
     # evidence list for saving results in batch
@@ -122,58 +103,3 @@ def extract_value_from_single_key(response, key):
 #         ]
 #     }
 #     return dummy_response_dict
-
-
-def auto_evaluation(query,bck_extracted_final_question,true_ans,fwd_extracted_final_response,bck_extracted_final_response,
-                    fwd_extracted_final_resp_exp,bck_extracted_final_resp_exp):
-    
-    fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp = \
-            map(str,(fwd_extracted_final_response,fwd_extracted_final_resp_exp,bck_extracted_final_response,bck_extracted_final_resp_exp))
-    
-    # if len(fwd_extracted_final_response.split()) < 5:
-    fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
-    # if len(bck_extracted_final_response.split()) < 5:
-    bck_extracted_final_response = bck_extracted_final_response + " " + bck_extracted_final_resp_exp
-    # bck_extracted_final_response = bck_extracted_final_resp_exp
-
-    prompt_var_list = [query,bck_extracted_final_question]
-
-    model = SentenceTransformer('bert-base-nli-mean-tokens')
-    embeddings = model.encode(prompt_var_list)
-    similarity = 1 - cosine(embeddings[0], embeddings[1])
-    if similarity <= 0.7:
-        prompt_var_list = [query,true_ans,bck_extracted_final_response]
-        extracted_gt_ans_resp1 = "different"
-    
-    else:
-        prompt_var_list = [query,true_ans,fwd_extracted_final_response]
-        extracted_gt_ans_resp1 = "identical"
-
-    accuracy_resp = perform_gpt_response(prompt_var_list,EVAL_MODEL,TEMPERATURE,AUTO_EVALUATION_PROMPT_PATH)
-    # print("Accuracy response text: ", accuracy_resp)
-    extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
-    accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
-    print(accuracy)
-    return similarity, accuracy
-    
-
-def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
-    with open(prompt_path, 'r') as file:
-        file_content = file.read()
-
-    message = [
-        {
-            "role": "system",
-            "content": file_content.format(*prompt_var_list) 
-        }
-    ]
-    chat_completion = client.chat.completions.create(
-        messages=message,
-        model=model,
-        temperature=temperature
-        )
-    
-    return chat_completion.choices[0].message.content.strip()
-

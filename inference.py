@@ -1,6 +1,5 @@
 import json
 import pandas as pd
-import argparse
 from importlib import import_module
 
 from utils.dataset import start_dataset_processing
@@ -8,7 +7,6 @@ from utils.response_processing import start_response_processing
 from utils.utils import generate_evidence_batch
 from utils.utils import modify_evidence_batch_dict
 from utils.utils import extract_value_from_single_key
-from utils.utils import auto_evaluation
 
 from web_search_serp import start_web_search
 
@@ -90,14 +88,17 @@ def start_workflow(args):
             evidence_batch_list[i] = modify_evidence_batch_dict(d)
     else:
         # this is just used to ensure the loop below works with minimal changes
+        # the dummy evidence_batch_list is used for fourshot method
         evidence_batch_list = [0] * len(ques_id_list)
-                
+
+
     # fp detection loop for each individual questions starts here
     for ques_id,query,external_evidence in zip(ques_id_list,query_list,evidence_batch_list):
         
         if not args.EVIDENCE_BATCH_USE and args.EVIDENCE_ALLOWED:
         # this evidence will be used when the batch evidence is not being used
-            external_evidence = start_web_search(ques_id,query)
+            initial_external_evidence = start_web_search(ques_id,query)
+            external_evidence = modify_evidence_batch_dict(initial_external_evidence)
         # print("NEW QUERY HAS STARTED"*4)
 
         if args.METHOD == "FPDAR":

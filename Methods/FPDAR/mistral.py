@@ -1,5 +1,3 @@
-# Calling the OpenAI GPT models 3.5 and 4
-
 import json
 import os
 from mistralai.client import MistralClient
@@ -58,9 +56,10 @@ def start_model_response(args,query,external_evidence):
     chat_completion = perform_mistral_response(client,prompt_var_list,args.MODEL_API,
                                                args.TEMPERATURE,args.QUERY_PROMPT_PATH)
     og_response_dict = process_response(chat_completion)
+    # print(og_response_dict)
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
-        og_response_dict['Explanation:'] = ""
+    og_response_dict['Explanation:'] = ""
     fwd_main_answers_list, bck_main_answers_list = perform_qa_task(args,client,query,external_evidence,
                                        og_response_dict['Answer:'],og_response_dict['Explanation:'])
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list

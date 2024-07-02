@@ -1,7 +1,3 @@
-import numpy as np
-import pandas as pd
-
-
 
 def processing_fpdar(combined_result_list,qa_data_dict):
     # Unpack the combined_result_list into individual lists

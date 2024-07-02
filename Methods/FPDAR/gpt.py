@@ -61,7 +61,7 @@ def start_model_response(args,query,external_evidence):
     if not check_dict_keys_condition(og_response_dict):
         og_response_dict['Answer:'] = next(iter(og_response_dict.items()))[1]
     og_response_dict['Explanation:'] = ""
-    print(og_response_dict)
+    # print(og_response_dict)
     fwd_main_answers_list, bck_main_answers_list = perform_qa_task(args,client,query,external_evidence,
                                        og_response_dict['Answer:'],og_response_dict['Explanation:'])
     return og_response_dict, fwd_main_answers_list, bck_main_answers_list

@@ -62,7 +62,7 @@ def auto_evaluation(args,query,bck_extracted_final_question,true_ans,fwd_extract
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
 
-    # print(query,accuracy)
+    print(query,accuracy)
     return similarity, accuracy
 
 @dispatch(argparse.Namespace, object, object, object)
@@ -71,5 +71,5 @@ def auto_evaluation(args,query,true_ans,final_resp_text):
     accuracy_resp = perform_gpt_response(prompt_var_list,args.EVAL_MODEL,args.TEMPERATURE,args.AUTO_EVALUATION_PROMPT_PATH)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
-    # print(query,accuracy)
+    print(query,accuracy)
     return accuracy
