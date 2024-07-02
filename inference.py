@@ -42,11 +42,22 @@ def start_workflow(args):
         bck_final_resp_exp_list = []
         bck_final_question_list = []
 
+        full_response_save_path = (
+            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
+            f"{args.SIMILARITY_THRESHOLD}_{args.MODEL_API}"
+        )
+
+
     elif args.METHOD == "SC":
         # list variables to save QA results later to a dataframe
         final_ans_dict_list = []
         candidate_responses_list = []
         final_response_list = []
+
+        full_response_save_path = (
+            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
+            f"{args.CANDIDATE_TEMPERATURE}_{args.MODEL_API}"
+        )
 
     elif args.METHOD == "FourShot":
         # list variables to save QA results later to a dataframe
@@ -65,7 +76,7 @@ def start_workflow(args):
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # OR make sure the default value of args.EVIDENCE_BATCH_GENERATE is not true
-        # generate_evidence_batch(ques_id_list, query_list)
+        # generate_evidence_batch(args.EVIDENCE_BATCH_SAVE_PATH,ques_id_list, query_list)
         print("test batch generate")
 
     if args.EVIDENCE_BATCH_USE and args.EVIDENCE_ALLOWED:
@@ -139,7 +150,8 @@ def start_workflow(args):
     print(df.head())
     print("$"*100)
     
-    df.to_csv(args.RESULT_SAVE_PATH + args.MODEL_API + "back_reasoningabd.csv",index=False)  # Set index=False to not write row indices
+    
+    df.to_csv(full_response_save_path + "_responses.csv",index=False)
 
 
 def start_evaluation(args):
@@ -178,13 +190,14 @@ def create_parser():
     parser = argparse.ArgumentParser(description="Script parameters")
     
     parser.add_argument('--METHOD', type=str, choices=["FPDAR", "SC", "FourShot"],
-                        default="FourShot", help='Method to use. This will decide which prompts are used going further.')
+                        default="FPDAR", help='Method to use. This will decide which prompts are used going further.')
     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
                         default="gpt-3.5-turbo-1106", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
-    parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="QAQA", help='Dataset name to use')
+    parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
     parser.add_argument('--PROMPT_PATH', type=str, default="Prompts\\", help='Path to the prompts')
+    parser.add_argument('--SIMILARITY_THRESHOLD', type=float, default=0.7, help='Similarity threshold value for FPDAR FP Detection')
     parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
     parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.0, help='Candidate temperature setting for the model')
     parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses to be generated for SC method')
@@ -204,14 +217,12 @@ def create_parser():
     return parser
 
 def main():
-    
     parser = create_parser()
-    
     # Parse the command-line arguments
     args = parser.parse_args()
-    
     # Print the parsed arguments (or use them as needed)
     print(args)
+    # Start the main fp detection workflow and prepare the responses to be processed for evaluation
     start_workflow(args)
     # start_evaluation(args)
 

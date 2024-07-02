@@ -21,7 +21,6 @@ def perform_gpt_response(client,prompt_var_list,model,temperature,prompt_path):
 
 
 def perform_qa_task(args,client,prompt_var_list):
-    print(args.QUERY_PROMPT_PATH)
     final_response = perform_gpt_response(client,prompt_var_list,args.MODEL_API,
                                           args.CANDIDATE_TEMPERATURE,args.QUERY_PROMPT_PATH)
     # print("Final response is: ", final_response)
