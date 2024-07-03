@@ -7,8 +7,7 @@ from utils.response_processing import start_response_processing
 from utils.utils import generate_evidence_batch
 from utils.utils import modify_evidence_batch_dict
 from utils.utils import extract_value_from_single_key
-
-from web_search_serp import start_web_search
+from utils.web_search_serp import start_web_search
 
 
 def start_fp_detc(args,query,external_evidence):
