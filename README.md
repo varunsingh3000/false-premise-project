@@ -63,7 +63,7 @@ Some implementation details to note:
 
 Since default parameters are set for the parser arguments in `main.py`, cloning the repository, installing the relevant packages and ensuring the LLMs are callable should ensure that the execution happens without any modifications. The specific subset of questions to be used for each dataset can be changed in the `process_{DATASET_NAME}` function in `utils/dataset.py`.
 
-1. Execute requirements.txt to install the relevant Python packages.
+1. Execute requirements.txt to install the relevant Python packages. `pip install -r requirements.txt`.
 2. Set the necessary parameters and run `main.py` which will invoke the starter functions for `inference.py` and `evaluation.py`.
 3. `inference.py` will generate the LLM response for the selected dataset and method. This will be saved in `Result` directory as a CSV file.
 4. `evaluation.py` will perform the evaluation on the previously generated responses CSV file.
