@@ -26,7 +26,7 @@ Some implementation details to note:
 
 `PROMPT_PATH`: Path to the prompts
 
-`SIMILARITY_THRESHOLD`: Similarity threshold value for FPDAR FP Detection
+`SIMILARITY_THRESHOLD`: Similarity threshold value for FPDAR FP Detection. To generate the results for the Baseline method, the threshold can be set to `0.0`
 
 `TEMPERATURE`: Temperature setting for LLM
 
@@ -59,7 +59,7 @@ Some implementation details to note:
 `RESULT_SAVE_PATH`: Path to save results
 
 
-### Inference and Evaluation
+## Inference and Evaluation
 
 Since default parameters are set for the parser arguments in `main.py`, cloning the repository, installing the relevant packages and ensuring the LLMs are callable should ensure that the execution happens without any modifications. The specific subset of questions to be used for each dataset can be changed in the `process_{DATASET_NAME}` function in `utils/dataset.py`.
 
@@ -68,3 +68,20 @@ Since default parameters are set for the parser arguments in `main.py`, cloning 
 3. `inference.py` will generate the LLM response for the selected dataset and method. This will be saved in `Result` directory as a CSV file.
 4. `evaluation.py` will perform the evaluation on the previously generated responses CSV file.
 5. The evaluation CSV can then be used in the jupyter notebooks present in the `Analysis` directory for generating benchmarks results.
+
+## Addition of new methods, LLM, and/or datasets
+
+Implementing new methods, LLMs, and/or datasets would require certain changes to be made to the codebase which will be detailed below as follows:
+
+### Method
+
+
+### LLM
+1. `inference.py` has function `start_fp_detc.py`, which is used to call the function responsible for starting the response generation for each `METHOD` and `MODEL_API`. This starter function is `start_model_response` for all method and LLM variations. Now, the `MODEL_API` is used to extract the model name, which is then used to dynamically import the required `start_model_response` function from the required `METHOD` and LLM.
+2. This was done to avoid a large number of explicit function imports, which could possibly get larger if more `METHODS` or LLMs were added.
+3. Note that for Llama, different versions of the prompts were created with special tokens. In the current implementation, the Llama prompts have different prompts; if another LLM would similarly need special tokens, then a different version of the prompt would have to be created and added as an argument to the parser. Alternatively, a function could be implemented to add the required token where required in the prompt.
+
+### Dataset
+1. The new dataset would need to be added to the `Data` directory as a CSV file. Ensure the CSV file name is the same you would input for the `DATASET_NAME` parameter. This is needed for easily accessing the dataset.
+2. A new processing function would need to be created in `utils/dataset.py`, which would need to extract the relevant fields as Python lists. The two required lists would be for the question id and the questions themselves.
+3. The new dataset would likely possess other fields possibly containing information such as the question's premise, no of hops, etc. These are passed to the `start_response_processing` function from `response_processing.py`. The intent is to create a dictionary with the other information that can then be later used to create a pandas dataframe. This dataframe is then converted to the LLM response CSV file.
