@@ -77,8 +77,8 @@ def start_workflow(args):
     #generate_evidence_batch is used to save evidence results in a batch
     # if the function has been called before and results are already save then comment the function call
     # OR make sure the default value of args.EVIDENCE_BATCH_GENERATE is not true
-        # generate_evidence_batch(args.EVIDENCE_BATCH_SAVE_PATH,ques_id_list, query_list)
-        print("test batch generate")
+        generate_evidence_batch(args.EVIDENCE_BATCH_SAVE_PATH,ques_id_list, query_list)
+        # print("test batch generate")
 
     if args.EVIDENCE_BATCH_USE and args.EVIDENCE_ALLOWED:
         with open(args.EVIDENCE_BATCH_SAVE_PATH, 'r') as json_file:
