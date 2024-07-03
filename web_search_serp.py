@@ -1,10 +1,5 @@
-# Web Search via Bing Web Search API
-# This file has the code to perform the web search and also process it into a format needed for the LLMs later
-
-import json
 import os 
 import serpapi
-
 
 # Function to perform web search using bing web search API, returns the response as json
 def perform_web_search(params):

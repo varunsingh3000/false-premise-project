@@ -9,7 +9,7 @@ included in the ground-truth answers. We accept ill-formed responses (including 
 language), as well as hallucinated or outdated information that does not significantly impact the primary answer.
 
 
-question: Is Tesla's stock price above $250 a share?
+question: Is Microsoft's stock price above $250 a share?
 correct answer(s): Yes
 response: Yes, it is. The stock price is currently at $207.
 evaluation: incorrect
