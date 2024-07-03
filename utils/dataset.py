@@ -4,7 +4,7 @@ def process_freshqa(dataset_path,dataset_name):
     # processing specific to freshqa dataset
     df_og = pd.read_csv(dataset_path+dataset_name+".csv")
     new_header = df_og.iloc[1]  # Grab the second row for the new column names
-    df = df_og.copy().loc[2:][:5] #the final indexing can be used to control how many/which questions to test
+    df = df_og.copy().loc[2:][:2] #the final indexing can be used to control how many/which questions to test
     df.columns = new_header  # Set the new column names
     query_list = df["question"].tolist()
     ans_list = df["answer_0"].tolist()
