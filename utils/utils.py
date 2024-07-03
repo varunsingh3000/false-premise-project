@@ -1,5 +1,5 @@
 import json
-from web_search_serp import start_web_search
+from utils.web_search_serp import start_web_search
 
 def generate_evidence_batch(EVIDENCE_BATCH_SAVE_PATH,ques_id_list,query_list):
     # evidence list for saving results in batch
