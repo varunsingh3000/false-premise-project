@@ -18,7 +18,7 @@ def process_freshqa(dataset_path,dataset_name):
 def process_QAQA(dataset_path,dataset_name):
     # processing specific to freshqa dataset
     df_og = pd.read_csv(dataset_path+dataset_name+".csv")
-    df = df_og.copy()[:2]
+    df = df_og.copy()[:2] # slice controls the subset of questions to be tested
     query_list = df["question"].tolist()
     ans_list = df["abstractive_answer"].tolist()
     ques_id_list = df["idx"].tolist()
