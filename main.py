@@ -8,10 +8,11 @@ def create_parser():
     
     parser.add_argument('--METHOD', type=str, choices=["FPDAR"],
                         default="FPDAR", help='Method to use.')
-    parser.add_argument('--ABLATION', type=str, choices=["Ab_AnswerQ`X`", "Ab_Deduction", "Ab_ExtraInputQ", "Ab_ExtraInputQ`"],
-                        default="Ab_Deduction", help='Ablation variations to use. None will run the original FPDAR method')
+    parser.add_argument('--ABLATION', type=str, choices=["Ab_wo_Context_Detc", "Ab_wo_Context_Repair", "Ab_wo_Context_Both", 
+                        "Ab_Deduction", "Ab_AnswerQ`X`", "Ab_ExtraInputQ", "Ab_ExtraInputQ`"],default="Ab_ExtraInputQ`", 
+                        help='Ablation variations to use. None will run the original FPDAR method')
     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
-                        default="gpt-3.5-turbo-1106", help='Model API to use')
+                        default="meta.llama2-70b-chat-v1", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')

@@ -15,8 +15,10 @@ def start_fp_detc(args,query,external_evidence):
     model_name = "gpt"
     if "mistral" in args.MODEL_API:
         model_name = "mistral"
+        args.CANDIDATE_TEMPERATURE = 1.0
     elif "llama2" in args.MODEL_API:
         model_name = "llama2"
+        args.CANDIDATE_TEMPERATURE = 1.0
     # Import the appropriate module dynamically based on the method
     fp_detc_module = import_module(f"Methods.{args.METHOD}.{model_name}")
     # Call the method-specific function from the imported module
@@ -82,33 +84,33 @@ def start_workflow(args):
             external_evidence = modify_evidence_batch_dict(initial_external_evidence)
         # print("NEW QUERY HAS STARTED"*4)
 
-        if args.METHOD == "FPDAR":
-            og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_fp_detc(args,query,external_evidence)
+        
+        og_response_dict, fwd_main_answers_list, bck_main_answers_list = start_fp_detc(args,query,external_evidence)
 
-            #appending results for qa
-            original_response_list.append(og_response_dict)
+        #appending results for qa
+        original_response_list.append(og_response_dict)
 
-            #appending results for forward reasoning
-            fwd_final_response_list.append(fwd_main_answers_list[0])
-            fwd_final_resp_exp_list.append(fwd_main_answers_list[1])
+        #appending results for forward reasoning
+        fwd_final_response_list.append(fwd_main_answers_list[0])
+        fwd_final_resp_exp_list.append(fwd_main_answers_list[1])
 
-            #appending results for backward attack
-            bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
+        #appending results for backward attack
+        bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
 
-            if args.ABLATION == "Ab_AnswerQ`X`":
-                bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Answer:")
-                bck_extracted_final_resp_exp = ""
-            else:
-                bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Answer:")
-                bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Explanation:")
-            
-            bck_final_response_list.append(bck_extracted_final_response)
-            bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
-            bck_final_question_list.append(bck_extracted_final_question)
+        if args.ABLATION == "Ab_AnswerQ`X`":
+            bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Answer:")
+            bck_extracted_final_resp_exp = ""
+        else:
+            bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Answer:")
+            bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Explanation:")
+        
+        bck_final_response_list.append(bck_extracted_final_response)
+        bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
+        bck_final_question_list.append(bck_extracted_final_question)
 
-            combined_result_list = [original_response_list,fwd_final_response_list,fwd_final_resp_exp_list,
-                                    bck_final_response_list,bck_final_resp_exp_list,
-                                    bck_final_question_list,dataset_elements]
+        combined_result_list = [original_response_list,fwd_final_response_list,fwd_final_resp_exp_list,
+                                bck_final_response_list,bck_final_resp_exp_list,
+                                bck_final_question_list,dataset_elements]
 
 
     qa_data_dict = start_response_processing(args,combined_result_list)

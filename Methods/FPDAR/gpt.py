@@ -41,15 +41,32 @@ def perform_qa_task(args,client,query,external_evidence,final_response_ans,final
         fwd_extracted_final_response = fwd_extracted_final_response + " " + fwd_extracted_final_resp_exp
 
     external_evidence = json.dumps(external_evidence, indent=4)
-
     prompt_var_list = [external_evidence, fwd_extracted_final_response]
+
+    if args.ABLATION == "Ab_wo_Context_Both":
+        no_external_evidence = ""
+        prompt_var_list = [no_external_evidence, fwd_extracted_final_response]
+
+    elif args.ABLATION == "Ab_wo_Context_Detc":
+        no_external_evidence = ""
+        prompt_var_list = [no_external_evidence, fwd_extracted_final_response]
+
     back_reasoning_response_query = perform_gpt_response(client,prompt_var_list,args.MODEL_API,
                                 args.CANDIDATE_TEMPERATURE,args.BACKWARD_REASONING_QUERY_PROMPT_PATH)
-    
-    if args.ABLATION == "Ab_ExtraInputQ":
+
+    if args.ABLATION == "Ab_wo_Context_Detc":
+        prompt_var_list = [external_evidence, fwd_extracted_final_response]
+
+    elif args.ABLATION == "Ab_wo_Context_Repair":
+        no_external_evidence = ""
+        prompt_var_list = [no_external_evidence, fwd_extracted_final_response]
+
+    elif args.ABLATION == "Ab_ExtraInputQ":
         prompt_var_list = [query, external_evidence, fwd_extracted_final_response]
+
     elif args.ABLATION == "Ab_ExtraInputQ`":
         prompt_var_list = [back_reasoning_response_query, external_evidence, fwd_extracted_final_response]
+
     elif args.ABLATION == "Ab_AnswerQ`X`":
         ques_id = [json.loads(external_evidence)][0]["QueryID"]
         initial_new_external_evidence = start_web_search(ques_id,back_reasoning_response_query)
@@ -60,6 +77,7 @@ def perform_qa_task(args,client,query,external_evidence,final_response_ans,final
         bck_main_answers_list.append(back_reasoning_response_query)
         bck_main_answers_list.append(back_reasoning_response)
         return fwd_main_answers_list, bck_main_answers_list
+
 
     back_reasoning_response = perform_gpt_response(client,prompt_var_list,args.MODEL_API,
                                 args.CANDIDATE_TEMPERATURE,args.BACKWARD_REASONING_RESP_PROMPT_PATH)
