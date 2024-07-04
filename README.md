@@ -12,8 +12,8 @@ Ablation variations:
 
 ## Parameters
 
-`ABLATION`: `None`, `Ab_wo_Context_Detc`, `Ab_wo_Context_Repair`, `Ab_wo_Context_Both`, `Ab_Deduction`, `Ab_AnswerQ`X``, `Ab_ExtraInputQ`, `Ab_ExtraInputQ``
+`ABLATION`: `None`, `Ab_wo_Context_Detc`, `Ab_wo_Context_Repair`, `Ab_wo_Context_Both`, `Ab_Deduction`, `` Ab_AnswerQ`X` ``, `Ab_ExtraInputQ`, `` Ab_ExtraInputQ` ``
 
 ## Inference and Evaluation
 
-The evaluation process stays the same. Most of the changes are done in `inference.py` and the `perform_qa_task` function from each of the LLMs inference code. Depedning on the ablation picked values of certain variables are changed, different prompts are used or a different process is used.
+The evaluation process stays the same. Most of the changes are done in `inference.py` and the `perform_qa_task` function from each of the LLMs inference codes. Depedning on the ablation picked values of certain variables are changed, different prompts are used or a different process is used. To generate the ablation results, set the `ABLATION`. If `None` is set then the original FPDAR method executes.
