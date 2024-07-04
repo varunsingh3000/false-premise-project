@@ -6,8 +6,10 @@ from evaluation import start_evaluation
 def create_parser():
     parser = argparse.ArgumentParser(description="Script parameters")
     
-    parser.add_argument('--METHOD', type=str, choices=["FPDAR", "SC", "FourShot"],
-                        default="FPDAR", help='Method to use. This will decide which prompts are used going further.')
+    parser.add_argument('--METHOD', type=str, choices=["FPDAR"],
+                        default="FPDAR", help='Method to use.')
+    parser.add_argument('--ABLATION', type=str, choices=["Ab_AnswerQ`X`", "Ab_Deduction", "Ab_ExtraInputQ", "Ab_ExtraInputQ`"],
+                        default="Ab_Deduction", help='Ablation variations to use. None will run the original FPDAR method')
     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
                         default="gpt-3.5-turbo-1106", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
@@ -17,7 +19,6 @@ def create_parser():
     parser.add_argument('--SIMILARITY_THRESHOLD', type=float, default=0.7, help='Similarity threshold value for FPDAR FP Detection')
     parser.add_argument('--TEMPERATURE', type=float, default=0.0, help='Temperature setting for the model')
     parser.add_argument('--CANDIDATE_TEMPERATURE', type=float, default=1.5, help='Candidate temperature setting for the model')
-    parser.add_argument('--MAX_CANDIDATE_RESPONSES', type=int, default=3, help='Maximum candidate responses to be generated for SC method')
     parser.add_argument('--EVIDENCE_ALLOWED', type=int, default=1, help='Boolean to decide to whether evidence should be used')
     parser.add_argument('--EVIDENCE_BATCH_GENERATE', type=int, default=0, help='Boolean to decide whether evidence is generated in batch or indiviudally for each question. Zero means by default batch will not be generated.')
     parser.add_argument('--EVIDENCE_BATCH_USE', type=int, default=1, help='Boolean to decide whether batch evidence has to be used. One means by default batch will be used.')

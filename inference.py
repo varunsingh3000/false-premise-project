@@ -25,47 +25,29 @@ def start_fp_detc(args,query,external_evidence):
  
 
 def start_workflow(args):
+    # list variables to save QA results later to a dataframe
+    original_response_list = []
 
-    if args.METHOD == "FPDAR":
-        # list variables to save QA results later to a dataframe
-        original_response_list = []
+    fwd_final_response_list = []
+    fwd_final_resp_exp_list = []
 
-        fwd_final_response_list = []
-        fwd_final_resp_exp_list = []
+    bck_final_response_list = []
+    bck_final_resp_exp_list = []
+    bck_final_question_list = []
 
-        bck_final_response_list = []
-        bck_final_resp_exp_list = []
-        bck_final_question_list = []
+    full_response_save_path = (
+        f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.ABLATION}_"
+        f"{args.SIMILARITY_THRESHOLD}_{args.MODEL_API}"
+    )
 
-        full_response_save_path = (
-            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
-            f"{args.SIMILARITY_THRESHOLD}_{args.MODEL_API}"
-        )
+    if args.ABLATION == "Ab_Deduction":
+        args.BACKWARD_REASONING_RESP_PROMPT_PATH = f"{args.PROMPT_PATH}{args.ABLATION}\\backward_reasoning_resp.txt"
+        args.LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH = f"{args.PROMPT_PATH}{args.ABLATION}\\backward_reasoning_resp_meta.txt"
 
+    if args.ABLATION == "Ab_ExtraInputQ" or args.ABLATION == "Ab_ExtraInputQ`":
+        args.BACKWARD_REASONING_RESP_PROMPT_PATH = f"{args.PROMPT_PATH}{args.ABLATION}\\backward_reasoning_resp.txt"
+        args.LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH = f"{args.PROMPT_PATH}{args.ABLATION}\\backward_reasoning_resp_meta.txt"
 
-    elif args.METHOD == "SC":
-        # list variables to save QA results later to a dataframe
-        final_ans_dict_list = []
-        candidate_responses_list = []
-        final_response_list = []
-
-        full_response_save_path = (
-            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
-            f"{args.CANDIDATE_TEMPERATURE}_{args.MODEL_API}"
-        )
-
-    elif args.METHOD == "FourShot":
-        # list variables to save QA results later to a dataframe
-        final_response_list = []
-        # fourshot method has different prompts without evidence, so those are assigned here
-        args.QUERY_PROMPT_PATH = f"{args.PROMPT_PATH}{args.METHOD}\\resp_generation.txt"
-        args.LLAMA_QUERY_PROMPT_PATH = f"{args.PROMPT_PATH}{args.METHOD}\\resp_generation_meta.txt"
-        args.EVIDENCE_ALLOWED = 0
-
-        full_response_save_path = (
-            f"{args.RESULT_SAVE_PATH}{args.DATASET_NAME}_{args.METHOD}_"
-            f"{args.CANDIDATE_TEMPERATURE}_{args.MODEL_API}"
-        )
 
     # retrieve the datasets fields in proper formats
     dataset_elements = start_dataset_processing(args)
@@ -112,8 +94,13 @@ def start_workflow(args):
 
             #appending results for backward attack
             bck_extracted_final_question = extract_value_from_single_key(bck_main_answers_list[0], key = "Final Question:")
-            bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Answer:")
-            bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Explanation:")
+
+            if args.ABLATION == "Ab_AnswerQ`X`":
+                bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Answer:")
+                bck_extracted_final_resp_exp = ""
+            else:
+                bck_extracted_final_response = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Answer:")
+                bck_extracted_final_resp_exp = extract_value_from_single_key(bck_main_answers_list[1], key = "Final Explanation:")
             
             bck_final_response_list.append(bck_extracted_final_response)
             bck_final_resp_exp_list.append(bck_extracted_final_resp_exp)
@@ -123,28 +110,6 @@ def start_workflow(args):
                                     bck_final_response_list,bck_final_resp_exp_list,
                                     bck_final_question_list,dataset_elements]
 
-        elif args.METHOD == "SC":
-            responses_dict, final_response = start_fp_detc(args,query,external_evidence)
-
-            temp_candidate_response_list = []
-            temp_indi_resp_list=[]
-            for key_value in responses_dict:
-                final_ans_dict_list.append(final_response)
-
-                for candidate_resp in responses_dict[key_value][3:]:  
-                    temp_indi_resp_list.append(candidate_resp)
-                temp_candidate_response_list.append(temp_indi_resp_list)
-                temp_indi_resp_list = []
-            candidate_responses_list.append(temp_candidate_response_list)
-
-            final_response_list.append(final_response)
-
-            combined_result_list = [candidate_responses_list,final_response_list,dataset_elements]
-        
-        elif args.METHOD == "FourShot":
-            final_response = start_fp_detc(args,query,external_evidence)
-            final_response_list.append(final_response)
-            combined_result_list = [final_response_list,dataset_elements]
 
     qa_data_dict = start_response_processing(args,combined_result_list)
     

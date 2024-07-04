@@ -1,0 +1,20 @@
+observation (o1): {}
+
+conclusion (o2): {}
+
+Given observation o1 evaluate whether conclusion c logically follows from these premises using deductive reasoning. 
+Consider the structure of the argument and the logical relationships between the premises and the conclusion. 
+Assess the validity of the conclusion based on the truth of the premises and the application of logical rules. 
+Provide a reasoned assessment of the soundness and coherence of the argument, ensuring that the conclusion 
+necessarily follows from the given premises.
+
+Note: Your response should not mention any variables such as o1 and o2 or reference them in the response. 
+
+Note: Formulate your response without any dependency on variables names, your response should make sense on its own.
+
+Note: Ensure that your responses are direct, concise and clear.
+
+Use the following format for the output:
+
+Final Answer: <based on your explanation, a standalone final answer response without variable names>
+Final Explanation: <your explanation response without variable names>
