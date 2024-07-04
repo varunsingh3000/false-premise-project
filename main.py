@@ -12,7 +12,7 @@ def create_parser():
                         "Ab_Deduction", "Ab_AnswerQ`X`", "Ab_ExtraInputQ", "Ab_ExtraInputQ`"],default="Ab_ExtraInputQ`", 
                         help='Ablation variations to use. None will run the original FPDAR method')
     parser.add_argument('--MODEL_API', type=str, choices=["gpt-3.5-turbo-1106", "mistral-small-latest", "meta.llama2-70b-chat-v1"],
-                        default="meta.llama2-70b-chat-v1", help='Model API to use')
+                        default="gpt-3.5-turbo-1106", help='Model API to use')
     parser.add_argument('--EVAL_MODEL', type=str, default="gpt-4-turbo-preview", help='Evaluation model to use')
     parser.add_argument('--DATASET_NAME', type=str, choices=["freshqa", "QAQA"], default="freshqa", help='Dataset name to use')
     parser.add_argument('--DATASET_PATH', type=str, default="Data\\", help='Path to the dataset')
