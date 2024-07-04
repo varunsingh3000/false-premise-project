@@ -15,8 +15,10 @@ def start_fp_detc(args,query,external_evidence):
     model_name = "gpt"
     if "mistral" in args.MODEL_API:
         model_name = "mistral"
+        args.CANDIDATE_TEMPERATURE = 1.0
     elif "llama2" in args.MODEL_API:
         model_name = "llama2"
+        args.CANDIDATE_TEMPERATURE = 1.0
     # Import the appropriate module dynamically based on the method
     fp_detc_module = import_module(f"Methods.{args.METHOD}.{model_name}")
     # Call the method-specific function from the imported module
