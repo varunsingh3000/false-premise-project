@@ -1,33 +1,12 @@
-import os
-from multipledispatch import dispatch
 import argparse
-
-from utils.utils import extract_value_from_single_key
-
+from multipledispatch import dispatch
 from sentence_transformers import SentenceTransformer
 from scipy.spatial.distance import cosine
-from openai import OpenAI
 
-def perform_gpt_response(prompt_var_list,model,temperature,prompt_path):
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
-    with open(prompt_path, 'r') as file:
-        file_content = file.read()
-
-    message = [
-        {
-            "role": "system",
-            "content": file_content.format(*prompt_var_list) 
-        }
-    ]
-    chat_completion = client.chat.completions.create(
-        messages=message,
-        model=model,
-        temperature=temperature
-        )
-    
-    return chat_completion.choices[0].message.content.strip()
-
+from utils.utils import extract_value_from_single_key
+from utils.utils import perform_gpt_response
+from utils.utils import perform_llama_response
+from utils.utils import perform_mistral_response
 
 # dispatch is used to implement func overload based on the number of arguments passed to auto_evaluation
 @dispatch(argparse.Namespace, object, object, object, object, object, object, object)
@@ -46,19 +25,34 @@ def auto_evaluation(args,query,bck_extracted_final_question,true_ans,fwd_extract
 
     prompt_var_list = [query,bck_extracted_final_question]
 
-    model = SentenceTransformer('bert-base-nli-mean-tokens')
-    embeddings = model.encode(prompt_var_list)
-    similarity = 1 - cosine(embeddings[0], embeddings[1])
+    if args.QUERY_INTENT_METHOD == "SemSim":
+        model = SentenceTransformer('bert-base-nli-mean-tokens')
+        embeddings = model.encode(prompt_var_list)
+        similarity = 1 - cosine(embeddings[0], embeddings[1])
 
-    if similarity <= args.SIMILARITY_THRESHOLD:
-        prompt_var_list = [query,true_ans,bck_extracted_final_response]
-        # extracted_gt_ans_resp1 = "different"
-    else:
-        prompt_var_list = [query,true_ans,fwd_extracted_final_response]
-        # extracted_gt_ans_resp1 = "identical"
+        if similarity <= args.SIMILARITY_THRESHOLD:
+            prompt_var_list = [query,true_ans,bck_extracted_final_response]
+        else:
+            prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+
+    elif args.QUERY_INTENT_METHOD == "LLM":
+
+        if "mistral" in args.MODEL_API:
+            similarity = perform_mistral_response(prompt_var_list,args.MODEL_API,args.TEMPERATURE,args.BACKWARD_REASONING_QUERY_INTENT_PROMPT_PATH)
+        elif "llama2" in args.MODEL_API:
+            similarity = perform_llama_response(prompt_var_list,args.MODEL_API,args.TEMPERATURE,args.LLAMA_BACKWARD_REASONING_QUERY_INTENT_PROMPT_PATH)
+        elif "gpt" in args.MODEL_API:
+            similarity = perform_gpt_response(prompt_var_list,args.MODEL_API,args.TEMPERATURE,args.BACKWARD_REASONING_QUERY_INTENT_PROMPT_PATH)
+
+        extracted_binary_similarity = extract_value_from_single_key(similarity, key = "evaluation:")
+
+        if extracted_binary_similarity == "different":
+            prompt_var_list = [query,true_ans,bck_extracted_final_response]
+        else:
+            prompt_var_list = [query,true_ans,fwd_extracted_final_response]
+        similarity = extracted_binary_similarity
 
     accuracy_resp = perform_gpt_response(prompt_var_list,args.EVAL_MODEL,args.TEMPERATURE,args.AUTO_EVALUATION_PROMPT_PATH)
-    # print("Accuracy response text: ", accuracy_resp)
     extracted_accuracy_resp = extract_value_from_single_key(accuracy_resp, key = "evaluation:")
     accuracy = "Correct" if extracted_accuracy_resp == "correct" else "Incorrect"
 
