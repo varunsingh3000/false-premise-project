@@ -133,7 +133,7 @@ def start_workflow(args):
             for key_value in responses_dict:
                 final_ans_dict_list.append(final_response)
 
-                for candidate_resp in responses_dict[key_value][3:]:  
+                for candidate_resp in responses_dict[key_value][3:]:
                     temp_indi_resp_list.append(candidate_resp)
                 temp_candidate_response_list.append(temp_indi_resp_list)
                 temp_indi_resp_list = []
