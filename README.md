@@ -28,11 +28,15 @@ Some implementation details to note:
 
 `SIMILARITY_THRESHOLD`: Similarity threshold value for FPDAR FP Detection. To generate the results for the Baseline method, the threshold can be set to `0.0`
 
+`QUERY_INTENT_METHOD`: Method to use for query intent comparison.
+
 `TEMPERATURE`: Temperature setting for LLM
 
 `CANDIDATE_TEMPERATURE`: Candidate temperature setting for LLM
 
 `MAX_CANDIDATE_RESPONSES`: Maximum candidate responses to be generated for SC method
+
+`USE_INITIAL_RESP_DATA`: Boolean to decide whether FPDAR has to be used as a posthoc approach for responses generated through another method
 
 `EVIDENCE_ALLOWED`: Boolean to decide to whether evidence should be used. This is used in FourShot method to stop the use of evidence.
 
@@ -42,17 +46,23 @@ Some implementation details to note:
 
 `EVIDENCE_BATCH_SAVE_PATH`: Path to save evidence batch results
 
+`INITIAL_RESP_DATA_PATH`: Path to the initial responses data csv file
+
 `QUERY_PROMPT_PATH`: Path to the query prompt file for generating initial response Y
 
 `BACKWARD_REASONING_RESP_PROMPT_PATH`: Path to the abductive reasoning response prompt file for generating explanation Z
 
 `BACKWARD_REASONING_QUERY_PROMPT_PATH`: Path to the abductive reasoning query prompt file for generating question Q`
 
+`BACKWARD_REASONING_QUERY_INTENT_PROMPT_PATH`: Path to the query intent comparison prompt file
+
 `LLAMA_QUERY_PROMPT_PATH`: Path to the Llama query prompt file for generating initial response Y
 
 `LLAMA_BACKWARD_REASONING_RESP_PROMPT_PATH`: Path to the Llama abductive reasoning response prompt file for generating explanation Z
 
 `LLAMA_BACKWARD_REASONING_QUERY_PROMPT_PATH`: Path to the Llama abductive reasoning query prompt file for generating question Q`
+
+`LLAMA_BACKWARD_REASONING_QUERY_INTENT_PROMPT_PATH`: Path to the Llama query intent comparison prompt file
 
 `AUTO_EVALUATION_PROMPT_PATH`: Path to the auto evaluation prompt file
 
